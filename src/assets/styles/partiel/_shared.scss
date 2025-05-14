@@ -6,9 +6,21 @@
   position: absolute;
   width: 100%;
   top: 0;
-
+  z-index: 11111;
+  li {
+    a {
+      color: white;
+      &:hover {
+        color: $color-primary;
+      }
+      &.active {
+        color: $color-primary !important;
+        font-weight: bold;
+      }
+    }
+  }
   img {
-    width: 4rem;
+    width: 8rem;
   }
 }
 
@@ -23,7 +35,6 @@
 .footer {
   background-color: $color-light-gray-100;
   width: 100%;
-
 
   z-index: -1;
   .high_light {
@@ -187,6 +198,40 @@
       height: 30px;
       border-bottom: none;
       border-right: none;
+    }
+  }
+}
+//contact-us-banner
+.contact-us-banner {
+  background-color: $color-primary;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+  }
+
+  .contact-us-button {
+    margin-top: 1rem;
+    @extend .shared-button;
+  }
+  .text {
+    z-index: 111;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .map {
+    img {
+      width: 100%;
+      z-index: -1;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   }
 }

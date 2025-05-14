@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
-  selected: string = ''; // ✅ لازم تتعرف هنا
+  selected: string = 'أخبار عن الإتحاد'; // ✅ لازم تتعرف هنا
+  isExpanded = false;
+
+  toggleText() {
+    this.isExpanded = !this.isExpanded;
+  }
 }
