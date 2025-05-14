@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/styles/main.scss";
 
+*{
+  transition: all 0.3s ease-in-out;
+}
 body {
   font-family: "Cairo", "Poppins", sans-serif;
+  
   overflow-x: hidden;
 }

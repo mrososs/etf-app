@@ -1,14 +1,192 @@
-//navbar
+// 1. تأكد أنك استوردت ملف الألوان في ملف الـ SCSS دا
+@import "../colors";
 
+// Navbar
 .navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+
   img {
     width: 4rem;
   }
 }
+
 [dir="rtl"] .navbar .dropdown-toggle::after {
-  float: right; /* السهم على اليسار من النص */
+  float: right;
   margin-right: 0;
   margin-top: 0.6rem;
-  margin-left: 0.255em; /* مسافة صغيرة من اليمين */
+  margin-left: 0.255em;
 }
 
+// Footer
+.footer {
+  background-color: $color-light-gray-100;
+  width: 100%;
+
+
+  z-index: -1;
+  .high_light {
+    padding: 1rem 0;
+    h1 {
+      font-size: 1rem;
+      font-weight: normal;
+      color: $color-gray-600;
+    }
+  }
+  .social_media {
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    h1 {
+      color: $color-primary;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &__icons {
+      img {
+        margin-inline: 0.4rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .footer__list {
+    display: grid;
+    padding: 2rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    li {
+      list-style: none;
+
+      &.first_list,
+      &.second_list,
+      &.third_list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      &.first_list {
+        h4 {
+          font-size: 1rem;
+          font-weight: lighter;
+          color: $color-muted-1;
+        }
+
+        img {
+          width: 10rem;
+        }
+      }
+
+      &.second_list,
+      &.third_list {
+        h1 {
+          font-size: 1rem;
+          font-weight: bold;
+          color: $color-primary;
+        }
+
+        p,
+        a {
+          font-size: 1rem;
+          font-weight: normal;
+          color: $color-gray-600;
+          text-decoration: none;
+        }
+
+        img {
+          margin-left: 0.3rem;
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 768px) {
+    .footer__list {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      li {
+        align-items: center;
+
+        h4,
+        h1,
+        p,
+        a {
+          text-align: center;
+        }
+
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+// Shared Button
+.shared-button {
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    rotate: 45deg;
+    border: 1px solid $color-primary;
+  }
+
+  &::before {
+    top: -3px;
+    left: 6px;
+    height: 20px;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  &::after {
+    top: -5px;
+    left: 10px;
+    height: 30px;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  &.active {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      rotate: 45deg;
+      border: 1px solid $color-white;
+    }
+
+    &::before {
+      top: -3px;
+      left: 6px;
+      height: 20px;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    &::after {
+      top: -5px;
+      left: 10px;
+      height: 30px;
+      border-bottom: none;
+      border-right: none;
+    }
+  }
+}

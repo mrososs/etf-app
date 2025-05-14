@@ -1,0 +1,7 @@
+<button
+  class="shared-button"
+  [ngClass]="{ active: isActive }"
+  (click)="handleClick()"
+>
+  <ng-content></ng-content>
+</button>

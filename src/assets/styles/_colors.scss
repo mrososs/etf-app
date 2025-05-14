@@ -1,0 +1,62 @@
+// Brand Colors
+$color-primary: #f7931d;
+$color-primary-dark: #f7941e;
+$color-secondary: #feca0a;
+$color-accent: #c5499b;
+
+// Greens (Success / Status)
+$color-success: #71bf44;
+$color-success-light: #71bf44cc; // 80% opacity
+$color-success-30: #71bf444d; // 30% opacity
+$color-success-34: #71bf4457; // 34% opacity
+$color-success-07: #71bf4412; // 7% opacity
+
+// Blues
+$color-info: #1cbfdf;
+$color-link-blue: #1c2b38;
+
+// Yellows
+$color-warning: #feca0a;
+
+// Grayscale
+$color-black: #000000;
+$color-black-100: #000000; // 100%
+$color-black-50: #00000080;
+$color-black-20: #00000033;
+$color-black-05: #0000000d;
+
+$color-white: #ffffff;
+$color-white-100: #ffffff;
+$color-white-80: #ffffffcc;
+$color-white-60: #ffffff99;
+$color-white-50: #ffffff80;
+$color-white-0: #ffffff00;
+
+$color-gray-900: #202020;
+$color-gray-800: #292f36;
+$color-gray-700: #505050;
+$color-gray-600: #5c5959;
+$color-gray-500: #5d5a5a;
+$color-gray-400: #4d5053;
+$color-gray-300: #7e8387;
+$color-gray-200: #8f8f8f;
+$color-gray-100: #c4c4c4;
+
+$color-light-gray-100: #d9d9d9;
+$color-light-gray-100-18: #d9d9d92e;
+$color-light-gray-0: #d9d9d900;
+
+$color-muted-1: #858585;
+$color-muted-2: #505050;
+$color-muted-3: #292f36;
+
+// Background Colors
+$color-bg-1: #f6f3f3;
+$color-bg-2: #fbf9f6;
+$color-bg-3: #f7fcf6;
+$color-bg-4: #fef9f3;
+$color-bg-light: #f3fcfd;
+
+// Linear Gradients (as references, use in background)
+$gradient-orange: linear-gradient(90deg, #f7931d 0%, #feca0a 100%);
+$gradient-light-orange: linear-gradient(90deg, #f7941e 0%, #feca0a 100%);
