@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/main.scss";
+@font-face {
+  font-family: "Somar";
+  src: url("assets/fonts/alfont_com_Somar-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Somar";
+  src: url("assets/fonts/alfont_com_Somar-ExtraLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SomarGX";
+  src: url("assets/fonts/alfont_com_SomarGX.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Somar", sans-serif;
+  overflow-x: hidden;
+}

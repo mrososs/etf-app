@@ -1,4 +1,17 @@
 {
   "HELLO": "Hello",
-  "WELCOME": "Welcome"
+  "WELCOME": "Welcome",
+  "navbar": {
+    "home": "Home",
+    "whoUs": "About Us",
+    "rooms": "Rooms",
+    "training": "Training",
+    "tourst": "Tourism Regulations",
+    "news": "News",
+    "contact": "Contact Us",
+    "arabic": "العربية",
+    "ar": "العربية",
+    "en": "english",
+    "english": "English"
+  }
 }

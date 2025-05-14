@@ -1,0 +1,14 @@
+//navbar
+
+.navbar {
+  img {
+    width: 4rem;
+  }
+}
+[dir="rtl"] .navbar .dropdown-toggle::after {
+  float: right; /* السهم على اليسار من النص */
+  margin-right: 0;
+  margin-top: 0.6rem;
+  margin-left: 0.255em; /* مسافة صغيرة من اليمين */
+}
+
