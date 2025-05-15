@@ -16,15 +16,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-        <li class="nav-item ">
-          <a [routerLink]="['landing-page/home']" routerLinkActive="active"  class="nav-link" aria-current="page" href="#">{{
-            resourcePath + "home" | translate
-          }}</a>
+        <li class="nav-item">
+          <a
+            [routerLink]="['landing-page/home']"
+            routerLinkActive="active"
+            class="nav-link"
+            aria-current="page"
+            >{{ resourcePath + "home" | translate }}</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">{{
-            resourcePath + "whoUs" | translate
-          }}</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['landing-page/union']"
+            routerLinkActive="active"
+            >{{ resourcePath + "whoUs" | translate }}</a
+          >
         </li>
 
         <li class="nav-item dropdown">
