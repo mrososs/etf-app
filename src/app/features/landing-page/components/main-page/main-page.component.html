@@ -38,8 +38,8 @@
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center">
         <div class="text_manager w-75" [ngClass]="{ expanded: isExpanded }">
-          <h1>كلمة رئيس المجلس</h1>
-          <p>
+          <h1 class="text_hero_header">كلمة رئيس المجلس</h1>
+          <p class="text_expanded">
             السادة الزملاء، قد شرفت أنا وزملائي بتولي مسؤولية هذا الكيان الذي
             اقترب من ميلاده السنين ليصبح واحداً من أقدم المؤسسات المساهمة في مصر
             بل أقدمها بالفعل. وأجدني أمامكم اليوم لأقدم لكم من خلال صفحات هذا
@@ -89,229 +89,27 @@
           </div>
         </div>
         <div>
-          <div class="d-flex flex-wrap flex-column gap-3">
+          <div class="member-card">
             <img
               src="../../../../../assets/img/managerPhoto.jpg"
               alt="Manager Photo"
             />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
+            <div class="manager_name d-flex flex-column align-items-center">
               <h1>أ/حسام الشاعر</h1>
               <p>رئيس مجلس لأدارة</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="mt-3 group-name">
-        <h2>أعضاء مجلس الأدارة</h2>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center mb-3"
-        >
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/managerPhoto.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/حسام الشاعر</h1>
-              <p>رئيس مجلس لأدارة</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-3"
-        >
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ناصر التركي.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/ناصر تركي</h1>
-              <p>وكيل المجلس</p>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/ايهاب عبد العال</h1>
-              <p>أمين الصندوق</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-3"
-        >
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ناصر التركي.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>اللواء/أمجد الجندي</h1>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>د/نبيل رشدان</h1>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/عمرو ابو زيد</h1>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-3"
-        >
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ناصر التركي.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/تامر يوسف</h1>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/احمد الوصيف</h1>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/نادر هشام علي</h1>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-3"
-        >
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ناصر التركي.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>ا/مصطفى فاروق</h1>
-              <p>رئيس غرفة سياحة الغوص</p>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>ا/نادر الببلاوي جورج</h1>
-              <p>رئيس غرفة الشركات</p>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>ا/محمد أيوب</h1>
-              <p>رئيس غرفة المنشآت الفندقية</p>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>ا/ياسر محمد التاجوري</h1>
-              <p>رئيس غرفة المنشآت والمطاعم</p>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>ا/علي غنيم</h1>
-              <p>رئيس غرفة السلع السياحية</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center gap-5 mb-3"
-        >
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1 class="text-center">ا/ عبدالعظيم احمد عبدالعظيم</h1>
-              <p>ممثل وزارة المالية</p>
-            </div>
-          </div>
-          <div class=" ">
-            <img
-              src="../../../../../assets/img/group-name/ايهاب عبدالعال.jpg"
-              alt="Manager Photo"
-            />
-            <div
-              class="w-100 manager_name d-flex flex-wrap flex-column justify-content-center align-items-center pt-3"
-            >
-              <h1>أ/ساميه سامي</h1>
-              <p>ممثل وزارة السياحة</p>
+      <div class="group-name">
+        <h2>أعضاء مجلس الإدارة</h2>
+
+        <div class="members-grid">
+          <div *ngFor="let member of members" class="member-card">
+            <img [src]="member.image" [alt]="member.name" />
+            <div class="manager_name">
+              <h1>{{ member.name }}</h1>
+              <p *ngIf="member.title">{{ member.title }}</p>
             </div>
           </div>
         </div>
@@ -341,29 +139,10 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col mb-3">
-          <img src="../../../../../assets/img/news/2.jpg" alt="News 1" />
-          <p>
-            في إطار جهود الإتحاد المصري للغرف السياحية لحل المشاكل التي تواجه
-            القطاع السياحي بكافة أنشطته..
-          </p>
-          <button class="news_btn">اقرأ المزيد</button>
-        </div>
-        <div class="col mb-3">
-          <img src="../../../../../assets/img/news/3.jpg" alt="News 1" />
-          <p>
-            إتحاد الغرف السياحية يستقبل وفدا عمانيا لبحث فرص الاستثمار السياحي
-            وتنظيم برامج مشتركة.
-          </p>
-          <button class="news_btn">اقرأ المزيد</button>
-        </div>
-        <div class="col mb-3">
-          <img src="../../../../../assets/img/news/1.jpg" alt="News 1" />
-          <p>
-            اكد حسام الشاعر رئيس الإتحاد المصري للغرف السياحية أن مشروع تطوير
-            وإحياء منطقة نزلة السمان الذي بدأت..
-          </p>
-          <button class="news_btn">اقرأ المزيد</button>
+        <div class="col mb-3" *ngFor="let item of newsItems">
+          <img [src]="item.image" alt="News" />
+          <p>{{ item.description }}</p>
+          <button class="news_btn">{{ item.buttonText }}</button>
         </div>
       </div>
     </div>
