@@ -41,5 +41,19 @@
       "view": "عرض",
       "download": "تحميل"
     }
+  },
+  "contactUs": {
+    "title": "تواصل معنا",
+    "subtitle": "شارك برأيك فيما يقدم لك من خدمات",
+    "phone": "الهاتف",
+    "emailLabel": "البريد الإلكتروني",
+    "addressLabel": "العنوان",
+    "name": "الاسم بالكامل",
+    "namePlaceholder": "ادخل الاسم",
+    "email": "البريد الالكتروني",
+    "emailPlaceholder": "ادخل البريد الالكتروني",
+    "message": "رسالتك",
+    "messagePlaceholder": "اكتب رسالتك ..",
+    "send": "ارسال"
   }
 }

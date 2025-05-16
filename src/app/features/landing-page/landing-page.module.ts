@@ -8,6 +8,7 @@ import { CarusolGalleryComponent } from './components/main-page/carusol-gallery/
 import { AboutUnionComponent } from './components/about-union/about-union.component';
 import { NewsComponent } from './components/news/news.component';
 import { TourismLegislationComponent } from './components/tourism-legislation/tourism-legislation.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TourismLegislationComponent } from './components/tourism-legislation/to
     AboutUnionComponent,
     NewsComponent,
     TourismLegislationComponent,
+    ContactUsComponent,
   ],
   imports: [CommonModule, LandingPageRoutingModule, SharedModule],
 })

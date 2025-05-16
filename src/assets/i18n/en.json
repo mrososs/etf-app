@@ -41,5 +41,19 @@
       "view": "View",
       "download": "Download"
     }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "subtitle": "Share your opinion about the services provided to you",
+    "phone": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "message": "Your Message",
+    "messagePlaceholder": "Type your message..",
+    "send": "Send"
   }
 }

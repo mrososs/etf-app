@@ -6,6 +6,8 @@ import { SharedNavigateButtonComponent } from './components/shared-navigate-butt
 import { ContactUsBannerComponent } from './components/contact-us-banner/contact-us-banner.component';
 import { OrganizationChartModule } from 'primeng/organizationchart';
 import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+
 
 @NgModule({
   declarations: [SharedNavigateButtonComponent, ContactUsBannerComponent],
@@ -16,10 +18,11 @@ import { InputTextModule } from 'primeng/inputtext';
     TranslateModule,
     OrganizationChartModule,
     InputTextModule,
-    
+    InputTextareaModule
   ],
   exports: [
     CommonModule,
+    InputTextareaModule,
     FormsModule,
     InputTextModule,
     ReactiveFormsModule,

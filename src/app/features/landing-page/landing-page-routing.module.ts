@@ -4,6 +4,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutUnionComponent } from './components/about-union/about-union.component';
 import { NewsComponent } from './components/news/news.component';
 import { TourismLegislationComponent } from './components/tourism-legislation/tourism-legislation.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,6 +27,11 @@ const routes: Routes = [
     path: 'Tourism-legislation',
     component: TourismLegislationComponent,
     data: { title: 'تشريعات السياحية  - الاتحاد المصري' },
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
+    data: { title: 'تواصل معنا  - الاتحاد المصري' },
   },
 ];
 
