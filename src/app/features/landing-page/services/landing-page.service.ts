@@ -5,6 +5,7 @@ import { GroupMember } from '../models/group.model';
 import { NewsItem } from '../models/news.model';
 import { Committee } from '../models/comittess.model';
 import { Report } from '../models/report.model';
+import { TourismNews } from '../models/tourism-news.model';
 
 @Injectable({
   providedIn: 'root',
@@ -25,4 +26,8 @@ export class LandingPageService {
   getReports(): Observable<Report[]> {
     return this.http.get<Report[]>('/assets/data/reports.json');
   }
+  getTourismNews(): Observable<TourismNews[]> {
+  return this.http.get<TourismNews[]>('assets/data/tourism-news.json');
+}
+
 }
