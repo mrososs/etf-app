@@ -6,9 +6,21 @@ import { NewsComponent } from './components/news/news.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: MainPageComponent },
-  { path: 'union', component: AboutUnionComponent },
-  { path: 'news', component: NewsComponent },
+  {
+    path: 'home',
+    component: MainPageComponent,
+    data: { title: 'الرئيسية - الاتحاد المصري' },
+  },
+  {
+    path: 'union',
+    component: AboutUnionComponent,
+    data: { title: 'عن الاتحاد - الاتحاد المصري' },
+  },
+  {
+    path: 'news',
+    component: NewsComponent,
+    data: { title: 'الأخبار - الاتحاد المصري' },
+  },
 ];
 
 @NgModule({
