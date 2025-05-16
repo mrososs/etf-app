@@ -25,5 +25,21 @@
     "email": "Info@etf.org.eg",
     "followUs": "Follow Us",
     "copyright": "Copyright © Egyptian Tourism Federation, Egypt, 2025. All rights reserved."
+  },
+  "tourism": {
+    "pageTitle": "Tourism Legislation",
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Tourism Legislation"
+    },
+    "buttons": {
+      "laws": "Laws",
+      "ministerialDecisions": "Ministerial Decisions"
+    },
+    "searchPlaceholder": "Enter Year",
+    "card": {
+      "view": "View",
+      "download": "Download"
+    }
   }
 }

@@ -25,5 +25,21 @@
     "email": "Info@etf.org.eg",
     "followUs": "تابعنا علي",
     "copyright": "حقوق النشر © الإتحاد المصرى للغرف السياحية، مصر، 2025. جميع الحقوق محفوظة."
+  },
+  "tourism": {
+    "pageTitle": "تشريعات سياحية",
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "current": "تشريعات سياحية"
+    },
+    "buttons": {
+      "laws": "قوانين",
+      "ministerialDecisions": "قرارات وزارية"
+    },
+    "searchPlaceholder": "ادخل السنة",
+    "card": {
+      "view": "عرض",
+      "download": "تحميل"
+    }
   }
 }

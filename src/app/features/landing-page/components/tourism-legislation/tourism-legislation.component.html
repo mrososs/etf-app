@@ -2,11 +2,13 @@
   <div class="w-100 tourism-legislation__image">
     <div class="tourism-legislation__overlay">
       <div class="tourism-legislation__text">
-        <h1>تشريعات سياحية</h1>
+        <h1>{{ "tourism.pageTitle" | translate }}</h1>
         <nav class="breadcrumb">
-          <a [routerLink]="['/landing-page/home']">الرئيسية</a>
+          <a [routerLink]="['/landing-page/home']">{{
+            "tourism.breadcrumb.home" | translate
+          }}</a>
           <span>&nbsp;>&nbsp;</span>
-          <span>تشريعات سياحية</span>
+          <span>{{ "tourism.breadcrumb.current" | translate }}</span>
         </nav>
       </div>
     </div>
@@ -16,14 +18,16 @@
       <app-shared-navigate-button
         [isActive]="selected === 'قوانين'"
         (click)="changeNewsType('قوانين')"
-        >قوانين</app-shared-navigate-button
       >
+        {{ "tourism.buttons.laws" | translate }}
+      </app-shared-navigate-button>
 
       <app-shared-navigate-button
         [isActive]="selected === 'قرارات وزارية'"
         (click)="changeNewsType('قرارات وزارية')"
-        >قرارات وزارية</app-shared-navigate-button
       >
+        {{ "tourism.buttons.ministerialDecisions" | translate }}
+      </app-shared-navigate-button>
     </div>
     <div class="d-flex justify-content-center mt-5">
       <form>
@@ -36,7 +40,9 @@
             name="enterYear"
             (ngModelChange)="onSearchYear()"
           />
-          <label for="username">ادخل السنه</label>
+          <label for="username">{{
+            "tourism.searchPlaceholder" | translate
+          }}</label>
           <img
             src="../../../../../assets/svg/search-alt-2_svgrepo.com.svg"
             alt="search"
@@ -52,7 +58,10 @@
         >
           <h1>{{ item.title }}</h1>
           <a [href]="item.link" target="_blank">{{ item.description }}</a>
-          <p><a>عرض</a>/<a>تحميل</a></p>
+          <p>
+            <a>{{ "tourism.card.view" | translate }}</a
+            >/<a>{{ "tourism.card.download" | translate }}</a>
+          </p>
         </div>
       </div>
     </div>
