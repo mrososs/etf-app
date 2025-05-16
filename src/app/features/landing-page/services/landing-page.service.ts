@@ -6,6 +6,7 @@ import { NewsItem } from '../models/news.model';
 import { Committee } from '../models/comittess.model';
 import { Report } from '../models/report.model';
 import { TourismNews } from '../models/tourism-news.model';
+import { TourismLegislation } from '../models/tourism-card.model';
 
 @Injectable({
   providedIn: 'root',
@@ -28,6 +29,9 @@ export class LandingPageService {
   }
   getTourismNews(): Observable<TourismNews[]> {
   return this.http.get<TourismNews[]>('assets/data/tourism-news.json');
+}
+getTourismLegislations(): Observable<TourismLegislation[]> {
+  return this.http.get<TourismLegislation[]>('/assets/data/tourism-legislation.json');
 }
 
 }

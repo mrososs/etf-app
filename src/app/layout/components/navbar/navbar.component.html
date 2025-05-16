@@ -58,9 +58,13 @@
           }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">{{
-            resourcePath + "tourst" | translate
-          }}</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/landing-page/Tourism-legislation']"
+            routerLinkActive="active"
+            >{{ resourcePath + "tourst" | translate }}</a
+          >
         </li>
         <li class="nav-item">
           <a

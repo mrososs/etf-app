@@ -281,3 +281,27 @@ button.news_btn {
     color: #ccc;
   }
 }
+.p-float-label {
+  direction: rtl;
+
+  label {
+    right: 10px;
+    left: auto;
+    text-align: right;
+  }
+
+  input {
+    text-align: right;
+    border-color: $color-primary;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  img {
+    padding: 0.4rem;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    background-color: $color-primary;
+    border-radius: 50%;
+  }
+}
