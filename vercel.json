@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "../etf-app/src/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
