@@ -1,0 +1,76 @@
+[
+  {
+    "name": "أ/حسام الشاعر",
+    "title": "رئيس مجلس لأدارة",
+    "image": "assets/img/managerPhoto.jpg"
+  },
+  {
+    "name": "أ/ناصر تركي",
+    "title": "وكيل المجلس",
+    "image": "assets/img/group-name/ناصر التركي.jpg"
+  },
+  {
+    "name": "أ/ايهاب عبد العال",
+    "title": "أمين الصندوق",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "اللواء/أمجد الجندي",
+    "image": "assets/img/group-name/ناصر التركي.jpg"
+  },
+  {
+    "name": "د/نبيل رشدان",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "أ/عمرو ابو زيد",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "أ/تامر يوسف",
+    "image": "assets/img/group-name/ناصر التركي.jpg"
+  },
+  {
+    "name": "أ/احمد الوصيف",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "أ/نادر هشام علي",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "ا/مصطفى فاروق",
+    "title": "رئيس غرفة سياحة الغوص",
+    "image": "assets/img/group-name/ناصر التركي.jpg"
+  },
+  {
+    "name": "ا/نادر الببلاوي جورج",
+    "title": "رئيس غرفة الشركات",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "ا/محمد أيوب",
+    "title": "رئيس غرفة المنشآت الفندقية",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "ا/ياسر محمد التاجوري",
+    "title": "رئيس غرفة المنشآت والمطاعم",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "ا/علي غنيم",
+    "title": "رئيس غرفة السلع السياحية",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "ا/ عبدالعظيم احمد عبدالعظيم",
+    "title": "ممثل وزارة المالية",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  },
+  {
+    "name": "أ/ساميه سامي",
+    "title": "ممثل وزارة السياحة",
+    "image": "assets/img/group-name/ايهاب عبدالعال.jpg"
+  }
+]

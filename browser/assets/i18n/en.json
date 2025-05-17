@@ -1,0 +1,59 @@
+{
+  "HELLO": "Hello",
+  "WELCOME": "Welcome",
+  "navbar": {
+    "home": "Home",
+    "whoUs": "About Us",
+    "rooms": "Rooms",
+    "training": "Training",
+    "tourst": "Tourism Regulations",
+    "news": "News",
+    "contact": "Contact Us",
+    "arabic": "العربية",
+    "ar": "العربية",
+    "en": "English",
+    "english": "English"
+  },
+  "footer": {
+    "aboutUs": "The Egyptian Tourism Federation is a professional federation established by Law No. 85 of 1968 and its amendment under Law No. 27 of 2023, which provides that the Federation is responsible for the common interests of the tourism sector in Egypt.",
+    "importantLinks": "Important Links",
+    "whoWeAre": "Who We Are",
+    "news": "News",
+    "contactUs": "Contact Us",
+    "contactDetails": "8 High Dam Street, Dokki, Giza, Egypt",
+    "phone": "0237483313",
+    "email": "Info@etf.org.eg",
+    "followUs": "Follow Us",
+    "copyright": "Copyright © Egyptian Tourism Federation, Egypt, 2025. All rights reserved."
+  },
+  "tourism": {
+    "pageTitle": "Tourism Legislation",
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Tourism Legislation"
+    },
+    "buttons": {
+      "laws": "Laws",
+      "ministerialDecisions": "Ministerial Decisions"
+    },
+    "searchPlaceholder": "Enter Year",
+    "card": {
+      "view": "View",
+      "download": "Download"
+    }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "subtitle": "Share your opinion about the services provided to you",
+    "phone": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "message": "Your Message",
+    "messagePlaceholder": "Type your message..",
+    "send": "Send"
+  }
+}
