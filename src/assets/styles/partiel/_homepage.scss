@@ -3,14 +3,24 @@
 .homepage {
   position: relative;
   margin-bottom: 5rem;
+  .arrow-more {
+    @media screen and (max-width: 551px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+  .img-fluid {
+    @media screen and (max-width: 551px) {
+      height: 10rem;
+      width: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
   .hero_text {
     position: absolute;
     top: 15rem;
     margin-bottom: 5rem;
     left: 60%;
-    @media screen and (max-width: 500px) {
-      display: none;
-    }
 
     h1 {
       position: absolute;
@@ -19,6 +29,19 @@
       color: white;
       width: 100%;
       right: 60%;
+    }
+    @media screen and (max-width: 500px) {
+      img {
+        width: 20rem;
+        position: absolute;
+        top: 50px;
+        right: -150px;
+      }
+      h1 {
+        font-size: 2rem;
+        top: 70px;
+        right: 70px;
+      }
     }
   }
   .carousel {
@@ -88,6 +111,9 @@
     background-color: #f7911d2b;
     padding: 5rem 2rem;
     .member-card {
+      @media screen and (max-width: 551px) {
+        margin: 0 auto;
+      }
       width: 100%;
       max-width: 12rem;
       height: 18rem;
@@ -134,6 +160,11 @@
 
     .text_manager {
       position: relative;
+      @media screen and (max-width: 551px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
       .text_hero_header {
         font-size: 2rem;
         color: $color-primary;
@@ -156,8 +187,6 @@
         -webkit-line-clamp: unset;
         overflow: visible;
       }
-
-   
     }
 
     .manager_name {
@@ -211,7 +240,6 @@
       color: $color-primary;
       cursor: pointer;
     }
-  
   }
   .rooms {
     margin-top: 3rem;

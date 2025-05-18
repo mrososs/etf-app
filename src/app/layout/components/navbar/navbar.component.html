@@ -65,6 +65,7 @@
               <a
                 (click)="closeNavbar()"
                 class="dropdown-item"
+                routerLinkActive="active"
                 [routerLink]="['landing-page/diving-room']"
                 >{{ resourcePath + "divingRoom" | translate }}</a
               >
@@ -74,6 +75,7 @@
               <a
                 class="dropdown-item"
                 (click)="closeNavbar()"
+                routerLinkActive="active"
                 [routerLink]="['landing-page/travel-room']"
                 >{{ resourcePath + "travelRoom" | translate }}</a
               >
@@ -83,6 +85,7 @@
               <a
                 class="dropdown-item"
                 (click)="closeNavbar()"
+                routerLinkActive="active"
                 [routerLink]="['landing-page/hotel-room']"
                 >{{ resourcePath + "hotelRoom" | translate }}</a
               >
@@ -92,6 +95,7 @@
               <a
                 class="dropdown-item"
                 (click)="closeNavbar()"
+                routerLinkActive="active"
                 [routerLink]="['landing-page/eat-room']"
                 >{{ resourcePath + "eatRoom" | translate }}</a
               >
@@ -100,6 +104,7 @@
             <li>
               <a
                 class="dropdown-item"
+                routerLinkActive="active"
                 (click)="closeNavbar()"
                 [routerLink]="['landing-page/product-room']"
                 >{{ resourcePath + "productsRoom" | translate }}</a

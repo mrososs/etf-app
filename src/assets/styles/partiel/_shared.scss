@@ -11,11 +11,11 @@
   .dropdown-item {
     color: $color-primary !important;
   }
-  ul{
+  ul {
     margin-right: 5rem;
   }
   @media screen and (max-width: 992px) {
-    ul{
+    ul {
       margin-right: 0rem;
     }
     .navbar-collapse {
@@ -35,7 +35,6 @@
       }
     }
   }
- 
 
   li a {
     color: white;
@@ -112,7 +111,7 @@
     display: grid;
     padding: 2rem 2rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 1rem;
 
     li {
@@ -430,6 +429,9 @@ button.news_btn {
 }
 
 .thumbnail-video {
+  @media screen and (max-width: 551px) {
+    width: 100%;
+  }
   width: 180px;
   height: 120px;
   object-fit: cover;
