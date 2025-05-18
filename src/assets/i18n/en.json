@@ -55,5 +55,21 @@
     "message": "Your Message",
     "messagePlaceholder": "Type your message..",
     "send": "Send"
+  },
+  "union": {
+    "pageTitle": "About the Federation",
+    "aboutTitle": "About the Federation",
+    "aboutDescription": "The Egyptian Tourism Federation is a professional federation established by Law No. 85 of 1968 and amended by Law No. 27 of 2023 to serve the common interests of the tourism sector in the Arab Republic of Egypt.",
+    "vision": {
+      "title": "Vision",
+      "description": "The Egyptian Tourism Federation believes in the importance of the tourism industry and considers it a driver of economic, social, and cultural development."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To be a leader in supporting and enhancing the tourism sector through coordination and collaboration among the various tourism chambers."
+    },
+    "committeesTitle": "Specialized Committees",
+    "reportsTitle": "Annual Reports",
+    "reportLabel": "Report for"
   }
 }

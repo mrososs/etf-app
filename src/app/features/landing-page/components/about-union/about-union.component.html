@@ -2,33 +2,28 @@
   <div class="w-100 about-union__image">
     <div class="about-union__overlay">
       <div class="about-union__text">
-        <h1>عن الإتحاد</h1>
+        <h1>{{ 'union.pageTitle' | translate }}</h1>
         <nav class="breadcrumb">
-          <a [routerLink]="['/landing-page/home']">الرئيسية</a>
+          <a [routerLink]="['/landing-page/home']">{{ 'navbar.home' | translate }}</a>
           <span>&nbsp;>&nbsp;</span>
-          <span>عن الإتحاد</span>
+          <span>{{ 'union.pageTitle' | translate }}</span>
         </nav>
       </div>
     </div>
   </div>
 
   <div class="container about-union__content text-center">
-    <h1>عن الإتحاد</h1>
-    <p>
-      الاتحاد المصرى للغرف السياحية هو اتحاد مهنى أنشىء لسنة 1968 وتعديله الصادر
-    </p>
+    <h1>{{ 'union.aboutTitle' | translate }}</h1>
+    <p>{{ 'union.aboutDescription' | translate }}</p>
   </div>
 
   <div class="mt-5 about-union__message">
-    <!-- الرؤية -->
+    <!-- Vision -->
     <div class="about-union__message__vision">
       <div class="row align-items-center">
         <div class="col-12 col-md-7 px-4 about-union__message__vision__text">
-          <h1>الرؤية</h1>
-          <p>
-            يؤمن الاتحاد المصري للغرف السياحية بأهمية صناعة السياحة ويعتبرها
-            قاطرة للتنمية...
-          </p>
+          <h1>{{ 'union.vision.title' | translate }}</h1>
+          <p>{{ 'union.vision.description' | translate }}</p>
         </div>
         <div class="col-12 col-md-5 text-center d-none d-md-block">
           <img src="../../../../../assets/img/vision.jpg" alt="vision" />
@@ -36,58 +31,42 @@
       </div>
     </div>
 
-    <!-- الرسالة -->
+    <!-- Mission -->
     <div class="about-union__message__visionMessage">
       <div class="row align-items-center flex-md-row-reverse">
         <div class="col-12 col-md-7 px-4 about-union__message__vision__text">
-          <h1>الرسالة</h1>
-          <p>
-            أن يكون الإتحاد المصري للغرف السياحية رائدًا في دعم وتعزيز قطاع
-            السياحة...
-          </p>
+          <h1>{{ 'union.mission.title' | translate }}</h1>
+          <p>{{ 'union.mission.description' | translate }}</p>
         </div>
         <div class="col-12 col-md-5 text-center d-none d-md-block">
-          <img
-            src="../../../../../assets/img/visionMessage.jpg"
-            alt="message"
-          />
+          <img src="../../../../../assets/img/visionMessage.jpg" alt="mission" />
         </div>
       </div>
     </div>
   </div>
 
-  <!-- اللجان -->
+  <!-- Committees -->
   <div class="container mt-5 about-union__committees text-center">
-    <h1>اللجان النوعية</h1>
+    <h1>{{ 'union.committeesTitle' | translate }}</h1>
     <div class="row justify-content-center gap-3">
-      <div
-        class="col-12 col-sm-10 col-md-6 col-lg-4 card-committees p-4"
-        *ngFor="let committee of committees"
-      >
+      <div class="col-12 col-sm-10 col-md-6 col-lg-4 card-committees p-4" *ngFor="let committee of committees">
         <img [src]="committee.icon" [alt]="committee.title" class="mb-3" />
         <h2>{{ committee.title }}</h2>
         <h1>{{ committee.head }}</h1>
         <p *ngFor="let point of committee.points">
-          <img
-            class="me-2"
-            src="../../../../../assets/svg/arrowCommittess.svg"
-            alt="arrow"
-          />
+          <img class="me-2" src="../../../../../assets/svg/arrowCommittess.svg" alt="arrow" />
           {{ point }}
         </p>
       </div>
     </div>
   </div>
 
-  <!-- التقارير السنوية -->
+  <!-- Reports -->
   <div class="container mt-5 about-union__reports text-center">
-    <h1>التقارير السنوية</h1>
+    <h1>{{ 'union.reportsTitle' | translate }}</h1>
     <div class="row justify-content-center gap-3">
-      <div
-        class="col-12 col-sm-10 col-md-6 col-lg-3 card-report p-4"
-        *ngFor="let report of reports"
-      >
-        <h1>تقرير سنة {{ report.year }}</h1>
+      <div class="col-12 col-sm-10 col-md-6 col-lg-3 card-report p-4" *ngFor="let report of reports">
+        <h1>{{ 'union.reportLabel' | translate }} {{ report.year }}</h1>
         <p>{{ report.description }}</p>
       </div>
     </div>

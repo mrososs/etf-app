@@ -8,6 +8,9 @@
   width: 100%;
   z-index: 11111;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .dropdown-item {
+    color: $color-primary !important;
+  }
   @media screen and (max-width: 992px) {
     .navbar-collapse {
       background-color: white;
@@ -26,25 +29,6 @@
       }
     }
   }
-
-  &.navbar-scrolled {
-    background-color: white !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-    li a {
-      color: black;
-
-      &.active {
-        color: $color-primary !important;
-        font-weight: bold;
-      }
-    }
-
-    .dropdown-item {
-      color: $color-primary;
-    }
-  }
-
   li a {
     color: white;
     font-size: 1.2rem;
@@ -59,6 +43,19 @@
     &.active {
       color: $color-primary !important;
       font-weight: bold;
+    }
+  }
+  &.navbar-scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    li a {
+      color: black;
+
+      &.active {
+        color: $color-primary !important;
+        font-weight: bold;
+      }
     }
   }
 
@@ -437,5 +434,4 @@ button.news_btn {
     transform: scale(1.05);
     border-color: var(--color-primary, orange); // fallback if CSS vars not used
   }
-
 }
