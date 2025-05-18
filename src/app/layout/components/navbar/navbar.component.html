@@ -24,10 +24,15 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div
+      #navbarCollapse
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
       <ul class="navbar-nav me-5 mb-2 mb-lg-0">
         <li class="nav-item">
           <a
+            (click)="closeNavbar()"
             [routerLink]="['landing-page/home']"
             routerLinkActive="active"
             class="nav-link"
@@ -37,6 +42,7 @@
         </li>
         <li class="nav-item">
           <a
+            (click)="closeNavbar()"
             class="nav-link"
             aria-current="page"
             [routerLink]="['landing-page/union']"
@@ -48,7 +54,6 @@
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -58,6 +63,7 @@
           <ul class="dropdown-menu">
             <li>
               <a
+                (click)="closeNavbar()"
                 class="dropdown-item"
                 [routerLink]="['landing-page/diving-room']"
                 >{{ resourcePath + "divingRoom" | translate }}</a
@@ -67,6 +73,7 @@
             <li>
               <a
                 class="dropdown-item"
+                (click)="closeNavbar()"
                 [routerLink]="['landing-page/travel-room']"
                 >{{ resourcePath + "travelRoom" | translate }}</a
               >
@@ -75,6 +82,7 @@
             <li>
               <a
                 class="dropdown-item"
+                (click)="closeNavbar()"
                 [routerLink]="['landing-page/hotel-room']"
                 >{{ resourcePath + "hotelRoom" | translate }}</a
               >
@@ -83,6 +91,7 @@
             <li>
               <a
                 class="dropdown-item"
+                (click)="closeNavbar()"
                 [routerLink]="['landing-page/eat-room']"
                 >{{ resourcePath + "eatRoom" | translate }}</a
               >
@@ -91,6 +100,7 @@
             <li>
               <a
                 class="dropdown-item"
+                (click)="closeNavbar()"
                 [routerLink]="['landing-page/product-room']"
                 >{{ resourcePath + "productsRoom" | translate }}</a
               >
@@ -101,6 +111,7 @@
           <a
             class="nav-link"
             aria-current="page"
+            (click)="closeNavbar()"
             [routerLink]="['/landing-page/training']"
             routerLinkActive="active"
             >{{ resourcePath + "training" | translate }}</a
@@ -110,6 +121,7 @@
           <a
             class="nav-link"
             aria-current="page"
+            (click)="closeNavbar()"
             [routerLink]="['/landing-page/Tourism-legislation']"
             routerLinkActive="active"
             >{{ resourcePath + "tourst" | translate }}</a
@@ -119,6 +131,7 @@
           <a
             class="nav-link"
             aria-current="page"
+            (click)="closeNavbar()"
             [routerLink]="['/landing-page/news']"
             routerLinkActive="active"
             >{{ resourcePath + "news" | translate }}</a
@@ -128,6 +141,7 @@
           <a
             class="nav-link"
             aria-current="page"
+            (click)="closeNavbar()"
             [routerLink]="['/landing-page/contact-us']"
             routerLinkActive="active"
             >{{ resourcePath + "contact" | translate }}</a

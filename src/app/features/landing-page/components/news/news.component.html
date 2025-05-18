@@ -1,41 +1,52 @@
 <section class="news">
+  <!-- Header Section -->
   <div class="w-100 news__image">
     <div class="news__overlay">
       <div class="news__text">
-        <h1>الاخبار</h1>
+        <h1>{{ "news.pageTitle" | translate }}</h1>
         <nav class="breadcrumb">
-          <a [routerLink]="['/landing-page/home']">الرئيسية</a>
+          <a [routerLink]="['/landing-page/home']">{{
+            "news.breadcrumbHome" | translate
+          }}</a>
           <span>&nbsp;>&nbsp;</span>
-          <span>الاخبار</span>
+          <span>{{ "news.breadcrumbNews" | translate }}</span>
         </nav>
       </div>
     </div>
   </div>
+
+  <!-- Union News Section -->
   <div class="news__mainNews mt-5">
     <div class="container">
-      <h1>اخبار الإتحاد</h1>
+      <h1>{{ "news.unionNewsTitle" | translate }}</h1>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of newsItems">
           <div class="news-card d-flex flex-column justify-content-start">
             <img [src]="item.image" alt="news" />
             <h1>{{ item.description }}</h1>
-            <button class="news_btn w-50">{{ item.buttonText }}</button>
+            <button class="news_btn w-50">
+              {{ item.buttonText || ("news.readMore" | translate) }}
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Tourism News Section -->
   <div class="news__mainNews mt-5">
     <div class="container">
-      <h1>اخبار السياحة</h1>
+      <h1>{{ "news.tourismNewsTitle" | translate }}</h1>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of tourismNews">
-        <div class="news-card d-flex flex-column justify-content-start">
-          <img [src]="item.image" alt="news" />
-          <h1>{{ item.description }}</h1>
-          <button class="news_btn w-50">{{ item.buttonText }}</button>
+          <div class="news-card d-flex flex-column justify-content-start">
+            <img [src]="item.image" alt="news" />
+            <h1>{{ item.description }}</h1>
+            <button class="news_btn w-50">
+              {{ item.buttonText || ("news.readMore" | translate) }}
+            </button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </div>
