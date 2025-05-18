@@ -11,7 +11,13 @@
   .dropdown-item {
     color: $color-primary !important;
   }
+  ul{
+    margin-right: 5rem;
+  }
   @media screen and (max-width: 992px) {
+    ul{
+      margin-right: 0rem;
+    }
     .navbar-collapse {
       background-color: white;
       li a {
@@ -29,6 +35,8 @@
       }
     }
   }
+ 
+
   li a {
     color: white;
     font-size: 1.2rem;
