@@ -7,6 +7,7 @@ import { Committee } from '../models/comittess.model';
 import { Report } from '../models/report.model';
 import { TourismNews } from '../models/tourism-news.model';
 import { TourismLegislation } from '../models/tourism-card.model';
+import { Law } from '../models/law.model';
 
 @Injectable({
   providedIn: 'root',
@@ -32,6 +33,9 @@ export class LandingPageService {
 }
 getTourismLegislations(): Observable<TourismLegislation[]> {
   return this.http.get<TourismLegislation[]>('/assets/data/tourism-legislation.json');
+}
+getLaw():Observable<Law[]>{
+  return this.http.get<Law[]>('/assets/data/law.json');
 }
 
 }

@@ -1,0 +1,572 @@
+<section class="training">
+  <div class="w-100 training__image">
+    <div class="training__overlay">
+      <div class="training__text">
+        <h1 class="header__txt">التدريب</h1>
+        <nav class="breadcrumb">
+          <a [routerLink]="['/landing-page/home']">الرئيسية</a>
+          <span>&nbsp;>&nbsp;</span>
+          <span>التدريب</span>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="training__buttons">
+    <app-shared-navigate-button
+      [isActive]="selected === 'القيادة الامنة'"
+      (click)="changeNewsType('القيادة الامنة')"
+      >القيادة الامنة</app-shared-navigate-button
+    >
+    <app-shared-navigate-button
+      [isActive]="selected === 'التعليم المزدوج'"
+      (click)="changeNewsType('التعليم المزدوج')"
+      >التعليم المزدوج</app-shared-navigate-button
+    >
+    <app-shared-navigate-button
+      [isActive]="selected === 'دعم الانتقال إلى سوق العمل'"
+      (click)="changeNewsType('دعم الانتقال إلى سوق العمل')"
+      >دعم الانتقال إلى سوق العمل</app-shared-navigate-button
+    >
+    <app-shared-navigate-button
+      [isActive]="selected === 'فنون الطهي'"
+      (click)="changeNewsType('فنون الطهي')"
+      >فنون الطهي</app-shared-navigate-button
+    >
+  </div>
+  <ng-container
+    [ngTemplateOutlet]="
+      selected === 'القيادة الامنة'
+        ? safeDrivingTpl
+        : selected === 'التعليم المزدوج'
+        ? dualEducationTpl
+        : selected === 'دعم الانتقال إلى سوق العمل'
+        ? transitionTpl
+        : selected === 'فنون الطهي'
+        ? cookingTpl
+        : null
+    "
+  ></ng-container>
+  <!-- Templates -->
+  <ng-template #safeDrivingTpl>
+    <div class="training__contentSafeDriving container">
+      <div
+        class="d-flex training__contentSafeDriving__header justify-content-center align-items-center flex-column text-center"
+      >
+        <h1>المركز المصرى للقيادة الامنة</h1>
+        <p>
+          يهدف المركز إلى تأهيل قائدي المركبات السياحية ورفع الوعي بمخاطر الطرق
+          المختلفة والحد من عدد حوادث الطرق من خلال تدريب السائقين تدريبًا
+          نظريًا وعمليًا لإكسابهم المعارف والمهارات اللازمة للقيادة السليمة
+          الآمنة على مختلف أنواع الطرق داخل البلاد وخارجها في ظل ظروف القيادة
+          المختلفة.
+        </p>
+        <p class="color_p">
+          يقع المركز المصري للقيادة الآمنة على طريق الاوتوستراد بمدينة 15 مايو
+          بمساحة حوالى 102 فدان، وهو من أكبر المراكز التدريبية على مستوى العالم
+          في هذا المجال.
+        </p>
+      </div>
+      <div class="mt-3">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <h1>الاهداف</h1>
+          <p>
+            نؤهلك لتقود بثقة... بأحدث المعايير وأعلى مستويات الأمان، نحو طرق
+            أكثر أمانًا وحياة بلا حوادث.
+          </p>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="activity">
+              <div class="activity__number">1</div>
+              <span>
+                تأهيل قائدي المركبات السياحية من خلال برامج تدريبية متخصصة
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="activity">
+              <div class="activity__number">2</div>
+              <span>رفع الوعي بمخاطر الطرق المختلفة وتحسين سلوك القيادة</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="activity">
+              <div class="activity__number">3</div>
+              <span>
+                الحد من حوادث الطرق عبر تدريب السائقين على أفضل الممارسات في
+                القيادة.
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="activity">
+              <div class="activity__number">4</div>
+              <span>
+                تدريب عملي ونظري لإكساب السائقين المعارف والمهارات اللازمة
+                للقيادة الآمنة.
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="activity">
+              <div class="activity__number">5</div>
+              <span>
+                التركيز على القيادة السليمة على مختلف أنواع الطرق داخل البلاد
+                وخارجها.
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="activity">
+              <div class="activity__number">6</div>
+              <span>
+                التعامل مع ظروف القيادة المختلفة لضمان الأمان في كافة الحالات.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <h1>مسارات التدريب</h1>
+          <p>
+            في مركز القيادة الآمنة، كل مسار تدريب هو تجربة واقعية بتجهزك لأي
+            موقف ممكن تقابله على الطريق من التصادم للدورانات الحادة، ومن
+            المنحدرات للسرعة، التجربة هنا مش مجرد تدريب… دي محاكاة حقيقية
+            للنجاة!
+          </p>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="row gap-3 d-flex justify-content-center">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="d-flex road_card justify-content-center align-items-center text-center flex-column"
+            >
+              <img
+                class="w-25"
+                src="../../../../../assets/svg/road_svgrepo.com.svg"
+                alt="road"
+              />
+              <p>مسار فرملة الطوارئ والانزلاق</p>
+            </div>
+          </div>
+          <div class="col-12 road_card col-md-6 col-lg-3">
+            <div
+              class="d-flex justify-content-center align-items-center text-center flex-column"
+            >
+              <img
+                class="w-25"
+                src="../../../../../assets/svg/road_svgrepo.com.svg"
+                alt="road"
+              />
+              <p>مسار فرملة ومناورات</p>
+            </div>
+          </div>
+          <div class="col-12 road_card col-md-6 col-lg-3">
+            <div
+              class="d-flex justify-content-center align-items-center text-center flex-column"
+            >
+              <img
+                class="w-25"
+                src="../../../../../assets/svg/road_svgrepo.com.svg"
+                alt="road"
+              />
+              <p>مسار التصادم</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="d-flex road_card justify-content-center align-items-center text-center flex-column"
+            >
+              <img
+                class="w-25"
+                src="../../../../../assets/svg/road_svgrepo.com.svg"
+                alt="road"
+              />
+              <p>مسار الدورانات وقوة الطرد المركزي</p>
+            </div>
+          </div>
+          <div class="col-12 road_card col-md-6 col-lg-3">
+            <div
+              class="d-flex justify-content-center align-items-center text-center flex-column"
+            >
+              <img
+                class="w-25"
+                src="../../../../../assets/svg/road_svgrepo.com.svg"
+                alt="road"
+              />
+              <p>مسار المنحدرات وقوة الجاذبية</p>
+            </div>
+          </div>
+          <div class="col-12 road_card col-md-6 col-lg-3">
+            <div
+              class="d-flex justify-content-center align-items-center text-center flex-column"
+            >
+              <img
+                class="w-25"
+                src="../../../../../assets/svg/road_svgrepo.com.svg"
+                alt="road"
+              />
+              <p>مسار تسارع السيارة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <div class="text w-50">
+            <h1>البرامج التدريبية</h1>
+            <p>
+              اكتشف برامجنا التدريبية التي ستغير طريقة تفكيرك عن القيادة وتمنحك
+              المهارات التي تحتاجها للتعامل مع كل تحدٍّ على الطريق.
+            </p>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة الآمنة</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة الوقائية</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة المدمجة</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة المتطورة</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة المتكاملة</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة الاقتصادية</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">القيادة في الصحراء</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">قياس المهارات للسائقين</p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">الاختبارات الفنية للمركبات والإطارات</p>
+            </span>
+          </div>
+          <img
+            src="../../../../../assets/img/road.jpg"
+            alt="road"
+            class="w-50"
+          />
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="loaction-card">
+          <div class="text d-flex flex-column align-items-start">
+            <h1>الموقع</h1>
+            <p>
+              مساحة المركز المصري للقيادة الآمنة حوالى 102 فدان، وهو من أكبر
+              المراكز التدريبية على مستوى العالم في هذا المجال.
+            </p>
+            <span class="d-flex align-items-center mb-2">
+              <img src="../../../../../assets/svg/PhoneCall.svg" alt="phone" />
+              <p class="mb-0">+20 114 363 4444</p>
+            </span>
+            <span class="d-flex align-items-center mb-2">
+              <img
+                src="../../../../../assets/svg/EnvelopeSimple.svg"
+                alt="phone"
+              />
+              <p class="mb-0">k.younes&#64;etf-rstc.org.eg</p>
+            </span>
+            <span class="d-flex align-items-center mb-2">
+              <img
+                src="../../../../../assets/svg/location-pin_svgrepo.com.svg"
+                alt="phone"
+              />
+              <p class="mb-0">على طريق الاوتوستراد بمدينة 15 مايو</p>
+            </span>
+          </div>
+          <img
+            src="../../../../../assets/img/locationTrainingMap.jpg"
+            alt="map"
+            class="map-img"
+          />
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="video-gallery">
+          <!-- Main Player -->
+          <div class="main-video">
+            <video
+              id="mainPlayer"
+              controls
+              [poster]="mainVideoPoster"
+              class="w-100 rounded"
+            >
+              <source [src]="mainVideoSrc" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="video-thumbnails">
+            <img
+              *ngFor="let video of videos"
+              [src]="video.poster"
+              (click)="changeVideo(video)"
+              class="thumbnail-video"
+              alt="thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #dualEducationTpl>
+    <div class="training__contentEduction container">
+      <div class="mt-5">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1>نظام إدارة التعلم بالاتحاد المصري للغرف السياحية</h1>
+          <p>(مشروع ممول من الوكالة الألمانية للتعاون الدولى - GIZ)</p>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-start">
+            <p class="">
+              يُعد التعليم هو أحد المحركات الرئيسية للتنمية الاقتصادية في مصر.
+              ويسهم - خاصة - التعليم الفني والتدريب المهني السليم، ممثلاً في
+              نظام التعليم والتدريب المزدوج القائم بالفعل منذ عام ١٩٩٤، في توفير
+              العمالة الماهرة المؤهلة لسوق العمل؛ لذلك فإن نظام التعليم الفني
+              والتدريب المهني الشامل له تأثير إيجابي على النمو الاقتصادي،
+              وإنتاجية المؤسسات. وتأكيداً على أهمية التعليم الفني والتدريب
+              المهني، نصت المادة (٢٠) من الدستور المصري لعام ٢٠١٤ على أن: (تلتزم
+              الدولة بتشجيع التعليم الفني والتقني والتدريب المهني، وتطويره،
+              والتوسع في أنواعه كافة، وفقاً لمعايير الجودة العالمية، وبما يتناسب
+              مع احتياجات سوق العمل. ولذلك سعي الأتحاد لأن يكون له رأي في
+              التعليم الفني حتي يتم تخريج طلبه من المدارس الفنية بمصر علي
+              المستوي المطلوب للعمل بالقطاع السياحي وفقا لمتطلبات السوق, و من ثم
+              تم توقيع اتفاقية بين الاتحاد و وزارة التربية و التعليم و التعليم
+              الفني تنص علي عضويه الأتحاد بمجلس التسييرى لنظام التعليم والتدريب
+              المزدوج للمشاركة بوضع المناهج و تدريب الطلبة أثناء الدراسة بحيث
+              تتضمن الدراسة الي جانب التعليم النظري بالمدارس تدريب بالمنشآت
+              السياحية بمختلف أنشطتها لاسيما الفنادق, خلال سنوات الدراسة
+              بالمدارس الفنية. في هذا الاطار قام الاتحاد بتمويل من الوكالة
+              الألمانية للتعاون الدولي (GIZ), بطرح مناقصة لأنشاء نظام إدارة
+              التعلم بهدف مساندة هذة الجهود و حتي يتمكن الطلاب من متابعة البرامج
+              التدريبية عن بعد الي جانب حضورهم التدريبات بالمنشآت الفندقية
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <img
+              src="../../../../../assets/img/t3lym.jpg"
+              alt="education"
+              class="eductionImg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="d-flex justify-content-center">
+          <h1>الأهداف المخططة للنظام</h1>
+        </div>
+        <div class="mt-3">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="activity">
+                <div class="activity__number">1</div>
+                <span>
+                  توفير محتوى تدريبي متطور ومتعدد الوسائط يمكن الوصول إليه
+                  بسهولة عبر الإنترنت.
+                </span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="activity">
+                <div class="activity__number">2</div>
+                <span
+                  >دعم منظومة التعليم المهني في القطاع السياحي وتطويرها.</span
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="activity">
+                <div class="activity__number">3</div>
+                <span>
+                  إدارة الدورات والبرامج التدريبية من خلال واجهة استخدام مرنة
+                  وسهلة.
+                </span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="activity">
+                <div class="activity__number">4</div>
+                <span> متابعة أداء المتدربين وتقييمهم بدقة. </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #transitionTpl>
+    <div class="training__contentTransition container">
+      <div class="d-flex justify-content-center align-items-center flex-column">
+        <h1>مشروع دعم الانتقال إلى سوق العمل </h1>
+        <p>
+          مشروع "دعم الانتقال إلى سوق العمل"، الممول من الاتحاد الأوروبي
+          والحكومة المصرية، هو أحد المشروعات التدريبية التي قام الاتحاد بتنفيذها
+          بالتعاون مع وزارة السياحة والآثار، وبرنامج دعم وتطوير التعليم الفني
+          والتدريب المهني (TVET Egypt) .
+        </p>
+      </div>
+      <div class="mt-3">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-6 col-lg-6">
+            <span
+              class="d-flex align-items-center justify-content-start mb-2 gap-2"
+            >
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">
+                بدأ تنفيذ الأنشطة التدريبية للمشروع في مارس 2019
+              </p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">
+                تم تدريب عدد 13157 متدرب من العمالة الحالية تدريبًا عمليًا
+                ونظريًا فى المحافظات السياحية: القاهرة، الجيزة، الأسكندرية، جنوب
+                سيناء، البحر الأحمر، الأقصر، وأسوان. 
+              </p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">
+                بالإضافة إلى تقديم برامج توعوية لعدد 8613 متدرب من العمالة
+                الحالية فى مجال التوعية البيئية، والإجراءات الوقائية من فيروس
+                كورونا (كوفيد 19)، ليصل إجمالي عدد المتدربين إلى 21770 متدرب.
+              </p>
+            </span>
+            <span class="d-flex align-items-center mb-2 gap-2">
+              <img
+                src="../../../../../assets/svg/arrowCommittess.svg"
+                alt="arrow"
+              />
+              <p class="mb-0">تم الانتهاء من المشروع فى 30 إبريل  2021. .</p>
+            </span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <img
+              src="../../../../../assets/img/Group 1597883381.jpg"
+              alt="education"
+              class="Img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <div class="video-gallery">
+          <!-- Main Player -->
+          <div class="main-video">
+            <video
+              id="mainPlayer"
+              controls
+              [poster]="mainVideoPoster2"
+              class="w-100 rounded"
+            >
+              <source [src]="mainVideoSrc2" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="video-thumbnails">
+            <img
+              *ngFor="let video of videos2"
+              [src]="video.poster"
+              (click)="changeVideo(video)"
+              class="thumbnail-video"
+              alt="thumbnail"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #cookingTpl>
+    <div class="training__contentCooking container">
+      <div class="row mt-5 d-flex align-items-center justify-content-center">
+        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-start">
+          <h1>مراكز تدريب فنون الطهى</h1>
+          <p class="text-end">
+            أنشأ الإتحاد المصري للغرف السياحية مراكز تدريب متخصصة لفنون الطهى
+            لإعداد كوادر مؤهلة من الطهاة المحترفين من خلال برامج عملية مصممة
+            وفقًا للمعايير الدولية بالتعاون مع مؤسسة City & Guilds البريطانية.
+          </p>
+          <p class="text-end">
+            حاليًا، جارى العمل على دراسة إعادة تشغيل المراكز في إحدى المحافظات
+            السياحية الرائدة لمواكبة إحتياجات سوق العمل السياحى.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+         <img src="../../../../../assets/img/cooking.jpg" alt="cooking" class="imgCooking">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</section>

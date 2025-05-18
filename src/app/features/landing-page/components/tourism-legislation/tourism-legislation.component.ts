@@ -16,13 +16,7 @@ export class TourismLegislationComponent implements OnInit {
   private _landingService = inject(LandingPageService);
 
   ngOnInit(): void {
-    this._landingService.getTourismLegislations().subscribe({
-      next: (data) => {
-        this.tourismLegislations = data;
-        this.filteredLegislations = data; // أول تحميل
-      },
-      error: (err) => console.error(err),
-    });
+    this.changeNewsType(this.selected); // default: قوانين
   }
   onSearchYear() {
     const year = this.enterYear.trim();
@@ -34,7 +28,21 @@ export class TourismLegislationComponent implements OnInit {
     this.selected = type;
 
     if (type === 'قوانين') {
+      this._landingService.getLaw().subscribe({
+        next: (data) => {
+          this.tourismLegislations = data;
+          this.filteredLegislations = data;
+        },
+        error: (err) => console.error(err),
+      });
     } else if (type === 'قرارات وزارية') {
+      this._landingService.getTourismLegislations().subscribe({
+        next: (data) => {
+          this.tourismLegislations = data;
+          this.filteredLegislations = data;
+        },
+        error: (err) => console.error(err),
+      });
     }
   }
 }

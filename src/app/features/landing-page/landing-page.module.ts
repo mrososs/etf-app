@@ -9,6 +9,7 @@ import { AboutUnionComponent } from './components/about-union/about-union.compon
 import { NewsComponent } from './components/news/news.component';
 import { TourismLegislationComponent } from './components/tourism-legislation/tourism-legislation.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { TrainingComponent } from './components/training/training.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     NewsComponent,
     TourismLegislationComponent,
     ContactUsComponent,
+    TrainingComponent,
   ],
   imports: [CommonModule, LandingPageRoutingModule, SharedModule],
 })

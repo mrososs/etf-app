@@ -1,0 +1,118 @@
+@import "../colors";
+.training {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: $color-primary;
+    &.header__txt{
+        color: $color-white;
+    }
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color-gray-600;
+    &.color_p {
+      color: $color-primary;
+    }
+  }
+  &__image {
+    width: 100vw;
+    height: 50vh;
+    background: url("../../img/trainingBackground.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); // dark overlay
+      z-index: 1;
+    }
+
+    .training__overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .training__text {
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &__buttons {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__contentSafeDriving {
+    &__header {
+      background: url("../../img/logoTrainingDriving.png") no-repeat center
+        center;
+    }
+    .road_card {
+      padding: 2rem;
+      background-color: #f7fcf6;
+      border-radius: 4px;
+      &:nth-child(even) {
+        background-color: #f3fcfd;
+      }
+    }
+    .loaction-card {
+      border: 1px solid $color-primary;
+      border-radius: 4px;
+      padding: 1rem;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .map-img {
+        width: 100%;
+        max-width: 20rem;
+      }
+    }
+  }
+  &__contentEduction {
+    .eductionImg {
+      width: 100%;
+      max-width: 20rem;
+    }
+  }
+  &__contentTransition{
+    .Img{
+      width: 100%;
+      max-width: 20rem;
+    }
+  }
+  &__contentCooking{
+    .imgCooking{
+      width: 100%;
+      max-width: 20rem;
+    }
+  }
+}

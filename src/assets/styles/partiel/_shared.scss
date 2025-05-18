@@ -362,3 +362,80 @@ button.news_btn {
 ::-webkit-scrollbar-thumb:hover {
   background-color: darken($color-primary, 10%);
 }
+
+.activity {
+  border: 1px solid $color-primary;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 0 50px 50px 0;
+  border-bottom-left-radius: 50px;
+  gap: 2rem;
+  span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: $color-gray-600;
+    margin-bottom: 0.5rem;
+  }
+  &__number {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 0.6rem 1.2rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -4.3px;
+      left: -8px;
+      width: 4.8rem;
+      height: 4.8rem;
+      border: 2px solid $color-primary;
+      border-radius: 50%;
+      z-index: -1;
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+      transform: rotate(-95deg);
+    }
+  }
+}
+///video
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.main-video video {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.video-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail-video {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, border 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    border-color: var(--color-primary, orange); // fallback if CSS vars not used
+  }
+
+}

@@ -63,9 +63,13 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">{{
-            resourcePath + "training" | translate
-          }}</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/landing-page/training']"
+            routerLinkActive="active"
+            >{{ resourcePath + "training" | translate }}</a
+          >
         </li>
         <li class="nav-item">
           <a
