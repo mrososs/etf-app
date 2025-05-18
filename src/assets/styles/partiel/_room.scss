@@ -59,8 +59,18 @@
       background-color: #f7911d38;
       border-left: 4px solid $color-primary;
       border-right: 4px solid $color-primary;
+
       a {
         color: $color-gray-600;
+        font-size: 1rem;
+        word-break: break-word;
+        white-space: normal;
+        display: inline-block;
+      }
+
+      @media (max-width: 768px) {
+        padding: 1rem 1rem; // تصغير البادينج للجوال
+        text-align: center;
       }
     }
   }
