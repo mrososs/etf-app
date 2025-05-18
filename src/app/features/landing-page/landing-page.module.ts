@@ -10,6 +10,11 @@ import { NewsComponent } from './components/news/news.component';
 import { TourismLegislationComponent } from './components/tourism-legislation/tourism-legislation.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TrainingComponent } from './components/training/training.component';
+import { DivingRoomComponent } from './components/rooms-component/diving-room/diving-room.component';
+import { TravelRoomComponent } from './components/rooms-component/travel-room/travel-room.component';
+import { HotelRoomComponent } from './components/rooms-component/hotel-room/hotel-room.component';
+import { EatRoomComponent } from './components/rooms-component/eat-room/eat-room.component';
+import { ProductRoomComponent } from './components/rooms-component/product-room/product-room.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { TrainingComponent } from './components/training/training.component';
     TourismLegislationComponent,
     ContactUsComponent,
     TrainingComponent,
+    DivingRoomComponent,
+    TravelRoomComponent,
+    HotelRoomComponent,
+    EatRoomComponent,
+    ProductRoomComponent,
   ],
   imports: [CommonModule, LandingPageRoutingModule, SharedModule],
 })

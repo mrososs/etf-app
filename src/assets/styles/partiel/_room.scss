@@ -1,0 +1,67 @@
+@import "../colors";
+.room {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+
+  &__image {
+    width: 100vw;
+    height: 50vh;
+    background: url("../../img/room.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); // dark overlay
+      z-index: 1;
+    }
+
+    .room__overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .room__text {
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &__content {
+    h1 {
+      font-size: 2rem;
+      color: $color-primary;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .room_img {
+      width: 100%;
+      max-width: 20rem;
+    }
+    span {
+      padding: 1rem 3rem;
+      background-color: #f7911d38;
+      border-left: 4px solid $color-primary;
+      border-right: 4px solid $color-primary;
+      a {
+        color: $color-gray-600;
+      }
+    }
+  }
+}

@@ -56,10 +56,45 @@
             {{ resourcePath + "rooms" | translate }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['landing-page/diving-room']"
+                >{{ resourcePath + "divingRoom" | translate }}</a
+              >
+            </li>
             <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['landing-page/travel-room']"
+                >{{ resourcePath + "travelRoom" | translate }}</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['landing-page/hotel-room']"
+                >{{ resourcePath + "hotelRoom" | translate }}</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['landing-page/eat-room']"
+                >{{ resourcePath + "eatRoom" | translate }}</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['landing-page/product-room']"
+                >{{ resourcePath + "productsRoom" | translate }}</a
+              >
+            </li>
           </ul>
         </li>
         <li class="nav-item">
@@ -101,7 +136,6 @@
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
-            
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -114,6 +148,8 @@
                 {{ resourcePath + "arabic" | translate }}
               </a>
             </li>
+            <li><hr class="dropdown-divider" /></li>
+
             <li>
               <a class="dropdown-item" (click)="changeLang('en')">
                 {{ resourcePath + "english" | translate }}

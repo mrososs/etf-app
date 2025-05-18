@@ -12,6 +12,11 @@
     "arabic": "العربية",
     "ar": "العربية",
     "en": "English",
+    "divingRoom": "Chamber of Diving and Water Activities",
+    "travelRoom": "Chamber of Travel and Tourism Companies and Agencies",
+    "hotelRoom": "Chamber of Hotel Establishments",
+    "eatRoom": "Chamber of Tourist Restaurants and Establishments",
+    "productsRoom": "Chamber of Handicrafts and Tourist Goods",
     "english": "English"
   },
   "footer": {
