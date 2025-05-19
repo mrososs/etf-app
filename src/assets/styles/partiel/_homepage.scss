@@ -22,29 +22,46 @@
     position: absolute;
     top: 15rem;
     margin-bottom: 5rem;
-    left: 60%;
+    right: 1rem;
+    border: 15px solid $color-primary;
+    border-left: none;
+    display: flex;
+    justify-content: end;
+    padding: 5rem 0;
 
     h1 {
-      position: absolute;
-      top: 25%;
       font-size: 3.75rem;
       color: white;
-      width: 100%;
-      right: 60%;
+      width: 50%;
     }
-    @media screen and (max-width: 500px) {
-      img {
-        width: 20rem;
-        position: absolute;
-        top: 50px;
-        right: -150px;
-      }
+    @media screen and (max-width: 871px) {
+      top: 20rem;
+      right: 3rem;
       h1 {
         font-size: 2rem;
-        top: 70px;
-        right: 70px;
       }
     }
+    @media screen and (max-width: 551px) {
+      right: 1rem;
+      top: 20rem;
+      padding: 2rem 0;
+      h1{
+        width: 100%;
+      }
+    }
+    // @media screen and (max-width: 500px) {
+    //   img {
+    //     width: 20rem;
+    //     position: absolute;
+    //     top: 50px;
+    //     right: -150px;
+    //   }
+    //   h1 {
+    //     font-size: 2rem;
+    //     top: 70px;
+    //     right: 70px;
+    //   }
+    // }
   }
   .carousel {
     width: 100%;
