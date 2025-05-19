@@ -43,13 +43,13 @@
     }
     @media screen and (max-width: 551px) {
       right: 1rem;
-      top: 15rem;
+      top: 20rem;
       padding: 3rem 1rem;
       padding-left: 0;
-          justify-content: end;
+      justify-content: end;
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: start;
         line-height: 3rem;
       }
@@ -94,6 +94,9 @@
 
     .carousel-control-next,
     .carousel-control-prev {
+      @media screen and (max-width: 551px) {
+        display: none;
+      }
       top: 50%;
       transform: translateY(-50%);
       z-index: 1;
