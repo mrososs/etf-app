@@ -10,6 +10,8 @@
     }
   }
   .img-fluid {
+    height: 10rem;
+    width: 10rem;
     @media screen and (max-width: 551px) {
       height: 10rem;
       width: 10rem;
@@ -110,6 +112,10 @@
   .about-group {
     background-color: #f7911d2b;
     padding: 5rem 2rem;
+    img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
     .member-card {
       @media screen and (max-width: 551px) {
         margin: 0 auto;
@@ -211,10 +217,10 @@
       }
 
       .members-grid {
-        img{
-          border-top-left-radius: 20px;
-          border-top-right-radius: 20px;
+        p {
+          text-align: center;
         }
+
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, auto);
