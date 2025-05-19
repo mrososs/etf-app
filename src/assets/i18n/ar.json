@@ -4,7 +4,7 @@
   "navbar": {
     "home": "الرئيسية",
     "whoUs": "عن الإتحاد",
-    "rooms": "الغرف",
+    "rooms": "الغرف السياحية",
     "training": "التدريب",
     "tourst": "تشريعات سياحية",
     "news": "الأخبار",
@@ -41,7 +41,7 @@
       "laws": "قوانين",
       "ministerialDecisions": "قرارات وزارية"
     },
-    "searchPlaceholder": "ادخل السنة",
+    "searchPlaceholder": "البحث",
     "card": {
       "view": "عرض",
       "download": "تحميل"
