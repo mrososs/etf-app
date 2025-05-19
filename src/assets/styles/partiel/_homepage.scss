@@ -43,13 +43,39 @@
     }
     @media screen and (max-width: 551px) {
       right: 1rem;
-      top: 20rem;
+      top: 15rem;
       padding: 3rem 1rem;
       padding-left: 0;
       justify-content: end;
 
       h1 {
         font-size: 2rem;
+        text-align: start;
+        line-height: 3rem;
+      }
+    }
+    @media screen and (max-width: 453px) {
+      right: 1rem;
+      top: 15rem;
+      padding: 2rem 1rem;
+      padding-left: 0;
+      justify-content: end;
+
+      h1 {
+        font-size: 1.5rem;
+        text-align: start;
+        line-height: 3rem;
+      }
+    }
+    @media screen and (max-width: 351px) {
+      right: 1rem;
+      top: 15rem;
+      padding: 2rem 1rem;
+      padding-left: 0;
+      justify-content: end;
+
+      h1 {
+        font-size: 1rem;
         text-align: start;
         line-height: 3rem;
       }
