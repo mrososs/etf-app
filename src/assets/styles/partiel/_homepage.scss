@@ -211,6 +211,10 @@
       }
 
       .members-grid {
+        img{
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, auto);

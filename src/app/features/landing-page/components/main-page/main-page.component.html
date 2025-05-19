@@ -53,17 +53,15 @@
         </div>
 
         <div class="member-card col-md-3 col-12">
-          <img
-            src="../../../../../assets/img/managerPhoto.jpg"
-            alt="Manager Photo"
-          />
+          <img [src]="members[0].image" [alt]="members[0].name" />
+
           <div class="manager_name d-flex flex-column align-items-center">
-            <h1>أ/حسام الشاعر</h1>
-            <p>رئيس مجلس لأدارة</p>
+            <h1>{{ members[0].name }}</h1>
+            <p *ngIf="members[0].title">{{ members[0].title }}</p>
           </div>
         </div>
       </div>
-      <div class="group-name">
+      <div class="group-name d-flex flex-column align-items-center">
         <h2>{{ "homePage.unionTeam" | translate }}</h2>
 
         <div class="members-grid">
