@@ -38,7 +38,7 @@
       <div
         class="d-flex mb-5 flex-wrap flex-lg-nowrap justify-content-between align-items-center"
       >
-        <div class="text_manager mb-5 " [ngClass]="{ expanded: isExpanded }">
+        <div class="text_manager mb-5" [ngClass]="{ expanded: isExpanded }">
           <h1 class="text_hero_header">
             {{ "homePage.unionHeadSpeak" | translate }}
           </h1>
@@ -67,11 +67,129 @@
         <h2>{{ "homePage.unionTeam" | translate }}</h2>
 
         <div class="members-grid">
-          <div *ngFor="let member of members" class="member-card">
-            <img [src]="member.image" [alt]="member.name" />
+          <div class="member-card div1" *ngIf="members[0]">
+            <img [src]="members[0].image" [alt]="members[0].name" />
             <div class="manager_name">
-              <h1>{{ member.name }}</h1>
-              <p *ngIf="member.title">{{ member.title }}</p>
+              <h1>{{ members[0].name }}</h1>
+              <p *ngIf="members[0].title">{{ members[0].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div2" *ngIf="members[1]">
+            <img [src]="members[1].image" [alt]="members[1].name" />
+            <div class="manager_name">
+              <h1>{{ members[1].name }}</h1>
+              <p *ngIf="members[1].title">{{ members[1].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div3" *ngIf="members[2]">
+            <img [src]="members[2].image" [alt]="members[2].name" />
+            <div class="manager_name">
+              <h1>{{ members[2].name }}</h1>
+              <p *ngIf="members[2].title">{{ members[2].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div4" *ngIf="members[3]">
+            <img [src]="members[3].image" [alt]="members[3].name" />
+            <div class="manager_name">
+              <h1>{{ members[3].name }}</h1>
+              <p *ngIf="members[3].title">{{ members[3].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div5" *ngIf="members[4]">
+            <img [src]="members[4].image" [alt]="members[4].name" />
+            <div class="manager_name">
+              <h1>{{ members[4].name }}</h1>
+              <p *ngIf="members[4].title">{{ members[4].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div6" *ngIf="members[5]">
+            <img [src]="members[5].image" [alt]="members[5].name" />
+            <div class="manager_name">
+              <h1>{{ members[5].name }}</h1>
+              <p *ngIf="members[5].title">{{ members[5].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div7" *ngIf="members[6]">
+            <img [src]="members[6].image" [alt]="members[6].name" />
+            <div class="manager_name">
+              <h1>{{ members[6].name }}</h1>
+              <p *ngIf="members[6].title">{{ members[6].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div8" *ngIf="members[7]">
+            <img [src]="members[7].image" [alt]="members[7].name" />
+            <div class="manager_name">
+              <h1>{{ members[7].name }}</h1>
+              <p *ngIf="members[7].title">{{ members[7].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div9" *ngIf="members[8]">
+            <img [src]="members[8].image" [alt]="members[8].name" />
+            <div class="manager_name">
+              <h1>{{ members[8].name }}</h1>
+              <p *ngIf="members[8].title">{{ members[8].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div10" *ngIf="members[9]">
+            <img [src]="members[9].image" [alt]="members[9].name" />
+            <div class="manager_name">
+              <h1>{{ members[9].name }}</h1>
+              <p *ngIf="members[9].title">{{ members[9].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div11" *ngIf="members[10]">
+            <img [src]="members[10].image" [alt]="members[10].name" />
+            <div class="manager_name">
+              <h1>{{ members[10].name }}</h1>
+              <p *ngIf="members[10].title">{{ members[10].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div12" *ngIf="members[11]">
+            <img [src]="members[11].image" [alt]="members[11].name" />
+            <div class="manager_name">
+              <h1>{{ members[11].name }}</h1>
+              <p *ngIf="members[11].title">{{ members[11].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div13" *ngIf="members[12]">
+            <img [src]="members[12].image" [alt]="members[12].name" />
+            <div class="manager_name">
+              <h1>{{ members[12].name }}</h1>
+              <p *ngIf="members[12].title">{{ members[12].title }}</p>
+            </div>
+          </div>
+
+          <div class="member-card div14" *ngIf="members[13]">
+            <img [src]="members[13].image" [alt]="members[13].name" />
+            <div class="manager_name">
+              <h1>{{ members[13].name }}</h1>
+              <p *ngIf="members[13].title">{{ members[13].title }}</p>
+            </div>
+          </div>
+          <div class="member-card div15" *ngIf="members[14]">
+            <img [src]="members[14].image" [alt]="members[14].name" />
+            <div class="manager_name">
+              <h1>{{ members[14].name }}</h1>
+              <p *ngIf="members[14].title">{{ members[14].title }}</p>
+            </div>
+          </div>
+          <div class="member-card div16" *ngIf="members[15]">
+            <img [src]="members[15].image" [alt]="members[15].name" />
+            <div class="manager_name">
+              <h1>{{ members[15].name }}</h1>
+              <p *ngIf="members[15].title">{{ members[15].title }}</p>
             </div>
           </div>
         </div>

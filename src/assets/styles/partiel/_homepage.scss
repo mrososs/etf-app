@@ -117,14 +117,12 @@
       width: 100%;
       max-width: 12rem;
       height: 18rem;
-      background-color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       border-radius: 0.5rem;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.3s ease;
 
@@ -171,6 +169,9 @@
         font-weight: bold;
       }
       .text_expanded {
+        @media screen and (max-width: 551px) {
+          text-align: justify;
+        }
         font-size: 1rem;
         font-weight: 500;
         color: $color-gray-600;
@@ -211,9 +212,86 @@
 
       .members-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        gap: 2rem;
-        justify-content: center;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 1rem;
+        grid-template-areas:
+          ". . div1 . ."
+          ". div2 . div3 ."
+          ". div4 div5 div6 ."
+          ". div7 div8 div9 ."
+          "div10 div11 div12 div13 div14"
+          ". div15 . div16 .";
+      }
+
+      /* ربط كل عضو بمنطقته في الجريد */
+      .div1 {
+        grid-area: div1;
+      }
+      .div2 {
+        grid-area: div2;
+      }
+      .div3 {
+        grid-area: div3;
+      }
+      .div4 {
+        grid-area: div4;
+      }
+      .div5 {
+        grid-area: div5;
+      }
+      .div6 {
+        grid-area: div6;
+      }
+      .div7 {
+        grid-area: div7;
+      }
+      .div8 {
+        grid-area: div8;
+      }
+      .div9 {
+        grid-area: div9;
+      }
+      .div10 {
+        grid-area: div10;
+      }
+      .div11 {
+        grid-area: div11;
+      }
+      .div12 {
+        grid-area: div12;
+      }
+      .div13 {
+        grid-area: div13;
+      }
+      .div14 {
+        grid-area: div14;
+      }
+      .div15 {
+        grid-area: div15;
+      }
+      .div16 {
+        grid-area: div16;
+      }
+
+      .member-card {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+
+      /* ✅ Media query لتغيير التصميم على الشاشات الصغيرة */
+      @media (max-width: 768px) {
+        .members-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .member-card {
+          width: 90%;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
