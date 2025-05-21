@@ -59,8 +59,17 @@
           <h1>{{ item.title }}</h1>
           <a [href]="item.link" target="_blank">{{ item.description }}</a>
           <p class="text-center">
-            <a>{{ "tourism.card.view" | translate }}</a
-            >/<a>{{ "tourism.card.download" | translate }}</a>
+            <!-- View -->
+            <a [href]="item.link" target="_blank" rel="noopener" class="me-2">
+              {{ "tourism.card.view" | translate }}
+            </a>
+
+            /
+
+            <!-- Download -->
+            <a [href]="item.link" download rel="noopener">
+              {{ "tourism.card.download" | translate }}
+            </a>
           </p>
         </div>
       </div>

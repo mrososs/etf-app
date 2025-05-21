@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #f7931d;
+  --color-secondary: #feca0a;
+  --color-success: #71bf44;
+  --color-info: #1cbfdf;
+}
+
+/* ثيم أخضر وسماوي */
+.theme-green-cyan {
+  --color-primary: #71bf44;
+  --color-secondary: #1cbfdf;
+}
+
+/* ثيم برتقالي وأصفر */
+.theme-orange-yellow {
+  --color-primary: #f7931d;
+  --color-secondary: #feca0a;
+}
+
+/* ✅ ثيم جديد بلون سماوي */
+.theme-cyan {
+  --color-primary: #1cbfdf;
+  --color-secondary: #ffffff;
+  --color-success: #71bf44;
+  --color-info: #1cbfdf;
+}

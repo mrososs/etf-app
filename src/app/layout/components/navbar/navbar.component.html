@@ -179,11 +179,28 @@
         </li>
         <li>
           <img
-            *ngIf="currentLang=== 'ar'"
+            *ngIf="currentLang === 'ar'"
             class="egyptFlag"
             src="../../../../assets/svg/Flag_of_Egypt.svg.svg"
             alt="egyFlag"
           />
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Theme
+          </a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let theme of themes">
+              <a class="dropdown-item" (click)="changeTheme(theme.class)">
+                {{ theme.label }}
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>

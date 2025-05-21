@@ -1,8 +1,14 @@
+$color-primary-raw: #f7931d;
+$color-primary-dark-raw: #975a0f;
+$color-secondary-raw: #feca0a;
+$color-success-raw: #71bf44;
+$color-info-raw: #1cbfdf;
 // Brand Colors
-$color-primary: #f7931d;
-$color-primary-dark: #975a0f;
-$color-secondary: #feca0a;
-$color-accent: #c5499b;
+$color-primary: var(--color-primary, $color-primary-raw);
+$color-primary-dark: var(--color-primary-dark, $color-primary-dark-raw);
+$color-secondary: var(--color-secondary, $color-secondary-raw);
+$color-success: var(--color-success, $color-success-raw);
+$color-info: var(--color-info, $color-info-raw);
 
 // Greens (Success / Status)
 $color-success: #71bf44;

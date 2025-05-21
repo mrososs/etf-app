@@ -17,6 +17,11 @@ declare var bootstrap: any;
 export class NavbarComponent implements OnInit {
   resourcePath = 'navbar.';
   isScrolled = false;
+  themes = [
+    { label: 'Green & Cyan', class: 'theme-green-cyan' },
+    { label: 'Orange & Yellow', class: 'theme-orange-yellow' },
+    { label: 'Cyan Theme', class: 'theme-cyan' }, // ✅ الجديد
+  ];
 
   private langService = inject(LangService);
 
@@ -40,6 +45,10 @@ export class NavbarComponent implements OnInit {
         bsCollapse.hide();
       }
     }
+  }
+  changeTheme(themeClass: string) {
+    document.body.className = ''; // remove existing classes
+    document.body.classList.add(themeClass);
   }
 
   changeLang(lang: string) {
