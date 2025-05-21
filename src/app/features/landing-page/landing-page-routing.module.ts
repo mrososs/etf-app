@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AboutUnionComponent } from './components/about-union/about-union.component';
 import { NewsComponent } from './components/news/news.component';
@@ -17,59 +17,64 @@ const routes: Routes = [
   {
     path: 'home',
     component: MainPageComponent,
-    data: { title: 'الرئيسية - الاتحاد المصري' },
+    data: { title: 'الرئيسية - الإتحاد المصري' },
   },
   {
     path: 'union',
     component: AboutUnionComponent,
-    data: { title: 'عن الاتحاد - الاتحاد المصري' },
+    data: { title: 'عن الإتحاد - الإتحاد المصري' },
   },
   {
     path: 'news',
     component: NewsComponent,
-    data: { title: 'الأخبار - الاتحاد المصري' },
+    data: { title: 'الأخبار - الإتحاد المصري' },
   },
   {
     path: 'Tourism-legislation',
     component: TourismLegislationComponent,
-    data: { title: 'تشريعات السياحية  - الاتحاد المصري' },
+    data: { title: 'تشريعات السياحية  - الإتحاد المصري' },
   },
   {
     path: 'contact-us',
     component: ContactUsComponent,
-    data: { title: 'تواصل معنا  - الاتحاد المصري' },
+    data: { title: 'تواصل معنا  - الإتحاد المصري' },
   },
   {
     path: 'training',
     component: TrainingComponent,
-    data: { title: 'التدريب  - الاتحاد المصري' },
+    data: { title: 'التدريب  - الإتحاد المصري' },
   },
   {
     path: 'diving-room',
     component: DivingRoomComponent,
-    data: { title: 'غرفة سياحة الغوص والأنشطة البحرية- الاتحاد المصري' },
+    data: { title: 'غرفة سياحة الغوص والأنشطة البحرية- الإتحاد المصري' },
   },
   {
     path: 'eat-room',
     component: EatRoomComponent,
-    data: { title: 'غرفة المنشآت والمطاعم السياحية- الاتحاد المصري' },
+    data: { title: 'غرفة المنشآت والمطاعم السياحية- الإتحاد المصري' },
   },
   {
     path: 'product-room',
     component: ProductRoomComponent,
-    data: { title: 'غرفة محال العاديات والسلع السياحية- الاتحاد المصري' },
+    data: { title: 'غرفة محال العاديات والسلع السياحية- الإتحاد المصري' },
   },
   {
     path: 'travel-room',
     component: TravelRoomComponent,
-    data: { title: 'غرفة شركات ووكالات السفر والسياحة - الاتحاد المصري' },
+    data: { title: 'غرفة شركات ووكالات السفر والسياحة - الإتحاد المصري' },
   },
   {
     path: 'hotel-room',
     component: HotelRoomComponent,
-    data: { title: 'غرفة المنشآت الفندقية  - الاتحاد المصري' },
+    data: { title: 'غرفة المنشآت الفندقية  - الإتحاد المصري' },
   },
 ];
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled', // ⬅️ دي المهمة
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 0],
+};
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -8,6 +8,12 @@
   width: 100%;
   z-index: 11111;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .egyptFlag {
+    width: 3rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
   .dropdown-item {
     color: $color-primary !important;
   }

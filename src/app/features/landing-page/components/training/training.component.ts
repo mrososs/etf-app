@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './training.component.scss',
 })
 export class TrainingComponent {
-  selected: string = 'القيادة الامنة';
+  selected: string = 'القيادة الآمنة';
   mainVideoSrc: string = 'assets/videos/video1.mp4';
   mainVideoPoster: string =
     '../../../../../assets/img/driveVideos/83641693482337.jpg';

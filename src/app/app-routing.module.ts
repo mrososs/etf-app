@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
@@ -12,9 +12,13 @@ const routes: Routes = [
       ),
   },
 ];
-
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled', // ⬅️ دي المهمة
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 0],
+};
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,routerOptions)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

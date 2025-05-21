@@ -13,9 +13,9 @@
   </div>
   <div class="training__buttons">
     <app-shared-navigate-button
-      [isActive]="selected === 'القيادة الامنة'"
-      (click)="changeNewsType('القيادة الامنة')"
-      >القيادة الامنة</app-shared-navigate-button
+      [isActive]="selected === 'القيادة الآمنة'"
+      (click)="changeNewsType('القيادة الآمنة')"
+      >القيادة الآمنة</app-shared-navigate-button
     >
     <app-shared-navigate-button
       [isActive]="selected === 'التعليم المزدوج'"
@@ -35,7 +35,7 @@
   </div>
   <ng-container
     [ngTemplateOutlet]="
-      selected === 'القيادة الامنة'
+      selected === 'القيادة الآمنة'
         ? safeDrivingTpl
         : selected === 'التعليم المزدوج'
         ? dualEducationTpl
@@ -52,7 +52,7 @@
       <div
         class="d-flex training__contentSafeDriving__header justify-content-center align-items-center flex-column text-center"
       >
-        <h1>المركز المصرى للقيادة الامنة</h1>
+        <h1>المركز المصرى للقيادة الآمنة</h1>
         <p>
           يهدف المركز إلى تأهيل قائدي المركبات السياحية ورفع الوعي بمخاطر الطرق
           المختلفة والحد من عدد حوادث الطرق من خلال تدريب السائقين تدريبًا
@@ -317,7 +317,11 @@
                 src="../../../../../assets/svg/EnvelopeSimple.svg"
                 alt="phone"
               />
-              <p class="mb-0">k.younes&#64;etf-rstc.org.eg</p>
+              <p class="mb-0">
+                <a href="https://www.etf-rstc.org.eg" target="_blank"
+                  >www.etf-rstc.org.eg</a
+                >
+              </p>
             </span>
             <span class="d-flex align-items-center mb-2">
               <img
@@ -370,7 +374,7 @@
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h1>نظام إدارة التعلم بالاتحاد المصري للغرف السياحية</h1>
+          <h1>نظام إدارة التعلم بالإتحاد المصري للغرف السياحية</h1>
           <p>(مشروع ممول من الوكالة الألمانية للتعاون الدولى - GIZ)</p>
         </div>
       </div>
@@ -390,12 +394,12 @@
               مع احتياجات سوق العمل. ولذلك سعي الأتحاد لأن يكون له رأي في
               التعليم الفني حتي يتم تخريج طلبه من المدارس الفنية بمصر علي
               المستوي المطلوب للعمل بالقطاع السياحي وفقا لمتطلبات السوق, و من ثم
-              تم توقيع اتفاقية بين الاتحاد و وزارة التربية و التعليم و التعليم
+              تم توقيع اتفاقية بين الإتحاد و وزارة التربية و التعليم و التعليم
               الفني تنص علي عضويه الأتحاد بمجلس التسييرى لنظام التعليم والتدريب
               المزدوج للمشاركة بوضع المناهج و تدريب الطلبة أثناء الدراسة بحيث
               تتضمن الدراسة الي جانب التعليم النظري بالمدارس تدريب بالمنشآت
               السياحية بمختلف أنشطتها لاسيما الفنادق, خلال سنوات الدراسة
-              بالمدارس الفنية. في هذا الاطار قام الاتحاد بتمويل من الوكالة
+              بالمدارس الفنية. في هذا الاطار قام الإتحاد بتمويل من الوكالة
               الألمانية للتعاون الدولي (GIZ), بطرح مناقصة لأنشاء نظام إدارة
               التعلم بهدف مساندة هذة الجهود و حتي يتمكن الطلاب من متابعة البرامج
               التدريبية عن بعد الي جانب حضورهم التدريبات بالمنشآت الفندقية
@@ -459,8 +463,8 @@
       <div class="d-flex justify-content-center align-items-center flex-column">
         <h1>مشروع دعم الانتقال إلى سوق العمل </h1>
         <p>
-          مشروع "دعم الانتقال إلى سوق العمل"، الممول من الاتحاد الأوروبي
-          والحكومة المصرية، هو أحد المشروعات التدريبية التي قام الاتحاد بتنفيذها
+          مشروع "دعم الانتقال إلى سوق العمل"، الممول من الإتحاد الأوروبي
+          والحكومة المصرية، هو أحد المشروعات التدريبية التي قام الإتحاد بتنفيذها
           بالتعاون مع وزارة السياحة والآثار، وبرنامج دعم وتطوير التعليم الفني
           والتدريب المهني (TVET Egypt) .
         </p>
@@ -551,7 +555,9 @@
   <ng-template #cookingTpl>
     <div class="training__contentCooking container">
       <div class="row mt-5 text-center">
-        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-start">
+        <div
+          class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-start"
+        >
           <h1>مراكز تدريب فنون الطهى</h1>
           <p class="text-end">
             أنشأ الإتحاد المصري للغرف السياحية مراكز تدريب متخصصة لفنون الطهى
@@ -564,7 +570,11 @@
           </p>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
-         <img src="../../../../../assets/img/cooking.jpg" alt="cooking" class="imgCooking">
+          <img
+            src="../../../../../assets/img/cooking.jpg"
+            alt="cooking"
+            class="imgCooking"
+          />
         </div>
       </div>
     </div>
