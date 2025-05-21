@@ -379,6 +379,11 @@
       font-size: 1rem;
       font-weight: 500;
       color: $color-gray-600;
+         display: -webkit-box;
+        -webkit-line-clamp: 2; // limit to 4 lines
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     a {
       font-size: 1.2rem;

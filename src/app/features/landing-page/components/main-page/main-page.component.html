@@ -15,7 +15,9 @@
           alt="logo"
         />
       </div> -->
-      <div class="col-12  text-center text-lg-end d-flex justify-content-center flex-column align-items-center">
+      <div
+        class="col-12 text-center text-lg-end d-flex justify-content-center flex-column align-items-center"
+      >
         <h1>{{ "homePage.union" | translate }}</h1>
         <p [innerHTML]="'homePage.unionDesc' | translate"></p>
         <div
@@ -233,7 +235,11 @@
         >
           <img [src]="item.image" alt="News" />
           <p>{{ item.description }}</p>
-          <button class="news_btn">{{ item.buttonText }}</button>
+          <button class="news_btn w-50">
+            <a [href]="item.link" target="_blank" class="text-white">
+              {{ item.buttonText || ("news.readMore" | translate) }}
+            </a>
+          </button>
         </div>
       </div>
     </div>
