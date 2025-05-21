@@ -1,26 +1,44 @@
 :root {
   --color-primary: #f7931d;
   --color-secondary: #feca0a;
+  --color-accent: #c5499b;
   --color-success: #71bf44;
   --color-info: #1cbfdf;
+  --color-text: #000000;
+  --color-bg: #ffffff;
 }
 
 /* ثيم أخضر وسماوي */
 .theme-green-cyan {
   --color-primary: #71bf44;
   --color-secondary: #1cbfdf;
+  --color-accent: #c5499b;
+  --color-text: #000000;
+  --color-bg: #ffffff;
 }
 
 /* ثيم برتقالي وأصفر */
 .theme-orange-yellow {
   --color-primary: #f7931d;
   --color-secondary: #feca0a;
+  --color-accent: #c5499b;
+  --color-text: #000000;
+  --color-bg: #ffffff;
 }
 
-/* ✅ ثيم جديد بلون سماوي */
+/* ثيم سماوي */
 .theme-cyan {
   --color-primary: #1cbfdf;
   --color-secondary: #ffffff;
   --color-success: #71bf44;
-  --color-info: #1cbfdf;
+  --color-accent: #c5499b;
+  --color-text: #000000;
+  --color-bg: #ffffff;
+}
+.theme-purple {
+  --color-primary: #c5499b;
+  --color-secondary: #feca0a;
+  --color-accent: #71bf44;
+  --color-text: #ffffff;
+  --color-bg: #292f36;
 }

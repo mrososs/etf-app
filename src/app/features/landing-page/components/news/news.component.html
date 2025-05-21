@@ -30,7 +30,9 @@
             <img [src]="item.image" alt="news" />
             <h1>{{ item.description }}</h1>
             <button class="news_btn w-50">
-              {{ item.buttonText || ("news.readMore" | translate) }}
+              <a [href]="item.link" target="_blank" class="text-white">
+                {{ item.buttonText || ("news.readMore" | translate) }}
+              </a>
             </button>
           </div>
         </div>
@@ -53,7 +55,9 @@
             <img [src]="item.image" alt="news" />
             <h1>{{ item.description }}</h1>
             <button class="news_btn w-50">
-              {{ item.buttonText || ("news.readMore" | translate) }}
+              <a [href]="item.link" target="_blank" class="text-white">
+                {{ item.buttonText || ("news.readMore" | translate) }}
+              </a>
             </button>
           </div>
         </div>

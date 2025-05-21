@@ -153,6 +153,7 @@
             >{{ resourcePath + "contact" | translate }}</a
           >
         </li>
+
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -185,22 +186,19 @@
             alt="egyFlag"
           />
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Theme
+        <li class="nav-item d-flex">
+          <a class="nav-link" aria-current="page">
+            {{ resourcePath + "chooseYourColor" | translate }}
           </a>
-          <ul class="dropdown-menu">
-            <li *ngFor="let theme of themes">
-              <a class="dropdown-item" (click)="changeTheme(theme.class)">
-                {{ theme.label }}
-              </a>
-            </li>
-          </ul>
+          <div class="colors d-flex gap-2">
+            <div
+              *ngFor="let theme of themes"
+              class="color-dot"
+              [ngStyle]="{ 'background-color': theme.color }"
+              (click)="changeTheme(theme.class)"
+              title="{{ theme.class }}"
+            ></div>
+          </div>
         </li>
       </ul>
     </div>

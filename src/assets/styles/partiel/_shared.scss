@@ -8,6 +8,50 @@
   width: 100%;
   z-index: 11111;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  .colors {
+    background-color: gray;
+    padding: 1rem;
+    height: 3rem;
+    width: 8rem;
+    .color-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid white;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.2);
+        border-color: var(--color-primary);
+      }
+    }
+
+    .colorOne {
+      background-color: #f7931d;
+      width: 20px;
+      height: 20px;
+    }
+    .colorTwo {
+      background-color: #feca0a;
+      width: 20px;
+      height: 20px;
+    }
+    .colorThree {
+      background-color: #c5499b;
+      width: 20px;
+      height: 20px;
+    }
+    .colorFour {
+      background-color: #1cbfdf;
+      width: 20px;
+      height: 20px;
+    }
+    .colorFive {
+      background-color: #71bf44;
+      width: 20px;
+      height: 20px;
+    }
+  }
   .egyptFlag {
     width: 3rem;
     background-color: white;
@@ -18,7 +62,7 @@
     color: $color-primary !important;
   }
   ul {
-    margin-right: 5rem;
+    margin-right: 1rem;
   }
   @media screen and (max-width: 992px) {
     ul {

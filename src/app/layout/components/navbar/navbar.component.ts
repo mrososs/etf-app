@@ -18,10 +18,12 @@ export class NavbarComponent implements OnInit {
   resourcePath = 'navbar.';
   isScrolled = false;
   themes = [
-    { label: 'Green & Cyan', class: 'theme-green-cyan' },
-    { label: 'Orange & Yellow', class: 'theme-orange-yellow' },
-    { label: 'Cyan Theme', class: 'theme-cyan' }, // ✅ الجديد
-  ];
+  { class: 'theme-orange-yellow', color: '#f7931d' },
+  { class: 'theme-green-cyan', color: '#71bf44' },
+  { class: 'theme-cyan', color: '#1cbfdf' },
+  { class: 'theme-purple', color: '#c5499b' } // لو هتضيفي ثيم جديد
+];
+
 
   private langService = inject(LangService);
 
@@ -46,10 +48,11 @@ export class NavbarComponent implements OnInit {
       }
     }
   }
-  changeTheme(themeClass: string) {
-    document.body.className = ''; // remove existing classes
-    document.body.classList.add(themeClass);
-  }
+ changeTheme(themeClass: string) {
+  document.body.className = ''; // clear old
+  document.body.classList.add(themeClass);
+  localStorage.setItem('theme', themeClass); // optional persistence
+}
 
   changeLang(lang: string) {
     this.langService.setLang(lang);

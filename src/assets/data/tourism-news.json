@@ -4,41 +4,47 @@
     "image": "assets/img/tourestNews/1.jpg",
     "title": "زيادة كبيرة.. مصر تستقبل 3.9 مليون سائح خلال أول 3 شهور من 2025",
     "description": "خبير: المتحف الكبير سيحقق طفرة في أعداد السياحة خلال الفترات القادمة.",
-    "buttonText": "اقرأ المزيد"
+    "buttonText": "اقرأ المزيد",
+    "link": "https://arabic.cnn.com/middle-east/article/2025/05/04/increase-number-of-tourists-to-egypt-in-2025-grand-museum"
   },
   {
     "id": 2,
     "image": "assets/img/tourestNews/2.jpg",
     "title": "اكتشاف أثري جديد في سيناء",
     "description": "الاكتشاف يكشف أسرار (حصون الشرق) ويعد من أهم الاكتشافات الحديثة.",
-    "buttonText": "اقرأ المزيد"
+    "buttonText": "اقرأ المزيد",
+    "link": "https://mota.gov.eg/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-2-1-1/%D8%A7%D9%83%D8%AA%D8%B4%D8%A7%D9%81%D8%A7%D8%AA-%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%A8%D8%B3%D9%8A%D9%86%D8%A7%D8%A1-%D8%AA%D9%83%D8%B4%D9%81-%D8%B9%D9%86-%D8%A3%D8%B3%D8%B1%D8%A7%D8%B1-%D8%AD%D8%B5%D9%88%D9%86-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%AB%D9%88%D8%B1-%D8%B9%D9%84%D9%89-%D8%A8%D9%82%D8%A7%D9%8A%D8%A7-%D8%AA%D8%AD%D8%B5%D9%8A%D9%86%D8%A7%D8%AA-%D8%B9%D8%B3%D9%83%D8%B1%D9%8A%D8%A9-%D9%88%D9%88%D8%AD%D8%AF%D8%A7%D8%AA-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%AC%D9%86%D9%88%D8%AF-%D9%88%D8%AE%D9%86%D8%AF%D9%82-%D9%8A%D8%B4%D9%8A%D8%B1-%D8%A5%D9%84%D9%89-%D8%A5%D9%85%D9%83%D8%A7%D9%86%D9%8A%D8%A9-%D9%88%D8%AC%D9%88%D8%AF-%D9%82%D9%84%D8%B9%D8%A9-%D8%A3%D8%AE%D8%B1%D9%8A-%D8%A8%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9/#:~:text=%D9%83%D8%B4%D9%81%D8%AA%20%D8%A7%D9%84%D8%A8%D8%B9%D8%AB%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9,%D8%B5%D9%8A%D9%81%D9%8A%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A3%D8%AB%D8%A7%D8%B1%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%B3%D9%8A%D9%86%D8%A7%D8%A1."
   },
   {
     "id": 3,
     "image": "assets/img/tourestNews/3.jpg",
     "title": "تعرف على القطع الأثرية المميزة لشهر مايو",
     "description": "القطع تم اختيارها من متاحف الجمهورية لتمثل أبرز الاكتشافات والأهمية التاريخية.",
-    "buttonText": "اقرأ المزيد"
+    "buttonText": "اقرأ المزيد",
+    "link": "https://mota.gov.eg/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-2-1-1/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%85-%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%D9%87%D8%A7-%D9%84%D8%AA%D9%83%D9%88%D9%86-%D8%A7%D9%84%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2%D8%A9-%D9%84%D8%B4%D9%87%D8%B1-%D9%85%D8%A7%D9%8A%D9%88-%D8%A8%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D8%AD%D9%81-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA%D9%88%D9%89-%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9/"
   },
   {
     "id": 4,
     "image": "assets/img/tourestNews/4.jpg",
     "title": "وزير السياحة يفتتح معرض «رمسيس وذهب الفراعنة»",
     "description": "المعرض يقام في اليابان ويضم قطع نادرة تعرض لأول مرة خارج مصر.",
-    "buttonText": "اقرأ المزيد"
+    "buttonText": "اقرأ المزيد",
+    "link": "https://www.youm7.com/story/2025/3/10/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD%D9%87-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86-%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A-%D8%B1%D9%85%D8%B3%D9%8A%D8%B3-%D9%88%D8%B0%D9%87%D8%A8/6911777"
   },
   {
     "id": 5,
     "image": "assets/img/tourestNews/5.jpg",
     "title": "بدء أعمال ترميم متحفي أسوان والنوبة",
     "description": "المشروع يهدف إلى تطوير العرض المتحفي وتحقيق الاستدامة السياحية.",
-    "buttonText": "اقرأ المزيد"
+    "buttonText": "اقرأ المزيد",
+    "link": "https://gate.ahram.org.eg/News/5109998.aspx"
   },
   {
     "id": 6,
     "image": "assets/img/tourestNews/6.jpg",
     "title": "وزير السياحة: افتتاح المتحف المصري الكبير يليق بمكانة مصر",
     "description": "الاحتفالية المرتقبة ستشكل حدثاً عالمياً يجذب أنظار العالم لمصر.",
-    "buttonText": "اقرأ المزيد"
+    "buttonText": "اقرأ المزيد",
+    "link": "https://www.youm7.com/story/2021/11/27/%D9%85%D8%B5%D8%B1-%D8%AA%D8%A8%D9%87%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A8%D8%B9%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%A3%D8%AC%D8%AF%D8%A7%D8%AF-%D9%85%D8%B9-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%85/5554342"
   }
 ]

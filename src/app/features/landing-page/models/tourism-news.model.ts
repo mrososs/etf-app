@@ -4,4 +4,5 @@ export interface TourismNews {
   title: string;
   description: string;
   buttonText: string;
+  link: string;
 }
