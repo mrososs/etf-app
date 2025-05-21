@@ -10,13 +10,19 @@
     <li class="second_list">
       <h1>{{ "footer.importantLinks" | translate }}</h1>
       <p>
-        <a>{{ "footer.whoWeAre" | translate }}</a>
+        <a [routerLink]="['/landing-page/union']">{{
+          "footer.whoWeAre" | translate
+        }}</a>
       </p>
       <p>
-        <a>{{ "footer.news" | translate }}</a>
+        <a [routerLink]="['/landing-page/news']">{{
+          "footer.news" | translate
+        }}</a>
       </p>
       <p>
-        <a>{{ "footer.contactUs" | translate }}</a>
+        <a [routerLink]="['/landing-page/contact-us']">{{
+          "footer.contactUs" | translate
+        }}</a>
       </p>
     </li>
     <li class="third_list">
