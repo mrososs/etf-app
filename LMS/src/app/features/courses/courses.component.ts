@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TopBannerComponent } from './top-banner/top-banner.component';
 import { LogoBannerComponent } from './logo-banner/logo-banner.component';
 import { TypesComponent } from './types/types.component';
+import { TrainingCourseComponent } from './Training-course/Training-course.component';
 
 @Component({
   selector: 'app-courses',
   standalone: true,
-  imports: [CommonModule,TopBannerComponent,LogoBannerComponent,TypesComponent],
+  imports: [CommonModule,TopBannerComponent,LogoBannerComponent,TypesComponent,TrainingCourseComponent],
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.scss',
 })

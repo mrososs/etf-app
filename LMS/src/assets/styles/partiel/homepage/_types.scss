@@ -1,5 +1,6 @@
 .types {
   padding: 2rem 0;
+  margin-bottom: 5rem;
   h1 {
     font-size: 2.1875rem;
     font-style: normal;
@@ -14,14 +15,24 @@
     text-align: center;
   }
   .types-cards {
-    .col-3 {
+    .card {
+     height: 25rem;
+      min-height: 100%; // ensures equal height
       padding: 2rem;
       border-radius: 0.625rem;
+      
       background-color: $color-card-bg;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+      }
+
       .type-img {
         background-color: $color-white;
         border-radius: 50%;
         padding: 1rem;
+        width: 6.25rem;
       }
       h1 {
         font-size: 1.8125rem;
@@ -41,6 +52,11 @@
       }
       &:nth-child(even) {
         background-color: $color-primary;
+        h1,
+        p,
+        a {
+          color: $color-white;
+        }
       }
     }
   }

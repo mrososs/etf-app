@@ -4,4 +4,5 @@ export interface types {
     img:string;
     description:string;
     examples:string;
+    arrow:string;
 }

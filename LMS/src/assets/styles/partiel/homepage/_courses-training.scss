@@ -1,0 +1,23 @@
+.training-courses {
+  padding: 2rem 0;
+  background-color: $color-primary-20;
+  h2 {
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+    color: $color-black;
+  }
+  a {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    color: $color-primary !important;
+  }
+  h1 {
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: $color-black;
+  }
+}

@@ -13,18 +13,18 @@
     <div
       class="types-cards row gap-3 d-flex justify-content-center align-items-center"
     >
-      <div class="col-3" *ngFor="let type of types()">
+      <div class="col-12 col-md-3 col-lg-3 card" *ngFor="let type of types()">
         <div class="d-flex justify-content-end">
           <img class="type-img" [src]="type.img" alt="type" />
         </div>
         <h1>{{ type.name }}</h1>
         <p>{{ type.description }}</p>
         <p>
-          {{ type.examples}}
+          {{ type.examples }}
         </p>
         <div class="d-flex gap-3">
           <a>عرض الفئة</a>
-          <img src="../../../../assets/svg/types/arrow-left.svg" alt="arrow" />
+          <img [src]="type.arrow" alt="arrow" />
         </div>
       </div>
     </div>
