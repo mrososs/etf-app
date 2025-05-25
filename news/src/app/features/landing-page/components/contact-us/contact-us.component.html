@@ -1,0 +1,81 @@
+<section class="contact-us">
+  <div class="w-100 contact-us__image">
+    <div class="contact-us__overlay">
+      <div class="contact-us__text">
+        <h1>{{ 'contactUs.title' | translate }}</h1>
+        <nav class="breadcrumb">
+          <a [routerLink]="['/landing-page/home']">{{ 'navbar.home' | translate }}</a>
+          <span>&nbsp;>&nbsp;</span>
+          <span>{{ 'navbar.contact' | translate }}</span>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="d-flex justify-content-center flex-column align-items-center">
+      <h1>{{ 'contactUs.title' | translate }}</h1>
+      <p>{{ 'contactUs.subtitle' | translate }}</p>
+    </div>
+    <div class="mt-2">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 contact-us__details">
+          <div class="flex flex-column justify-content-start align-items-start">
+            <div class="d-flex align-items-center gap-3">
+              <img src="../../../../../assets/svg/contact-us/phone.svg" alt="phone" />
+              <div class="d-flex flex-column justify-content-start align-items-start">
+                <h1>{{ 'contactUs.phone' | translate }}</h1>
+                <p>{{ 'footer.phone' | translate }}</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="../../../../../assets/svg/contact-us/mail.svg" alt="mail" />
+              <div class="d-flex flex-column justify-content-start align-items-start">
+                <h1>{{ 'contactUs.emailLabel' | translate }}</h1>
+                <p>{{ 'footer.email' | translate }}</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="../../../../../assets/svg/contact-us/location.svg" alt="location" />
+              <div class="d-flex flex-column justify-content-start align-items-start">
+                <h1>{{ 'contactUs.addressLabel' | translate }}</h1>
+                <p>{{ 'footer.contactDetails' | translate }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-md-6 contact-us__form">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="name">{{ 'contactUs.name' | translate }}</label>
+                  <input id="name" formControlName="name" type="text" pInputText placeholder="{{ 'contactUs.namePlaceholder' | translate }}" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="form-group">
+                  <label for="email">{{ 'contactUs.email' | translate }}</label>
+                  <input id="email" formControlName="email" type="email" pInputText placeholder="{{ 'contactUs.emailPlaceholder' | translate }}" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="form-group d-flex flex-column">
+                  <label for="message">{{ 'contactUs.message' | translate }}</label>
+                  <textarea id="message" rows="5" cols="30" pInputTextarea formControlName="message" placeholder="{{ 'contactUs.messagePlaceholder' | translate }}"></textarea>
+                </div>
+              </div>
+              <div class="mt-3">
+                <button class="news_btn w-100" type="submit">
+                  {{ 'contactUs.send' | translate }}
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

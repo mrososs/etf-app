@@ -1,0 +1,83 @@
+.tourism-legislation {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+
+  &__image {
+    width: 100vw;
+    height: 50vh;
+    background: url("../../img/tourism-legislationBackground.jpg") no-repeat
+      center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); // dark overlay
+      z-index: 1;
+    }
+
+    .tourism-legislation__overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tourism-legislation__text {
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .tourism-card {
+    &:nth-child(even) {
+      background-color: white;
+    }
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f7911d13;
+    padding: 2rem 0.3rem;
+    margin: 10px;
+
+    border-radius: 30px;
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: 1rem;
+      font-weight: normal;
+      color: $color-gray-600;
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 1rem;
+      a {
+        opacity: 1;
+        text-decoration: none;
+        color: $color-primary;
+        margin-inline: 10px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

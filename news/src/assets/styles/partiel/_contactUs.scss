@@ -1,0 +1,98 @@
+@import "../colors";
+
+.contact-us {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: $color-primary;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color-gray-600;
+  }
+  &__image {
+    width: 100vw;
+    height: 50vh;
+    background: url("../../img/contactUsBackground.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); // dark overlay
+      z-index: 1;
+    }
+
+    .contact-us__overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-us__text {
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &__details {
+    background-color: #fef9f3;
+    padding: 3rem;
+    border-radius: 10px;
+    h1 {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+
+      color: $color-primary;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .line {
+      background-color: $color-gray-700;
+      height: 1px;
+      opacity: 0.5;
+      width: 100%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &__form {
+    label {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: $color-primary;
+      font-weight: bold;
+    }
+    input {
+      padding: 1rem 1rem;
+    }
+    textarea {
+      padding: 1rem 1rem;
+    }
+  }
+}

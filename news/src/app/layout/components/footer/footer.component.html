@@ -1,0 +1,92 @@
+<app-contact-us-banner></app-contact-us-banner>
+<section class="footer">
+  <ul class="footer__list">
+    <li class="first_list">
+      <img src="../../../../assets/img/logo.png" alt="logo" />
+      <h4>
+        {{ "footer.aboutUs" | translate }}
+      </h4>
+    </li>
+    <li class="second_list">
+      <h1>{{ "footer.importantLinks" | translate }}</h1>
+      <p>
+        <a [routerLink]="['/landing-page/union']">{{
+          "footer.whoWeAre" | translate
+        }}</a>
+      </p>
+      <p>
+        <a [routerLink]="['/landing-page/news']">{{
+          "footer.news" | translate
+        }}</a>
+      </p>
+      <p>
+        <a [routerLink]="['/landing-page/contact-us']">{{
+          "footer.contactUs" | translate
+        }}</a>
+      </p>
+    </li>
+    <li class="third_list">
+      <h1>{{ "footer.contactUs" | translate }}</h1>
+      <p>
+        <img
+          src="../../../../assets/svg/location-pin_svgrepo.com.svg"
+          alt="location_icon"
+        />
+        {{ "footer.contactDetails" | translate }}
+      </p>
+      <p>
+        <img src="../../../../assets/svg/PhoneCall.svg" alt="location_icon" />
+        {{ "footer.phone" | translate }}
+      </p>
+      <p>
+        <img
+          src="../../../../assets/svg/EnvelopeSimple.svg"
+          alt="location_icon"
+        />
+        {{ "footer.email" | translate }}
+      </p>
+      <h1>{{ "footer.title2" | translate }}</h1>
+      <p>
+        <img
+          src="../../../../assets/svg/EnvelopeSimple.svg"
+          alt="location_icon"
+        />
+        {{ "footer.email2" | translate }}
+      </p>
+      <p>
+        <img src="../../../../assets/svg/PhoneCall.svg" alt="location_icon" />
+        {{ "footer.phone2" | translate }}
+      </p>
+    </li>
+  </ul>
+  <div class="social_media">
+    <h1>{{ "footer.followUs" | translate }}</h1>
+    <div class="social_media__icons">
+      <img
+        src="../../../../assets/svg/Link - Link to Calendly Facebook account.svg"
+        alt="facebook_icon"
+      />
+      <img
+        src="../../../../assets/svg/Link - Link to Calendly Instagram account.svg"
+        alt="instagram_icon"
+      />
+      <img
+        src="../../../../assets/svg/Link - Link to Calendly Twitter account.svg"
+        alt="twitter_icon"
+      />
+      <img
+        src="../../../../assets/svg/Link - Link to Calendly Linkedin account.svg"
+        alt="linkedin_icon"
+      />
+      <img
+        src="../../../../assets/svg/Link - Link to Calendly Youtube account.svg"
+        alt="youtube_icon"
+      />
+    </div>
+  </div>
+  <div
+    class="w-100 bg-white d-flex justify-content-center align-content-center high_light"
+  >
+    <h1>{{ "footer.copyright" | translate }}</h1>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+<section class="tourism-legislation">
+  <div class="w-100 tourism-legislation__image">
+    <div class="tourism-legislation__overlay">
+      <div class="tourism-legislation__text">
+        <h1>{{ "tourism.pageTitle" | translate }}</h1>
+        <nav class="breadcrumb">
+          <a [routerLink]="['/landing-page/home']">{{
+            "tourism.breadcrumb.home" | translate
+          }}</a>
+          <span>&nbsp;>&nbsp;</span>
+          <span>{{ "tourism.breadcrumb.current" | translate }}</span>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center mt-3 gap-3">
+      <app-shared-navigate-button
+        [isActive]="selected === 'قوانين'"
+        (click)="changeNewsType('قوانين')"
+      >
+        {{ "tourism.buttons.laws" | translate }}
+      </app-shared-navigate-button>
+
+      <app-shared-navigate-button
+        [isActive]="selected === 'قرارات وزارية'"
+        (click)="changeNewsType('قرارات وزارية')"
+      >
+        {{ "tourism.buttons.ministerialDecisions" | translate }}
+      </app-shared-navigate-button>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+      <form>
+        <div class="p-float-label">
+          <input
+            id="username"
+            type="text"
+            pInputText
+            [(ngModel)]="enterYear"
+            name="enterYear"
+            (ngModelChange)="onSearchYear()"
+          />
+          <label for="username">{{
+            "tourism.searchPlaceholder" | translate
+          }}</label>
+          <img
+            src="../../../../../assets/svg/search-alt-2_svgrepo.com.svg"
+            alt="search"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="mt-5 container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div
+          class="col-12 col-md-6 col-lg-3 text-center tourism-card"
+          *ngFor="let item of filteredLegislations"
+        >
+          <h1>{{ item.title }}</h1>
+          <a [href]="item.link" target="_blank">{{ item.description }}</a>
+          <p class="text-center">
+            <!-- View -->
+            <a [href]="item.link" target="_blank" rel="noopener" class="me-2">
+              {{ "tourism.card.view" | translate }}
+            </a>
+
+            /
+
+            <!-- Download -->
+            <a [href]="item.link" download rel="noopener">
+              {{ "tourism.card.download" | translate }}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

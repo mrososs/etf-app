@@ -1,0 +1,407 @@
+@import "../colors";
+
+.homepage {
+  position: relative;
+  margin-bottom: 5rem;
+  .arrow-more {
+    @media screen and (max-width: 551px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+  .img-fluid {
+    height: 10rem;
+    width: 10rem;
+    @media screen and (max-width: 551px) {
+      height: 10rem;
+      width: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .hero_text {
+    position: absolute;
+    top: 15rem;
+    margin-bottom: 5rem;
+    right: 1rem;
+    border: 15px solid $color-primary;
+    border-left: none;
+    display: flex;
+    justify-content: end;
+    padding: 5rem 0;
+
+    h1 {
+      font-size: 3.75rem;
+      color: white;
+      width: 50%;
+    }
+    @media screen and (max-width: 871px) {
+      top: 20rem;
+      right: 3rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 551px) {
+      right: 1rem;
+      top: 15rem;
+      padding: 3rem 1rem;
+      padding-left: 0;
+      justify-content: end;
+
+      h1 {
+        font-size: 2rem;
+        text-align: start;
+        line-height: 3rem;
+      }
+    }
+    @media screen and (max-width: 453px) {
+      right: 1rem;
+      top: 15rem;
+      padding: 2rem 1rem;
+      padding-left: 0;
+      justify-content: end;
+
+      h1 {
+        font-size: 1.5rem;
+        text-align: start;
+        line-height: 3rem;
+      }
+    }
+    @media screen and (max-width: 351px) {
+      right: 1rem;
+      top: 15rem;
+      padding: 2rem 1rem;
+      padding-left: 0;
+      justify-content: end;
+
+      h1 {
+        font-size: 1rem;
+        text-align: start;
+        line-height: 3rem;
+      }
+    }
+    // @media screen and (max-width: 500px) {
+    //   img {
+    //     width: 20rem;
+    //     position: absolute;
+    //     top: 50px;
+    //     right: -150px;
+    //   }
+    //   h1 {
+    //     font-size: 2rem;
+    //     top: 70px;
+    //     right: 70px;
+    //   }
+    // }
+  }
+  .carousel {
+    width: 100%;
+    margin-bottom: 3rem;
+    max-width: 100vw; // ✅ مهم جدًا لتجنب overflow
+    overflow: hidden; // ✅ يمنع أي عنصر داخلي يخرج خارج الحدود
+
+    img {
+      height: 100vh;
+      width: 100%; // ✅ يضمن إن الصورة ما تتجاوزش العرض
+      object-fit: cover;
+    }
+
+    .carousel-indicators {
+      button {
+        border-radius: 50% !important;
+        height: 1rem;
+        width: 1rem;
+
+        &.active {
+          background-color: $color-primary !important;
+        }
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      @media screen and (max-width: 551px) {
+        display: none;
+      }
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      width: 3rem; // ✅ تحديد عرض مناسب
+      height: 3rem;
+    }
+
+    .carousel-control-next {
+      right: auto !important;
+      left: 0 !important;
+      margin-top: 2rem;
+      rotate: 90deg !important;
+    }
+
+    .carousel-control-prev {
+      rotate: 90deg !important;
+    }
+  }
+  .about {
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-primary;
+    }
+    a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $color-primary;
+      cursor: pointer;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+
+      color: $color-gray-600;
+    }
+  }
+  .about-group {
+    background-color: #f7911d2b;
+    padding: 5rem 2rem;
+    img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .member-card {
+      @media screen and (max-width: 551px) {
+        margin: 0 auto;
+      }
+      width: 100%;
+      max-width: 12rem;
+      height: 18rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-bottom: 2px solid $color-primary;
+      }
+
+      .manager_name {
+        background-color: $color-primary;
+        color: white;
+        width: 100%;
+        padding: 0.5rem;
+
+        h1 {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0.2rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .text_manager {
+      position: relative;
+      @media screen and (max-width: 551px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .text_hero_header {
+        font-size: 2rem;
+        color: $color-primary;
+        font-weight: bold;
+      }
+      .text_expanded {
+        @media screen and (max-width: 551px) {
+          text-align: justify;
+        }
+        font-size: 1rem;
+        font-weight: 500;
+        color: $color-gray-600;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 4; // limit to 4 lines
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: max-height 0.3s ease;
+      }
+
+      &.expanded .text_expanded {
+        -webkit-line-clamp: unset;
+        overflow: visible;
+      }
+    }
+
+    .manager_name {
+      background-color: $color-primary;
+      color: white;
+      width: 100%;
+      padding: 0.5rem;
+
+      p {
+        font-size: 0.75rem;
+        margin: 0;
+      }
+    }
+    .group-name {
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-primary;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .members-grid {
+        p {
+          text-align: center;
+        }
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 1rem;
+        grid-template-areas:
+          // ". . div1 . ."
+          ". div2 . div3 ."
+          ". div4 div5 div6 ."
+          ". div7 div8 div9 ."
+          "div10 div11 div12 div13 div14"
+          ". div15 . div16 .";
+      }
+
+      /* ربط كل عضو بمنطقته في الجريد */
+      .div1 {
+        grid-area: div1;
+      }
+      .div2 {
+        grid-area: div2;
+      }
+      .div3 {
+        grid-area: div3;
+      }
+      .div4 {
+        grid-area: div4;
+      }
+      .div5 {
+        grid-area: div5;
+      }
+      .div6 {
+        grid-area: div6;
+      }
+      .div7 {
+        grid-area: div7;
+      }
+      .div8 {
+        grid-area: div8;
+      }
+      .div9 {
+        grid-area: div9;
+      }
+      .div10 {
+        grid-area: div10;
+      }
+      .div11 {
+        grid-area: div11;
+      }
+      .div12 {
+        grid-area: div12;
+      }
+      .div13 {
+        grid-area: div13;
+        p {
+          font-size: 0.5rem;
+        }
+      }
+      .div14 {
+        grid-area: div14;
+      }
+      .div15 {
+        grid-area: div15;
+      }
+      .div16 {
+        grid-area: div16;
+      }
+
+      .member-card {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        img {
+          width: 100%;
+          height: 13.4rem;
+        }
+      }
+
+      /* ✅ Media query لتغيير التصميم على الشاشات الصغيرة */
+      @media (max-width: 768px) {
+        .members-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .member-card {
+          width: 90%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .news {
+    img {
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-primary;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-gray-600;
+         display: -webkit-box;
+        -webkit-line-clamp: 2; // limit to 4 lines
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+  .rooms {
+    margin-top: 3rem;
+    background-image: url("../../img/logoBackground.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-primary;
+    }
+  }
+}

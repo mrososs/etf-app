@@ -1,0 +1,193 @@
+@import "../colors";
+
+.about-union {
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+  
+
+  &__image {
+    width: 100vw;
+    height: 50vh;
+    background: url("../../img/image\ 52.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); // dark overlay
+      z-index: 1;
+    }
+
+    .about-union__overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-union__text {
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 2rem;
+
+    h1 {
+      font-size: 2rem;
+      color: $color-primary;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 2;
+
+      @media (max-width: 768px) {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  &__message {
+    &__vision,
+    &__visionMessage {
+      background: linear-gradient(
+        to right,
+        rgba(255, 136, 0, 0.2),
+        rgba(255, 255, 255, 1)
+      );
+
+      padding: 2rem 3rem;
+
+      img {
+        max-width: 90%;
+        height: auto;
+        mix-blend-mode: darken;
+        opacity: 0.85;
+      }
+
+      h1 {
+        color: $color-primary;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #333;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        text-align: center;
+
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  &__committees {
+    h1 {
+      font-size: 2rem;
+      color: $color-primary;
+      margin-bottom: 2rem;
+    }
+
+    .card-committees {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+
+      h2 {
+        font-size: 1.3rem;
+        color: $color-primary;
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        color: $color-gray-600;
+
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #333;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: #fff5e6;
+      }
+    }
+  }
+
+  &__reports {
+    h1 {
+      font-size: 2rem;
+      color: $color-primary;
+      margin-bottom: 2rem;
+    }
+
+    .card-report {
+      background-color: $color-success-07;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+
+      &:nth-child(even) {
+        background-color: white;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #333;
+      }
+    }
+  }
+}
