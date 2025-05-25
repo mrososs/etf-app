@@ -1,5 +1,5 @@
 // 1. تأكد أنك استوردت ملف الألوان في ملف الـ SCSS دا
-@import "../colors";
+@import '../colors';
 
 // Navbar
 .navbar {
@@ -7,6 +7,7 @@
   top: 0;
   width: 100%;
   z-index: 11111;
+  font-size: 0.95rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   .colors {
     background-color: gray;
@@ -62,9 +63,13 @@
     color: $color-primary !important;
   }
   ul {
-    margin-right: 1rem;
+    margin-right: 0.1rem;
   }
-  @media screen and (max-width: 992px) {
+  a.lang{
+    margin-left: 0rem !important;
+  }
+
+  @media screen and (max-width: 1400px) {
     ul {
       margin-right: 0rem;
     }
@@ -88,10 +93,10 @@
 
   li a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 1rem;
-
     transition: color 0.3s ease;
+    white-space: nowrap;
 
     &:hover {
       color: $color-primary;
@@ -121,7 +126,7 @@
   }
 }
 
-[dir="rtl"] .navbar .dropdown-toggle::after {
+[dir='rtl'] .navbar .dropdown-toggle::after {
   float: right;
   margin-right: 0;
   margin-top: 0.6rem;
@@ -245,7 +250,7 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 1px;
     rotate: 45deg;
@@ -274,7 +279,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 1px;
       rotate: 45deg;
@@ -441,7 +446,7 @@ button.news_btn {
     border-radius: 50%;
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -4.3px;
       left: -8px;

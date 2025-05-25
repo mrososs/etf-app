@@ -19,11 +19,28 @@
         "assets": [
           {
             "glob": "**/*",
-            "input": "LMS/public"
+            "input": "LMS/src/assets",
+            "output": "assets"
+          },
+          {
+            "input": "LMS/src",
+            "glob": "favicon.ico",
+            "output": "."
+          },
+          {
+            "input": "LMS/src",
+            "glob": "index.html",
+            "output": "."
           }
         ],
-        "styles": ["LMS/src/styles.scss"],
-        "scripts": []
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeicons/primeicons.css",
+          "LMS/src/styles.scss"
+        ],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
       },
       "configurations": {
         "production": {

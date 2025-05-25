@@ -1,0 +1,47 @@
+.types {
+  padding: 2rem 0;
+  h1 {
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    color: $color-black;
+  }
+  p {
+    font-size: 0.9375rem;
+    font-style: normal;
+    color: $color-black;
+    font-weight: 500;
+    text-align: center;
+  }
+  .types-cards {
+    .col-3 {
+      padding: 2rem;
+      border-radius: 0.625rem;
+      background-color: $color-card-bg;
+      .type-img {
+        background-color: $color-white;
+        border-radius: 50%;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.8125rem;
+        font-style: normal;
+        font-weight: 700;
+      }
+      p {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        text-align: start;
+      }
+      a {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+      }
+      &:nth-child(even) {
+        background-color: $color-primary;
+      }
+    }
+  }
+}

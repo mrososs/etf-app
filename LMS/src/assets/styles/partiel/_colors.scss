@@ -1,0 +1,33 @@
+// Primary Colors
+$color-primary: #f7941e;
+$color-black: #000000;
+$color-white: #ffffff;
+
+// Additional Shades
+$color-dark-gray: #292d32;
+$color-light-orange: #ffb254;
+$color-gray: #5c5959;
+$linear-gradient-top-banner: linear-gradient(90deg, #fdead2 0%, #ffffff 100%);
+
+// Opacity Variants (using rgba)
+$color-primary-80: rgba(247, 148, 30, 0.8);
+$color-primary-70: rgba(247, 148, 30, 0.7);
+$color-primary-30: rgba(247, 148, 30, 0.3);
+$color-primary-20: rgba(247, 148, 30, 0.2);
+$color-primary-15: rgba(247, 148, 30, 0.15);
+$color-card-bg :rgba(247, 148, 30, 0.20);
+
+$color-black-75: rgba(0, 0, 0, 0.75);
+
+// Gradient Colors
+$color-gradient-orange-light: #fcd9b0; // 75.39%
+$color-gradient-orange-soft: #fdead2;
+$color-gradient-yellow: #ffbf73; // 70%
+
+// Example gradient
+$gradient-orange: linear-gradient(
+  90deg,
+  rgba(247, 148, 30, 0.3) 0%,
+  #fcd9b0 75.39%
+);
+$gradient-soft-orange: linear-gradient(90deg, rgba(247, 148, 30, 0.3), #fdead2);
