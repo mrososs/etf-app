@@ -2,7 +2,6 @@
 @import 'assets/styles/LMS.scss';
 * {
   transition: all 0.3s ease-in-out;
-
   box-sizing: border-box;
 }
 body {
@@ -13,4 +12,119 @@ body {
 }
 p {
   text-align: justify;
+}
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  border: none;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    gap: 1rem;
+    text-wrap: nowrap; // منع التفاف النص
+  }
+  &:hover {
+    background-color: $color-primary-80; // أو أي لون تفضله عند التمرير
+  }
+}
+.btn-secondary {
+  background: none !important;
+  color: $color-primary;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  border: 1px solid $color-primary;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    gap: 1rem;
+    text-wrap: nowrap; // منع التفاف النص
+  }
+  &:hover {
+    background: $color-primary-20 !important; // أو أي لون تفضله عند التمرير
+    color: $color-black; // تغيير لون النص عند التمرير
+  }
+}
+.p-component {
+  font-family: 'Cairo', 'Poppins', sans-serif !important;
+}
+p-card {
+  border-radius: 0.9375rem !important;
+
+  .p-card-header {
+    padding: 1rem;
+    position: relative;
+    .plus-button {
+      position: absolute;
+      background-color: $color-white;
+      border-radius: 50%;
+      bottom: 0;
+      cursor: pointer;
+      padding: 1.3rem;
+      right: 13px;
+      border: 5px solid $color-primary;
+      span {
+        font-size: 1.3rem;
+        color: $color-primary;
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+    }
+    img {
+      border-radius: 0.87675rem;
+    }
+    .p-card-title {
+      font-family: 'Cairo', sans-serif;
+
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      color: $color-black;
+    }
+  }
+  .img-profile {
+    width: 2rem;
+    border-radius: 50%;
+  }
+  .p-ripple {
+    background: none !important;
+    border: none;
+    color: $color-primary;
+  }
+  .p-card-footer {
+    padding: 0.2rem;
+  }
+  .p-card-content {
+    padding: 0;
+  }
+  .dotted-line {
+    border: none;
+    width: 100%;
+    height: 1rem;
+    border-top: 2px dotted #000; // adjust thickness and color
+    margin: 1rem 0; // optional spacing
+  }
 }

@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "assets/styles/main.scss";
+@import 'assets/styles/main.scss';
 
 * {
   transition: all 0.3s ease-in-out;
@@ -7,11 +7,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Cairo", "Poppins", sans-serif;
+  font-family: 'Cairo', 'Poppins', sans-serif;
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
 }
-p{
+p {
   text-align: justify;
 }
+

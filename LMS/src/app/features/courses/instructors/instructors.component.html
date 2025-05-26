@@ -1,1 +1,76 @@
-<p>instructors works!</p>
+<div class="trainer">
+  <div class="container">
+    <div class="d-flex justify-content-center flex-column align-items-center">
+      <h1>مدربو الدورات</h1>
+      <p>
+        يقدم الدورات نخبة من الخبراء والمحترفين في مجالاتهم، ممن يملكون خبرة
+        عملية وأكاديمية واسعة
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <p-card [style]="{ overflow: 'hidden' }">
+          <ng-template pTemplate="header">
+            <img
+              alt="Card"
+              class="w-full"
+              src="../../../../assets/img/image_99-removebg-preview.png"
+            />
+            <div class="plus-button"><span class="pi pi-plus"></span></div>
+          </ng-template>
+
+          <ng-template pTemplate="title"> الاء هاني </ng-template>
+
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-6 mb-3">
+              <div class="d-flex gap-2">
+                <img
+                  src="../../../../assets/svg/card/bookmark.svg"
+                  alt="video"
+                />
+                <span>خبير لغة وتواصل ثقافي</span>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="d-flex justify-content-center gap-2">
+                <img src="../../../../assets/svg/card/clock.svg" alt="chart" />
+                <span>18 منهج</span>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="d-flex gap-2">
+                <img src="../../../../assets/svg/card/star.svg" alt="star" />
+                <span>(9k)4.5</span>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div
+                class="d-flex justify-content-center align-items-center gap-2"
+              >
+                <img
+                  src="../../../../assets/svg/card/profile-2user.svg"
+                  alt="student"
+                />
+                <span>16K طالب</span>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <hr class="dotted-line" />
+            </div>
+          </div>
+
+          <ng-template pTemplate="footer">
+            <div class="d-flex justify-content-center mt-1">
+              <p-button
+                label="اللأطلاع علي المدرب"
+                styleClass="w-full"
+              ></p-button>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>
