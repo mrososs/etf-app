@@ -1,0 +1,2696 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.1.2",
+  "pathMappings": {
+    "auth": [
+      "shared/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "news": [
+        {
+          "file": "news/eslint.config.mjs",
+          "hash": "15052851186193004871",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "news/jest.config.ts",
+          "hash": "16175786782170436395"
+        },
+        {
+          "file": "news/project.json",
+          "hash": "16175306507914758298"
+        },
+        {
+          "file": "news/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "news/src/app/app-routing.module.ts",
+          "hash": "11000789019108961033",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "news/src/app/app.component.html",
+          "hash": "10017461919089158894"
+        },
+        {
+          "file": "news/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/app.component.spec.ts",
+          "hash": "16331128607562129245",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "news/src/app/app.component.ts",
+          "hash": "16300316287108676186",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "news/src/app/app.module.ts",
+          "hash": "14936209018801005533",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/common",
+            "npm:@ngx-translate/core",
+            "npm:@ngx-translate/http-loader"
+          ]
+        },
+        {
+          "file": "news/src/app/core/services/lang.service.spec.ts",
+          "hash": "17416235389670829796",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/core/services/lang.service.ts",
+          "hash": "14480344540359856469",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngx-translate/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/about-union/about-union.component.html",
+          "hash": "12014636729736944202"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/about-union/about-union.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/about-union/about-union.component.spec.ts",
+          "hash": "15894318973522561228",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/about-union/about-union.component.ts",
+          "hash": "13990788938607574580",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/contact-us/contact-us.component.html",
+          "hash": "15693571780592597775"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/contact-us/contact-us.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/contact-us/contact-us.component.spec.ts",
+          "hash": "17190109991000407774",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/contact-us/contact-us.component.ts",
+          "hash": "16803886907021074546",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.html",
+          "hash": "8670234364532413312"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.spec.ts",
+          "hash": "8590553106933885817",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.ts",
+          "hash": "14986961517183876169",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/main-page.component.html",
+          "hash": "12724369286773554459"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/main-page.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/main-page.component.spec.ts",
+          "hash": "1221478700497015557",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/main-page/main-page.component.ts",
+          "hash": "5269021617172477341",
+          "deps": [
+            "npm:@angular/core",
+            "npm:primeng",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/news/news.component.html",
+          "hash": "36095847257361733"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/news/news.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/news/news.component.spec.ts",
+          "hash": "4704150710174687054",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/news/news.component.ts",
+          "hash": "584396209491323124",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.html",
+          "hash": "246977760197649295"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.spec.ts",
+          "hash": "13661158126099859431",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.ts",
+          "hash": "76829963485751428",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.html",
+          "hash": "11632901210549335864"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.spec.ts",
+          "hash": "12193287782521011094",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.ts",
+          "hash": "9955622454820174542",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.html",
+          "hash": "15542986543635695598"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.spec.ts",
+          "hash": "17031824433224712160",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.ts",
+          "hash": "14082345543101205977",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/product-room/product-room.component.html",
+          "hash": "1033175002399252746"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/product-room/product-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/product-room/product-room.component.spec.ts",
+          "hash": "5185212128100445480",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/product-room/product-room.component.ts",
+          "hash": "17303864865587119693",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.html",
+          "hash": "12730678576653495537"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.spec.ts",
+          "hash": "1034792538320406274",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.ts",
+          "hash": "1671156338640466762",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.html",
+          "hash": "12463688533791360618"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.spec.ts",
+          "hash": "2262929820575138844",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.ts",
+          "hash": "14524298110375582042",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/training/training.component.html",
+          "hash": "7366156187749468887"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/training/training.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/training/training.component.spec.ts",
+          "hash": "11132189455897346152",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/components/training/training.component.ts",
+          "hash": "8259658283147373363",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/landing-page-routing.module.ts",
+          "hash": "14675564683252826478",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/landing-page.module.ts",
+          "hash": "7517035743141593582",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/comittess.model.ts",
+          "hash": "6995418630903968496"
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/group.model.ts",
+          "hash": "7505494435882707903"
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/law.model.ts",
+          "hash": "3147156636134933681"
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/news.model.ts",
+          "hash": "12333376807245129277"
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/report.model.ts",
+          "hash": "4718487146165100911"
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/tourism-card.model.ts",
+          "hash": "17092818141029420051"
+        },
+        {
+          "file": "news/src/app/features/landing-page/models/tourism-news.model.ts",
+          "hash": "4468436023947627542"
+        },
+        {
+          "file": "news/src/app/features/landing-page/services/landing-page.service.spec.ts",
+          "hash": "5251296213358730396",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/features/landing-page/services/landing-page.service.ts",
+          "hash": "18153216012707928427",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "news/src/app/layout/components/footer/footer.component.html",
+          "hash": "3018827409344297346"
+        },
+        {
+          "file": "news/src/app/layout/components/footer/footer.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/layout/components/footer/footer.component.spec.ts",
+          "hash": "7968777678148102466",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/layout/components/footer/footer.component.ts",
+          "hash": "6296333626453119658",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/layout/components/navbar/navbar.component.html",
+          "hash": "6723088249199492728"
+        },
+        {
+          "file": "news/src/app/layout/components/navbar/navbar.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/layout/components/navbar/navbar.component.spec.ts",
+          "hash": "5810484327242448477",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/layout/components/navbar/navbar.component.ts",
+          "hash": "5097279799724088310",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/layout/layout.module.ts",
+          "hash": "7070418077369734279",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "news/src/app/shared/components/contact-us-banner/contact-us-banner.component.html",
+          "hash": "9759966179638328523"
+        },
+        {
+          "file": "news/src/app/shared/components/contact-us-banner/contact-us-banner.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/shared/components/contact-us-banner/contact-us-banner.component.spec.ts",
+          "hash": "13298434112863637509",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/shared/components/contact-us-banner/contact-us-banner.component.ts",
+          "hash": "5772726866184407175",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/shared/components/shared-navigate-button/shared-navigate-button.component.html",
+          "hash": "3066037236955470878"
+        },
+        {
+          "file": "news/src/app/shared/components/shared-navigate-button/shared-navigate-button.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "news/src/app/shared/components/shared-navigate-button/shared-navigate-button.component.spec.ts",
+          "hash": "13384230704051620667",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/shared/components/shared-navigate-button/shared-navigate-button.component.ts",
+          "hash": "15455350208451377975",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "news/src/app/shared/shared.module.ts",
+          "hash": "10583727952026486484",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@ngx-translate/core",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "news/src/assets/data/committees.json",
+          "hash": "4970293788886390758"
+        },
+        {
+          "file": "news/src/assets/data/group-members.json",
+          "hash": "6024700859584050121"
+        },
+        {
+          "file": "news/src/assets/data/law.json",
+          "hash": "10409672605008893458"
+        },
+        {
+          "file": "news/src/assets/data/news.json",
+          "hash": "12922222468980397359"
+        },
+        {
+          "file": "news/src/assets/data/reports.json",
+          "hash": "18204903268966841506"
+        },
+        {
+          "file": "news/src/assets/data/tourism-legislation.json",
+          "hash": "13061328877978292711"
+        },
+        {
+          "file": "news/src/assets/data/tourism-news.json",
+          "hash": "5626328507013340193"
+        },
+        {
+          "file": "news/src/assets/i18n/ar.json",
+          "hash": "5051249679853808856"
+        },
+        {
+          "file": "news/src/assets/i18n/en.json",
+          "hash": "17125225275842526433"
+        },
+        {
+          "file": "news/src/assets/img/Group 1597883381.jpg",
+          "hash": "3931976499239903646"
+        },
+        {
+          "file": "news/src/assets/img/[CITYPNG.COM]HD Round Uk United Kingdom Flag Icon PNG - 1500x1500.png",
+          "hash": "9142693619566840984"
+        },
+        {
+          "file": "news/src/assets/img/blankImage.jpg",
+          "hash": "17398793113478464823"
+        },
+        {
+          "file": "news/src/assets/img/contactUsBackground.jpg",
+          "hash": "3318967402588832997"
+        },
+        {
+          "file": "news/src/assets/img/cooking.jpg",
+          "hash": "10411109485270917768"
+        },
+        {
+          "file": "news/src/assets/img/driveVideos/1500360037.jpg",
+          "hash": "16797699591693943803"
+        },
+        {
+          "file": "news/src/assets/img/driveVideos/83641693482337.jpg",
+          "hash": "4479354663433295205"
+        },
+        {
+          "file": "news/src/assets/img/driveVideos/Screenshot 2025-03-26 101342 1.jpg",
+          "hash": "8879099606962788992"
+        },
+        {
+          "file": "news/src/assets/img/driveVideos/Screenshot 2025-03-26 101354 1.jpg",
+          "hash": "6085318579975302088"
+        },
+        {
+          "file": "news/src/assets/img/driveVideos/Screenshot 2025-03-26 101409 1.jpg",
+          "hash": "5070305801966884926"
+        },
+        {
+          "file": "news/src/assets/img/favicon.ico",
+          "hash": "5151623248412161582"
+        },
+        {
+          "file": "news/src/assets/img/footerMap.jpg",
+          "hash": "1726183306641384617"
+        },
+        {
+          "file": "news/src/assets/img/group-name/blankImage-removebg-preview.png",
+          "hash": "2533592366743990785"
+        },
+        {
+          "file": "news/src/assets/img/group-name/managerPhoto-removebg-preview.png",
+          "hash": "4100272528003061033"
+        },
+        {
+          "file": "news/src/assets/img/group-name/احمد الوصيف.png",
+          "hash": "12428652535266838054"
+        },
+        {
+          "file": "news/src/assets/img/group-name/ايهاب_عبدالعال-removebg-preview.png",
+          "hash": "10659620701040630573"
+        },
+        {
+          "file": "news/src/assets/img/group-name/علي_غنيم-removebg-preview.png",
+          "hash": "10198896380912197526"
+        },
+        {
+          "file": "news/src/assets/img/group-name/محمد ايوب.png",
+          "hash": "6731800477008470622"
+        },
+        {
+          "file": "news/src/assets/img/group-name/ناصر_التركي-removebg-preview.png",
+          "hash": "7061434028759576471"
+        },
+        {
+          "file": "news/src/assets/img/image 14.jpg",
+          "hash": "15495659407698663857"
+        },
+        {
+          "file": "news/src/assets/img/image 15.jpg",
+          "hash": "12272186315559060039"
+        },
+        {
+          "file": "news/src/assets/img/image 16.jpg",
+          "hash": "11706922624546185807"
+        },
+        {
+          "file": "news/src/assets/img/image 52.jpg",
+          "hash": "16771971356686594692"
+        },
+        {
+          "file": "news/src/assets/img/locationTrainingMap.jpg",
+          "hash": "6089088351983662272"
+        },
+        {
+          "file": "news/src/assets/img/logo white.png",
+          "hash": "1396715790930466516"
+        },
+        {
+          "file": "news/src/assets/img/logo.png",
+          "hash": "2090884646473615696"
+        },
+        {
+          "file": "news/src/assets/img/logoBackground.jpg",
+          "hash": "10720810855107927799"
+        },
+        {
+          "file": "news/src/assets/img/logoRemove.png",
+          "hash": "1944911798580208814"
+        },
+        {
+          "file": "news/src/assets/img/logoTrainingDriving.png",
+          "hash": "6671601808567333481"
+        },
+        {
+          "file": "news/src/assets/img/managerPhoto.jpg",
+          "hash": "5153218481525860219"
+        },
+        {
+          "file": "news/src/assets/img/maps.jpg",
+          "hash": "12588615496434371215"
+        },
+        {
+          "file": "news/src/assets/img/news/1.jpg",
+          "hash": "2212128877536146195"
+        },
+        {
+          "file": "news/src/assets/img/news/2.jpg",
+          "hash": "15171861272609520623"
+        },
+        {
+          "file": "news/src/assets/img/news/3.jpg",
+          "hash": "16522537330602455292"
+        },
+        {
+          "file": "news/src/assets/img/news/4.jpg",
+          "hash": "17911025773392228278"
+        },
+        {
+          "file": "news/src/assets/img/news/485794915_961648869459903_6363310355770955150_n.jpg",
+          "hash": "10640801960697173538"
+        },
+        {
+          "file": "news/src/assets/img/news/485799308_965260625765394_3378018704554052780_n.jpg",
+          "hash": "14067355274720817863"
+        },
+        {
+          "file": "news/src/assets/img/newsBackground.jpg",
+          "hash": "12688659672013234030"
+        },
+        {
+          "file": "news/src/assets/img/road.jpg",
+          "hash": "530746865709988683"
+        },
+        {
+          "file": "news/src/assets/img/room.jpg",
+          "hash": "8307757588211406709"
+        },
+        {
+          "file": "news/src/assets/img/rooms/Group 109.png",
+          "hash": "4399930009614976993"
+        },
+        {
+          "file": "news/src/assets/img/rooms/Group 110.png",
+          "hash": "9034000343735333807"
+        },
+        {
+          "file": "news/src/assets/img/rooms/Group 111.png",
+          "hash": "5524219768628290650"
+        },
+        {
+          "file": "news/src/assets/img/rooms/Group 114.png",
+          "hash": "16642146958762208731"
+        },
+        {
+          "file": "news/src/assets/img/rooms/image 45.png",
+          "hash": "17212436814281706585"
+        },
+        {
+          "file": "news/src/assets/img/t3lym.jpg",
+          "hash": "223571680895124273"
+        },
+        {
+          "file": "news/src/assets/img/tourestNews/1.jpg",
+          "hash": "10984773197570735202"
+        },
+        {
+          "file": "news/src/assets/img/tourestNews/2.jpg",
+          "hash": "5819374753274196361"
+        },
+        {
+          "file": "news/src/assets/img/tourestNews/3.jpg",
+          "hash": "10884851082748250056"
+        },
+        {
+          "file": "news/src/assets/img/tourestNews/4.jpg",
+          "hash": "16500164094282797472"
+        },
+        {
+          "file": "news/src/assets/img/tourestNews/5.jpg",
+          "hash": "9588643186125953546"
+        },
+        {
+          "file": "news/src/assets/img/tourestNews/6.jpg",
+          "hash": "5989650885850838346"
+        },
+        {
+          "file": "news/src/assets/img/tourism-legislationBackground.jpg",
+          "hash": "17108368166430346300"
+        },
+        {
+          "file": "news/src/assets/img/trainingBackground.jpg",
+          "hash": "14046359100260597045"
+        },
+        {
+          "file": "news/src/assets/img/videos2/تدريب - دعم الانتقال الى سوق العمل .1.jpg",
+          "hash": "3023098397076696930"
+        },
+        {
+          "file": "news/src/assets/img/videos2/تدريب - دعم الانتقال الى سوق العمل .2.jpg",
+          "hash": "18033307818167278880"
+        },
+        {
+          "file": "news/src/assets/img/vision.jpg",
+          "hash": "14118887097612463786"
+        },
+        {
+          "file": "news/src/assets/img/visionMessage.jpg",
+          "hash": "4502196121027061553"
+        },
+        {
+          "file": "news/src/assets/pdf/1-1.قرار وزير السياحة والآثار رقم 27 لسنة 2024  بإصدار اللائحة التنفيذية لقانون إنشاء الغرف السياحية.pdf",
+          "hash": "6250087239681032163"
+        },
+        {
+          "file": "news/src/assets/pdf/1-2 قانون 27 لسنة 2023 بشأن إصدار قانون إنشاء الغرف السياحية وتنظيم اتحاد لها.pdf",
+          "hash": "1149616982053273696"
+        },
+        {
+          "file": "news/src/assets/pdf/1-3 قانون 85 لسنة 1968-انشاء غرف سياحية وتنظيم اتحاد لها.pdf",
+          "hash": "14754421984886920003"
+        },
+        {
+          "file": "news/src/assets/pdf/10- قانون 8 لسنة 2022 المنشآت السياحيةوالفندقية 6 مارس 2022.pdf",
+          "hash": "1731774670722874999"
+        },
+        {
+          "file": "news/src/assets/pdf/11- قرار رئيس الجمهورية رقم 134 لسنة 1981 بإنشاء الهيئة العامة للتنشيط السياحى.pdf",
+          "hash": "1588694863718981129"
+        },
+        {
+          "file": "news/src/assets/pdf/2- قرار وزير السياحة والآثار رقم 34 لسنة 2023 تشكيل لجنة تسيير أعمال الاتحاد.pdf",
+          "hash": "11529855641886571629"
+        },
+        {
+          "file": "news/src/assets/pdf/3- قرار رئيس الوزراء رقم 2462 لسنة 2022 بشأن إعادة تنظيم المجلس الأعلى للآثار 4-7-2022.pdf",
+          "hash": "4948454320353037855"
+        },
+        {
+          "file": "news/src/assets/pdf/4- قرار رئيس الوزراء رقم 1523 لسنة 2020.pdf.pdf",
+          "hash": "16927333106029139451"
+        },
+        {
+          "file": "news/src/assets/pdf/5- قانون رقم 84 لسنة 2022 بإصدار قانون تنظيم الحج وإنشاء البوابة المصرية الموحدة للحج 9-6-2022.pdf",
+          "hash": "15805157021512592108"
+        },
+        {
+          "file": "news/src/assets/pdf/6- قرار  1800لسنة 2022- تشكيل اللجنة الوزارية للسياحة 22-5-2022.pdf",
+          "hash": "11188860398745174077"
+        },
+        {
+          "file": "news/src/assets/pdf/7- قرار  1801لسنة 2022- تشكيل اللجنة الدائمة لتراخيص المنشآت السياحية 22-5-2022.pdf",
+          "hash": "8953131899342083501"
+        },
+        {
+          "file": "news/src/assets/pdf/8- قرار رئيس الجمهورية رقم 169 لسنة 2022 باعادة تنظيم المجلس الاعلى للسياحة 26-4-2022.pdf",
+          "hash": "16363540701136892765"
+        },
+        {
+          "file": "news/src/assets/pdf/9- قانون رقم 19 لسنة 2022 قانون إنشاء صندوق دعم السياحة والآثار 9-4-2022.pdf",
+          "hash": "4174479123873851152"
+        },
+        {
+          "file": "news/src/assets/styles/_colors.scss",
+          "hash": "1013173421569268383"
+        },
+        {
+          "file": "news/src/assets/styles/_theme.scss",
+          "hash": "10804864476623064185"
+        },
+        {
+          "file": "news/src/assets/styles/main.scss",
+          "hash": "994274737017762555"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_aboutUnion.scss",
+          "hash": "14971640883387679623"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_contactUs.scss",
+          "hash": "7249952234128685503"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_homepage.scss",
+          "hash": "3638506586899274859"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_news.scss",
+          "hash": "8745469598081287469"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_room.scss",
+          "hash": "18141659258666621179"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_shared.scss",
+          "hash": "7926721115861674692"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_tourism-legislation.scss",
+          "hash": "8883070632869744586"
+        },
+        {
+          "file": "news/src/assets/styles/partiel/_training.scss",
+          "hash": "13693887950457532414"
+        },
+        {
+          "file": "news/src/assets/svg/Committees/Clip path group-1.svg",
+          "hash": "12132172720013780664"
+        },
+        {
+          "file": "news/src/assets/svg/Committees/Clip path group.svg",
+          "hash": "12214581477894326819"
+        },
+        {
+          "file": "news/src/assets/svg/Committees/Group 1597883248.svg",
+          "hash": "6678108856395492219"
+        },
+        {
+          "file": "news/src/assets/svg/Committees/Group 1597883252.svg",
+          "hash": "5229520589601776282"
+        },
+        {
+          "file": "news/src/assets/svg/Committees/Group 1597883253.svg",
+          "hash": "10356735811115952990"
+        },
+        {
+          "file": "news/src/assets/svg/Committees/Group 1597883254.svg",
+          "hash": "11710177225238359332"
+        },
+        {
+          "file": "news/src/assets/svg/EnvelopeSimple.svg",
+          "hash": "11604713205959108220"
+        },
+        {
+          "file": "news/src/assets/svg/Flag_of_Egypt.svg.svg",
+          "hash": "7093883168944768235"
+        },
+        {
+          "file": "news/src/assets/svg/Link - Link to Calendly Facebook account.svg",
+          "hash": "15177929975378732762"
+        },
+        {
+          "file": "news/src/assets/svg/Link - Link to Calendly Instagram account.svg",
+          "hash": "4742107635218104182"
+        },
+        {
+          "file": "news/src/assets/svg/Link - Link to Calendly Linkedin account.svg",
+          "hash": "14876537892368617456"
+        },
+        {
+          "file": "news/src/assets/svg/Link - Link to Calendly Twitter account.svg",
+          "hash": "11768670364587750333"
+        },
+        {
+          "file": "news/src/assets/svg/Link - Link to Calendly Youtube account.svg",
+          "hash": "14800365764871441670"
+        },
+        {
+          "file": "news/src/assets/svg/PhoneCall.svg",
+          "hash": "6636225222120141603"
+        },
+        {
+          "file": "news/src/assets/svg/Vector.svg",
+          "hash": "9856556439100457606"
+        },
+        {
+          "file": "news/src/assets/svg/arrow-left.svg",
+          "hash": "136008047687369829"
+        },
+        {
+          "file": "news/src/assets/svg/arrowCommittess.svg",
+          "hash": "13802229299609726189"
+        },
+        {
+          "file": "news/src/assets/svg/contact-us-banner/EnvelopeSimple.svg",
+          "hash": "5907956465316901766"
+        },
+        {
+          "file": "news/src/assets/svg/contact-us-banner/PhoneCall.svg",
+          "hash": "12790172047018113963"
+        },
+        {
+          "file": "news/src/assets/svg/contact-us-banner/location-pin_svgrepo.com.svg",
+          "hash": "8575683450828531292"
+        },
+        {
+          "file": "news/src/assets/svg/contact-us/location.svg",
+          "hash": "16677515974485436597"
+        },
+        {
+          "file": "news/src/assets/svg/contact-us/mail.svg",
+          "hash": "8663588667750528986"
+        },
+        {
+          "file": "news/src/assets/svg/contact-us/phone.svg",
+          "hash": "7497379777441922531"
+        },
+        {
+          "file": "news/src/assets/svg/location-pin_svgrepo.com.svg",
+          "hash": "10506490217777802788"
+        },
+        {
+          "file": "news/src/assets/svg/road_svgrepo.com.svg",
+          "hash": "12306928277953080203"
+        },
+        {
+          "file": "news/src/assets/svg/search-alt-2_svgrepo.com.svg",
+          "hash": "17751363687692993773"
+        },
+        {
+          "file": "news/src/assets/svg/vector6.svg",
+          "hash": "12202589537579501281"
+        },
+        {
+          "file": "news/src/assets/svg/website.svg",
+          "hash": "12486755881094135610"
+        },
+        {
+          "file": "news/src/index.html",
+          "hash": "11247399752735589617"
+        },
+        {
+          "file": "news/src/main.ts",
+          "hash": "16069336117215539879",
+          "deps": [
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "news/src/styles.scss",
+          "hash": "5605917488852307306"
+        },
+        {
+          "file": "news/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "news/tsconfig.app.json",
+          "hash": "13344354189090010831"
+        },
+        {
+          "file": "news/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "news/tsconfig.json",
+          "hash": "12310607727617122927"
+        },
+        {
+          "file": "news/tsconfig.spec.json",
+          "hash": "2129196202529263968"
+        }
+      ],
+      "etf-app": [
+        {
+          "file": ".editorconfig",
+          "hash": "8037249353422744134"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "11057877875157303441"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "13702958613070101424"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17406702432687230417"
+        },
+        {
+          "file": ".vscode/settings.json",
+          "hash": "6353645496170649526"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "10093397977228577162"
+        },
+        {
+          "file": "README.md",
+          "hash": "17886768681891570294"
+        },
+        {
+          "file": "eslint.config.mjs",
+          "hash": "3462096019013144053",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "6870352021923392442",
+          "deps": [
+            "npm:jest",
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "13460954966583519005"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "7458351478664367387"
+        },
+        {
+          "file": "package.json",
+          "hash": "472988000250717201",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-devkit/core",
+            "npm:@angular-devkit/schematics",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@eslint/js",
+            "npm:@nx/angular",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/web",
+            "npm:@nx/workspace",
+            "npm:@schematics/angular",
+            "npm:@swc-node/register",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@types/jasmine",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@typescript-eslint/utils",
+            "npm:angular-eslint",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:jasmine-core",
+            "npm:jest",
+            "npm:jest-environment-jsdom",
+            "npm:jest-preset-angular",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:nx",
+            "npm:prettier",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@ngx-translate/core",
+            "npm:@ngx-translate/http-loader",
+            "npm:bootstrap",
+            "npm:primeicons",
+            "npm:primeng",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "5299417336182296990"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "5027810585482108654"
+        },
+        {
+          "file": "src/app/app-routing.module.ts",
+          "hash": "3894517550992603274",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "10017461919089158894"
+        },
+        {
+          "file": "src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "16331128607562129245",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "16300316287108676186",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/app.module.ts",
+          "hash": "14936209018801005533",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/common",
+            "npm:@ngx-translate/core",
+            "npm:@ngx-translate/http-loader"
+          ]
+        },
+        {
+          "file": "src/app/core/services/lang.service.spec.ts",
+          "hash": "17416235389670829796",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/lang.service.ts",
+          "hash": "14480344540359856469",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngx-translate/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/about-union/about-union.component.html",
+          "hash": "12014636729736944202"
+        },
+        {
+          "file": "src/app/features/landing-page/components/about-union/about-union.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/about-union/about-union.component.spec.ts",
+          "hash": "15894318973522561228",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/about-union/about-union.component.ts",
+          "hash": "13990788938607574580",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/contact-us/contact-us.component.html",
+          "hash": "15693571780592597775"
+        },
+        {
+          "file": "src/app/features/landing-page/components/contact-us/contact-us.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/contact-us/contact-us.component.spec.ts",
+          "hash": "17190109991000407774",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/contact-us/contact-us.component.ts",
+          "hash": "16803886907021074546",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.html",
+          "hash": "8670234364532413312"
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.spec.ts",
+          "hash": "8590553106933885817",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/carusol-gallery/carusol-gallery.component.ts",
+          "hash": "14986961517183876169",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/main-page.component.html",
+          "hash": "2845556532284587192"
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/main-page.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/main-page.component.spec.ts",
+          "hash": "1221478700497015557",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/main-page/main-page.component.ts",
+          "hash": "5269021617172477341",
+          "deps": [
+            "npm:@angular/core",
+            "npm:primeng",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/news/news.component.html",
+          "hash": "36095847257361733"
+        },
+        {
+          "file": "src/app/features/landing-page/components/news/news.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/news/news.component.spec.ts",
+          "hash": "4704150710174687054",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/news/news.component.ts",
+          "hash": "584396209491323124",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.html",
+          "hash": "246977760197649295"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.spec.ts",
+          "hash": "13661158126099859431",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/diving-room/diving-room.component.ts",
+          "hash": "76829963485751428",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.html",
+          "hash": "11632901210549335864"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.spec.ts",
+          "hash": "12193287782521011094",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/eat-room/eat-room.component.ts",
+          "hash": "9955622454820174542",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.html",
+          "hash": "15542986543635695598"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.spec.ts",
+          "hash": "17031824433224712160",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/hotel-room/hotel-room.component.ts",
+          "hash": "14082345543101205977",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/product-room/product-room.component.html",
+          "hash": "1033175002399252746"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/product-room/product-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/product-room/product-room.component.spec.ts",
+          "hash": "5185212128100445480",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/product-room/product-room.component.ts",
+          "hash": "17303864865587119693",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.html",
+          "hash": "12730678576653495537"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.spec.ts",
+          "hash": "1034792538320406274",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/rooms-component/travel-room/travel-room.component.ts",
+          "hash": "1671156338640466762",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.html",
+          "hash": "12463688533791360618"
+        },
+        {
+          "file": "src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.spec.ts",
+          "hash": "2262929820575138844",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/tourism-legislation/tourism-legislation.component.ts",
+          "hash": "14524298110375582042",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/training/training.component.html",
+          "hash": "7366156187749468887"
+        },
+        {
+          "file": "src/app/features/landing-page/components/training/training.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/features/landing-page/components/training/training.component.spec.ts",
+          "hash": "11132189455897346152",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/components/training/training.component.ts",
+          "hash": "8259658283147373363",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/landing-page-routing.module.ts",
+          "hash": "14675564683252826478",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/landing-page.module.ts",
+          "hash": "7517035743141593582",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/models/comittess.model.ts",
+          "hash": "6995418630903968496"
+        },
+        {
+          "file": "src/app/features/landing-page/models/group.model.ts",
+          "hash": "7505494435882707903"
+        },
+        {
+          "file": "src/app/features/landing-page/models/law.model.ts",
+          "hash": "3147156636134933681"
+        },
+        {
+          "file": "src/app/features/landing-page/models/news.model.ts",
+          "hash": "12333376807245129277"
+        },
+        {
+          "file": "src/app/features/landing-page/models/report.model.ts",
+          "hash": "4718487146165100911"
+        },
+        {
+          "file": "src/app/features/landing-page/models/tourism-card.model.ts",
+          "hash": "17092818141029420051"
+        },
+        {
+          "file": "src/app/features/landing-page/models/tourism-news.model.ts",
+          "hash": "4468436023947627542"
+        },
+        {
+          "file": "src/app/features/landing-page/services/landing-page.service.spec.ts",
+          "hash": "5251296213358730396",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/features/landing-page/services/landing-page.service.ts",
+          "hash": "14652986115734574839",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/layout/components/footer/footer.component.html",
+          "hash": "3018827409344297346"
+        },
+        {
+          "file": "src/app/layout/components/footer/footer.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/layout/components/footer/footer.component.spec.ts",
+          "hash": "7968777678148102466",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/components/footer/footer.component.ts",
+          "hash": "6296333626453119658",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/components/navbar/navbar.component.html",
+          "hash": "2062478928888597095"
+        },
+        {
+          "file": "src/app/layout/components/navbar/navbar.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/layout/components/navbar/navbar.component.spec.ts",
+          "hash": "5810484327242448477",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/components/navbar/navbar.component.ts",
+          "hash": "5097279799724088310",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/layout.module.ts",
+          "hash": "7070418077369734279",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/shared/components/contact-us-banner/contact-us-banner.component.html",
+          "hash": "9759966179638328523"
+        },
+        {
+          "file": "src/app/shared/components/contact-us-banner/contact-us-banner.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/components/contact-us-banner/contact-us-banner.component.spec.ts",
+          "hash": "13298434112863637509",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/components/contact-us-banner/contact-us-banner.component.ts",
+          "hash": "5772726866184407175",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/components/shared-navigate-button/shared-navigate-button.component.html",
+          "hash": "3066037236955470878"
+        },
+        {
+          "file": "src/app/shared/components/shared-navigate-button/shared-navigate-button.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/components/shared-navigate-button/shared-navigate-button.component.spec.ts",
+          "hash": "13384230704051620667",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/components/shared-navigate-button/shared-navigate-button.component.ts",
+          "hash": "15455350208451377975",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/shared.module.ts",
+          "hash": "10583727952026486484",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@ngx-translate/core",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "src/assets/data/committees.json",
+          "hash": "4970293788886390758"
+        },
+        {
+          "file": "src/assets/data/group-members.json",
+          "hash": "6024700859584050121"
+        },
+        {
+          "file": "src/assets/data/law.json",
+          "hash": "10409672605008893458"
+        },
+        {
+          "file": "src/assets/data/news.json",
+          "hash": "12922222468980397359"
+        },
+        {
+          "file": "src/assets/data/reports.json",
+          "hash": "18204903268966841506"
+        },
+        {
+          "file": "src/assets/data/tourism-legislation.json",
+          "hash": "13061328877978292711"
+        },
+        {
+          "file": "src/assets/data/tourism-news.json",
+          "hash": "5626328507013340193"
+        },
+        {
+          "file": "src/assets/i18n/ar.json",
+          "hash": "8602236564719197454"
+        },
+        {
+          "file": "src/assets/i18n/en.json",
+          "hash": "1985595394384925160"
+        },
+        {
+          "file": "src/assets/img/Group 1597883381.jpg",
+          "hash": "3931976499239903646"
+        },
+        {
+          "file": "src/assets/img/[CITYPNG.COM]HD Round Uk United Kingdom Flag Icon PNG - 1500x1500.png",
+          "hash": "9142693619566840984"
+        },
+        {
+          "file": "src/assets/img/blankImage.jpg",
+          "hash": "17398793113478464823"
+        },
+        {
+          "file": "src/assets/img/contactUsBackground.jpg",
+          "hash": "3318967402588832997"
+        },
+        {
+          "file": "src/assets/img/cooking.jpg",
+          "hash": "10411109485270917768"
+        },
+        {
+          "file": "src/assets/img/driveVideos/1500360037.jpg",
+          "hash": "16797699591693943803"
+        },
+        {
+          "file": "src/assets/img/driveVideos/83641693482337.jpg",
+          "hash": "4479354663433295205"
+        },
+        {
+          "file": "src/assets/img/driveVideos/Screenshot 2025-03-26 101342 1.jpg",
+          "hash": "8879099606962788992"
+        },
+        {
+          "file": "src/assets/img/driveVideos/Screenshot 2025-03-26 101354 1.jpg",
+          "hash": "6085318579975302088"
+        },
+        {
+          "file": "src/assets/img/driveVideos/Screenshot 2025-03-26 101409 1.jpg",
+          "hash": "5070305801966884926"
+        },
+        {
+          "file": "src/assets/img/favicon.ico",
+          "hash": "5151623248412161582"
+        },
+        {
+          "file": "src/assets/img/footerMap.jpg",
+          "hash": "1726183306641384617"
+        },
+        {
+          "file": "src/assets/img/group-name/blankImage-removebg-preview.png",
+          "hash": "2533592366743990785"
+        },
+        {
+          "file": "src/assets/img/group-name/managerPhoto-removebg-preview.png",
+          "hash": "4100272528003061033"
+        },
+        {
+          "file": "src/assets/img/group-name/احمد الوصيف.png",
+          "hash": "12428652535266838054"
+        },
+        {
+          "file": "src/assets/img/group-name/ايهاب_عبدالعال-removebg-preview.png",
+          "hash": "10659620701040630573"
+        },
+        {
+          "file": "src/assets/img/group-name/علي_غنيم-removebg-preview.png",
+          "hash": "10198896380912197526"
+        },
+        {
+          "file": "src/assets/img/group-name/محمد ايوب.png",
+          "hash": "6731800477008470622"
+        },
+        {
+          "file": "src/assets/img/group-name/ناصر_التركي-removebg-preview.png",
+          "hash": "7061434028759576471"
+        },
+        {
+          "file": "src/assets/img/image 14.jpg",
+          "hash": "15495659407698663857"
+        },
+        {
+          "file": "src/assets/img/image 15.jpg",
+          "hash": "12272186315559060039"
+        },
+        {
+          "file": "src/assets/img/image 16.jpg",
+          "hash": "11706922624546185807"
+        },
+        {
+          "file": "src/assets/img/image 52.jpg",
+          "hash": "16771971356686594692"
+        },
+        {
+          "file": "src/assets/img/locationTrainingMap.jpg",
+          "hash": "6089088351983662272"
+        },
+        {
+          "file": "src/assets/img/logo white.png",
+          "hash": "1396715790930466516"
+        },
+        {
+          "file": "src/assets/img/logo.png",
+          "hash": "2090884646473615696"
+        },
+        {
+          "file": "src/assets/img/logoBackground.jpg",
+          "hash": "10720810855107927799"
+        },
+        {
+          "file": "src/assets/img/logoRemove.png",
+          "hash": "1944911798580208814"
+        },
+        {
+          "file": "src/assets/img/logoTrainingDriving.png",
+          "hash": "6671601808567333481"
+        },
+        {
+          "file": "src/assets/img/managerPhoto.jpg",
+          "hash": "5153218481525860219"
+        },
+        {
+          "file": "src/assets/img/maps.jpg",
+          "hash": "12588615496434371215"
+        },
+        {
+          "file": "src/assets/img/news/1.jpg",
+          "hash": "2212128877536146195"
+        },
+        {
+          "file": "src/assets/img/news/2.jpg",
+          "hash": "15171861272609520623"
+        },
+        {
+          "file": "src/assets/img/news/3.jpg",
+          "hash": "16522537330602455292"
+        },
+        {
+          "file": "src/assets/img/news/4.jpg",
+          "hash": "17911025773392228278"
+        },
+        {
+          "file": "src/assets/img/news/485794915_961648869459903_6363310355770955150_n.jpg",
+          "hash": "10640801960697173538"
+        },
+        {
+          "file": "src/assets/img/news/485799308_965260625765394_3378018704554052780_n.jpg",
+          "hash": "14067355274720817863"
+        },
+        {
+          "file": "src/assets/img/newsBackground.jpg",
+          "hash": "12688659672013234030"
+        },
+        {
+          "file": "src/assets/img/road.jpg",
+          "hash": "530746865709988683"
+        },
+        {
+          "file": "src/assets/img/room.jpg",
+          "hash": "8307757588211406709"
+        },
+        {
+          "file": "src/assets/img/rooms/Group 109.png",
+          "hash": "4399930009614976993"
+        },
+        {
+          "file": "src/assets/img/rooms/Group 110.png",
+          "hash": "9034000343735333807"
+        },
+        {
+          "file": "src/assets/img/rooms/Group 111.png",
+          "hash": "5524219768628290650"
+        },
+        {
+          "file": "src/assets/img/rooms/Group 114.png",
+          "hash": "16642146958762208731"
+        },
+        {
+          "file": "src/assets/img/rooms/image 45.png",
+          "hash": "17212436814281706585"
+        },
+        {
+          "file": "src/assets/img/t3lym.jpg",
+          "hash": "223571680895124273"
+        },
+        {
+          "file": "src/assets/img/tourestNews/1.jpg",
+          "hash": "10984773197570735202"
+        },
+        {
+          "file": "src/assets/img/tourestNews/2.jpg",
+          "hash": "5819374753274196361"
+        },
+        {
+          "file": "src/assets/img/tourestNews/3.jpg",
+          "hash": "10884851082748250056"
+        },
+        {
+          "file": "src/assets/img/tourestNews/4.jpg",
+          "hash": "16500164094282797472"
+        },
+        {
+          "file": "src/assets/img/tourestNews/5.jpg",
+          "hash": "9588643186125953546"
+        },
+        {
+          "file": "src/assets/img/tourestNews/6.jpg",
+          "hash": "5989650885850838346"
+        },
+        {
+          "file": "src/assets/img/tourism-legislationBackground.jpg",
+          "hash": "17108368166430346300"
+        },
+        {
+          "file": "src/assets/img/trainingBackground.jpg",
+          "hash": "14046359100260597045"
+        },
+        {
+          "file": "src/assets/img/videos2/تدريب - دعم الانتقال الى سوق العمل .1.jpg",
+          "hash": "3023098397076696930"
+        },
+        {
+          "file": "src/assets/img/videos2/تدريب - دعم الانتقال الى سوق العمل .2.jpg",
+          "hash": "18033307818167278880"
+        },
+        {
+          "file": "src/assets/img/vision.jpg",
+          "hash": "14118887097612463786"
+        },
+        {
+          "file": "src/assets/img/visionMessage.jpg",
+          "hash": "4502196121027061553"
+        },
+        {
+          "file": "src/assets/pdf/1-1.قرار وزير السياحة والآثار رقم 27 لسنة 2024  بإصدار اللائحة التنفيذية لقانون إنشاء الغرف السياحية.pdf",
+          "hash": "6250087239681032163"
+        },
+        {
+          "file": "src/assets/pdf/1-2 قانون 27 لسنة 2023 بشأن إصدار قانون إنشاء الغرف السياحية وتنظيم اتحاد لها.pdf",
+          "hash": "1149616982053273696"
+        },
+        {
+          "file": "src/assets/pdf/1-3 قانون 85 لسنة 1968-انشاء غرف سياحية وتنظيم اتحاد لها.pdf",
+          "hash": "14754421984886920003"
+        },
+        {
+          "file": "src/assets/pdf/10- قانون 8 لسنة 2022 المنشآت السياحيةوالفندقية 6 مارس 2022.pdf",
+          "hash": "1731774670722874999"
+        },
+        {
+          "file": "src/assets/pdf/11- قرار رئيس الجمهورية رقم 134 لسنة 1981 بإنشاء الهيئة العامة للتنشيط السياحى.pdf",
+          "hash": "1588694863718981129"
+        },
+        {
+          "file": "src/assets/pdf/2- قرار وزير السياحة والآثار رقم 34 لسنة 2023 تشكيل لجنة تسيير أعمال الاتحاد.pdf",
+          "hash": "11529855641886571629"
+        },
+        {
+          "file": "src/assets/pdf/3- قرار رئيس الوزراء رقم 2462 لسنة 2022 بشأن إعادة تنظيم المجلس الأعلى للآثار 4-7-2022.pdf",
+          "hash": "4948454320353037855"
+        },
+        {
+          "file": "src/assets/pdf/4- قرار رئيس الوزراء رقم 1523 لسنة 2020.pdf.pdf",
+          "hash": "16927333106029139451"
+        },
+        {
+          "file": "src/assets/pdf/5- قانون رقم 84 لسنة 2022 بإصدار قانون تنظيم الحج وإنشاء البوابة المصرية الموحدة للحج 9-6-2022.pdf",
+          "hash": "15805157021512592108"
+        },
+        {
+          "file": "src/assets/pdf/6- قرار  1800لسنة 2022- تشكيل اللجنة الوزارية للسياحة 22-5-2022.pdf",
+          "hash": "11188860398745174077"
+        },
+        {
+          "file": "src/assets/pdf/7- قرار  1801لسنة 2022- تشكيل اللجنة الدائمة لتراخيص المنشآت السياحية 22-5-2022.pdf",
+          "hash": "8953131899342083501"
+        },
+        {
+          "file": "src/assets/pdf/8- قرار رئيس الجمهورية رقم 169 لسنة 2022 باعادة تنظيم المجلس الاعلى للسياحة 26-4-2022.pdf",
+          "hash": "16363540701136892765"
+        },
+        {
+          "file": "src/assets/pdf/9- قانون رقم 19 لسنة 2022 قانون إنشاء صندوق دعم السياحة والآثار 9-4-2022.pdf",
+          "hash": "4174479123873851152"
+        },
+        {
+          "file": "src/assets/styles/_colors.scss",
+          "hash": "1013173421569268383"
+        },
+        {
+          "file": "src/assets/styles/_theme.scss",
+          "hash": "10804864476623064185"
+        },
+        {
+          "file": "src/assets/styles/main.scss",
+          "hash": "994274737017762555"
+        },
+        {
+          "file": "src/assets/styles/partiel/_aboutUnion.scss",
+          "hash": "14971640883387679623"
+        },
+        {
+          "file": "src/assets/styles/partiel/_contactUs.scss",
+          "hash": "7249952234128685503"
+        },
+        {
+          "file": "src/assets/styles/partiel/_homepage.scss",
+          "hash": "3638506586899274859"
+        },
+        {
+          "file": "src/assets/styles/partiel/_news.scss",
+          "hash": "8745469598081287469"
+        },
+        {
+          "file": "src/assets/styles/partiel/_room.scss",
+          "hash": "18141659258666621179"
+        },
+        {
+          "file": "src/assets/styles/partiel/_shared.scss",
+          "hash": "333336229901171383"
+        },
+        {
+          "file": "src/assets/styles/partiel/_tourism-legislation.scss",
+          "hash": "8883070632869744586"
+        },
+        {
+          "file": "src/assets/styles/partiel/_training.scss",
+          "hash": "13693887950457532414"
+        },
+        {
+          "file": "src/assets/svg/Committees/Clip path group-1.svg",
+          "hash": "12132172720013780664"
+        },
+        {
+          "file": "src/assets/svg/Committees/Clip path group.svg",
+          "hash": "12214581477894326819"
+        },
+        {
+          "file": "src/assets/svg/Committees/Group 1597883248.svg",
+          "hash": "6678108856395492219"
+        },
+        {
+          "file": "src/assets/svg/Committees/Group 1597883252.svg",
+          "hash": "5229520589601776282"
+        },
+        {
+          "file": "src/assets/svg/Committees/Group 1597883253.svg",
+          "hash": "10356735811115952990"
+        },
+        {
+          "file": "src/assets/svg/Committees/Group 1597883254.svg",
+          "hash": "11710177225238359332"
+        },
+        {
+          "file": "src/assets/svg/EnvelopeSimple.svg",
+          "hash": "11604713205959108220"
+        },
+        {
+          "file": "src/assets/svg/Flag_of_Egypt.svg.svg",
+          "hash": "7093883168944768235"
+        },
+        {
+          "file": "src/assets/svg/Link - Link to Calendly Facebook account.svg",
+          "hash": "15177929975378732762"
+        },
+        {
+          "file": "src/assets/svg/Link - Link to Calendly Instagram account.svg",
+          "hash": "4742107635218104182"
+        },
+        {
+          "file": "src/assets/svg/Link - Link to Calendly Linkedin account.svg",
+          "hash": "14876537892368617456"
+        },
+        {
+          "file": "src/assets/svg/Link - Link to Calendly Twitter account.svg",
+          "hash": "11768670364587750333"
+        },
+        {
+          "file": "src/assets/svg/Link - Link to Calendly Youtube account.svg",
+          "hash": "14800365764871441670"
+        },
+        {
+          "file": "src/assets/svg/PhoneCall.svg",
+          "hash": "6636225222120141603"
+        },
+        {
+          "file": "src/assets/svg/Vector.svg",
+          "hash": "9856556439100457606"
+        },
+        {
+          "file": "src/assets/svg/arrow-left.svg",
+          "hash": "136008047687369829"
+        },
+        {
+          "file": "src/assets/svg/arrowCommittess.svg",
+          "hash": "13802229299609726189"
+        },
+        {
+          "file": "src/assets/svg/contact-us-banner/EnvelopeSimple.svg",
+          "hash": "5907956465316901766"
+        },
+        {
+          "file": "src/assets/svg/contact-us-banner/PhoneCall.svg",
+          "hash": "12790172047018113963"
+        },
+        {
+          "file": "src/assets/svg/contact-us-banner/location-pin_svgrepo.com.svg",
+          "hash": "8575683450828531292"
+        },
+        {
+          "file": "src/assets/svg/contact-us/location.svg",
+          "hash": "16677515974485436597"
+        },
+        {
+          "file": "src/assets/svg/contact-us/mail.svg",
+          "hash": "8663588667750528986"
+        },
+        {
+          "file": "src/assets/svg/contact-us/phone.svg",
+          "hash": "7497379777441922531"
+        },
+        {
+          "file": "src/assets/svg/location-pin_svgrepo.com.svg",
+          "hash": "10506490217777802788"
+        },
+        {
+          "file": "src/assets/svg/road_svgrepo.com.svg",
+          "hash": "12306928277953080203"
+        },
+        {
+          "file": "src/assets/svg/search-alt-2_svgrepo.com.svg",
+          "hash": "17751363687692993773"
+        },
+        {
+          "file": "src/assets/svg/vector6.svg",
+          "hash": "12202589537579501281"
+        },
+        {
+          "file": "src/assets/svg/website.svg",
+          "hash": "12486755881094135610"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "2425747285147514264"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "12212770880247725047",
+          "deps": [
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "16400104464591809143"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "14560978611694835822"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "10052841889637812314"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "5034644234853304819"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "11023685540591620072"
+        },
+        {
+          "file": "vercel.json",
+          "hash": "8013298616109996778"
+        }
+      ],
+      "auth": [
+        {
+          "file": "shared/README.md",
+          "hash": "9370648284768385907"
+        },
+        {
+          "file": "shared/eslint.config.mjs",
+          "hash": "805488336937133967",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "shared/jest.config.ts",
+          "hash": "5145509082756976624"
+        },
+        {
+          "file": "shared/project.json",
+          "hash": "11870105048379892641"
+        },
+        {
+          "file": "shared/src/index.ts",
+          "hash": "6959015935353446184"
+        },
+        {
+          "file": "shared/src/lib/auth/auth.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "shared/src/lib/auth/auth.component.html",
+          "hash": "4340194693546777985"
+        },
+        {
+          "file": "shared/src/lib/auth/auth.component.spec.ts",
+          "hash": "5188219778723573435",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "shared/src/lib/auth/auth.component.ts",
+          "hash": "8416736198877372972",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "shared/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "shared/tsconfig.json",
+          "hash": "14532299958370693979"
+        },
+        {
+          "file": "shared/tsconfig.lib.json",
+          "hash": "4766185256741444917"
+        },
+        {
+          "file": "shared/tsconfig.spec.json",
+          "hash": "2129196202529263968"
+        }
+      ],
+      "LMS": [
+        {
+          "file": "LMS/eslint.config.mjs",
+          "hash": "15052851186193004871",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "LMS/jest.config.ts",
+          "hash": "1538836676480642631"
+        },
+        {
+          "file": "LMS/project.json",
+          "hash": "10836086847415791329"
+        },
+        {
+          "file": "LMS/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "LMS/src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "LMS/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/app.component.spec.ts",
+          "hash": "5496964870236014774",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "LMS/src/app/app.component.ts",
+          "hash": "15442098744875741813",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "LMS/src/app/app.config.ts",
+          "hash": "6137170128205633588",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "LMS/src/app/app.routes.ts",
+          "hash": "8409624298140660335",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/Training-course/Training-course.component.html",
+          "hash": "5563889420677154603"
+        },
+        {
+          "file": "LMS/src/app/features/courses/Training-course/Training-course.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/features/courses/Training-course/Training-course.component.spec.ts",
+          "hash": "395512757465950969",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/Training-course/Training-course.component.ts",
+          "hash": "16844311637388885364",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/courses.component.html",
+          "hash": "14586143144510708613"
+        },
+        {
+          "file": "LMS/src/app/features/courses/courses.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/features/courses/courses.component.spec.ts",
+          "hash": "2990957241190969739",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/courses.component.ts",
+          "hash": "8582270599635039187",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/dreams/dreams.component.html",
+          "hash": "7323657501934529795"
+        },
+        {
+          "file": "LMS/src/app/features/courses/dreams/dreams.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/features/courses/dreams/dreams.component.spec.ts",
+          "hash": "11893631359100058425",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/dreams/dreams.component.ts",
+          "hash": "9190065428744599121",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/instructors/instructors.component.html",
+          "hash": "2619588802665012522"
+        },
+        {
+          "file": "LMS/src/app/features/courses/instructors/instructors.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/features/courses/instructors/instructors.component.spec.ts",
+          "hash": "5080987212441868610",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/instructors/instructors.component.ts",
+          "hash": "1786913851813430627",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:primeng"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/logo-banner/logo-banner.component.html",
+          "hash": "9612026645398289631"
+        },
+        {
+          "file": "LMS/src/app/features/courses/logo-banner/logo-banner.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/features/courses/logo-banner/logo-banner.component.spec.ts",
+          "hash": "13798430788856203991",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/logo-banner/logo-banner.component.ts",
+          "hash": "8883563670814083890",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/model/types.model.ts",
+          "hash": "639256177571267143"
+        },
+        {
+          "file": "LMS/src/app/features/courses/services/home-page.service.spec.ts",
+          "hash": "6170628678413795924",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/services/home-page.service.ts",
+          "hash": "16447030139170077294",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/top-banner/top-banner.component.html",
+          "hash": "402408090352896976"
+        },
+        {
+          "file": "LMS/src/app/features/courses/top-banner/top-banner.component.spec.ts",
+          "hash": "16004072720121153697",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/top-banner/top-banner.component.ts",
+          "hash": "7945885942184522948",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/types/types.component.html",
+          "hash": "13367714640071217622"
+        },
+        {
+          "file": "LMS/src/app/features/courses/types/types.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "LMS/src/app/features/courses/types/types.component.spec.ts",
+          "hash": "7659005651793103727",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/features/courses/types/types.component.ts",
+          "hash": "8250482394730872241",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "LMS/src/app/nx-welcome.component.ts",
+          "hash": "1670035947589896383",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "LMS/src/assets/data/types.data.json",
+          "hash": "14834039868257682780"
+        },
+        {
+          "file": "LMS/src/assets/img/7ef2304b20f6ad5592ea1cfd9a75cc52a2d5773f.png",
+          "hash": "16059470213313525140"
+        },
+        {
+          "file": "LMS/src/assets/img/7f9243b191fa23d6df286330bc998b5d4b099dcc.png",
+          "hash": "9918332128732938922"
+        },
+        {
+          "file": "LMS/src/assets/img/df509221ce4f392ec28cdd907420878627d1bdb8.png",
+          "hash": "3993862242033410939"
+        },
+        {
+          "file": "LMS/src/assets/img/image_99-removebg-preview.png",
+          "hash": "9949525746001390979"
+        },
+        {
+          "file": "LMS/src/assets/img/rooms/Group 109.png",
+          "hash": "4399930009614976993"
+        },
+        {
+          "file": "LMS/src/assets/img/rooms/Group 110.png",
+          "hash": "9034000343735333807"
+        },
+        {
+          "file": "LMS/src/assets/img/rooms/Group 111.png",
+          "hash": "5524219768628290650"
+        },
+        {
+          "file": "LMS/src/assets/img/rooms/Group 114.png",
+          "hash": "16642146958762208731"
+        },
+        {
+          "file": "LMS/src/assets/img/rooms/image 45.png",
+          "hash": "17212436814281706585"
+        },
+        {
+          "file": "LMS/src/assets/img/student img.png",
+          "hash": "14788986136293875657"
+        },
+        {
+          "file": "LMS/src/assets/img/top-banner.png",
+          "hash": "4476549175966062683"
+        },
+        {
+          "file": "LMS/src/assets/styles/LMS.scss",
+          "hash": "12233709528463337133"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/_colors.scss",
+          "hash": "8585263829367891594"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/_homepage.scss",
+          "hash": "6985179445900742581"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/_scroll-bar.scss",
+          "hash": "13730065765503904614"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/homepage/_courses-training.scss",
+          "hash": "8202770743108764512"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/homepage/_dreams.scss",
+          "hash": "1305369949871422536"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/homepage/_logo-banner.scss",
+          "hash": "6252847913544995571"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/homepage/_top-banner.scss",
+          "hash": "5061089045208522039"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/homepage/_trainer.scss",
+          "hash": "193770826050522277"
+        },
+        {
+          "file": "LMS/src/assets/styles/partiel/homepage/_types.scss",
+          "hash": "819444130694465918"
+        },
+        {
+          "file": "LMS/src/assets/svg/arrow-left-color-left.svg",
+          "hash": "311723558081361190"
+        },
+        {
+          "file": "LMS/src/assets/svg/arrow-left-color.svg",
+          "hash": "14705724388959930852"
+        },
+        {
+          "file": "LMS/src/assets/svg/arrow-left.svg",
+          "hash": "9850878542196541996"
+        },
+        {
+          "file": "LMS/src/assets/svg/call-calling.svg",
+          "hash": "12351899129770019613"
+        },
+        {
+          "file": "LMS/src/assets/svg/card/bookmark.svg",
+          "hash": "10816212796464673282"
+        },
+        {
+          "file": "LMS/src/assets/svg/card/chart.svg",
+          "hash": "9129018740075928953"
+        },
+        {
+          "file": "LMS/src/assets/svg/card/clock.svg",
+          "hash": "12878190892298984920"
+        },
+        {
+          "file": "LMS/src/assets/svg/card/profile-2user.svg",
+          "hash": "7436780938225476223"
+        },
+        {
+          "file": "LMS/src/assets/svg/card/star.svg",
+          "hash": "3183671304607928384"
+        },
+        {
+          "file": "LMS/src/assets/svg/card/video.svg",
+          "hash": "873333530171061185"
+        },
+        {
+          "file": "LMS/src/assets/svg/dream/lamp-on.svg",
+          "hash": "7024742050364284988"
+        },
+        {
+          "file": "LMS/src/assets/svg/dream/status-up.svg",
+          "hash": "8900942448478820194"
+        },
+        {
+          "file": "LMS/src/assets/svg/types/Screenshot_2025-05-25_230750-removebg-preview.png",
+          "hash": "4067984218865189518"
+        },
+        {
+          "file": "LMS/src/assets/svg/types/arrow-left-white.svg",
+          "hash": "18094313316148990112"
+        },
+        {
+          "file": "LMS/src/assets/svg/types/arrow-left.svg",
+          "hash": "3709822004781808059"
+        },
+        {
+          "file": "LMS/src/assets/svg/types/diagram.svg",
+          "hash": "4748145989069630736"
+        },
+        {
+          "file": "LMS/src/assets/svg/types/profile-2user.svg",
+          "hash": "10343192932160692463"
+        },
+        {
+          "file": "LMS/src/index.html",
+          "hash": "13322149748886795408"
+        },
+        {
+          "file": "LMS/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "LMS/src/styles.scss",
+          "hash": "9716746852594767203"
+        },
+        {
+          "file": "LMS/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "LMS/tsconfig.app.json",
+          "hash": "13344354189090010831"
+        },
+        {
+          "file": "LMS/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "LMS/tsconfig.json",
+          "hash": "12310607727617122927"
+        },
+        {
+          "file": "LMS/tsconfig.spec.json",
+          "hash": "2129196202529263968"
+        }
+      ]
+    }
+  }
+}

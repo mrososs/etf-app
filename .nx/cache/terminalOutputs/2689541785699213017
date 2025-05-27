@@ -1,0 +1,2323 @@
+- Generating browser application bundles (phase: setup)...
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mvendor.js[39m[37m                                           [2m | [22m[2mvendor[22m                            [2m | [22m  [36m2.80 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m                               [2m | [22m[2mstyles[22m                            [2m | [22m[36m598.03 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mpolyfills.js[39m[37m                                        [2m | [22m[2mpolyfills[22m                         [2m | [22m[36m266.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mscripts.js[39m[37m                                          [2m | [22m[2mscripts[22m                           [2m | [22m [36m80.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mmain.js[39m[37m                                             [2m | [22m[2mmain[22m                              [2m | [22m  [36m4.79 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                                                   [2m | [22m[1mInitial total[22m                     [2m | [22m  [1m3.76 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m [36m18.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:39:52.207Z[39m[37m[22m - Hash: [1m[37mb45d36e0086d12b2[39m[37m[22m - Time: [1m[37m29185[39m[37m[22mms[0m[39m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:39:59.509Z[39m[37m[22m - Hash: [1m[37mb45d36e0086d12b2[39m[37m[22m - Time: [1m[37m6523[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:00.295Z[39m[37m[22m - Hash: [1m[37md29e0d362e3b3a9e[39m[37m[22m - Time: [1m[37m731[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.67 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:04.677Z[39m[37m[22m - Hash: [1m[37mdbce3f96ad316d0b[39m[37m[22m - Time: [1m[37m1228[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m17[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 's' does not exist on type 'Observable<types[]>'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m     this._homePageService.getTypes().s[39m[22m
+[1m[31m[7m  [0m [91m                                     ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.27 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:08.696Z[39m[37m[22m - Hash: [1m[37mbd089c179f885c07[39m[37m[22m - Time: [1m[37m376[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/app/features/courses/types/types.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: H:\giza freelance\ETF\etf-app\LMS\src\app\features\courses\types\types.component.ts: Unexpected token (9:61)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m  7 |[39m[31m     _homePageService [33m=[39m[31m inject([33mHomePageService[39m[31m)[33m;[39m[31m[39m[22m
+[1m[31m [90m  8 |[39m[31m     ngOnInit() {[39m[22m
+[1m[31m[31m[1m>[22m[1m[39m[31m[90m  9 |[39m[31m         [36mthis[39m[31m[33m.[39m[31m_homePageService[33m.[39m[31mgetTypes()[33m.[39m[31msubscribe((data) [33m=>[39m[31m )[33m;[39m[31m[39m[22m
+[1m[31m [90m    |[39m[31m                                                              [31m[1m^[22m[1m[39m[31m[39m[22m
+[1m[31m [90m 10 |[39m[31m     }[39m[22m
+[1m[31m [90m 11 |[39m[31m     [36mstatic[39m[31m ɵfac [33m=[39m[31m [36mfunction[39m[31m [33mTypesComponent_Factory[39m[31m(__ngFactoryType__) { [36mreturn[39m[31m [36mnew[39m[31m (__ngFactoryType__ [33m||[39m[31m [33mTypesComponent[39m[31m)()[33m;[39m[31m }[33m;[39m[31m[39m[22m
+[1m[31m [90m 12 |[39m[31m     [36mstatic[39m[31m ɵcmp [33m=[39m[31m [90m/*@__PURE__*/[39m[31m i0[33m.[39m[31mɵɵdefineComponent({ type[33m:[39m[31m [33mTypesComponent[39m[31m[33m,[39m[31m selectors[33m:[39m[31m [[[32m"app-types"[39m[31m]][33m,[39m[31m standalone[33m:[39m[31m [36mtrue[39m[31m[33m,[39m[31m features[33m:[39m[31m [i0[33m.[39m[31mɵɵStandaloneFeature][33m,[39m[31m decls[33m:[39m[31m [35m23[39m[31m[33m,[39m[31m vars[33m:[39m[31m [35m0[39m[31m[33m,[39m[31m consts[33m:[39m[31m [[[35m1[39m[31m[33m,[39m[31m [32m"types"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"container"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"flex-column"[39m[31m[33m,[39m[31m [32m"p-5"[39m[31m[33m,[39m[31m [32m"justify-content-center"[39m[31m[33m,[39m[31m [32m"align-items-center"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"types-cards"[39m[31m[33m,[39m[31m [32m"row"[39m[31m[33m,[39m[31m [32m"gap-3"[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"justify-content-center"[39m[31m[33m,[39m[31m [32m"align-items-center"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [39m[22m[1m[31m[32m"col-3"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"justify-content-end"[39m[31m][33m,[39m[31m [[32m"src"[39m[31m[33m,[39m[31m [32m"../../../../assets/svg/types/Screenshot_2025-05-25_230750-removebg-preview.png"[39m[31m[33m,[39m[31m [32m"alt"[39m[31m[33m,[39m[31m [32m"type"[39m[31m[33m,[39m[31m [35m1[39m[31m[33m,[39m[31m [32m"type-img"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"gap-3"[39m[31m][33m,[39m[31m [[32m"src"[39m[31m[33m,[39m[31m [32m"../../../../assets/svg/types/arrow-left.svg"[39m[31m[33m,[39m[31m [32m"alt"[39m[31m[33m,[39m[31m [32m"arrow"[39m[31m]][33m,[39m[31m template[33m:[39m[31m [36mfunction[39m[31m [33mTypesComponent_Template[39m[31m(rf[33m,[39m[31m ctx) { [36mif[39m[31m (rf [33m&[39m[31m [35m1[39m[31m) {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS1005: [0m'=>' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m     this._homePageService.getTypes().subscribe((data:types[]))[39m[22m
+[1m[31m[7m  [0m [91m                                                             ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:12.802Z[39m[37m[22m - Hash: [1m[37mbd089c179f885c07[39m[37m[22m - Time: [1m[37m291[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/app/features/courses/types/types.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: H:\giza freelance\ETF\etf-app\LMS\src\app\features\courses\types\types.component.ts: Unexpected token (9:61)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m  7 |[39m[31m     _homePageService [33m=[39m[31m inject([33mHomePageService[39m[31m)[33m;[39m[31m[39m[22m
+[1m[31m [90m  8 |[39m[31m     ngOnInit() {[39m[22m
+[1m[31m[31m[1m>[22m[1m[39m[31m[90m  9 |[39m[31m         [36mthis[39m[31m[33m.[39m[31m_homePageService[33m.[39m[31mgetTypes()[33m.[39m[31msubscribe((data) [33m=>[39m[31m )[33m;[39m[31m[39m[22m
+[1m[31m [90m    |[39m[31m                                                              [31m[1m^[22m[1m[39m[31m[39m[22m
+[1m[31m [90m 10 |[39m[31m     }[39m[22m
+[1m[31m [90m 11 |[39m[31m     [36mstatic[39m[31m ɵfac [33m=[39m[31m [36mfunction[39m[31m [33mTypesComponent_Factory[39m[31m(__ngFactoryType__) { [36mreturn[39m[31m [36mnew[39m[31m (__ngFactoryType__ [33m||[39m[31m [33mTypesComponent[39m[31m)()[33m;[39m[31m }[33m;[39m[31m[39m[22m
+[1m[31m [90m 12 |[39m[31m     [36mstatic[39m[31m ɵcmp [33m=[39m[31m [90m/*@__PURE__*/[39m[31m i0[33m.[39m[31mɵɵdefineComponent({ type[33m:[39m[31m [33mTypesComponent[39m[31m[33m,[39m[31m selectors[33m:[39m[31m [[[32m"app-types"[39m[31m]][33m,[39m[31m standalone[33m:[39m[31m [36mtrue[39m[31m[33m,[39m[31m features[33m:[39m[31m [i0[33m.[39m[31mɵɵStandaloneFeature][33m,[39m[31m decls[33m:[39m[31m [35m23[39m[31m[33m,[39m[31m vars[33m:[39m[31m [35m0[39m[31m[33m,[39m[31m consts[33m:[39m[31m [[[35m1[39m[31m[33m,[39m[31m [32m"types"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"container"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"flex-column"[39m[31m[33m,[39m[31m [32m"p-5"[39m[31m[33m,[39m[31m [32m"justify-content-center"[39m[31m[33m,[39m[31m [32m"align-items-center"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"types-cards"[39m[31m[33m,[39m[31m [32m"row"[39m[31m[33m,[39m[31m [32m"gap-3"[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"justify-content-center"[39m[31m[33m,[39m[31m [32m"align-items-center"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [39m[22m[1m[31m[32m"col-3"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"justify-content-end"[39m[31m][33m,[39m[31m [[32m"src"[39m[31m[33m,[39m[31m [32m"../../../../assets/svg/types/Screenshot_2025-05-25_230750-removebg-preview.png"[39m[31m[33m,[39m[31m [32m"alt"[39m[31m[33m,[39m[31m [32m"type"[39m[31m[33m,[39m[31m [35m1[39m[31m[33m,[39m[31m [32m"type-img"[39m[31m][33m,[39m[31m [[35m1[39m[31m[33m,[39m[31m [32m"d-flex"[39m[31m[33m,[39m[31m [32m"gap-3"[39m[31m][33m,[39m[31m [[32m"src"[39m[31m[33m,[39m[31m [32m"../../../../assets/svg/types/arrow-left.svg"[39m[31m[33m,[39m[31m [32m"alt"[39m[31m[33m,[39m[31m [32m"arrow"[39m[31m]][33m,[39m[31m template[33m:[39m[31m [36mfunction[39m[31m [33mTypesComponent_Template[39m[31m(rf[33m,[39m[31m ctx) { [36mif[39m[31m (rf [33m&[39m[31m [35m1[39m[31m) {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m17[0m:[93m62[0m - [91merror[0m[90m TS1005: [0m'=>' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m     this._homePageService.getTypes().subscribe((data:types[]))[39m[22m
+[1m[31m[7m  [0m [91m                                                             ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:16.425Z[39m[37m[22m - Hash: [1m[37m131c204227f9bf57[39m[37m[22m - Time: [1m[37m723[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:18.243Z[39m[37m[22m - Hash: [1m[37ma6f8a8d205f22bec[39m[37m[22m - Time: [1m[37m990[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:40.163Z[39m[37m[22m - Hash: [1m[37m657d9edc38fe0f68[39m[37m[22m - Time: [1m[37m550[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m10[0m:[93m3[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'pr' does not exist in type 'Component'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   pr[39m[22m
+[1m[31m[7m  [0m [91m  ~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m10[0m:[93m3[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'pr'. Either declare one or provide an initializer.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   pr[39m[22m
+[1m[31m[7m  [0m [91m  ~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m11[0m:[93m3[0m - [91merror[0m[90m TS1005: [0m',' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m11[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:43.876Z[39m[37m[22m - Hash: [1m[37mf804b6ba245570b4[39m[37m[22m - Time: [1m[37m691[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m10[0m:[93m14[0m - [91merror[0m[90m TS2304: [0mCannot find name 'homeP'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   providers:[homeP][39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m11[0m:[93m3[0m - [91merror[0m[90m TS1005: [0m',' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m11[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:45.928Z[39m[37m[22m - Hash: [1m[37m55058fb2c8d53fff[39m[37m[22m - Time: [1m[37m483[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m11[0m:[93m3[0m - [91merror[0m[90m TS1005: [0m',' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m11[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:40:46.929Z[39m[37m[22m - Hash: [1m[37mde199fddfb3bdd26[39m[37m[22m - Time: [1m[37m497[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:42:44.423Z[39m[37m[22m - Hash: [1m[37m7bf138c53f039ce1[39m[37m[22m - Time: [1m[37m472[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m16.00 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:42:49.007Z[39m[37m[22m - Hash: [1m[37m58c83464a7154c6f[39m[37m[22m - Time: [1m[37m1805[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m9[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m9[0m   imports: [CommonModule,httpC],[39m[22m
+[1m[31m[7m [0m [91m           ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m9[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'httpC'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m9[0m   imports: [CommonModule,httpC],[39m[22m
+[1m[31m[7m [0m [91m                         ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m20.93 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:42:50.574Z[39m[37m[22m - Hash: [1m[37me2e5e7c8a837208b[39m[37m[22m - Time: [1m[37m1035[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:42:59.181Z[39m[37m[22m - Hash: [1m[37m06ca5d0dfe028215[39m[37m[22m - Time: [1m[37m489[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:17.096Z[39m[37m[22m - Hash: [1m[37m5feef974192604a5[39m[37m[22m - Time: [1m[37m352[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:20.030Z[39m[37m[22m - Hash: [1m[37m735ff1f8af7965cb[39m[37m[22m - Time: [1m[37m451[39m[37m[22mms[0m[39m[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m14[0m:[93m6[0m - [93mwarning[0m[90m NG8103: [0mThe `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     *ngFor=""[39m[22m
+[1m[33m[7m  [0m [93m     ~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[33m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[33m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[0m[33mWarning: [39m[33m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m14[0m:[93m6[0m - [93mwarning[0m[90m NG8105: [0mYour ngFor is missing a value. Did you forget to add the `let` keyword?[39m[22m
+[1m[33m[39m[22m
+[1m[33m[7m14[0m     *ngFor=""[39m[22m
+[1m[33m[7m  [0m [93m     ~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[33m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[33m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.41 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:24.851Z[39m[37m[22m - Hash: [1m[37m6ffb0cc1d92a6da5[39m[37m[22m - Time: [1m[37m395[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.60 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:29.966Z[39m[37m[22m - Hash: [1m[37m81be1a58f0d1ff82[39m[37m[22m - Time: [1m[37m604[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m14[0m:[93m25[0m - [91merror[0m[90m TS2551: [0mProperty 'type' does not exist on type 'TypesComponent'. Did you mean 'types'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m     *ngFor="let type of type"[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.60 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:30.857Z[39m[37m[22m - Hash: [1m[37m06798990e045b406[39m[37m[22m - Time: [1m[37m446[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m14[0m:[93m25[0m - [91merror[0m[90m TS2551: [0mProperty 'type' does not exist on type 'TypesComponent'. Did you mean 'types'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m     *ngFor="let type of type()"[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.60 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:42.949Z[39m[37m[22m - Hash: [1m[37m6b137bbc95e52d48[39m[37m[22m - Time: [1m[37m351[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:43:50.035Z[39m[37m[22m - Hash: [1m[37m38b312c497643f57[39m[37m[22m - Time: [1m[37m400[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m16.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:04.439Z[39m[37m[22m - Hash: [1m[37mf0ba3fa1703b3230[39m[37m[22m - Time: [1m[37m318[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m21[0m:[93m20[0m - [91merror[0m[90m NG5002: [0mParser Error: Expected identifier for property access[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m21[0m:[93m20[0m - [91merror[0m[90m NG5002: [0mParser Error: Unexpected end of input, expected identifier or keyword[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:06.406Z[39m[37m[22m - Hash: [1m[37m9b0ce9430876d4b7[39m[37m[22m - Time: [1m[37m389[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.08 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:20.520Z[39m[37m[22m - Hash: [1m[37m0346cc3afabd8a09[39m[37m[22m - Time: [1m[37m353[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m21[0m:[93m20[0m - [91merror[0m[90m TS2551: [0mProperty 'type' does not exist on type 'TypesComponent'. Did you mean 'types'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m             [src]="type.img"[39m[22m
+[1m[31m[7m  [0m [91m                   ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:22.367Z[39m[37m[22m - Hash: [1m[37m009a5176c50475d9[39m[37m[22m - Time: [1m[37m542[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.37 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:27.659Z[39m[37m[22m - Hash: [1m[37m37756925f5247eff[39m[37m[22m - Time: [1m[37m347[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:31.650Z[39m[37m[22m - Hash: [1m[37mc2a644d287e7e857[39m[37m[22m - Time: [1m[37m884[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m25[0m:[93m15[0m - [91merror[0m[90m TS2339: [0mProperty 'ty' does not exist on type 'TypesComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m25[0m         <h1>{{ty}}</h1>[39m[22m
+[1m[31m[7m  [0m [91m              ~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m16.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:33.633Z[39m[37m[22m - Hash: [1m[37m760f38192a9639aa[39m[37m[22m - Time: [1m[37m309[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m25[0m:[93m13[0m - [91merror[0m[90m NG5002: [0mParser Error: Expected identifier for property access[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m25[0m:[93m13[0m - [91merror[0m[90m NG5002: [0mParser Error: Unexpected end of input, expected identifier or keyword[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:36.074Z[39m[37m[22m - Hash: [1m[37mec2fb1e7ab097000[39m[37m[22m - Time: [1m[37m326[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m16.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:42.999Z[39m[37m[22m - Hash: [1m[37m64fc26308cf335ea[39m[37m[22m - Time: [1m[37m263[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m26[0m:[93m12[0m - [91merror[0m[90m NG5002: [0mParser Error: Expected identifier for property access[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m26[0m:[93m12[0m - [91merror[0m[90m NG5002: [0mParser Error: Unexpected end of input, expected identifier or keyword[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:44.539Z[39m[37m[22m - Hash: [1m[37mf5c2e1d6fc31b57a[39m[37m[22m - Time: [1m[37m429[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:47.998Z[39m[37m[22m - Hash: [1m[37m7e788a7d68c4dfdf[39m[37m[22m - Time: [1m[37m1255[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m16.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:50.891Z[39m[37m[22m - Hash: [1m[37m65da92c0a30880bf[39m[37m[22m - Time: [1m[37m714[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m28[0m:[93m13[0m - [91merror[0m[90m NG5002: [0mParser Error: Expected identifier for property access[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m28[0m:[93m13[0m - [91merror[0m[90m NG5002: [0mParser Error: Unexpected end of input, expected identifier or keyword[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:52.441Z[39m[37m[22m - Hash: [1m[37m6e49be804300be4c[39m[37m[22m - Time: [1m[37m716[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:44:53.581Z[39m[37m[22m - Hash: [1m[37m441bf6b77a967305[39m[37m[22m - Time: [1m[37m811[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:45:02.931Z[39m[37m[22m - Hash: [1m[37m201df783c1e0ce57[39m[37m[22m - Time: [1m[37m412[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:46:15.362Z[39m[37m[22m - Hash: [1m[37m6f1786fe242a4c56[39m[37m[22m - Time: [1m[37m622[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:47:14.556Z[39m[37m[22m - Hash: [1m[37m6f1786fe242a4c56[39m[37m[22m - Time: [1m[37m264[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:47:17.239Z[39m[37m[22m - Hash: [1m[37m6f1786fe242a4c56[39m[37m[22m - Time: [1m[37m293[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:47:39.934Z[39m[37m[22m - Hash: [1m[37m34b03ecfeabce6be[39m[37m[22m - Time: [1m[37m321[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m23[0m:[93m19[0m - [91merror[0m[90m TS2551: [0mProperty 'examples' does not exist on type 'types'. Did you mean 'example'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m23[0m           {{ type.examples}}[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:47:47.261Z[39m[37m[22m - Hash: [1m[37m2742ba56218688de[39m[37m[22m - Time: [1m[37m423[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:47:51.517Z[39m[37m[22m - Hash: [1m[37mecd358cb81740d54[39m[37m[22m - Time: [1m[37m1147[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:50:13.362Z[39m[37m[22m - Hash: [1m[37m61a347650dc3b648[39m[37m[22m - Time: [1m[37m681[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:50:15.798Z[39m[37m[22m - Hash: [1m[37mdf5380666acacaf8[39m[37m[22m - Time: [1m[37m1378[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:50:43.053Z[39m[37m[22m - Hash: [1m[37m658bd25886370be3[39m[37m[22m - Time: [1m[37m320[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:50:46.277Z[39m[37m[22m - Hash: [1m[37mc5c0b64521cc3658[39m[37m[22m - Time: [1m[37m1063[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:50:52.616Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m240[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:51:23.698Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m248[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:01.606Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m260[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:02.758Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m204[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:05.346Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m161[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:10.347Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m182[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:14.031Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m251[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:17.971Z[39m[37m[22m - Hash: [1m[37md7325daf3f521bdd[39m[37m[22m - Time: [1m[37m171[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.44 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:29.809Z[39m[37m[22m - Hash: [1m[37m4ee0ebd5e50b2591[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:37.965Z[39m[37m[22m - Hash: [1m[37md3658c6d33a91f68[39m[37m[22m - Time: [1m[37m316[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:40.436Z[39m[37m[22m - Hash: [1m[37m82a203b90ebe8ffa[39m[37m[22m - Time: [1m[37m373[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m27[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'ty' does not exist on type 'TypesComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m27[0m           <img [src]="ty" alt="arrow" />[39m[22m
+[1m[31m[7m  [0m [91m                      ~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/types/types.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './types.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TypesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m16.28 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:41.553Z[39m[37m[22m - Hash: [1m[37mc2d7cdaa42efc9e8[39m[37m[22m - Time: [1m[37m243[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m27[0m:[93m23[0m - [91merror[0m[90m NG5002: [0mParser Error: Expected identifier for property access[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/types/types.component.html[0m:[93m27[0m:[93m23[0m - [91merror[0m[90m NG5002: [0mParser Error: Unexpected end of input, expected identifier or keyword[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:53:43.346Z[39m[37m[22m - Hash: [1m[37mc3106d5586510be7[39m[37m[22m - Time: [1m[37m306[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:06.456Z[39m[37m[22m - Hash: [1m[37m7da800c116c4592f[39m[37m[22m - Time: [1m[37m381[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:09.469Z[39m[37m[22m - Hash: [1m[37m1d58f52b13da47ba[39m[37m[22m - Time: [1m[37m501[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:16.007Z[39m[37m[22m - Hash: [1m[37mf485bb8b9ed271a1[39m[37m[22m - Time: [1m[37m275[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:26.797Z[39m[37m[22m - Hash: [1m[37ma63c2d52e27a5703[39m[37m[22m - Time: [1m[37m278[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:27.097Z[39m[37m[22m - Hash: [1m[37ma63c2d52e27a5703[39m[37m[22m - Time: [1m[37m189[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:32.229Z[39m[37m[22m - Hash: [1m[37m84f60f1591de651a[39m[37m[22m - Time: [1m[37m279[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m603.51 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:38.287Z[39m[37m[22m - Hash: [1m[37m05643269a6b880c9[39m[37m[22m - Time: [1m[37m275[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mExpected expression.[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m19 │     grid-template-rows: ;[39m[22m
+[1m[31m   │                         ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_types.scss 19:25  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 3:9          @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                        @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                   root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mExpected expression.[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m19 │     grid-template-rows: ;[39m[22m
+[1m[31m   │                         ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_types.scss 19:25  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 3:9          @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                        @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                   root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m598.30 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:42.925Z[39m[37m[22m - Hash: [1m[37meb5908e3ef6b4060[39m[37m[22m - Time: [1m[37m372[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:55.332Z[39m[37m[22m - Hash: [1m[37md55e235821230add[39m[37m[22m - Time: [1m[37m258[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:54:56.142Z[39m[37m[22m - Hash: [1m[37m89000fb85ed2b40a[39m[37m[22m - Time: [1m[37m345[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:55:51.854Z[39m[37m[22m - Hash: [1m[37m539036d1595f56d5[39m[37m[22m - Time: [1m[37m447[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:56:13.080Z[39m[37m[22m - Hash: [1m[37m156621ea684ca497[39m[37m[22m - Time: [1m[37m400[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:56:41.679Z[39m[37m[22m - Hash: [1m[37m9f5c50364e927fa8[39m[37m[22m - Time: [1m[37m451[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:57:39.152Z[39m[37m[22m - Hash: [1m[37m32f318eabd05067a[39m[37m[22m - Time: [1m[37m318[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:57:42.028Z[39m[37m[22m - Hash: [1m[37mbd0c349d43a9bf4e[39m[37m[22m - Time: [1m[37m531[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:57:47.607Z[39m[37m[22m - Hash: [1m[37m48c5367fcd5ba766[39m[37m[22m - Time: [1m[37m238[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T20:59:59.197Z[39m[37m[22m - Hash: [1m[37m48c5367fcd5ba766[39m[37m[22m - Time: [1m[37m331[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m602.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:05.933Z[39m[37m[22m - Hash: [1m[37m32345ce5b8c5fb8f[39m[37m[22m - Time: [1m[37m211[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mThis file is already being loaded.[39m[22m
+[1m[31m  ┌──> LMS\src\assets\styles\partiel\_homepage.scss[39m[22m
+[1m[31m4 │ @import ""[39m[22m
+[1m[31m  │         ^^ new load[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  ┌──> LMS\src\assets\styles\LMS.scss[39m[22m
+[1m[31m2 │ @import "partiel/homepage";[39m[22m
+[1m[31m  │         ━━━━━━━━━━━━━━━━━━ original load[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                           root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mThis file is already being loaded.[39m[22m
+[1m[31m  ┌──> LMS\src\assets\styles\partiel\_homepage.scss[39m[22m
+[1m[31m4 │ @import ""[39m[22m
+[1m[31m  │         ^^ new load[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  ┌──> LMS\src\assets\styles\LMS.scss[39m[22m
+[1m[31m2 │ @import "partiel/homepage";[39m[22m
+[1m[31m  │         ━━━━━━━━━━━━━━━━━━ original load[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                           root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:07.632Z[39m[37m[22m - Hash: [1m[37mdbbf1215a37902c7[39m[37m[22m - Time: [1m[37m264[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mCan't find stylesheet to import.[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m4 │ @import "homepage/"[39m[22m
+[1m[31m  │         ^^^^^^^^^^^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                           root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mThis file is already being loaded.[39m[22m
+[1m[31m  ┌──> LMS\src\assets\styles\partiel\_homepage.scss[39m[22m
+[1m[31m4 │ @import ""[39m[22m
+[1m[31m  │         ^^ new load[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  ┌──> LMS\src\assets\styles\LMS.scss[39m[22m
+[1m[31m2 │ @import "partiel/homepage";[39m[22m
+[1m[31m  │         ━━━━━━━━━━━━━━━━━━ original load[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                           root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m598.43 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:10.093Z[39m[37m[22m - Hash: [1m[37m48c5367fcd5ba766[39m[37m[22m - Time: [1m[37m311[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.19 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:23.005Z[39m[37m[22m - Hash: [1m[37mf8b9cae70ee8b09a[39m[37m[22m - Time: [1m[37m322[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/courses.component.ts[0m:[93m10[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TopBannerComponent, LogoBannerComponent, TypesComponent, (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   imports: [CommonModule,TopBannerComponent,LogoBannerComponent,TypesComponent,cour],[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/courses.component.ts[0m:[93m10[0m:[93m80[0m - [91merror[0m[90m TS2304: [0mCannot find name 'cour'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   imports: [CommonModule,TopBannerComponent,LogoBannerComponent,TypesComponent,cour],[39m[22m
+[1m[31m[7m  [0m [91m                                                                               ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m21.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:28.144Z[39m[37m[22m - Hash: [1m[37mea6694e8b76dfca3[39m[37m[22m - Time: [1m[37m414[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:33.785Z[39m[37m[22m - Hash: [1m[37m83cd97ffa45d211e[39m[37m[22m - Time: [1m[37m362[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/courses.component.html[0m:[93m4[0m:[93m1[0m - [91merror[0m[90m NG5002: [0mOpening tag "app-t" not terminated.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m <app-t[39m[22m
+[1m[31m[7m [0m [91m~~~~~~[0m[39m[22m
+[1m[31m[7m5[0m [39m[22m
+[1m[31m[7m [0m [91m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/courses.component.ts[0m:[93m12[0m:[93m16[0m[39m[22m
+[1m[31m    [7m12[0m   templateUrl: './courses.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component CoursesComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.85 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:38.188Z[39m[37m[22m - Hash: [1m[37m4699d3b21cba317e[39m[37m[22m - Time: [1m[37m225[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.85 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:00:38.596Z[39m[37m[22m - Hash: [1m[37mcc29cf0bf343bb38[39m[37m[22m - Time: [1m[37m226[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.68 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:01:12.781Z[39m[37m[22m - Hash: [1m[37m098453b6d3ff8f88[39m[37m[22m - Time: [1m[37m412[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:01:20.070Z[39m[37m[22m - Hash: [1m[37m61c0998c4c418ccb[39m[37m[22m - Time: [1m[37m224[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:01:25.484Z[39m[37m[22m - Hash: [1m[37m61c0998c4c418ccb[39m[37m[22m - Time: [1m[37m333[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m603.48 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:01:38.724Z[39m[37m[22m - Hash: [1m[37mfd12a94f70038213[39m[37m[22m - Time: [1m[37m268[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m3 │     ba[39m[22m
+[1m[31m  │       ^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 3:7  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                   @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                 @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                            root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m3 │     ba[39m[22m
+[1m[31m  │       ^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 3:7  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                   @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                 @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                            root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:01:39.956Z[39m[37m[22m - Hash: [1m[37m81cfa163d4310bc8[39m[37m[22m - Time: [1m[37m267[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mExpected expression.[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m3 │     background-color: ;[39m[22m
+[1m[31m  │                       ^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 3:23  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                    @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                  @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                             root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m3 │     ba[39m[22m
+[1m[31m  │       ^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 3:7  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                   @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                 @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                            root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m598.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:02:00.203Z[39m[37m[22m - Hash: [1m[37m5b665a539d78b685[39m[37m[22m - Time: [1m[37m435[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:02:11.114Z[39m[37m[22m - Hash: [1m[37m789757bef60d81de[39m[37m[22m - Time: [1m[37m412[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:02:20.708Z[39m[37m[22m - Hash: [1m[37m332b2e091d1e236d[39m[37m[22m - Time: [1m[37m328[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:02:41.122Z[39m[37m[22m - Hash: [1m[37m09cbe6d747309371[39m[37m[22m - Time: [1m[37m394[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:02:56.914Z[39m[37m[22m - Hash: [1m[37md87facc2926536a3[39m[37m[22m - Time: [1m[37m245[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:02:58.130Z[39m[37m[22m - Hash: [1m[37m8db094015cd8438c[39m[37m[22m - Time: [1m[37m405[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.03 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:09.589Z[39m[37m[22m - Hash: [1m[37m9fa9b0104f871870[39m[37m[22m - Time: [1m[37m263[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.04 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:13.082Z[39m[37m[22m - Hash: [1m[37ma6b2807f4415c3a8[39m[37m[22m - Time: [1m[37m317[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:16.207Z[39m[37m[22m - Hash: [1m[37m9ca1929c0c7e77af[39m[37m[22m - Time: [1m[37m395[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:21.849Z[39m[37m[22m - Hash: [1m[37m21199cfb799ca23a[39m[37m[22m - Time: [1m[37m367[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:27.850Z[39m[37m[22m - Hash: [1m[37mf015fbe055fc9ef3[39m[37m[22m - Time: [1m[37m233[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.70 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:32.458Z[39m[37m[22m - Hash: [1m[37m92a1fed799e7dc2f[39m[37m[22m - Time: [1m[37m308[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:43.109Z[39m[37m[22m - Hash: [1m[37mb1f1be3e40d9bab5[39m[37m[22m - Time: [1m[37m244[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.95 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:44.881Z[39m[37m[22m - Hash: [1m[37mf968155d81bbb639[39m[37m[22m - Time: [1m[37m302[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:45.139Z[39m[37m[22m - Hash: [1m[37mf968155d81bbb639[39m[37m[22m - Time: [1m[37m204[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:45.473Z[39m[37m[22m - Hash: [1m[37mf968155d81bbb639[39m[37m[22m - Time: [1m[37m302[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:49.201Z[39m[37m[22m - Hash: [1m[37mef136795e7b71b70[39m[37m[22m - Time: [1m[37m936[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:03:53.655Z[39m[37m[22m - Hash: [1m[37me78803ce2e875110[39m[37m[22m - Time: [1m[37m244[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.97 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:01.895Z[39m[37m[22m - Hash: [1m[37m934c8636ae07f88d[39m[37m[22m - Time: [1m[37m479[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:02.370Z[39m[37m[22m - Hash: [1m[37m934c8636ae07f88d[39m[37m[22m - Time: [1m[37m418[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:03.365Z[39m[37m[22m - Hash: [1m[37ma3d5e96207b40eee[39m[37m[22m - Time: [1m[37m474[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:07.300Z[39m[37m[22m - Hash: [1m[37mac3c3bff95108ee5[39m[37m[22m - Time: [1m[37m493[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:12.807Z[39m[37m[22m - Hash: [1m[37m0b64725ed926fa52[39m[37m[22m - Time: [1m[37m236[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m23.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:20.235Z[39m[37m[22m - Hash: [1m[37m49a3e02c7bc6196f[39m[37m[22m - Time: [1m[37m374[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/Training-course/Training-course.component.html[0m:[93m8[0m:[93m9[0m - [91merror[0m[90m NG5002: [0mUnexpected closing tag "h1". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m         </h1>[39m[22m
+[1m[31m[7m [0m [91m        ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/Training-course/Training-course.component.ts[0m:[93m8[0m:[93m16[0m[39m[22m
+[1m[31m    [7m8[0m   templateUrl: './Training-course.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TrainingCourseComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mLMS/src/app/features/courses/Training-course/Training-course.component.html[0m:[93m13[0m:[93m7[0m - [91merror[0m[90m NG5002: [0mUnexpected closing tag "div". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m       </div>[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mLMS/src/app/features/courses/Training-course/Training-course.component.ts[0m:[93m8[0m:[93m16[0m[39m[22m
+[1m[31m    [7m8[0m   templateUrl: './Training-course.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component TrainingCourseComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m24.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:23.083Z[39m[37m[22m - Hash: [1m[37mc9db0cb08e59354f[39m[37m[22m - Time: [1m[37m619[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.14 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:27.779Z[39m[37m[22m - Hash: [1m[37maf5a2879b6f96a84[39m[37m[22m - Time: [1m[37m583[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.51 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:31.513Z[39m[37m[22m - Hash: [1m[37m0ed483faad8b3ddb[39m[37m[22m - Time: [1m[37m415[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:40.900Z[39m[37m[22m - Hash: [1m[37mb20e58af9aece640[39m[37m[22m - Time: [1m[37m667[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:49.330Z[39m[37m[22m - Hash: [1m[37mf14ea58308354d20[39m[37m[22m - Time: [1m[37m499[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m603.48 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:52.383Z[39m[37m[22m - Hash: [1m[37m60bc99690b9d56c6[39m[37m[22m - Time: [1m[37m1035[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m8 │     c[39m[22m
+[1m[31m  │      ^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 8:6  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                   @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                 @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                            root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m  ╷[39m[22m
+[1m[31m8 │     c[39m[22m
+[1m[31m  │      ^[39m[22m
+[1m[31m  ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 8:6  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                   @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                 @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                            root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m598.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:55.499Z[39m[37m[22m - Hash: [1m[37m287bf1f932a67d21[39m[37m[22m - Time: [1m[37m295[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:04:56.899Z[39m[37m[22m - Hash: [1m[37mf5d323769bb76437[39m[37m[22m - Time: [1m[37m331[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:00.961Z[39m[37m[22m - Hash: [1m[37m127edb4aa546022d[39m[37m[22m - Time: [1m[37m554[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m603.48 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:10.089Z[39m[37m[22m - Hash: [1m[37m641382541be3b157[39m[37m[22m - Time: [1m[37m249[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m14 │ c[39m[22m
+[1m[31m   │  ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 14:2  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                    @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                  @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                             root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m14 │ c[39m[22m
+[1m[31m   │  ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 14:2  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                    @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                  @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                             root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:11.219Z[39m[37m[22m - Hash: [1m[37m7e4593f5fa925519[39m[37m[22m - Time: [1m[37m207[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mExpected expression.[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m14 │ color: ;[39m[22m
+[1m[31m   │        ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 14:8  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                    @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                  @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                             root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mexpected "{".[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m14 │ c[39m[22m
+[1m[31m   │  ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_courses-training.scss 14:2  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 4:9                    @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                                  @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                             root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m598.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:12.777Z[39m[37m[22m - Hash: [1m[37mcc04bbfa6736957b[39m[37m[22m - Time: [1m[37m425[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:26.982Z[39m[37m[22m - Hash: [1m[37m733faaf0c6166715[39m[37m[22m - Time: [1m[37m777[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:34.340Z[39m[37m[22m - Hash: [1m[37m5b3612af8806248a[39m[37m[22m - Time: [1m[37m822[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:36.697Z[39m[37m[22m - Hash: [1m[37m0e9c7c8959029a28[39m[37m[22m - Time: [1m[37m372[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.51 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:54.789Z[39m[37m[22m - Hash: [1m[37m358d691f22f808c3[39m[37m[22m - Time: [1m[37m362[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:05:56.351Z[39m[37m[22m - Hash: [1m[37mfc590f3aee94c730[39m[37m[22m - Time: [1m[37m337[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:06:10.804Z[39m[37m[22m - Hash: [1m[37mae07ae0de87f51c1[39m[37m[22m - Time: [1m[37m484[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:17.291Z[39m[37m[22m - Hash: [1m[37m0a02f25980193525[39m[37m[22m - Time: [1m[37m398[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:17.730Z[39m[37m[22m - Hash: [1m[37m0a02f25980193525[39m[37m[22m - Time: [1m[37m260[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:18.664Z[39m[37m[22m - Hash: [1m[37mafc0745ef8141e7e[39m[37m[22m - Time: [1m[37m468[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[0m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:47.291Z[39m[37m[22m - Hash: [1m[37mafc0745ef8141e7e[39m[37m[22m - Time: [1m[37m432[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.50 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:53.126Z[39m[37m[22m - Hash: [1m[37mb6dabf55589f107f[39m[37m[22m - Time: [1m[37m321[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.50 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:54.732Z[39m[37m[22m - Hash: [1m[37mc2b1cd00da8c9207[39m[37m[22m - Time: [1m[37m434[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:07:56.306Z[39m[37m[22m - Hash: [1m[37mb97b81ac18e2a67d[39m[37m[22m - Time: [1m[37m498[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:09:08.312Z[39m[37m[22m - Hash: [1m[37m9066cffdf84e9788[39m[37m[22m - Time: [1m[37m370[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:09:10.552Z[39m[37m[22m - Hash: [1m[37mdeccc5d44054eb61[39m[37m[22m - Time: [1m[37m396[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:09:42.069Z[39m[37m[22m - Hash: [1m[37m2373553ab0f045c5[39m[37m[22m - Time: [1m[37m530[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:09:52.124Z[39m[37m[22m - Hash: [1m[37m399184c64abcb99d[39m[37m[22m - Time: [1m[37m378[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.58 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:10:13.710Z[39m[37m[22m - Hash: [1m[37m06cba7947cbb3c3f[39m[37m[22m - Time: [1m[37m541[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:10:28.331Z[39m[37m[22m - Hash: [1m[37m38af4726445ec9c5[39m[37m[22m - Time: [1m[37m417[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:10:34.955Z[39m[37m[22m - Hash: [1m[37m45f323482ec8a0bf[39m[37m[22m - Time: [1m[37m643[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:10:52.279Z[39m[37m[22m - Hash: [1m[37m1108c005df0c922e[39m[37m[22m - Time: [1m[37m421[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:11:13.711Z[39m[37m[22m - Hash: [1m[37m4794fff67a621c17[39m[37m[22m - Time: [1m[37m382[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:11:19.417Z[39m[37m[22m - Hash: [1m[37m55442a4810ce0598[39m[37m[22m - Time: [1m[37m299[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:11:23.655Z[39m[37m[22m - Hash: [1m[37ma8a234c19c469b0f[39m[37m[22m - Time: [1m[37m377[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m         [2m | [22m[2mruntime[22m[2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:11:34.578Z[39m[37m[22m - Hash: [1m[37m8be9521b2293595f[39m[37m[22m - Time: [1m[37m288[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m603.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:12:16.148Z[39m[37m[22m - Hash: [1m[37m64cf9a2014c5581f[39m[37m[22m - Time: [1m[37m258[39m[37m[22mms[0m[39m[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mExpected expression.[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m35 │         width: ;[39m[22m
+[1m[31m   │                ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_types.scss 35:16  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 3:9          @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                        @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                   root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./LMS/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):[39m[22m
+[1m[31mExpected expression.[39m[22m
+[1m[31m   ╷[39m[22m
+[1m[31m35 │         width: ;[39m[22m
+[1m[31m   │                ^[39m[22m
+[1m[31m   ╵[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\homepage\_types.scss 35:16  @import[39m[22m
+[1m[31m  LMS\src\assets\styles\partiel\_homepage.scss 3:9          @import[39m[22m
+[1m[31m  LMS\src\assets\styles\LMS.scss 2:9                        @import[39m[22m
+[1m[31m  LMS\src\styles.scss 2:9                                   root stylesheet[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m  [2m | [22m[1mNames[22m  [2m | [22m [1mRaw size[22m[0m[39m
+[37m[0m[32mstyles.css, styles.js[39m[37m[2m | [22m[2mstyles[22m [2m | [22m[36m598.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m           [2m | [22m[2mruntime[22m[2m | [22m [36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:12:18.525Z[39m[37m[22m - Hash: [1m[37m3d1691d2fd63264e[39m[37m[22m - Time: [1m[37m747[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[32m✔[39m Browser application bundle generation complete.
+[37m[0m[0m[39m
+[37m[0m[1mInitial chunk files[22m                                 [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mruntime.js[39m[37m                                          [2m | [22m[2mruntime[22m                           [2m | [22m[36m12.89 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy chunk files[22m                                    [2m | [22m[1mNames[22m                             [2m | [22m[1mRaw size[22m[0m[39m
+[37m[0m[32mLMS_src_app_features_courses_courses_component_ts.js[39m[37m[2m | [22m[2mfeatures-courses-courses-component[22m[2m | [22m[36m25.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2025-05-25T21:13:11.161Z[39m[37m[22m - Hash: [1m[37mfa9ed4893316316a[39m[37m[22m - Time: [1m[37m319[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
