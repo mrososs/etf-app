@@ -39,19 +39,17 @@
         {{ "footer.phone" | translate }}
       </p>
       <p>
-        <img
-          src="../../../../assets/svg/EnvelopeSimple.svg"
-          alt="location_icon"
-        />
-        {{ "footer.email" | translate }}
+        <img src="../../../../assets/svg/EnvelopeSimple.svg" alt="email_icon" />
+        <a [href]="'mailto:' + ('footer.email' | translate)">
+          {{ "footer.email" | translate }}
+        </a>
       </p>
       <h1>{{ "footer.title2" | translate }}</h1>
       <p>
-        <img
-          src="../../../../assets/svg/EnvelopeSimple.svg"
-          alt="location_icon"
-        />
-        {{ "footer.email2" | translate }}
+        <img src="../../../../assets/svg/EnvelopeSimple.svg" alt="email_icon" />
+        <a  [href]="'mailto:' + ('footer.email' | translate)">
+          {{ "footer.email2" | translate }}
+        </a>
       </p>
       <p>
         <img src="../../../../assets/svg/PhoneCall.svg" alt="location_icon" />
