@@ -60,11 +60,21 @@
   }
   .dropdown-item {
     color: $color-primary !important;
+    a{
+      text-align: justify;
+    }
   }
   ul {
     margin-right: 1rem;
   }
   @media screen and (max-width: 992px) {
+    .dropdown-menu{
+      li{
+        a{
+          text-align: justify;
+        }
+      }
+    }
     ul {
       margin-right: 0rem;
     }

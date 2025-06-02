@@ -55,9 +55,10 @@
       }
     }
     @media screen and (max-width: 453px) {
+      display: none;
       right: 1rem;
-      top: 15rem;
-      padding: 2rem 1rem;
+      top: 10rem;
+      padding: 0rem 0rem;
       padding-left: 0;
       justify-content: end;
 
@@ -104,6 +105,12 @@
       height: 100vh;
       width: 100%; // ✅ يضمن إن الصورة ما تتجاوزش العرض
       object-fit: cover;
+      @media screen and (max-width: 551px) {
+        height: 80vh;
+      }
+      @media screen and (max-width: 400px) {
+        height: 50vh;
+      }
     }
 
     .carousel-indicators {
@@ -278,6 +285,7 @@
         gap: 1rem;
         grid-template-areas:
           // ". . div1 . ."
+
           ". div2 . div3 ."
           ". div4 div5 div6 ."
           ". div7 div8 div9 ."
@@ -379,11 +387,11 @@
       font-size: 1rem;
       font-weight: 500;
       color: $color-gray-600;
-         display: -webkit-box;
-        -webkit-line-clamp: 2; // limit to 4 lines
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; // limit to 4 lines
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     a {
       font-size: 1.2rem;
@@ -398,18 +406,45 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    @media screen and (max-width: 767px) {
+      .order-mobile-third {
+        /* الصورة الثالثة (Group 111.png) نريدها أن تكون الأولى في الموبايل */
+        order: 1;
+      }
+
+      .order-mobile-second {
+        /* الصورة الثانية (Group 110.png) نريدها أن تكون الثانية في الموبايل */
+        order: 2;
+      }
+
+      .order-mobile-fourth {
+        /* الصورة الرابعة (Group 109.png) نريدها أن تكون الثالثة في الموبايل */
+        order: 3;
+      }
+
+      .order-mobile-first {
+        /* الصورة الأولى (Group 114.png) ستصبح الرابعة في الموبايل */
+        order: 4;
+      }
+
+      .order-mobile-fifth {
+        /* الصورة الخامسة (image 45.png) ستصبح الخامسة في الموبايل */
+        order: 5;
+      }
+    }
+
     h1 {
       font-size: 2rem;
       font-weight: bold;
       color: $color-primary;
     }
-    img{
+    img {
       width: 10rem;
       height: 10rem;
-      &.last-logo{
+      &.last-logo {
         height: 8rem;
       }
-      &.food-logo{
+      &.food-logo {
         width: 12rem;
         height: 12rem;
       }
