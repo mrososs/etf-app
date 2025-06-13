@@ -25,6 +25,14 @@
   --color-text: #000000;
   --color-bg: #ffffff;
 }
+/* ثيم اصفر وأصفر */
+.theme-yellow-orange {
+  --color-primary: #fdd835;   /* bright yellow */
+  --color-secondary: #fbc02d; /* golden yellow */
+  --color-accent: #ffee58;    /* light yellow accent */
+  --color-text: #000000;      /* black text for contrast */
+  --color-bg: #ffffff;        /* white background */
+}
 
 /* ثيم سماوي */
 .theme-cyan {

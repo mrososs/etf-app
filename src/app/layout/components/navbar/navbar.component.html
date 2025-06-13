@@ -178,7 +178,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <!-- <li>
           <img
             *ngIf="currentLang === 'ar'"
             class="egyptFlag"
@@ -191,20 +191,39 @@
             src="../../../../assets/img/[CITYPNG.COM]HD Round Uk United Kingdom Flag Icon PNG - 1500x1500.png"
             alt="egyFlag"
           />
-        </li>
+        </li> -->
         <li class="nav-item d-flex">
-          <a class="nav-link" aria-current="page">
+          <a
+            class="nav-link"
+            aria-current="page"
+            role="button"
+            (click)="showDialog()"
+            label="Show"
+          >
             {{ resourcePath + "chooseYourColor" | translate }}
           </a>
-          <div class="colors d-flex gap-2">
+          <p-dialog
+            [header]="resourcePath + 'chooseYourColor' | translate"
+            [modal]="true"
+            [(visible)]="visible"
+            [style]="{ width: '25rem' }"
+          >
+          <h1>اختر لونك المفضل من الوان الاتحاد</h1>
             <div
-              *ngFor="let theme of themes"
-              class="color-dot"
-              [ngStyle]="{ 'background-color': theme.color }"
-              (click)="changeTheme(theme.class)"
-              title="{{ theme.class }}"
-            ></div>
-          </div>
+              class="colors d-flex justify-content-center align-items-center gap-2"
+            >
+              <div
+                *ngFor="let theme of themes"
+                class="color-dot"
+                [ngStyle]="{
+                  'background-image': 'url(' + theme.image + ')',
+                  'background-size': 'cover'
+                }"
+                (click)="changeTheme(theme.class)"
+                title="{{ theme.class }}"
+              ></div>
+            </div>
+          </p-dialog>
         </li>
       </ul>
     </div>

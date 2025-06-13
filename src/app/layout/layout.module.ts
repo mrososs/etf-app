@@ -4,6 +4,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+
 
 
 
@@ -13,8 +16,8 @@ import { RouterModule } from '@angular/router';
     FooterComponent
   ],
   imports: [
-    CommonModule,SharedModule,RouterModule
+    CommonModule,SharedModule,RouterModule,DialogModule,ButtonModule
   ],
-  exports:[ NavbarComponent,FooterComponent]
+  exports:[ NavbarComponent,FooterComponent,DialogModule,ButtonModule]
 })
 export class LayoutModule { }

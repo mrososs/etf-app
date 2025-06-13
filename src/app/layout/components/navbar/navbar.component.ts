@@ -17,13 +17,26 @@ declare var bootstrap: any;
 export class NavbarComponent implements OnInit {
   resourcePath = 'navbar.';
   isScrolled = false;
+  visible: boolean = false;
   themes = [
-  { class: 'theme-orange-yellow', color: '#f7931d' },
-  { class: 'theme-green-cyan', color: '#71bf44' },
-  { class: 'theme-cyan', color: '#1cbfdf' },
-  { class: 'theme-purple', color: '#c5499b' } // لو هتضيفي ثيم جديد
-];
-
+    {
+      class: 'theme-orange-yellow',
+      image: '../../../../assets/img/logoColor/orange.png',
+    },
+    {
+      class: 'theme-green-cyan',
+      image: '../../../../assets/img/logoColor/green.png',
+    },
+    { class: 'theme-cyan', image: '../../../../assets/img/logoColor/blue.png' },
+    {
+      class: 'theme-purple',
+      image: '../../../../assets/img/logoColor/purple.png',
+    },
+    {
+      class: 'theme-yellow-orange',
+      image: '../../../../assets/img/logoColor/yellow.png',
+    },
+  ];
 
   private langService = inject(LangService);
 
@@ -38,7 +51,9 @@ export class NavbarComponent implements OnInit {
   onScroll = () => {
     this.isScrolled = window.scrollY > 50;
   };
-
+  showDialog() {
+    this.visible = true;
+  }
   closeNavbar() {
     const collapseEl = this.navbarCollapse?.nativeElement;
     if (collapseEl && window.innerWidth < 992) {
@@ -48,11 +63,11 @@ export class NavbarComponent implements OnInit {
       }
     }
   }
- changeTheme(themeClass: string) {
-  document.body.className = ''; // clear old
-  document.body.classList.add(themeClass);
-  localStorage.setItem('theme', themeClass); // optional persistence
-}
+  changeTheme(themeClass: string) {
+    document.body.className = ''; // clear old
+    document.body.classList.add(themeClass);
+    localStorage.setItem('theme', themeClass); // optional persistence
+  }
 
   changeLang(lang: string) {
     this.langService.setLang(lang);
