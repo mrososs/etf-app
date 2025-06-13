@@ -230,20 +230,22 @@
           />
         </div>
       </div>
-      <div class="row mt-4">
-        <div
-          class="col-12 col-md-6 col-lg mb-3"
-          *ngFor="let item of displayedNews"
-        >
-          <img [src]="item.image" alt="News" />
-          <p>{{ item.description }}</p>
-          <button class="news_btn w-50">
-            <a [href]="item.link" target="_blank" class="text-white">
-              {{ item.buttonText || ("news.readMore" | translate) }}
-            </a>
-          </button>
-        </div>
+      <div class="news-marquee-wrapper mt-4">
+    <div class="news-marquee-content">
+      <div
+        class="news-item"
+        *ngFor="let item of displayedNews"
+      >
+        <img [src]="item.image" alt="News" />
+        <p>{{ item.description }}</p>
+        <button class="news_btn">
+          <a [href]="item.link" target="_blank" class="text-white">
+            {{ item.buttonText || ("news.readMore" | translate) }}
+          </a>
+        </button>
       </div>
+    </div>
+  </div>
     </div>
     <div class="rooms">
       <div class="text-center">

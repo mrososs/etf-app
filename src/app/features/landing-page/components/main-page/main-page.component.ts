@@ -30,7 +30,7 @@ export class MainPageComponent implements OnInit {
         this.members = members;
         this.newsItems = news;
         this.tourismNews = tourismNews;
-        this.displayedNews = news.slice(0, 3) || tourismNews.slice(0, 3);
+        this.displayedNews = news|| tourismNews;
       },
       error: (err) => {
         console.error('Error loading data', err);
