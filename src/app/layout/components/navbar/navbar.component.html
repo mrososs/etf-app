@@ -208,7 +208,7 @@
             [(visible)]="visible"
             [style]="{ width: '25rem' }"
           >
-          <h1>اختر لونك المفضل من الوان الإتحاد</h1>
+            <h1>اختر لونك المفضل من الوان الإتحاد</h1>
             <div
               class="colors d-flex justify-content-center align-items-center gap-2"
             >
@@ -223,6 +223,19 @@
                 title="{{ theme.class }}"
               ></div>
             </div>
+          </p-dialog>
+        </li>
+        <li class="nav-item me-5">
+          <button class="register_btn" (click)="showLogin()">
+            {{ resourcePath + "login" | translate }}
+          </button>
+          <p-dialog
+            [header]="resourcePath + 'login' | translate"
+            [modal]="true"
+            [(visible)]="visibleLogin"
+            [style]="{ width: '25rem' }"
+          >
+            <h1>{{ resourcePath + "comingSoon" | translate }}</h1>
           </p-dialog>
         </li>
       </ul>

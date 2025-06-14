@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   resourcePath = 'navbar.';
   isScrolled = false;
   visible: boolean = false;
+  visibleLogin:boolean=false;
   themes = [
     {
       class: 'theme-orange-yellow',
@@ -53,6 +54,9 @@ export class NavbarComponent implements OnInit {
   };
   showDialog() {
     this.visible = true;
+  }
+  showLogin(){
+    this.visibleLogin=true;
   }
   closeNavbar() {
     const collapseEl = this.navbarCollapse?.nativeElement;

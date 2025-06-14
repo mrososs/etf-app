@@ -7,7 +7,6 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './training.component.scss',
 })
 export class TrainingComponent {
-  selected: string = 'القيادة الآمنة';
   translate = inject(TranslateService);
   translateKeys = {
     safeDriving: this.translate.instant('training.safeDriving.title'),
@@ -15,6 +14,7 @@ export class TrainingComponent {
     transition: this.translate.instant('training.transition.title'),
     cooking: this.translate.instant('training.cooking.title'),
   };
+  selected: string = this.translateKeys.safeDriving;
   mainVideoSrc: string = 'assets/videos/video1.mp4';
   mainVideoPoster: string =
     '../../../../../assets/img/driveVideos/83641693482337.jpg';
