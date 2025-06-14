@@ -101,5 +101,129 @@
     "unionNewsTitle": "Union News",
     "tourismNewsTitle": "Tourism News",
     "readMore": "Read More"
+  },
+  "divingroom": {
+    "title": "Tourism Rooms",
+    "breadcrumb": "Rooms",
+    "header": "Chamber of Diving and Marine Activities",
+    "description": "It includes diving facilities licensed by the Ministry of Tourism. The chamber aims to improve the quality, safety, and standards of diving and marine activity services, in addition to preserving the unique marine life of the Red Sea.",
+    "officialSite": {
+      "title": "Official Website",
+      "link": "https://www.cdws.travel/en"
+    }
+  },
+  "eatroom": {
+    "title": "Tourism Rooms",
+    "breadcrumb": "Rooms",
+    "header": "Chamber of Tourism Establishments and Restaurants",
+    "description": "It includes tourism establishments licensed by the Ministry of Tourism and works to support and improve the services provided by these establishments and restaurants.",
+    "officialSite": {
+      "title": "Official Website",
+      "link": "https://www.egyptianhotels.org/"
+    }
+  },
+  "hotelroom": {
+    "title": "Tourism Rooms",
+    "breadcrumb": "Rooms",
+    "header": "Chamber of Hotel Establishments",
+    "description": "It includes hotel establishments licensed by the Ministry of Tourism. The chamber works to develop the hotel sector in Egypt by promoting knowledge sharing, overcoming obstacles to its growth, and providing continuous professional training to enhance hotel staff performance.",
+    "officialSite": {
+      "title": "Official Website",
+      "link": "https://www.egyptianhotels.org/"
+    }
+  },
+  "productroom": {
+    "title": "Tourism Rooms",
+    "breadcrumb": "Rooms",
+    "header": "Chamber of Handicrafts and Tourist Goods",
+    "description": "It includes licensed establishments for selling handicrafts and tourist goods. The chamber supports its members and their activities in the trade of tourist products, aiming to develop the product, raise the standards of workers, solve issues, and represent them before the relevant authorities.",
+    "officialSite": {
+      "title": "Official Website",
+      "link": "https://www.facebook.com/egyptianctc"
+    }
+  },
+  "travelroom": {
+    "title": "Tourism Rooms",
+    "breadcrumb": "Rooms",
+    "header": "Chamber of Travel and Tourism Companies",
+    "description": "It includes tourism companies licensed by the Ministry of Tourism. The chamber works to support and care for these companies within the state's tourism plan, and represents them before public authorities, organizations, and local and international bodies.",
+    "officialSite": {
+      "title": "Official Website",
+      "link": "https://www.etaa-egypt.org/"
+    }
+  },
+  "training": {
+    "title": "Training",
+    "breadcrumb": "Training",
+    "safeDriving": {
+      "title": "Safe Driving"
+    },
+    "dualEducation": {
+      "title": "Dual Education"
+    },
+    "transition": {
+      "title": "Transition to Workforce"
+    },
+    "cooking": {
+      "title": "Culinary Arts"
+    }
+  },
+  "safeDivingDesc": {
+    "title": "Egyptian Safe Driving Center",
+    "desc1": "The center aims to qualify tourist vehicle drivers, raise awareness of road risks, and reduce road accidents...",
+    "desc2": "The Egyptian Safe Driving Center is located on the Autostrad Road in 15th of May City...",
+    "objectivesTitle": "Objectives",
+    "objectivesDesc": "We prepare you to drive confidently… with the latest standards and highest safety levels...",
+    "objective1": "Qualifying tourist drivers through specialized training programs",
+    "objective2": "Raising awareness of various road hazards and improving driving behavior",
+    "objective3": "Reducing road accidents by training drivers on best practices",
+    "objective4": "Practical and theoretical training to provide drivers with the necessary knowledge and skills",
+    "objective5": "Focusing on proper driving on all types of roads",
+    "objective6": "Handling various driving conditions to ensure safety",
+    "tracksTitle": "Training Tracks",
+    "tracksDesc": "Each track is a realistic experience preparing you for any situation you may face on the road...",
+    "track1": "Emergency braking and skidding track",
+    "track2": "Braking and maneuvering track",
+    "track3": "Collision track",
+    "track4": "Turns and centrifugal force track",
+    "track5": "Slopes and gravity force track",
+    "track6": "Vehicle acceleration track",
+    "programsTitle": "Training Programs",
+    "programsDesc": "Explore our training programs that will change your mindset about driving...",
+    "program1": "Safe driving",
+    "program2": "Defensive driving",
+    "program3": "Integrated driving",
+    "program4": "Advanced driving",
+    "program5": "Comprehensive driving",
+    "program6": "Economic driving",
+    "program7": "Desert driving",
+    "program8": "Driver skill assessment",
+    "program9": "Technical tests for vehicles and tires",
+    "locationTitle": "Location",
+    "locationDesc": "The Egyptian Safe Driving Center covers an area of about 102 acres...",
+    "locationAddress": "On the Autostrad Road in 15th of May City"
+  },
+  "doubleLearning": {
+    "title": "Learning Management System by the Egyptian Tourism Federation",
+    "subtitle": "(Project funded by the German Agency for International Cooperation - GIZ)",
+    "description": "Education is one of the key drivers of economic development in Egypt. Technical and vocational education and training (TVET), especially through the dual education system that has been in place since 1994, helps provide a skilled workforce for the labor market. A comprehensive TVET system positively impacts economic growth and institutional productivity. Recognizing the importance of TVET, Article (20) of the 2014 Egyptian Constitution states: (The state is committed to encouraging, developing, and expanding all types of technical education and vocational training in accordance with global quality standards and labor market needs). The Federation therefore sought to have a say in technical education to ensure graduates from technical schools in Egypt meet the required standards for the tourism sector. Consequently, an agreement was signed between the Federation and the Ministry of Education and Technical Education granting the Federation membership in the steering council of the dual education and training system to participate in curriculum design and student training during their studies. This includes hands-on training at various tourism establishments, especially hotels, alongside theoretical education. Within this framework, and funded by GIZ, the Federation launched a tender to establish a learning management system to support these efforts and enable students to access training programs remotely in addition to attending onsite hotel-based training.",
+    "goalsTitle": "Planned System Objectives",
+    "goal1": "Provide advanced, multimedia training content accessible online.",
+    "goal2": "Support and enhance the vocational education system in the tourism sector.",
+    "goal3": "Manage courses and training programs via a user-friendly interface.",
+    "goal4": "Accurately monitor and evaluate trainees' performance."
+  },
+  "transitionTpl": {
+    "title": "Support Transition to the Labor Market Project",
+    "description": "The 'Support Transition to the Labor Market' project, funded by the European Union and the Egyptian government, is one of the training initiatives implemented by the Federation in cooperation with the Ministry of Tourism and Antiquities and the TVET Egypt program.",
+    "point1": "Project training activities started in March 2019.",
+    "point2": "A total of 13,157 trainees from the existing workforce received practical and theoretical training in the following tourism governorates: Cairo, Giza, Alexandria, South Sinai, Red Sea, Luxor, and Aswan.",
+    "point3": "Additionally, 8,613 workers received awareness training on environmental topics and COVID-19 preventive measures, bringing the total number of trainees to 21,770.",
+    "point4": "The project was completed on April 30, 2021."
+  },
+  "cooking": {
+    "title": "Culinary Arts Training Centers",
+    "description1": "The Egyptian Tourism Federation has established specialized training centers for culinary arts to prepare qualified professional chefs through practical programs designed according to international standards in collaboration with the British City & Guilds Foundation.",
+    "description2": "Currently, a study is underway to restart the centers in one of the leading tourism governorates to meet the needs of the tourism labor market."
   }
 }

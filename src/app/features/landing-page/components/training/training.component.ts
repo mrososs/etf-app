@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-training',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class TrainingComponent {
   selected: string = 'القيادة الآمنة';
+  translate = inject(TranslateService);
+  translateKeys = {
+    safeDriving: this.translate.instant('training.safeDriving.title'),
+    dualEducation: this.translate.instant('training.dualEducation.title'),
+    transition: this.translate.instant('training.transition.title'),
+    cooking: this.translate.instant('training.cooking.title'),
+  };
   mainVideoSrc: string = 'assets/videos/video1.mp4';
   mainVideoPoster: string =
     '../../../../../assets/img/driveVideos/83641693482337.jpg';
