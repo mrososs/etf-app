@@ -11,6 +11,7 @@ import { EatRoomComponent } from './components/rooms-component/eat-room/eat-room
 import { ProductRoomComponent } from './components/rooms-component/product-room/product-room.component';
 import { TravelRoomComponent } from './components/rooms-component/travel-room/travel-room.component';
 import { HotelRoomComponent } from './components/rooms-component/hotel-room/hotel-room.component';
+import { NewsDetailsComponent } from './components/news-details/news-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +19,11 @@ const routes: Routes = [
     path: 'home',
     component: MainPageComponent,
     data: { title: 'الرئيسية - الإتحاد المصري' },
+  },
+  {
+    path: 'newsdetails/:id',
+    component: NewsDetailsComponent,
+    data: { title: 'الاخبار' },
   },
   {
     path: 'union',

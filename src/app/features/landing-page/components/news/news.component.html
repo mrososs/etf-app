@@ -54,7 +54,11 @@
               </a>
             </div>
             <button class="news_btn w-50 mt-2">
-              <a [href]="item.link" target="_blank" class="text-white">
+              <a
+                [routerLink]="['/landing-page/newsdetails', item.id]"
+                [queryParams]="{ type: 'news' }"
+                class="text-white"
+              >
                 {{ item.buttonText || ("news.readMore" | translate) }}
               </a>
             </button>

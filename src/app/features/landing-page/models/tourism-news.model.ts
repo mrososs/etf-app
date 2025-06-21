@@ -5,4 +5,5 @@ export interface TourismNews {
   description: string;
   buttonText: string;
   link: string;
+  details:string;
 }

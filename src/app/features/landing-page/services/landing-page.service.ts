@@ -18,6 +18,9 @@ export class LandingPageService {
   getGroupMembers(): Observable<GroupMember[]> {
     return this.http.get<GroupMember[]>('/assets/data/group-members.json');
   }
+  getNewDetails(): Observable<NewsItem[]> {
+    return this.http.get<NewsItem[]>('/assets/data/news.json');
+  }
   getNewsItems(): Observable<NewsItem[]> {
     return this.http.get<NewsItem[]>('/assets/data/news.json');
   }
@@ -29,13 +32,14 @@ export class LandingPageService {
     return this.http.get<Report[]>('/assets/data/reports.json');
   }
   getTourismNews(): Observable<TourismNews[]> {
-  return this.http.get<TourismNews[]>('assets/data/tourism-news.json');
-}
-getTourismLegislations(): Observable<TourismLegislation[]> {
-  return this.http.get<TourismLegislation[]>('/assets/data/tourism-legislation.json');
-}
-getLaw():Observable<Law[]>{
-  return this.http.get<Law[]>('/assets/data/law.json');
-}
-
+    return this.http.get<TourismNews[]>('assets/data/tourism-news.json');
+  }
+  getTourismLegislations(): Observable<TourismLegislation[]> {
+    return this.http.get<TourismLegislation[]>(
+      '/assets/data/tourism-legislation.json'
+    );
+  }
+  getLaw(): Observable<Law[]> {
+    return this.http.get<Law[]>('/assets/data/law.json');
+  }
 }

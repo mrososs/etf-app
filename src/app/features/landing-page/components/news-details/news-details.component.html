@@ -1,0 +1,24 @@
+<section class="news-details">
+  <div class="w-100 news__image">
+    <div class="news__overlay">
+      <div class="news__text">
+        <h1>{{ "news.pageTitle" | translate }}</h1>
+        <nav class="breadcrumb">
+          <a [routerLink]="['/landing-page/home']">{{
+            "news.breadcrumbHome" | translate
+          }}</a>
+          <span>&nbsp;>&nbsp;</span>
+          <span>{{ "news.breadcrumbNews" | translate }}</span>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="news-details__main">
+      <h1>{{ "newsDetails.news" | translate }}</h1>
+      <h2>{{ newsItem?.description }}</h2>
+      <img [src]="newsItem?.image" alt="newImg" />
+      <p class="mt-5">{{ newsItem?.details }}</p>
+    </div>
+  </div>
+</section>
