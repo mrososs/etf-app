@@ -21,4 +21,15 @@ export class NewsComponent implements OnInit {
       this.tourismNews = data;
     });
   }
+  generateFacebookShareLink(url: string): string {
+    return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+      url
+    )}`;
+  }
+
+  generateTwitterShareLink(url: string, text?: string): string {
+    return `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+      url
+    )}&text=${encodeURIComponent(text || '')}`;
+  }
 }

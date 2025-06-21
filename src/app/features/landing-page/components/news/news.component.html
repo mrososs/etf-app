@@ -29,7 +29,31 @@
           <div class="news-card d-flex flex-column align-items-center">
             <img [src]="item.image" alt="news" />
             <h1>{{ item.description }}</h1>
-            <button class="news_btn w-50">
+            <div class="d-flex gap-2 mt-2">
+              <a
+                [href]="generateFacebookShareLink(item.link)"
+                target="_blank"
+                class="btn btn-sm btn-outline-primary"
+                aria-label="Share on Facebook"
+              >
+                <i
+                  class="pi pi-facebook"
+                  style="color: var(--color-primary)"
+                ></i>
+              </a>
+              <a
+                [href]="generateTwitterShareLink(item.link, item.description)"
+                target="_blank"
+                class="btn btn-sm btn-outline-info"
+                aria-label="Share on Twitter"
+              >
+                <i
+                  class="pi pi-twitter"
+                  style="color: var(--color-primary)"
+                ></i>
+              </a>
+            </div>
+            <button class="news_btn w-50 mt-2">
               <a [href]="item.link" target="_blank" class="text-white">
                 {{ item.buttonText || ("news.readMore" | translate) }}
               </a>
@@ -54,7 +78,32 @@
           <div class="news-card d-flex flex-column align-items-center">
             <img [src]="item.image" alt="news" />
             <h1>{{ item.description }}</h1>
-            <button class="news_btn w-50">
+            <div class="d-flex gap-2 mt-2">
+              <a
+                [href]="generateFacebookShareLink(item.link)"
+                target="_blank"
+                class="btn btn-sm btn-outline-primary"
+                aria-label="Share on Facebook"
+              >
+                <i
+                  class="pi pi-facebook"
+                  style="color: var(--color-primary)"
+                ></i>
+              </a>
+              <a
+                [href]="generateTwitterShareLink(item.link, item.description)"
+                target="_blank"
+                class="btn btn-sm btn-outline-info"
+                aria-label="Share on Twitter"
+              >
+                <i
+                  class="pi pi-twitter"
+                  style="color: var(--color-primary)"
+                ></i>
+              </a>
+            </div>
+
+            <button class="news_btn w-50 mt-2">
               <a [href]="item.link" target="_blank" class="text-white">
                 {{ item.buttonText || ("news.readMore" | translate) }}
               </a>
