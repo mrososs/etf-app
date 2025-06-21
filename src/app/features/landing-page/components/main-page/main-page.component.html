@@ -231,21 +231,18 @@
         </div>
       </div>
       <div class="news-marquee-wrapper mt-4">
-    <div class="news-marquee-content">
-      <div
-        class="news-item"
-        *ngFor="let item of displayedNews"
-      >
-        <img [src]="item.image" alt="News" />
-        <p>{{ item.description }}</p>
-        <button class="news_btn">
-          <a [href]="item.link" target="_blank" class="text-white">
-            {{ item.buttonText || ("news.readMore" | translate) }}
-          </a>
-        </button>
+        <div class="news-marquee-content">
+          <div class="news-item" *ngFor="let item of displayedNews">
+            <img [src]="item.image" alt="News" />
+            <p>{{ item.description }}</p>
+            <button class="news_btn">
+              <a [href]="item.link" target="_blank" class="text-white">
+                {{ item.buttonText || ("news.readMore" | translate) }}
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
     </div>
     <div class="rooms">
       <div class="text-center">
@@ -257,7 +254,7 @@
             class="col-12 col-md-6 col-lg-2 text-center order-lg-1 order-mobile-first"
           >
             <img
-              src="../../../../../assets/img/rooms/Group 114.png"
+              src="../../../../../assets/img/rooms/Group_114.png"
               alt="Rooms"
               class="img-fluid"
             />
@@ -266,7 +263,7 @@
             class="col-12 col-md-6 col-lg-2 text-center order-lg-2 order-mobile-second"
           >
             <img
-              src="../../../../../assets/img/rooms/Group 110.png"
+              src="../../../../../assets/img/rooms/Group_110.png"
               alt="Rooms"
               class="img-fluid"
             />
@@ -275,7 +272,7 @@
             class="col-12 col-md-6 col-lg-2 text-center order-lg-3 order-mobile-third"
           >
             <img
-              src="../../../../../assets/img/rooms/Group 111.png"
+              src="../../../../../assets/img/rooms/Group_111.png"
               alt="Rooms"
               class="img-fluid"
             />
@@ -284,7 +281,7 @@
             class="col-12 col-md-6 col-lg-2 text-center order-lg-4 order-mobile-fourth"
           >
             <img
-              src="../../../../../assets/img/rooms/Group 109.png"
+              src="../../../../../assets/img/rooms/Group_109.png"
               alt="Rooms"
               class="img-fluid food-logo"
             />
@@ -293,7 +290,7 @@
             class="col-12 col-md-6 col-lg-2 text-center order-lg-5 order-mobile-fifth"
           >
             <img
-              src="../../../../../assets/img/rooms/image 45.png"
+              src="../../../../../assets/img/rooms/image_45.png"
               alt="Rooms"
               class="img-fluid last-logo"
             />
