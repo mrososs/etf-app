@@ -30,7 +30,7 @@ export class MainPageComponent implements OnInit {
         this.members = members;
         this.newsItems = news;
         this.tourismNews = tourismNews;
-        this.displayedNews = news|| tourismNews;
+        this.displayedNews = news || tourismNews;
       },
       error: (err) => {
         console.error('Error loading data', err);
@@ -39,6 +39,17 @@ export class MainPageComponent implements OnInit {
   }
   toggleText() {
     this.isExpanded = !this.isExpanded;
+  }
+  generateFacebookShareLink(url: string): string {
+    return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+      url
+    )}`;
+  }
+
+  generateTwitterShareLink(url: string, text?: string): string {
+    return `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+      url
+    )}&text=${encodeURIComponent(text || '')}`;
   }
 
   changeNewsType(type: string) {
