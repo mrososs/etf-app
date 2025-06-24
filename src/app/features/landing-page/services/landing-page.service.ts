@@ -22,24 +22,46 @@ export class LandingPageService {
     return this.http.get<NewsItem[]>('/assets/data/news.json');
   }
   getNewsItems(): Observable<NewsItem[]> {
-    return this.http.get<NewsItem[]>('/assets/data/news.json');
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<NewsItem[]>(
+      `http://etfapi.itechpro-eg.com/api/News?lang=${lang}`
+    );
+  }
+  getContactUs(data: any): Observable<any> {
+    return this.http.post<any>(
+      `http://etfapi.itechpro-eg.com/api/ContactUs`,
+      data
+    );
   }
   getCommittees(): Observable<Committee[]> {
-    return this.http.get<Committee[]>('assets/data/committees.json');
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<Committee[]>(
+      `http://etfapi.itechpro-eg.com/api/Commitee/${lang}`
+    );
   }
 
   getReports(): Observable<Report[]> {
-    return this.http.get<Report[]>('/assets/data/reports.json');
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<Report[]>(
+      `http://etfapi.itechpro-eg.com/api/Report?lang=${lang}`
+    );
   }
   getTourismNews(): Observable<TourismNews[]> {
-    return this.http.get<TourismNews[]>('assets/data/tourism-news.json');
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<TourismNews[]>(
+      `http://etfapi.itechpro-eg.com/api/TourismNews?lang=${lang}`
+    );
   }
   getTourismLegislations(): Observable<TourismLegislation[]> {
+    const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<TourismLegislation[]>(
-      '/assets/data/tourism-legislation.json'
+      `http://etfapi.itechpro-eg.com/api/TourismLegislation?lang=${lang}`
     );
   }
   getLaw(): Observable<Law[]> {
-    return this.http.get<Law[]>('/assets/data/law.json');
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<Law[]>(
+      `http://etfapi.itechpro-eg.com/api/Law/${lang}`
+    );
   }
 }

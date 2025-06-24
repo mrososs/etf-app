@@ -40,13 +40,15 @@ export class MainPageComponent implements OnInit {
   toggleText() {
     this.isExpanded = !this.isExpanded;
   }
-  generateFacebookShareLink(url: string): string {
+  generateFacebookShareLink(id: number, type: string): string {
+    const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
     return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       url
     )}`;
   }
 
-  generateTwitterShareLink(url: string, text?: string): string {
+  generateTwitterShareLink(id: number, type: string, text?: string): string {
+    const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
     return `https://twitter.com/intent/tweet?url=${encodeURIComponent(
       url
     )}&text=${encodeURIComponent(text || '')}`;

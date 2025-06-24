@@ -1,9 +1,7 @@
 export interface TourismNews {
   id: number;
-  image: string;
+  imageUrl: string;
   title: string;
   description: string;
   buttonText: string;
-  link: string;
-  details:string;
 }

@@ -30,8 +30,14 @@ export class TourismLegislationComponent implements OnInit {
     if (type === 'قوانين') {
       this._landingService.getLaw().subscribe({
         next: (data) => {
-          this.tourismLegislations = data;
-          this.filteredLegislations = data;
+          // Map Law[] to TourismLegislation[]
+          this.tourismLegislations = data.map((law: any) => ({
+            id: law.id,
+            title: law.title,
+            description: law.description,
+            link: law.link,
+          }));
+          this.filteredLegislations = this.tourismLegislations;
         },
         error: (err) => console.error(err),
       });

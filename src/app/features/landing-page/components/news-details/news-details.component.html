@@ -17,8 +17,8 @@
     <div class="news-details__main">
       <h1>{{ "newsDetails.news" | translate }}</h1>
       <h2>{{ newsItem?.description }}</h2>
-      <img [src]="newsItem?.image" alt="newImg" />
-      <p class="mt-5">{{ newsItem?.details }}</p>
+      <img [src]="newsItem?.imageUrl" alt="newImg" />
+      <p class="mt-5">{{ newsItem?.description }}</p>
     </div>
   </div>
 </section>

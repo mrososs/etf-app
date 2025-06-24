@@ -6,6 +6,8 @@ import { LayoutModule } from './layout/layout.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ToastrModule } from 'ngx-toastr';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Factory function
 export function HttpLoaderFactory(http: HttpClient) {
@@ -17,6 +19,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right', // أو toast-top-right
+      timeOut: 3000,
+      preventDuplicates: true,
+    }),
     BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({

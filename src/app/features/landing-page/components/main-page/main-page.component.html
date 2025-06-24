@@ -233,11 +233,11 @@
       <div class="news-marquee-wrapper mt-4">
         <div class="news-marquee-content">
           <div class="news-item" *ngFor="let item of displayedNews">
-            <img [src]="item.image" alt="News" />
+            <img [src]="item.imageUrl" alt="News" />
             <p>{{ item.description }}</p>
             <div class="d-flex justify-content-center gap-2 mt-2">
               <a
-                [href]="generateFacebookShareLink(item.link)"
+                [href]="generateFacebookShareLink(item.id, 'touristnews')"
                 target="_blank"
                 class="btn btn-sm btn-outline-primary"
                 aria-label="Share on Facebook"
@@ -248,7 +248,9 @@
                 ></i>
               </a>
               <a
-                [href]="generateTwitterShareLink(item.link, item.description)"
+                [href]="
+                  generateTwitterShareLink(item.id, 'news', item.description)
+                "
                 target="_blank"
                 class="btn btn-sm btn-outline-info"
                 aria-label="Share on Twitter"
@@ -271,7 +273,8 @@
                 </a>
                 <a
                   *ngIf="selected === 'أخبار السياحة'"
-                  [href]="item.link"
+                  [routerLink]="['/landing-page/newsdetails', item.id]"
+                  [queryParams]="{ type: 'tourstnews' }"
                   target="_blank"
                   class="text-white"
                 >
