@@ -16,6 +16,7 @@ import { HotelRoomComponent } from './components/rooms-component/hotel-room/hote
 import { EatRoomComponent } from './components/rooms-component/eat-room/eat-room.component';
 import { ProductRoomComponent } from './components/rooms-component/product-room/product-room.component';
 import { NewsDetailsComponent } from './components/news-details/news-details.component';
+import { AuthLoginComponent } from './components/auth-login/auth-login.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { NewsDetailsComponent } from './components/news-details/news-details.com
     EatRoomComponent,
     ProductRoomComponent,
     NewsDetailsComponent,
+    AuthLoginComponent,
   ],
   imports: [CommonModule, LandingPageRoutingModule, SharedModule],
 })

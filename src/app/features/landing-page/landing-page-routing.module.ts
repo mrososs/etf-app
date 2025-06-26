@@ -12,6 +12,7 @@ import { ProductRoomComponent } from './components/rooms-component/product-room/
 import { TravelRoomComponent } from './components/rooms-component/travel-room/travel-room.component';
 import { HotelRoomComponent } from './components/rooms-component/hotel-room/hotel-room.component';
 import { NewsDetailsComponent } from './components/news-details/news-details.component';
+import { AuthLoginComponent } from './components/auth-login/auth-login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,6 +25,13 @@ const routes: Routes = [
     path: 'newsdetails/:id',
     component: NewsDetailsComponent,
     data: { title: 'الاخبار' },
+  },
+  {
+    path:'login',
+    component:AuthLoginComponent,
+    data:{
+      title :'تسجيل الدخول - الإتحاد المصري'
+    }
   },
   {
     path: 'union',
