@@ -17,6 +17,10 @@ import { EatRoomComponent } from './components/rooms-component/eat-room/eat-room
 import { ProductRoomComponent } from './components/rooms-component/product-room/product-room.component';
 import { NewsDetailsComponent } from './components/news-details/news-details.component';
 import { AuthLoginComponent } from './components/auth-login/auth-login.component';
+import { AuthRegisterComponent } from './components/auth-register/auth-register.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { ConfirmAuthComponent } from './components/confirm-auth/confirm-auth.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import { AuthLoginComponent } from './components/auth-login/auth-login.component
     ProductRoomComponent,
     NewsDetailsComponent,
     AuthLoginComponent,
+    AuthRegisterComponent,
+    ForgetPasswordComponent,
+    ResetPasswordComponent,
+    ConfirmAuthComponent,
   ],
   imports: [CommonModule, LandingPageRoutingModule, SharedModule],
 })

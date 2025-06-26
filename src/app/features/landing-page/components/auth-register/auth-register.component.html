@@ -1,0 +1,96 @@
+<section class="login">
+  <app-carusol-gallery></app-carusol-gallery>
+  <div class="hero_text">
+    <div class="login-container">
+      <div class="d-flex justify-content-center align-items-center">
+        <h1>{{ "register.title" | translate }}</h1>
+      </div>
+      <div class="col-12 contact-us__form">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div class="form-group">
+                <label for="email">{{ "register.username" | translate }}</label>
+                <input
+                  id="username"
+                  formControlName="username"
+                  type="text"
+                  pInputText
+                  placeholder="{{ 'register.usernamePlaceholder' | translate }}"
+                  class="form-control"
+                />
+                <div
+                  class="text-danger mt-1"
+                  *ngIf="username?.touched && username?.invalid"
+                >
+                  <small *ngIf="username?.errors?.['required']">
+                    {{ "register.errors.usernameRequired" | translate }}
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="email">{{ "register.email" | translate }}</label>
+                <input
+                  id="email"
+                  formControlName="email"
+                  type="email"
+                  pInputText
+                  placeholder="{{ 'register.emailPlaceholder' | translate }}"
+                  class="form-control"
+                />
+                <div
+                  class="text-danger mt-1"
+                  *ngIf="email?.touched && email?.invalid"
+                >
+                  <small *ngIf="email?.errors?.['required']">
+                    {{ "register.errors.emailRequired" | translate }}
+                  </small>
+                  <small *ngIf="email?.errors?.['email']">
+                    {{ "register.errors.emailInvalid" | translate }}
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="form-group">
+                <label for="password">{{
+                  "register.password" | translate
+                }}</label>
+                <input
+                  id="password"
+                  formControlName="password"
+                  type="password"
+                  pInputText
+                  placeholder="{{ 'register.passwordPlaceholder' | translate }}"
+                  class="form-control"
+                />
+
+                <div
+                  class="text-danger mt-1"
+                  *ngIf="password?.touched && password?.invalid"
+                >
+                  <small *ngIf="password?.errors?.['required']">
+                    {{ "register.errors.passwordRequired" | translate }}
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <button class="news_btn w-100" type="submit">
+                {{ "register.registerNow" | translate }}
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex justify-content-center mt-3">
+          <a [routerLink]="['/landing-page/login']">{{
+            "register.goToLogin" | translate
+          }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

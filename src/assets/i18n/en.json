@@ -1,6 +1,38 @@
 {
   "HELLO": "Hello",
   "WELCOME": "Welcome",
+  "login": {
+    "title": "Log in to your account",
+    "email": "Username",
+    "emailPlaceholder": "Enter your username",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "loginNow": "Log In",
+    "register": "Create a new account",
+    "errors": {
+      "emailRequired": "username is required",
+      "emailInvalid": "Invalid email format",
+      "passwordRequired": "Password is required"
+    }
+  },
+  "register": {
+    "title": "Create a New Account",
+    "username": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "registerNow": "Register",
+    "goToLogin": "Already have an account?",
+    "errors": {
+      "emailRequired": "Email is required",
+      "usernameRequired": "Username is required",
+      "passwordRequired": "Password is required"
+    }
+  },
   "navbar": {
     "home": "Home",
     "whoUs": "About Us",

@@ -13,6 +13,9 @@ import { TravelRoomComponent } from './components/rooms-component/travel-room/tr
 import { HotelRoomComponent } from './components/rooms-component/hotel-room/hotel-room.component';
 import { NewsDetailsComponent } from './components/news-details/news-details.component';
 import { AuthLoginComponent } from './components/auth-login/auth-login.component';
+import { AuthRegisterComponent } from './components/auth-register/auth-register.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -27,11 +30,32 @@ const routes: Routes = [
     data: { title: 'الاخبار' },
   },
   {
-    path:'login',
-    component:AuthLoginComponent,
-    data:{
-      title :'تسجيل الدخول - الإتحاد المصري'
-    }
+    path: 'login',
+    component: AuthLoginComponent,
+    data: {
+      title: 'تسجيل الدخول - الإتحاد المصري',
+    },
+  },
+  {
+    path: 'register',
+    component: AuthRegisterComponent,
+    data: {
+      title: 'انشاء حساب - الإتحاد المصري',
+    },
+  },
+  {
+    path: 'forgetPassword',
+    component: ForgetPasswordComponent,
+    data: {
+      title: 'نسيت الباسورد - الإتحاد المصري',
+    },
+  },
+  {
+    path: 'resetPassword',
+    component: ResetPasswordComponent,
+    data: {
+      title: 'نسيت الباسورد - الإتحاد المصري',
+    },
   },
   {
     path: 'union',

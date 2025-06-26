@@ -1,6 +1,37 @@
 {
   "HELLO": "مرحبا",
   "WELCOME": "أهلاً بك",
+  "login": {
+    "title": "تسجيل الدخول إلي حسابك",
+    "email": "اسم المستخدم",
+    "emailPlaceholder": "ادخل اسم المستخدم",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "ادخل كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "loginNow": "تسجيل الدخول ",
+    "register": "إنشاء حساب جديد",
+    "errors": {
+      "emailRequired": "اسم المستخدم مطلوب",
+      "passwordRequired": "كلمة المرور مطلوبة"
+    }
+  },
+  "register": {
+    "title": "إنشاء حساب جديد",
+    "username": "اسم المستخدم",
+    "usernamePlaceholder": "ادخل اسم المستخدم",
+    "email": "البريد الالكتروني",
+    "emailPlaceholder": "ادخل البريد الالكتروني",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "ادخل كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "registerNow": "إنشاء حساب ",
+    "goToLogin": "هل لديك حساب ؟",
+    "errors": {
+      "emailRequired": "اسم البريد الالكتروني مطلوب",
+      "usernameRequired": "اسم المستخدم مطلوب",
+      "passwordRequired": "كلمة المرور مطلوبة"
+    }
+  },
   "navbar": {
     "home": "الرئيسية",
     "login": "تسجيل الدخول",
@@ -22,9 +53,8 @@
     "en": "English",
     "english": "English"
   },
-  "newsDetails":{
-    "news":"بيان صحفي"
-
+  "newsDetails": {
+    "news": "بيان صحفي"
   },
   "footer": {
     "aboutUs": "الإتحاد المصرى للغرف السياحية هو إتحاد مهنى أنشىء بالقانون رقم 85 لسنة 1968 وتعديله الصادر بالقانون رقم 27 لسنة 2023، والذى ينص على أن الإتحاد يقوم على رعاية المصالح المشتركة للنشاط السياحي في جمهورية مصر العربية.",

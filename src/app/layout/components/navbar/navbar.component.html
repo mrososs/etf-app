@@ -226,17 +226,10 @@
           </p-dialog>
         </li>
         <li class="nav-item me-5">
-          <button class="register_btn" (click)="showLogin()">
+          <button class="register_btn" [routerLink]="['/landing-page/login']">
             {{ resourcePath + "login" | translate }}
           </button>
-          <p-dialog
-            [header]="resourcePath + 'login' | translate"
-            [modal]="true"
-            [(visible)]="visibleLogin"
-            [style]="{ width: '25rem' }"
-          >
-            <h1>{{ resourcePath + "comingSoon" | translate }}</h1>
-          </p-dialog>
+      
         </li>
       </ul>
     </div>

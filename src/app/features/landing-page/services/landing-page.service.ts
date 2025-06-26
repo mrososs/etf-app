@@ -8,6 +8,8 @@ import { Report } from '../models/report.model';
 import { TourismNews } from '../models/tourism-news.model';
 import { TourismLegislation } from '../models/tourism-card.model';
 import { Law } from '../models/law.model';
+import { Login } from '../models/login.model';
+import { RegisterModel } from '../models/register.model';
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +17,18 @@ import { Law } from '../models/law.model';
 export class LandingPageService {
   private http = inject(HttpClient);
   constructor() {}
+  login(data: Login): Observable<any> {
+    return this.http.post<any>(
+      'http://etfapi.itechpro-eg.com/api/Auth/login',
+      data
+    );
+  }
+  register(data: RegisterModel): Observable<any> {
+    return this.http.post<any>(
+      'http://etfapi.itechpro-eg.com/api/Auth/register',
+      data
+    );
+  }
   getGroupMembers(): Observable<GroupMember[]> {
     return this.http.get<GroupMember[]>('/assets/data/group-members.json');
   }

@@ -1,1 +1,72 @@
-<p>auth-login works!</p>
+<section class="login">
+  <app-carusol-gallery></app-carusol-gallery>
+  <div class="hero_text">
+    <div class="login-container">
+      <div class="d-flex justify-content-center align-items-center">
+        <h1>{{ "login.title" | translate }}</h1>
+      </div>
+      <div class="col-12 contact-us__form">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="email">{{ "login.email" | translate }}</label>
+                <input
+                  id="email"
+                  formControlName="email"
+                  type="text"
+                  pInputText
+                  placeholder="{{ 'login.emailPlaceholder' | translate }}"
+                  class="form-control"
+                />
+                <div
+                  class="text-danger mt-1"
+                  *ngIf="email?.touched && email?.invalid"
+                >
+                  <small *ngIf="email?.errors?.['required']">
+                    {{ "login.errors.emailRequired" | translate }}
+                  </small>
+                  <small *ngIf="email?.errors?.['email']">
+                    {{ "login.errors.emailInvalid" | translate }}
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="form-group">
+                <label for="password">{{ "login.password" | translate }}</label>
+                <input
+                  id="password"
+                  formControlName="password"
+                  type="password"
+                  pInputText
+                  placeholder="{{ 'login.passwordPlaceholder' | translate }}"
+                  class="form-control"
+                />
+              
+                <div
+                  class="text-danger mt-1"
+                  *ngIf="password?.touched && password?.invalid"
+                >
+                  <small *ngIf="password?.errors?.['required']">
+                    {{ "login.errors.passwordRequired" | translate }}
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <button class="news_btn w-100" type="submit">
+                {{ "login.loginNow" | translate }}
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex justify-content-between mt-3">
+          <a [routerLink]="['/landing-page/forgetPassword']" >{{ "login.forgotPassword" | translate }}</a>
+          <a [routerLink]="['/landing-page/register']">{{ "login.register" | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
