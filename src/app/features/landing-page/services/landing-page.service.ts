@@ -10,6 +10,8 @@ import { TourismLegislation } from '../models/tourism-card.model';
 import { Law } from '../models/law.model';
 import { Login } from '../models/login.model';
 import { RegisterModel } from '../models/register.model';
+import { forgetPasswordModel } from '../models/forgetpassword.model';
+import { ResetPasswordModel } from '../models/token.model';
 
 @Injectable({
   providedIn: 'root',
@@ -20,6 +22,18 @@ export class LandingPageService {
   login(data: Login): Observable<any> {
     return this.http.post<any>(
       'http://etfapi.itechpro-eg.com/api/Auth/login',
+      data
+    );
+  }
+  forgetPassword(data: forgetPasswordModel): Observable<any> {
+    return this.http.post<any>(
+      `http://etfapi.itechpro-eg.com/api/Auth/forget-password`,
+      data
+    );
+  }
+  resetPassword(data: ResetPasswordModel): Observable<any> {
+    return this.http.post<any>(
+      `http://etfapi.itechpro-eg.com/api/Auth/reset-password`,
       data
     );
   }

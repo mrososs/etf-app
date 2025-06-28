@@ -21,6 +21,7 @@ import { AuthRegisterComponent } from './components/auth-register/auth-register.
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { ConfirmAuthComponent } from './components/confirm-auth/confirm-auth.component';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,6 @@ import { ConfirmAuthComponent } from './components/confirm-auth/confirm-auth.com
     ResetPasswordComponent,
     ConfirmAuthComponent,
   ],
-  imports: [CommonModule, LandingPageRoutingModule, SharedModule],
+  imports: [CommonModule, LandingPageRoutingModule, SharedModule, DialogModule],
 })
 export class LandingPageModule {}

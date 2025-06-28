@@ -7,17 +7,15 @@ import { RouterModule } from '@angular/router';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 
-
-
-
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    FooterComponent
-  ],
+  declarations: [NavbarComponent, FooterComponent],
   imports: [
-    CommonModule,SharedModule,RouterModule,DialogModule,ButtonModule
+    CommonModule,
+    SharedModule,
+    RouterModule,
+    DialogModule,
+    ButtonModule,
   ],
-  exports:[ NavbarComponent,FooterComponent,DialogModule,ButtonModule]
+  exports: [NavbarComponent, FooterComponent, DialogModule, ButtonModule],
 })
-export class LayoutModule { }
+export class LayoutModule {}

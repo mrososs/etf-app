@@ -43,7 +43,7 @@
                   placeholder="{{ 'login.passwordPlaceholder' | translate }}"
                   class="form-control"
                 />
-              
+
                 <div
                   class="text-danger mt-1"
                   *ngIf="password?.touched && password?.invalid"
@@ -63,8 +63,12 @@
           </div>
         </form>
         <div class="d-flex justify-content-between mt-3">
-          <a [routerLink]="['/landing-page/forgetPassword']" >{{ "login.forgotPassword" | translate }}</a>
-          <a [routerLink]="['/landing-page/register']">{{ "login.register" | translate }}</a>
+          <a [routerLink]="['/landing-page/forgetPassword']">{{
+            "login.forgotPassword" | translate
+          }}</a>
+          <a [routerLink]="['/landing-page/register']">{{
+            "login.register" | translate
+          }}</a>
         </div>
       </div>
     </div>

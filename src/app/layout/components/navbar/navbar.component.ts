@@ -16,9 +16,11 @@ declare var bootstrap: any;
 })
 export class NavbarComponent implements OnInit {
   resourcePath = 'navbar.';
+  isLoggedIn: boolean = false;
+
   isScrolled = false;
   visible: boolean = false;
-  visibleLogin:boolean=false;
+  visibleLogin: boolean = false;
   themes = [
     {
       class: 'theme-orange-yellow',
@@ -38,6 +40,7 @@ export class NavbarComponent implements OnInit {
       image: '../../../../assets/img/logoColor/yellow.png',
     },
   ];
+  visibleLogoutConfirm: boolean = false;
 
   private langService = inject(LangService);
 
@@ -45,6 +48,8 @@ export class NavbarComponent implements OnInit {
   @ViewChild('navbarCollapse') navbarCollapse!: ElementRef;
 
   ngOnInit(): void {
+    this.isLoggedIn = !!localStorage.getItem('auth_token');
+
     window.addEventListener('scroll', this.onScroll, true);
   }
 
@@ -55,8 +60,16 @@ export class NavbarComponent implements OnInit {
   showDialog() {
     this.visible = true;
   }
-  showLogin(){
-    this.visibleLogin=true;
+  logout() {
+    localStorage.clear();
+    document.cookie = ''; // مسح أي cookies إن وجدت
+    this.visibleLogoutConfirm = false;
+    this.isLoggedIn = false;
+    window.location.href = '/landing-page/login'; // إعادة التوجيه
+  }
+
+  showLogin() {
+    this.visibleLogin = true;
   }
   closeNavbar() {
     const collapseEl = this.navbarCollapse?.nativeElement;

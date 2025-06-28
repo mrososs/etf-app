@@ -243,18 +243,39 @@
           >
             <h1>{{ "divingroom.officialSite.title" | translate }}</h1>
             <div class="mt-3">
-              <span class="d-flex align-items-center gap-3 website">
+              <span
+                class="d-flex align-items-center gap-3 website"
+                (click)="handleLinkClick()"
+              >
                 <img
                   src="../../../../../../assets/svg/website.svg"
                   alt="website"
                 />
-                <a href="http://etflms.itechpro-eg.com" target="_blank">
-                  {{ "doubleLearning.link" | translate }}
-                </a>
+                <span class="text-primary" style="cursor: pointer">
+                  {{ "doubleLearning.linkCourses" | translate }}
+                </span>
               </span>
             </div>
           </div>
         </div>
+        <p-dialog
+          [header]="'doubleLearning.mustLogin' | translate"
+          [modal]="true"
+          [(visible)]="visible"
+          [style]="{ width: '25rem' }"
+        >
+          <p class="text-center">
+            {{ "doubleLearning.mustLogin" | translate }}
+          </p>
+          <div class="d-flex justify-content-between align-items-center"  [routerLink]="['/landing-page/login']">
+            <button class="news_btn" type="button">
+              {{ "login.loginNow" | translate }}
+            </button>
+            <button class="news_btn" type="button" [routerLink]="['/landing-page/register']">
+              {{ "login.register" | translate }}
+            </button>
+          </div>
+        </p-dialog>
       </div>
     </div>
   </ng-template>

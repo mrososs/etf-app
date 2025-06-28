@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,8 +6,11 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './training.component.html',
   styleUrl: './training.component.scss',
 })
-export class TrainingComponent {
+export class TrainingComponent implements OnInit {
   translate = inject(TranslateService);
+  visible: boolean = false;
+  isLoggedIn = false;
+
   translateKeys = {
     safeDriving: this.translate.instant('training.safeDriving.title'),
     dualEducation: this.translate.instant('training.dualEducation.title'),
@@ -55,6 +58,9 @@ export class TrainingComponent {
         '../../../../../assets/img/videos2/تدريب - دعم الانتقال الى سوق العمل .2.jpg',
     },
   ];
+  ngOnInit(): void {
+    this.isLoggedIn = !!localStorage.getItem('auth_token');
+  }
   changeNewsType(type: string) {
     this.selected = type;
   }
@@ -67,5 +73,12 @@ export class TrainingComponent {
       const player = document.getElementById('mainPlayer') as HTMLVideoElement;
       if (player) player.play();
     });
+  }
+  handleLinkClick() {
+    if (this.isLoggedIn) {
+      window.open('http://etflms.itechpro-eg.com', '_blank');
+    } else {
+      this.visible = true;
+    }
   }
 }

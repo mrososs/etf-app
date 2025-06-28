@@ -51,10 +51,10 @@ const routes: Routes = [
     },
   },
   {
-    path: 'resetPassword',
+    path: 'resetpassword',
     component: ResetPasswordComponent,
     data: {
-      title: 'نسيت الباسورد - الإتحاد المصري',
+      title: 'تغير الباسورد - الإتحاد المصري',
     },
   },
   {

@@ -2,9 +2,15 @@
   "HELLO": "Hello",
   "WELCOME": "Welcome",
   "login": {
+    "forgetPassword": "Send Code",
+    "titlechangePassword": "Change Password",
+    "userId": "User ID",
+    "userIdPlaceholder": "Enter your User ID",
+    "token": "Verification Token",
+    "tokenPlaceholder": "Enter verification token",
     "title": "Log in to your account",
-    "email": "Username",
-    "emailPlaceholder": "Enter your username",
+    "email": "Username or Email",
+    "emailPlaceholder": "Enter your username or your email",
     "password": "Password",
     "passwordPlaceholder": "Enter your password",
     "forgotPassword": "Forgot password?",
@@ -34,6 +40,10 @@
     }
   },
   "navbar": {
+    "logout": "Logout",
+    "logoutConfirm": "Are you sure you want to logout?",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
     "home": "Home",
     "whoUs": "About Us",
     "login": "log in",
@@ -238,6 +248,8 @@
     "locationAddress": "On the Autostrad Road in 15th of May City"
   },
   "doubleLearning": {
+    "linkCourses": "Go to official course site",
+    "mustLogin": "You must be logged in to access the course site",
     "title": "Learning Management System by the Egyptian Tourism Federation",
     "subtitle": "(Project funded by the German Agency for International Cooperation - GIZ)",
     "description": "Education is one of the key drivers of economic development in Egypt. Technical and vocational education and training (TVET), especially through the dual education system that has been in place since 1994, helps provide a skilled workforce for the labor market. A comprehensive TVET system positively impacts economic growth and institutional productivity. Recognizing the importance of TVET, Article (20) of the 2014 Egyptian Constitution states: (The state is committed to encouraging, developing, and expanding all types of technical education and vocational training in accordance with global quality standards and labor market needs). The Federation therefore sought to have a say in technical education to ensure graduates from technical schools in Egypt meet the required standards for the tourism sector. Consequently, an agreement was signed between the Federation and the Ministry of Education and Technical Education granting the Federation membership in the steering council of the dual education and training system to participate in curriculum design and student training during their studies. This includes hands-on training at various tourism establishments, especially hotels, alongside theoretical education. Within this framework, and funded by GIZ, the Federation launched a tender to establish a learning management system to support these efforts and enable students to access training programs remotely in addition to attending onsite hotel-based training.",
