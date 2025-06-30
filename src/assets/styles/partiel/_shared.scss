@@ -501,3 +501,13 @@ button.news_btn {
     border-color: var(--color-primary, orange); // fallback if CSS vars not used
   }
 }
+.custom-spinner {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 9999 !important;
+   svg circle {
+    stroke: $color-primary !important;
+  }
+}

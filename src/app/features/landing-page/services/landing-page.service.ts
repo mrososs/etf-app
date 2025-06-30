@@ -19,12 +19,13 @@ import { ResetPasswordModel } from '../models/token.model';
 export class LandingPageService {
   private http = inject(HttpClient);
   constructor() {}
-  login(data: Login): Observable<any> {
-    return this.http.post<any>(
-      'http://etfapi.itechpro-eg.com/api/Auth/login',
-      data
-    );
-  }
+ login(data: Login): Observable<string> {
+  return this.http.post<string>(
+    'http://etfapi.itechpro-eg.com/api/Auth/login',
+    data,
+    { responseType: 'text' as 'json' } // الحل هنا
+  );
+}
   forgetPassword(data: forgetPasswordModel): Observable<any> {
     return this.http.post<any>(
       `http://etfapi.itechpro-eg.com/api/Auth/forget-password`,

@@ -21,27 +21,30 @@ export class AuthLoginComponent {
   togglePassword() {
     this.showPassword = !this.showPassword;
   }
-onSubmit() {
-  if (this.loginForm.valid) {
-    const data: Login = {
-      usernameOrEmail: this.loginForm.value.email || '',
-      password: this.loginForm.value.password || ''
-    };
+  onSubmit() {
+    if (this.loginForm.valid) {
+      const data: Login = {
+        usernameOrEmail: this.loginForm.value.email || '',
+        password: this.loginForm.value.password || '',
+      };
 
-    this.landingPageService.login(data).subscribe({
-      next: (res) => {
-        this.toasterService.success('Login successful!', 'Success');
-        localStorage.setItem('auth_token', res.token);
-        // this.router.navigate(['/dashboard']);
-      },
-      error: (err) => {
-        this.toasterService.error('Invalid email or password.', 'Login Failed');
-      }
-    });
-  } else {
-    this.loginForm.markAllAsTouched();
+      this.landingPageService.login(data).subscribe({
+        next: (res) => {
+          this.toasterService.success('Login successful!', 'Success');
+          localStorage.setItem('auth_token', res);
+          console.log('Login response:', res);
+        },
+        error: (err) => {
+          this.toasterService.error(
+            'Invalid email or password.',
+            'Login Failed'
+          );
+        },
+      });
+    } else {
+      this.loginForm.markAllAsTouched();
+    }
   }
-}
 
   get email() {
     return this.loginForm.get('email');

@@ -1,6 +1,10 @@
 <div class="page-container">
   <app-navbar></app-navbar>
   <main class="content">
+    <p-progressSpinner
+      *ngIf="loader.loading$ | async"
+      styleClass="custom-spinner"
+    ></p-progressSpinner>
     <router-outlet></router-outlet>
   </main>
 

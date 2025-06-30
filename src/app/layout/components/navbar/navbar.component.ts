@@ -49,6 +49,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoggedIn = !!localStorage.getItem('auth_token');
+    console.log(this.isLoggedIn);
 
     window.addEventListener('scroll', this.onScroll, true);
   }

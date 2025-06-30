@@ -12,9 +12,11 @@ import {
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ToastrModule } from 'ngx-toastr';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { tokenInterceptor } from './core/interceptors/token.interceptor';
+import { loaderInterceptor } from './core/interceptors/loader.interceptor';
 // Factory function
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -25,6 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
+    ProgressSpinnerModule,
+
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right', // أو toast-top-right
       timeOut: 3000,
@@ -41,7 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
   ],
-  providers: [provideHttpClient(withInterceptors([tokenInterceptor]))],
+  providers: [
+    provideHttpClient(withInterceptors([tokenInterceptor, loaderInterceptor])),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
