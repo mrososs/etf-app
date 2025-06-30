@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LandingPageService } from '../../services/landing-page.service';
 import { ToastrService } from 'ngx-toastr';
 import { Login } from '../../models/login.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth-login',
@@ -12,6 +13,7 @@ import { Login } from '../../models/login.model';
 export class AuthLoginComponent {
   private landingPageService = inject(LandingPageService);
   private toasterService = inject(ToastrService);
+  private router = inject(Router);
   showPassword = false;
 
   loginForm = new FormGroup({
@@ -32,13 +34,15 @@ export class AuthLoginComponent {
         next: (res) => {
           this.toasterService.success('Login successful!', 'Success');
           localStorage.setItem('auth_token', res);
-          console.log('Login response:', res);
         },
         error: (err) => {
           this.toasterService.error(
             'Invalid email or password.',
             'Login Failed'
           );
+        },
+        complete: () => {
+          this.router.navigate(['/landing-page/home']);
         },
       });
     } else {
