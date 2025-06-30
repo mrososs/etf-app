@@ -24,7 +24,7 @@ export class AuthLoginComponent {
 onSubmit() {
   if (this.loginForm.valid) {
     const data: Login = {
-      username: this.loginForm.value.email || '',
+      usernameOrEmail: this.loginForm.value.email || '',
       password: this.loginForm.value.password || ''
     };
 
