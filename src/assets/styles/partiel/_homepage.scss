@@ -409,7 +409,7 @@
   .news-marquee-content {
     display: flex;
     gap: 2rem;
-    animation: scroll-horizontal 20s linear infinite;
+    animation: scroll-horizontal 60s linear infinite;
     align-items: stretch;
   }
 
@@ -486,10 +486,10 @@
 
   @keyframes scroll-horizontal {
     0% {
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(100%);
     }
   }
 }
