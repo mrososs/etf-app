@@ -58,11 +58,11 @@
 
     "ar": "العربية",
     "en": "English",
-    "divingRoom": "Chamber of Diving and Water Activities",
-    "travelRoom": "Chamber of Travel and Tourism Companies and Agencies",
-    "hotelRoom": "Chamber of Hotel Establishments",
-    "eatRoom": "Chamber of Tourist Restaurants and Establishments",
-    "productsRoom": "Chamber of Handicrafts and Tourist Goods",
+    "divingRoom": "Chamber Of Diving And Water sports",
+    "travelRoom": "Egyptian Travel Agents Association",
+    "hotelRoom": " Egyptian Hotels Association",
+    "eatRoom": "Chamber of Tourism Establishments & Restaurants",
+    "productsRoom": "Egyptian Chamber Of Touristic Commodities",
     "english": "English"
   },
   "footer": {
@@ -149,7 +149,7 @@
   "divingroom": {
     "title": "Tourism Rooms",
     "breadcrumb": "Rooms",
-    "header": "Chamber of Diving and Marine Activities",
+    "header": "Chamber Of Diving And Water sports",
     "description": "It includes diving facilities licensed by the Ministry of Tourism. The chamber aims to improve the quality, safety, and standards of diving and marine activity services, in addition to preserving the unique marine life of the Red Sea.",
     "officialSite": {
       "title": "Official Website",
@@ -159,7 +159,7 @@
   "eatroom": {
     "title": "Tourism Rooms",
     "breadcrumb": "Rooms",
-    "header": "Chamber of Tourism Establishments and Restaurants",
+    "header": "Chamber of Tourism Establishments & Restaurants",
     "description": "It includes tourism establishments licensed by the Ministry of Tourism and works to support and improve the services provided by these establishments and restaurants.",
     "officialSite": {
       "title": "Official Website",
@@ -169,7 +169,7 @@
   "hotelroom": {
     "title": "Tourism Rooms",
     "breadcrumb": "Rooms",
-    "header": "Chamber of Hotel Establishments",
+    "header": "Egyptian Hotels Association",
     "description": "It includes hotel establishments licensed by the Ministry of Tourism. The chamber works to develop the hotel sector in Egypt by promoting knowledge sharing, overcoming obstacles to its growth, and providing continuous professional training to enhance hotel staff performance.",
     "officialSite": {
       "title": "Official Website",
@@ -179,7 +179,7 @@
   "productroom": {
     "title": "Tourism Rooms",
     "breadcrumb": "Rooms",
-    "header": "Chamber of Handicrafts and Tourist Goods",
+    "header": "Egyptian Chamber Of Touristic Commodities",
     "description": "It includes licensed establishments for selling handicrafts and tourist goods. The chamber supports its members and their activities in the trade of tourist products, aiming to develop the product, raise the standards of workers, solve issues, and represent them before the relevant authorities.",
     "officialSite": {
       "title": "Official Website",
@@ -189,7 +189,7 @@
   "travelroom": {
     "title": "Tourism Rooms",
     "breadcrumb": "Rooms",
-    "header": "Chamber of Travel and Tourism Companies",
+    "header": "Egyptian Travel Agents Association",
     "description": "It includes tourism companies licensed by the Ministry of Tourism. The chamber works to support and care for these companies within the state's tourism plan, and represents them before public authorities, organizations, and local and international bodies.",
     "officialSite": {
       "title": "Official Website",

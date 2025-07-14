@@ -1,6 +1,6 @@
 export interface Committee {
   title: string;
   head: string;
-  icon?:string;
+  iconUrl?:string;
   points: string[];
 }

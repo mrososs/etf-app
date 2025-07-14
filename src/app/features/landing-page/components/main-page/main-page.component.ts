@@ -12,6 +12,7 @@ import { TourismNews } from '../../models/tourism-news.model';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent implements OnInit {
+  
   selected: string = 'أخبار عن الإتحاد'; // ✅ لازم تتعرف هنا
   isExpanded = false;
   members: GroupMember[] = [];

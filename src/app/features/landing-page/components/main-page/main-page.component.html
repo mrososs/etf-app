@@ -230,7 +230,7 @@
           />
         </div>
       </div>
-      <div class="news-marquee-wrapper mt-4">
+      <div class="news-marquee-wrapper mt-4" #newsWrapper>
         <div class="news-marquee-content">
           <div class="news-item" *ngFor="let item of displayedNews">
             <img [src]="item.imageUrl" alt="News" />
@@ -284,6 +284,11 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex gap-3 justify-content-center mt-5">
+        <!-- Left Arrow -->
+        <button class="arrow-btn right">&#8594;</button>
+        <button class="arrow-btn left">&#8592;</button>
       </div>
     </div>
     <div class="rooms">
