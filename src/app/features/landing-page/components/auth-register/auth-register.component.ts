@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { LandingPageService } from '../../services/landing-page.service';
 import { RegisterModel } from '../../models/register.model';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-auth-register',
@@ -24,7 +25,7 @@ export class AuthRegisterComponent {
   }
   onSubmit() {
     if (this.registerForm.valid) {
-      const confirmUrl = 'https://etf.itechpro-eg.com/confirm-register';
+      const confirmUrl = environment.confirmUrl;
 
       const data: RegisterModel = {
         username: this.registerForm.value.username || '',
