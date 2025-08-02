@@ -18,6 +18,7 @@ import { ProductRoomComponent } from './components/rooms-component/product-room/
 import { NewsDetailsComponent } from './components/news-details/news-details.component';
 import { AuthLoginComponent } from './components/auth-login/auth-login.component';
 import { AuthRegisterComponent } from './components/auth-register/auth-register.component';
+import { ConfirmRegisterComponent } from './components/confirm-register/confirm-register.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { ConfirmAuthComponent } from './components/confirm-auth/confirm-auth.component';
@@ -40,6 +41,7 @@ import { DialogModule } from 'primeng/dialog';
     NewsDetailsComponent,
     AuthLoginComponent,
     AuthRegisterComponent,
+    ConfirmRegisterComponent,
     ForgetPasswordComponent,
     ResetPasswordComponent,
     ConfirmAuthComponent,

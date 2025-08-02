@@ -24,7 +24,7 @@ export class AuthRegisterComponent {
   }
   onSubmit() {
     if (this.registerForm.valid) {
-      const confirmUrl = 'https://etf.itechpro-eg.com/login';
+      const confirmUrl = 'https://etf.itechpro-eg.com/confirm-register';
 
       const data: RegisterModel = {
         username: this.registerForm.value.username || '',

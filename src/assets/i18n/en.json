@@ -20,7 +20,8 @@
       "emailRequired": "username is required",
       "emailInvalid": "Invalid email format",
       "passwordRequired": "Password is required"
-    }
+    },
+    "accountConfirmed": "Your account has been successfully confirmed! You can now log in."
   },
   "register": {
     "title": "Create a New Account",
@@ -271,5 +272,15 @@
     "title": "Culinary Arts Training Centers",
     "description1": "The Egyptian Tourism Federation has established specialized training centers for culinary arts to prepare qualified professional chefs through practical programs designed according to international standards in collaboration with the British City & Guilds Foundation.",
     "description2": "Currently, a study is underway to restart the centers in one of the leading tourism governorates to meet the needs of the tourism labor market."
+  },
+  "confirmRegister": {
+    "loading": "Verifying your account...",
+    "successTitle": "Account Confirmed Successfully!",
+    "successMessage": "Your email has been verified and your account is now active. You can now log in to your account.",
+    "redirectMessage": "You will be redirected to the login page in a few seconds...",
+    "goToLogin": "Go to Login",
+    "errorTitle": "Verification Failed",
+    "errorMessage": "The verification link is invalid or has expired. Please try registering again or contact support.",
+    "invalidLink": "Invalid or expired confirmation link"
   }
 }

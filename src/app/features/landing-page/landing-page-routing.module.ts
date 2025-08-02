@@ -14,6 +14,7 @@ import { HotelRoomComponent } from './components/rooms-component/hotel-room/hote
 import { NewsDetailsComponent } from './components/news-details/news-details.component';
 import { AuthLoginComponent } from './components/auth-login/auth-login.component';
 import { AuthRegisterComponent } from './components/auth-register/auth-register.component';
+import { ConfirmRegisterComponent } from './components/confirm-register/confirm-register.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
@@ -41,6 +42,13 @@ const routes: Routes = [
     component: AuthRegisterComponent,
     data: {
       title: 'انشاء حساب - الإتحاد المصري',
+    },
+  },
+  {
+    path: 'confirm-register',
+    component: ConfirmRegisterComponent,
+    data: {
+      title: 'تأكيد التسجيل - الإتحاد المصري',
     },
   },
   {
