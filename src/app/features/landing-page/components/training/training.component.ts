@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-training',
@@ -76,7 +77,10 @@ export class TrainingComponent implements OnInit {
   }
   handleLinkClick() {
     if (this.isLoggedIn) {
-      window.open('http://etflms.itechpro-eg.com', '_blank');
+      const token = localStorage.getItem('auth_token');
+      const lmsUrl = environment.lmsUrl;
+      const urlWithToken = `${lmsUrl}?token=${token}`;
+      window.open(urlWithToken, '_blank');
     } else {
       this.visible = true;
     }

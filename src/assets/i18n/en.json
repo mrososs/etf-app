@@ -43,6 +43,7 @@
   "navbar": {
     "logout": "Logout",
     "logoutConfirm": "Are you sure you want to logout?",
+    "logoutSuccess": "You have been successfully logged out.",
     "confirm": "Confirm",
     "cancel": "Cancel",
     "home": "Home",

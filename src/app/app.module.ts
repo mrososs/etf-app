@@ -46,7 +46,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
   ],
   providers: [
-    provideHttpClient(withInterceptors([tokenInterceptor, loaderInterceptor])),
+    provideHttpClient(withInterceptors([ loaderInterceptor])),
   ],
   bootstrap: [AppComponent],
 })

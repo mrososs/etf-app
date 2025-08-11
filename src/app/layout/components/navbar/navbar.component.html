@@ -228,7 +228,7 @@
         <li class="nav-item me-5">
           <button
             class="register_btn"
-            *ngIf="!isLoggedIn"
+            *ngIf="!isLoggedIn && !isOnLoginPage()"
             [routerLink]="['/landing-page/login']"
           >
             {{ resourcePath + "login" | translate }}
@@ -236,27 +236,35 @@
 
           <button
             class="register_btn"
-            *ngIf="isLoggedIn"
+            *ngIf="isLoggedIn && !isOnLoginPage()"
             (click)="visibleLogoutConfirm = true"
           >
             {{ resourcePath + "logout" | translate }}
           </button>
         </li>
         <p-dialog
-          header="{{ resourcePath + 'logout' | translate }}"
+          [header]="resourcePath + 'logout' | translate"
           [(visible)]="visibleLogoutConfirm"
           [modal]="true"
-          [style]="{ width: '20rem' }"
+          [style]="{ width: '25rem' }"
+          [closable]="true"
+          (onHide)="visibleLogoutConfirm = false"
         >
-          <p class="text-center">
-            {{ resourcePath + "logoutConfirm" | translate }}
-          </p>
-          <div class="text-center  mt-4">
+          <div class="text-center">
+            <i
+              class="fas fa-exclamation-triangle text-warning mb-3"
+              style="font-size: 3rem"
+            ></i>
+            <p class="mb-3">
+              {{ resourcePath + "logoutConfirm" | translate }}
+            </p>
+          </div>
+          <div class="text-center mt-4">
             <button class="btn btn-danger me-2" (click)="logout()">
               {{ resourcePath + "confirm" | translate }}
             </button>
             <button
-              class="btn btn-secondary me-3"
+              class="btn btn-secondary"
               (click)="visibleLogoutConfirm = false"
             >
               {{ resourcePath + "cancel" | translate }}

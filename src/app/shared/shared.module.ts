@@ -8,7 +8,6 @@ import { OrganizationChartModule } from 'primeng/organizationchart';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 
-
 @NgModule({
   declarations: [SharedNavigateButtonComponent, ContactUsBannerComponent],
   imports: [
@@ -18,7 +17,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
     TranslateModule,
     OrganizationChartModule,
     InputTextModule,
-    InputTextareaModule
+    InputTextareaModule,
   ],
   exports: [
     CommonModule,

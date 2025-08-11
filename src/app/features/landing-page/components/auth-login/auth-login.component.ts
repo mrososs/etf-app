@@ -65,6 +65,23 @@ export class AuthLoginComponent implements OnInit {
         next: (res) => {
           this.toasterService.success('Login successful!', 'Success');
           localStorage.setItem('auth_token', res);
+          document.cookie = `token=${res}; path=/; domain=.itechpro-eg.com; secure; SameSite=None`;
+
+          // Trigger storage event to notify navbar of login state change
+          window.dispatchEvent(
+            new StorageEvent('storage', {
+              key: 'auth_token',
+              newValue: res,
+              url: window.location.href,
+            })
+          );
+
+          // Also dispatch a custom event for better communication
+          window.dispatchEvent(
+            new CustomEvent('loginStateChanged', {
+              detail: { isLoggedIn: true, token: res },
+            })
+          );
         },
         error: (err) => {
           this.toasterService.error(

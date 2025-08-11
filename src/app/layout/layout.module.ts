@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [NavbarComponent, FooterComponent],
@@ -15,6 +16,7 @@ import { ButtonModule } from 'primeng/button';
     RouterModule,
     DialogModule,
     ButtonModule,
+    ToastrModule,
   ],
   exports: [NavbarComponent, FooterComponent, DialogModule, ButtonModule],
 })
