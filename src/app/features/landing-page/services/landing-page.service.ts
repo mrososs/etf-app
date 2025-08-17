@@ -28,7 +28,7 @@ export class LandingPageService {
   }
   forgetPassword(data: forgetPasswordModel): Observable<any> {
     return this.http.post<any>(
-      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Auth/forget-password`,
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Auth/forgot-password`,
       data
     );
   }

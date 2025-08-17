@@ -13,12 +13,18 @@
     "emailPlaceholder": " ادخل اسم المستخدم او الايميل ",
     "password": "كلمة المرور",
     "passwordPlaceholder": "ادخل كلمة المرور",
+    "newPassword": "كلمة المرور الجديدة",
+    "newPasswordPlaceholder": "ادخل كلمة المرور الجديدة",
+    "passwordHelp": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
     "forgotPassword": "نسيت كلمة المرور؟",
     "loginNow": "تسجيل الدخول ",
     "register": "إنشاء حساب جديد",
+    "changePassword": "تغيير كلمة المرور",
+    "changingPassword": "جاري تغيير كلمة المرور...",
     "errors": {
       "emailRequired": "اسم المستخدم مطلوب",
-      "passwordRequired": "كلمة المرور مطلوبة"
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "passwordMinLength": "كلمة المرور يجب أن تكون 6 أحرف على الأقل"
     },
     "accountConfirmed": "تم تأكيد حسابك بنجاح! يمكنك الآن تسجيل الدخول."
   },

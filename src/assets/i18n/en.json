@@ -13,13 +13,19 @@
     "emailPlaceholder": "Enter your username or your email",
     "password": "Password",
     "passwordPlaceholder": "Enter your password",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Enter your new password",
+    "passwordHelp": "Password must be at least 6 characters long",
     "forgotPassword": "Forgot password?",
     "loginNow": "Log In",
     "register": "Create a new account",
+    "changePassword": "Change Password",
+    "changingPassword": "Changing Password...",
     "errors": {
       "emailRequired": "username is required",
       "emailInvalid": "Invalid email format",
-      "passwordRequired": "Password is required"
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 6 characters"
     },
     "accountConfirmed": "Your account has been successfully confirmed! You can now log in."
   },

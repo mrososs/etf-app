@@ -5,6 +5,7 @@ import { Login } from '../../models/login.model';
 import { LandingPageService } from '../../services/landing-page.service';
 import { forgetPasswordModel } from '../../models/forgetpassword.model';
 import { Router } from '@angular/router';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-forget-password',
@@ -25,7 +26,7 @@ export class ForgetPasswordComponent {
   }
   onSubmit() {
     if (this.forgetPasswordForm.valid) {
-      const confirmUrl = 'https://etf.itechpro-eg.com/resetpassword';
+      const confirmUrl = environment.resetPasswordUrl;
 
       const data: forgetPasswordModel = {
         email: this.forgetPasswordForm.value.email || '',
@@ -34,16 +35,23 @@ export class ForgetPasswordComponent {
 
       this.landingPageService.forgetPassword(data).subscribe({
         next: (res) => {
+          // Save token and userId to localStorage as fallback
+          if (res.token && res.userId) {
+            localStorage.setItem('resetToken', res.token);
+            localStorage.setItem('resetUserId', res.userId);
+          }
+
+          // Show the message from the response
           this.toasterService.success(
-            'send to your email the token!',
+            res.message ||
+              'Password reset link has been sent if the email exists.',
             'Success'
           );
-          this.router.navigate(['/landing-page/resetpassword']);
+          // Don't navigate automatically - user will receive email with link
         },
         error: (err) => {
           this.toasterService.error('Invalid email .', '');
         },
-        complete: () => this.router.navigate(['/landing-page/resetpassword']),
       });
     } else {
       this.forgetPasswordForm.markAllAsTouched();

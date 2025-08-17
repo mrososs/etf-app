@@ -66,6 +66,11 @@ const routes: Routes = [
     },
   },
   {
+    path: 'reset-password',
+    redirectTo: 'resetpassword',
+    pathMatch: 'full',
+  },
+  {
     path: 'union',
     component: AboutUnionComponent,
     data: { title: 'عن الإتحاد - الإتحاد المصري' },
