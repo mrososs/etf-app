@@ -19,28 +19,28 @@ import { ResetPasswordModel } from '../models/token.model';
 export class LandingPageService {
   private http = inject(HttpClient);
   constructor() {}
- login(data: Login): Observable<string> {
-  return this.http.post<string>(
-    'http://etfapi.itechpro-eg.com/api/Auth/login',
-    data,
-    { responseType: 'text' as 'json' } // الحل هنا
-  );
-}
+  login(data: Login): Observable<string> {
+    return this.http.post<string>(
+      'https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Auth/login',
+      data,
+      { responseType: 'text' as 'json' } // الحل هنا
+    );
+  }
   forgetPassword(data: forgetPasswordModel): Observable<any> {
     return this.http.post<any>(
-      `http://etfapi.itechpro-eg.com/api/Auth/forget-password`,
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Auth/forget-password`,
       data
     );
   }
   resetPassword(data: ResetPasswordModel): Observable<any> {
     return this.http.post<any>(
-      `http://etfapi.itechpro-eg.com/api/Auth/reset-password`,
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Auth/reset-password`,
       data
     );
   }
   register(data: RegisterModel): Observable<any> {
     return this.http.post<any>(
-      'http://etfapi.itechpro-eg.com/api/Auth/register',
+      'https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Auth/register',
       data
     );
   }
@@ -53,44 +53,44 @@ export class LandingPageService {
   getNewsItems(): Observable<NewsItem[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<NewsItem[]>(
-      `http://etfapi.itechpro-eg.com/api/News?lang=${lang}`
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/News?lang=${lang}`
     );
   }
   getContactUs(data: any): Observable<any> {
     return this.http.post<any>(
-      `http://etfapi.itechpro-eg.com/api/ContactUs`,
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/ContactUs`,
       data
     );
   }
   getCommittees(): Observable<Committee[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<Committee[]>(
-      `http://etfapi.itechpro-eg.com/api/Commitee/${lang}`
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Commitee/${lang}`
     );
   }
 
   getReports(): Observable<Report[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<Report[]>(
-      `http://etfapi.itechpro-eg.com/api/Report?lang=${lang}`
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Report?lang=${lang}`
     );
   }
   getTourismNews(): Observable<TourismNews[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<TourismNews[]>(
-      `http://etfapi.itechpro-eg.com/api/TourismNews?lang=${lang}`
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/TourismNews?lang=${lang}`
     );
   }
   getTourismLegislations(): Observable<TourismLegislation[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<TourismLegislation[]>(
-      `http://etfapi.itechpro-eg.com/api/TourismLegislation?lang=${lang}`
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/TourismLegislation?lang=${lang}`
     );
   }
   getLaw(): Observable<Law[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<Law[]>(
-      `http://etfapi.itechpro-eg.com/api/Law/${lang}`
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Law/${lang}`
     );
   }
 }

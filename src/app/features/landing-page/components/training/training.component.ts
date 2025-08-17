@@ -78,9 +78,21 @@ export class TrainingComponent implements OnInit {
   handleLinkClick() {
     if (this.isLoggedIn) {
       const token = localStorage.getItem('auth_token');
+      const pendingUserId = localStorage.getItem('pendingUserId');
+      const pendingToken = localStorage.getItem('pendingToken');
+
       const lmsUrl = environment.lmsUrl;
-      const urlWithToken = `${lmsUrl}?token=${token}`;
-      window.open(urlWithToken, '_blank');
+      let urlWithParams = `${lmsUrl}?token=${token}`;
+
+      // Add pending confirmation parameters if they exist
+      if (pendingUserId && pendingToken) {
+        urlWithParams += `&userId=${pendingUserId}&confirmToken=${pendingToken}`;
+        // Clear the pending values after using them
+        localStorage.removeItem('pendingUserId');
+        localStorage.removeItem('pendingToken');
+      }
+
+      window.open(urlWithParams, '_blank');
     } else {
       this.visible = true;
     }

@@ -47,10 +47,10 @@ export class ConfirmRegisterComponent implements OnInit {
             this.toasterService.success(message, 'Success');
           });
 
-        // Redirect to login page after 3 seconds
+        // Redirect to login page after 5 seconds
         setTimeout(() => {
-          this.router.navigate(['/login']);
-        }, 3000);
+          this.router.navigate(['/landing-page/login']);
+        }, 5000);
       } else {
         this.isSuccess = false;
         this.isLoading = false;
@@ -72,6 +72,6 @@ export class ConfirmRegisterComponent implements OnInit {
   }
 
   goToLogin() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/landing-page/login']);
   }
 }
