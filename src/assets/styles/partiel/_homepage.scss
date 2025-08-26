@@ -381,6 +381,27 @@
       width: 2.5rem;
       height: 2.5rem;
       cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover:not(.disabled) {
+        background-color: #e67e17; // Darker version of the primary color
+        transform: scale(1.1);
+      }
+
+      &.disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    }
+
+    .pagination-info {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $color-primary;
+      margin: 0 1rem;
     }
     h1 {
       font-size: 2rem;
@@ -402,29 +423,29 @@
       }
     }
 
-    .news-marquee-wrapper {
-      overflow: hidden;
+    .news-pagination-wrapper {
       width: 100%;
       position: relative;
-      // height: 220px; // adjust height to fit expanded content
       margin-top: 1.5rem;
+    }
 
-      // 🛑 Pause scroll on hover of wrapper
-      &:hover .news-marquee-content {
-        animation-play-state: paused;
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      align-items: stretch;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
       }
     }
 
-    .news-marquee-content {
-      display: flex;
-      gap: 2rem;
-      animation: scroll-horizontal 60s linear infinite;
-      align-items: stretch;
-    }
-
     .news-item {
-      flex: 0 0 auto;
-      width: 300px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -436,6 +457,7 @@
       flex-direction: column;
       justify-content: start;
       height: 100%;
+      min-height: 400px;
 
       img {
         max-width: 100%;
@@ -489,15 +511,6 @@
           opacity: 1;
           pointer-events: auto;
         }
-      }
-    }
-
-    @keyframes scroll-horizontal {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(100%);
       }
     }
   }

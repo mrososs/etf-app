@@ -12,13 +12,17 @@ import { TourismNews } from '../../models/tourism-news.model';
   styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent implements OnInit {
-  
   selected: string = 'أخبار عن الإتحاد'; // ✅ لازم تتعرف هنا
   isExpanded = false;
   members: GroupMember[] = [];
   newsItems: NewsItem[] = [];
   tourismNews: TourismNews[] = [];
   displayedNews: NewsItem[] | TourismNews[] = [];
+
+  // Pagination properties
+  currentPage: number = 0;
+  itemsPerPage: number = 3;
+  totalPages: number = 0;
 
   private _landingPageService = inject(LandingPageService);
   ngOnInit(): void {
@@ -31,16 +35,18 @@ export class MainPageComponent implements OnInit {
         this.members = members;
         this.newsItems = news;
         this.tourismNews = tourismNews;
-        this.displayedNews = news || tourismNews;
+        this.updateDisplayedNews();
       },
       error: (err) => {
         console.error('Error loading data', err);
       },
     });
   }
+
   toggleText() {
     this.isExpanded = !this.isExpanded;
   }
+
   generateFacebookShareLink(id: number, type: string): string {
     const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
     return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
@@ -57,11 +63,41 @@ export class MainPageComponent implements OnInit {
 
   changeNewsType(type: string) {
     this.selected = type;
+    this.currentPage = 0; // Reset to first page when changing news type
+    this.updateDisplayedNews();
+  }
 
-    if (type === 'أخبار عن الإتحاد') {
-      this.displayedNews = this.newsItems.slice(0, 3);
-    } else if (type === 'أخبار السياحة') {
-      this.displayedNews = this.tourismNews.slice(0, 3);
+  // Pagination methods
+  updateDisplayedNews() {
+    const sourceArray =
+      this.selected === 'أخبار عن الإتحاد' ? this.newsItems : this.tourismNews;
+    this.totalPages = Math.ceil(sourceArray.length / this.itemsPerPage);
+
+    const startIndex = this.currentPage * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    this.displayedNews = sourceArray.slice(startIndex, endIndex);
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages - 1) {
+      this.currentPage++;
+      this.updateDisplayedNews();
     }
+  }
+
+  previousPage() {
+    if (this.currentPage > 0) {
+      this.currentPage--;
+      this.updateDisplayedNews();
+    }
+  }
+
+  // Helper methods for pagination state
+  canGoNext(): boolean {
+    return this.currentPage < this.totalPages - 1;
+  }
+
+  canGoPrevious(): boolean {
+    return this.currentPage > 0;
   }
 }

@@ -230,14 +230,19 @@
           />
         </div>
       </div>
-      <div class="news-marquee-wrapper mt-4" #newsWrapper>
-        <div class="news-marquee-content">
+      <div class="news-pagination-wrapper mt-4">
+        <div class="news-grid">
           <div class="news-item" *ngFor="let item of displayedNews">
             <img [src]="item.imageUrl" alt="News" />
             <p>{{ item.description }}</p>
             <div class="d-flex justify-content-center gap-2 mt-2">
               <a
-                [href]="generateFacebookShareLink(item.id, 'touristnews')"
+                [href]="
+                  generateFacebookShareLink(
+                    item.id,
+                    selected === 'أخبار عن الإتحاد' ? 'news' : 'touristnews'
+                  )
+                "
                 target="_blank"
                 class="btn btn-sm btn-outline-primary"
                 aria-label="Share on Facebook"
@@ -249,7 +254,11 @@
               </a>
               <a
                 [href]="
-                  generateTwitterShareLink(item.id, 'news', item.description)
+                  generateTwitterShareLink(
+                    item.id,
+                    selected === 'أخبار عن الإتحاد' ? 'news' : 'touristnews',
+                    item.description
+                  )
                 "
                 target="_blank"
                 class="btn btn-sm btn-outline-info"
@@ -274,8 +283,7 @@
                 <a
                   *ngIf="selected === 'أخبار السياحة'"
                   [routerLink]="['/landing-page/newsdetails', item.id]"
-                  [queryParams]="{ type: 'tourstnews' }"
-                  target="_blank"
+                  [queryParams]="{ type: 'touristnews' }"
                   class="text-white"
                 >
                   {{ item.buttonText || ("news.readMore" | translate) }}
@@ -286,9 +294,26 @@
         </div>
       </div>
       <div class="d-flex gap-3 justify-content-center mt-5">
-        <!-- Left Arrow -->
-        <button class="arrow-btn right">&#8594;</button>
-        <button class="arrow-btn left">&#8592;</button>
+        <!-- Pagination Controls -->
+        <button
+          class="arrow-btn left"
+          (click)="previousPage()"
+          [disabled]="!canGoPrevious()"
+          [class.disabled]="!canGoPrevious()"
+        >
+        &#8594;
+        </button>
+        <span class="pagination-info">
+          {{ currentPage + 1 }} / {{ totalPages }}
+        </span>
+        <button
+          class="arrow-btn right"
+          (click)="nextPage()"
+          [disabled]="!canGoNext()"
+          [class.disabled]="!canGoNext()"
+        >
+        &#8592;
+      </button>
       </div>
     </div>
     <div class="rooms">
