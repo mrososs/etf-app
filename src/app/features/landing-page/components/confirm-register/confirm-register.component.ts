@@ -17,6 +17,7 @@ export class ConfirmRegisterComponent implements OnInit {
   isLoading = true;
   isSuccess = false;
   errorMessage = '';
+  countdown = 5;
 
   ngOnInit() {
     this.handleConfirmation();
@@ -27,6 +28,9 @@ export class ConfirmRegisterComponent implements OnInit {
     this.route.queryParams.subscribe((params) => {
       const userId = params['userId'];
       const token = params['token'];
+
+      console.log('Confirm Register - URL Parameters:', { userId, token });
+      console.log('Current URL:', window.location.href);
 
       if (userId && token) {
         // Store in localStorage
@@ -47,22 +51,41 @@ export class ConfirmRegisterComponent implements OnInit {
             this.toasterService.success(message, 'Success');
           });
 
-        // Redirect to login page after 5 seconds
-        setTimeout(() => {
-          this.router.navigate(['/landing-page/login']);
-        }, 5000);
+        // Start countdown and redirect
+        this.startCountdown();
       } else {
         this.isSuccess = false;
         this.isLoading = false;
-        this.errorMessage = 'Invalid confirmation link';
 
+        // Get translated error message
         this.translateService
           .get('confirmRegister.invalidLink')
           .subscribe((message: string) => {
-            this.toasterService.error(message, 'Error');
+            this.errorMessage = message;
+          });
+
+        console.error('Confirm Register - Missing parameters:', {
+          userId,
+          token,
+        });
+
+        this.translateService
+          .get('confirmRegister.errorTitle')
+          .subscribe((title: string) => {
+            this.toasterService.error(this.errorMessage, title);
           });
       }
     });
+  }
+
+  private startCountdown() {
+    const interval = setInterval(() => {
+      this.countdown--;
+      if (this.countdown <= 0) {
+        clearInterval(interval);
+        this.router.navigate(['/landing-page/login']);
+      }
+    }, 1000);
   }
 
   private setCookie(name: string, value: string, days: number) {
@@ -73,5 +96,10 @@ export class ConfirmRegisterComponent implements OnInit {
 
   goToLogin() {
     this.router.navigate(['/landing-page/login']);
+  }
+
+  // Getter for countdown display
+  get countdownDisplay(): string {
+    return this.countdown.toString();
   }
 }

@@ -52,6 +52,13 @@ const routes: Routes = [
     },
   },
   {
+    path: 'test-confirm',
+    component: ConfirmRegisterComponent,
+    data: {
+      title: 'Test Confirm - الإتحاد المصري',
+    },
+  },
+  {
     path: 'forgetPassword',
     component: ForgetPasswordComponent,
     data: {

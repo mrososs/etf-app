@@ -33,46 +33,26 @@ export class ResetPasswordComponent implements OnInit {
   }
 
   private handleResetPassword() {
-    // First try to get token and userId from URL parameters
-    this.route.queryParams.subscribe((params) => {
-      const urlToken = params['token'];
-      const urlUserId = params['userId'];
+    // Get token and userId from localStorage only
+    this.resetToken = localStorage.getItem('resetToken') || '';
+    this.resetUserId = localStorage.getItem('resetUserId') || '';
 
-      console.log('URL Parameters:', { urlToken, urlUserId });
-
-      if (urlToken && urlUserId) {
-        // Use URL parameters if available
-        this.resetToken = urlToken;
-        this.resetUserId = urlUserId;
-
-        // Store in localStorage for consistency
-        localStorage.setItem('resetToken', urlToken);
-        localStorage.setItem('resetUserId', urlUserId);
-
-        console.log('Using URL parameters, stored in localStorage');
-      } else {
-        // Fallback to localStorage if URL parameters are not available
-        this.resetToken = localStorage.getItem('resetToken') || '';
-        this.resetUserId = localStorage.getItem('resetUserId') || '';
-
-        console.log('Using localStorage fallback:', {
-          resetToken: this.resetToken ? 'exists' : 'missing',
-          resetUserId: this.resetUserId ? 'exists' : 'missing',
-        });
-      }
-
-      // If token or userId is missing, redirect to forget password
-      if (!this.resetToken || !this.resetUserId) {
-        console.log('Missing token or userId, redirecting to forget password');
-        this.toasterService.error(
-          'Invalid reset link. Please request a new password reset.',
-          'Error'
-        );
-        this.router.navigate(['/landing-page/forgetpassword']);
-      } else {
-        console.log('Token and userId found, ready for password reset');
-      }
+    console.log('Using localStorage:', {
+      resetToken: this.resetToken ? 'exists' : 'missing',
+      resetUserId: this.resetUserId ? 'exists' : 'missing',
     });
+
+    // If token or userId is missing, redirect to forget password
+    if (!this.resetToken || !this.resetUserId) {
+      console.log('Missing token or userId, redirecting to forget password');
+      this.toasterService.error(
+        'Invalid reset link. Please request a new password reset.',
+        'Error'
+      );
+      this.router.navigate(['/landing-page/forgetpassword']);
+    } else {
+      console.log('Token and userId found, ready for password reset');
+    }
   }
 
   togglePassword() {

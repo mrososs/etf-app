@@ -29,6 +29,7 @@
     },
     "accountConfirmed": "Your account has been successfully confirmed! You can now log in."
   },
+
   "register": {
     "title": "Create a New Account",
     "username": "Username",
@@ -287,7 +288,9 @@
     "redirectMessage": "You will be redirected to the login page in a few seconds...",
     "goToLogin": "Go to Login",
     "errorTitle": "Verification Failed",
-    "errorMessage": "The verification link is invalid or has expired. Please try registering again or contact support.",
-    "invalidLink": "Invalid or expired confirmation link"
+    "errorMessage": "The verification link is invalid or has expired. Please try again or contact support.",
+    "invalidLink": "Invalid confirmation link. Please check your email or contact support.",
+    "success": "Your account has been successfully confirmed! You can now log in.",
+    "title": "Account Confirmation"
   }
 }
