@@ -61,14 +61,16 @@
         <img [src]="committee?.iconUrl" [alt]="committee.title" class="mb-3" />
         <h2>{{ committee.title }}</h2>
         <h1>{{ committee.head }}</h1>
-        <p *ngFor="let point of committee.points">
-          <img
-            class="me-2"
-            src="../../../../../assets/svg/arrowCommittess.svg"
-            alt="arrow"
-          />
-          {{ point }}
-        </p>
+        <ng-container *ngFor="let point of committee.points">
+          <p *ngIf="point && point.trim()">
+            <img
+              class="me-2"
+              src="../../../../../assets/svg/arrowCommittess.svg"
+              alt="arrow"
+            />
+            {{ point }}
+          </p>
+        </ng-container>
       </div>
     </div>
   </div>
