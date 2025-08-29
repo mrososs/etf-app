@@ -16,8 +16,12 @@
   <div class="container mt-5">
     <div class="news-details__main">
       <h1>{{ "newsDetails.news" | translate }}</h1>
-      <h2>{{ newsItem?.description }}</h2>
-      <img [src]="newsItem?.imageUrl" alt="newImg" />
+      <h2>{{ newsItem?.title }}</h2>
+      <img
+        [src]="getImageUrl(newsItem?.imageUrl || '')"
+        alt="newImg"
+        (error)="onImageError($event)"
+      />
       <p class="mt-5">{{ newsItem?.description }}</p>
     </div>
   </div>

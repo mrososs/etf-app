@@ -1,13 +1,21 @@
-import { Component, inject, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  inject,
+  OnInit,
+  ViewChild,
+  AfterViewInit,
+} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../../../environments/environment';
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-training',
   templateUrl: './training.component.html',
   styleUrl: './training.component.scss',
 })
-export class TrainingComponent implements OnInit {
+export class TrainingComponent implements OnInit, AfterViewInit {
   translate = inject(TranslateService);
   visible: boolean = false;
   isLoggedIn = false;
@@ -59,8 +67,57 @@ export class TrainingComponent implements OnInit {
         '../../../../../assets/img/videos2/تدريب - دعم الانتقال الى سوق العمل .2.jpg',
     },
   ];
+  @ViewChild('safeMap') safeMapRef?: ElementRef<HTMLDivElement>;
+  private map?: L.Map;
+  private readonly center = {
+    lat: environment['mapCenter']?.lat ?? 30.0444,
+    lng: environment['mapCenter']?.lng ?? 31.2357,
+    zoom: environment['mapCenter']?.zoom ?? 14,
+  };
+  private readonly maptileKey = environment['maptilerKey'] ?? '';
+
   ngOnInit(): void {
     this.isLoggedIn = !!localStorage.getItem('auth_token');
+  }
+
+  ngAfterViewInit(): void {
+    // Small delay to ensure the map container is properly rendered
+    setTimeout(() => {
+      this.initMap();
+    }, 100);
+  }
+
+  private initMap(): void {
+    if (this.safeMapRef) {
+      this.map = L.map(this.safeMapRef.nativeElement).setView(
+        [this.center.lat, this.center.lng],
+        this.center.zoom
+      );
+
+      L.tileLayer(
+        `https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=${this.maptileKey}`,
+        {
+          attribution:
+            '© <a href="https://www.maptiler.com/">MapTiler</a> © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        }
+      ).addTo(this.map);
+
+      // Fix for default marker icon
+      const defaultIcon = L.icon({
+        iconUrl: 'assets/leaflet/marker-icon.png',
+        shadowUrl: 'assets/leaflet/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41],
+      });
+
+      // Add a marker for the training center
+      L.marker([this.center.lat, this.center.lng], { icon: defaultIcon })
+        .addTo(this.map)
+        .bindPopup('المركز المصري للقيادة الآمنة')
+        .openPopup();
+    }
   }
   changeNewsType(type: string) {
     this.selected = type;

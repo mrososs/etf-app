@@ -4,4 +4,10 @@ export const environment = {
   confirmUrl: 'http://etf.itechpro-eg.com/landing-page/confirm-register',
   resetPasswordUrl: 'http://etf.itechpro-eg.com/landing-page/resetpassword',
   lmsUrl: 'http://etflms.itechpro-eg.com',
+  mapCenter: {
+    lat: 29.862373543976624,
+    lng: 31.359766997791912,
+    zoom: 14,
+  },
+  maptilerKey: 'enELxej3eEUOIYdDfpKg',
 };

@@ -56,6 +56,13 @@ export class LandingPageService {
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/News?lang=${lang}`
     );
   }
+
+  getNewsItemById(id: number): Observable<NewsItem> {
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<NewsItem>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/News/${id}?lang=${lang}`
+    );
+  }
   getContactUs(data: any): Observable<any> {
     return this.http.post<any>(
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/ContactUs`,
@@ -79,6 +86,13 @@ export class LandingPageService {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<TourismNews[]>(
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/TourismNews?lang=${lang}`
+    );
+  }
+
+  getTourismNewsById(id: number): Observable<TourismNews> {
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<TourismNews>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/TourismNews/${id}?lang=${lang}`
     );
   }
   getTourismLegislations(): Observable<TourismLegislation[]> {

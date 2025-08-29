@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/styles/main.scss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+@import "leaflet/dist/leaflet.css";
+
 
 * {
   transition: all 0.3s ease-in-out;
@@ -12,6 +15,14 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-p{
+p {
   text-align: justify;
+}
+
+#map { height: 60vh; width: 100%; }
+.loaction-card .map-img {
+  height: 320px; /* اضبطها حسب تصميمك */
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }

@@ -27,14 +27,15 @@
           *ngFor="let item of newsItems"
         >
           <div class="news-card d-flex flex-column align-items-center">
-            <img [src]="item.imageUrl" alt="news" />
+            <img
+              [src]="getImageUrl(item.imageUrl)"
+              alt="news"
+              (error)="onImageError($event)"
+            />
             <h1>{{ item.description }}</h1>
             <div class="d-flex gap-2 mt-2">
               <a
-                [href]="
-                  generateTwitterShareLink(item.id, 'news', item.description)
-                "
-                target="_blank"
+                [href]="generateFacebookShareLink(item.id, 'news')"
                 target="_blank"
                 class="btn btn-sm btn-outline-primary"
                 aria-label="Share on Facebook"
@@ -48,7 +49,6 @@
                 [href]="
                   generateTwitterShareLink(item.id, 'news', item.description)
                 "
-                target="_blank"
                 target="_blank"
                 class="btn btn-sm btn-outline-info"
                 aria-label="Share on Twitter"
@@ -86,12 +86,15 @@
           *ngFor="let item of tourismNews"
         >
           <div class="news-card d-flex flex-column align-items-center">
-            <img [src]="item.imageUrl" alt="news" />
+            <img
+              [src]="getImageUrl(item.imageUrl)"
+              alt="news"
+              (error)="onImageError($event)"
+            />
             <h1>{{ item.description }}</h1>
             <div class="d-flex gap-2 mt-2">
               <a
                 [href]="generateFacebookShareLink(item.id, 'touristnews')"
-                target="_blank"
                 target="_blank"
                 class="btn btn-sm btn-outline-primary"
                 aria-label="Share on Facebook"
@@ -109,7 +112,6 @@
                     item.description
                   )
                 "
-                target="_blank"
                 target="_blank"
                 class="btn btn-sm btn-outline-info"
                 aria-label="Share on Twitter"
