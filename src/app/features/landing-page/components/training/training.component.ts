@@ -27,6 +27,7 @@ export class TrainingComponent implements OnInit, AfterViewInit {
     cooking: this.translate.instant('training.cooking.title'),
   };
   selected: string = this.translateKeys.safeDriving;
+  driveVideoTraining: string = '../../../../../assets/video/AQNpMwIm20YPg2bIVbOj_rVBFaUMZA2lIu0njwyowKbLd4fNy153Ktmt5xuehGKQzOiCoJQoSXXnbzBtQhgrVNFs.mp4';
   mainVideoSrc: string = 'assets/videos/video1.mp4';
   mainVideoPoster: string =
     '../../../../../assets/img/driveVideos/83641693482337.jpg';

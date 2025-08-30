@@ -172,19 +172,11 @@
             [poster]="mainVideoPoster"
             class="w-100 rounded"
           >
-            <source [src]="mainVideoSrc" type="video/mp4" />
+            <source [src]="driveVideoTraining" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="video-thumbnails">
-          <img
-            *ngFor="let video of videos"
-            [src]="video.poster"
-            (click)="changeVideo(video)"
-            class="thumbnail-video"
-            alt="thumbnail"
-          />
-        </div>
+       
       </div>
     </div>
   </ng-template>

@@ -57,7 +57,7 @@
     "whoUs": "About Us",
     "login": "log in",
     "comingSoon": "🚧 Registration page is under development — launching soon with ease and professionalism!",
-    "rooms": "Rooms",
+    "rooms": "Tourism Chambers",
     "training": "Training",
     "tourst": "Tourism Regulations",
     "news": "News",
@@ -77,6 +77,7 @@
   "footer": {
     "aboutUs": "The Egyptian Tourism Federation is a professional federation established by Law No. 85 of 1968 and its amendment under Law No. 27 of 2023, which provides that the Federation is responsible for the common interests of the tourism sector in Egypt.",
     "importantLinks": "Important Links",
+    "title2": "For Media Contact",
     "whoWeAre": "Who We Are",
     "news": "News",
     "contactUs": "Contact Us",
@@ -116,7 +117,7 @@
     "messagePlaceholder": "Type your message..",
     "send": "Send"
   },
-  "union": {
+  "ETF": {
     "pageTitle": "About the Federation",
     "aboutTitle": "About the Federation",
     "aboutDescription": "The Egyptian Tourism Federation is a professional federation established by Law No. 85 of 1968 and amended by Law No. 27 of 2023 to serve the common interests of the tourism sector in the Arab Republic of Egypt.",
@@ -133,25 +134,25 @@
     "reportLabel": "Report for"
   },
   "homePage": {
-    "aboutUnion": "Egyptian Tourism Federation",
-    "union": "About the Union",
+    "aboutETF": "Egyptian Tourism Federation",
+    "ETF": "About the ETF",
     "more": "Read More",
-    "unionHeadSpeak": "Message from the Chairman",
+    "ETFHeadSpeak": "Message from the Chairman",
     "news": "News",
     "seeMore": "show More",
     "seeLess": "show Less",
-    "newsOfUnion": "Union News",
+    "newsOfETF": "ETF News",
     "newsOfTourist": "Tourism News",
     "touristRoom": "Tourism Chambers",
-    "unionTeam": "Board Members",
-    "unionHeadSpeakDesc": "Since July 2024, my colleagues and I have had the honor of assuming responsibility for leading the Egyptian Tourism Federation, a prestigious entity approaching its 60th anniversary, making it one of the oldest and most impactful institutions in Egypt. At the start of this term, the Board of Directors set out a number of strategic goals: First, to actively contribute to shaping a new roadmap for Egyptian tourism that supports the state’s vision of reaching 30 million tourists annually by 2030; Second, to address the current challenges facing the tourism sector; Third, to work on enforcing the laws governing tourism chambers and administration, as well as the law on hotel and tourism establishments. The Federation is pursuing these objectives through several key tracks, including coordinating with various stakeholders to implement the national sustainable tourism strategy, which includes a new roadmap for Egyptian tourism, enhancing the training system, supporting digital transformation in the tourism sector, and building strategic partnerships and strengthening cooperation with tourism organizations and federations at the local, regional, and international levels. Last but not least, we are committed to empowering the Federation to fully fulfill its role. In conclusion, I would like to emphasize the importance of maintaining continuous communication between the Federation and the sector through various channels, including this website.",
-    "unionDesc": "The Federation aims to assist the Ministry of Tourism and Antiquities in formulating the general policy for tourism activities and implementing the national strategy for sustainable tourism, which includes a new roadmap for Egyptian tourism aimed at supporting sustainable tourism development as a driver of economic growth and comprehensive development."
+    "ETFTeam": "Board Members",
+    "ETFHeadSpeakDesc": "Since July 2024, my colleagues and I have had the honor of assuming responsibility for leading the Egyptian Tourism Federation, a prestigious entity approaching its 60th anniversary, making it one of the oldest and most impactful institutions in Egypt. At the start of this term, the Board of Directors set out a number of strategic goals: First, to actively contribute to shaping a new roadmap for Egyptian tourism that supports the state’s vision of reaching 30 million tourists annually by 2030; Second, to address the current challenges facing the tourism sector; Third, to work on enforcing the laws governing tourism chambers and administration, as well as the law on hotel and tourism establishments. The Federation is pursuing these objectives through several key tracks, including coordinating with various stakeholders to implement the national sustainable tourism strategy, which includes a new roadmap for Egyptian tourism, enhancing the training system, supporting digital transformation in the tourism sector, and building strategic partnerships and strengthening cooperation with tourism organizations and federations at the local, regional, and international levels. Last but not least, we are committed to empowering the Federation to fully fulfill its role. In conclusion, I would like to emphasize the importance of maintaining continuous communication between the Federation and the sector through various channels, including this website.",
+    "ETFDesc": "The Federation aims to assist the Ministry of Tourism and Antiquities in formulating the general policy for tourism activities and implementing the national strategy for sustainable tourism, which includes a new roadmap for Egyptian tourism aimed at supporting sustainable tourism development as a driver of economic growth and comprehensive development."
   },
   "news": {
     "pageTitle": "News",
     "breadcrumbHome": "Home",
     "breadcrumbNews": "News",
-    "unionNewsTitle": "Union News",
+    "ETFNewsTitle": "ETF News",
     "tourismNewsTitle": "Tourism News",
     "readMore": "Read More"
   },
@@ -270,7 +271,7 @@
   },
   "transitionTpl": {
     "title": "Support Transition to the Labor Market Project",
-    "description": "The 'Support Transition to the Labor Market' project, funded by the European Union and the Egyptian government, is one of the training initiatives implemented by the Federation in cooperation with the Ministry of Tourism and Antiquities and the TVET Egypt program.",
+    "description": "The 'Support Transition to the Labor Market' project, funded by the European ETF and the Egyptian government, is one of the training initiatives implemented by the Federation in cooperation with the Ministry of Tourism and Antiquities and the TVET Egypt program.",
     "point1": "Project training activities started in March 2019.",
     "point2": "A total of 13,157 trainees from the existing workforce received practical and theoretical training in the following tourism governorates: Cairo, Giza, Alexandria, South Sinai, Red Sea, Luxor, and Aswan.",
     "point3": "Additionally, 8,613 workers received awareness training on environmental topics and COVID-19 preventive measures, bringing the total number of trainees to 21,770.",
