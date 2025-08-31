@@ -15,14 +15,61 @@
   </div>
   <div class="container mt-5">
     <div class="news-details__main">
-      <h1>{{ "newsDetails.news" | translate }}</h1>
-      <h2>{{ newsItem?.title }}</h2>
-      <img
-        [src]="getImageUrl(newsItem?.imageUrl || '')"
-        alt="newImg"
-        (error)="onImageError($event)"
-      />
-      <p class="mt-5">{{ newsItem?.description }}</p>
+      <div class="news-header">
+        <h1>{{ "newsDetails.news" | translate }}</h1>
+        <h2>{{ newsItem?.title }}</h2>
+      </div>
+
+      <div class="news-image-container">
+        <img
+          [src]="getImageUrl(newsItem?.imageUrl || '')"
+          alt="صورة الخبر"
+          (error)="onImageError($event)"
+        />
+      </div>
+
+      <div class="news-content">
+        <p>{{ newsItem?.description }}</p>
+      </div>
+
+      <div class="news-actions">
+        <div class="social-buttons">
+          <a
+            [href]="
+              generateFacebookShareLink(
+                (newsItem?.id || '').toString(),
+                type || 'news'
+              )
+            "
+            target="_blank"
+            aria-label="مشاركة على فيسبوك"
+            title="مشاركة على فيسبوك"
+          >
+            <i class="pi pi-facebook"></i>
+            <span>مشاركة على فيسبوك</span>
+          </a>
+          <a
+            [href]="
+              generateTwitterShareLink(
+                (newsItem?.id || '').toString(),
+                type || 'news',
+                newsItem?.title || ''
+              )
+            "
+            target="_blank"
+            aria-label="مشاركة على تويتر"
+            title="مشاركة على تويتر"
+          >
+            <i class="pi pi-twitter"></i>
+            <span>مشاركة على تويتر</span>
+          </a>
+        </div>
+
+        <button class="back-btn" (click)="goBack()">
+          <i class="pi pi-arrow-right"></i>
+          <span>العودة للأخبار</span>
+        </button>
+      </div>
     </div>
   </div>
 </section>

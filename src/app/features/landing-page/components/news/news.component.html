@@ -20,54 +20,57 @@
     <div class="container">
       <h1>{{ "news.unionNewsTitle" | translate }}</h1>
       <div
-        class="row justify-content-center text-center justify-content-lg-start"
+        class="row justify-content-center text-center justify-content-lg-start g-4"
       >
         <div
-          class="col-12 col-sm-10 col-md-6 col-lg-4"
+          class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4"
           *ngFor="let item of newsItems"
         >
-          <div class="news-card d-flex flex-column align-items-center">
+          <div class="news-card">
             <img
               [src]="getImageUrl(item.imageUrl)"
-              alt="news"
+              alt="صورة الخبر"
               (error)="onImageError($event)"
             />
-            <h1>{{ item.description }}</h1>
-            <div class="d-flex gap-2 mt-2">
-              <a
-                [href]="generateFacebookShareLink(item.id, 'news')"
-                target="_blank"
-                class="btn btn-sm btn-outline-primary"
-                aria-label="Share on Facebook"
-              >
-                <i
-                  class="pi pi-facebook"
-                  style="color: var(--color-primary)"
-                ></i>
-              </a>
-              <a
-                [href]="
-                  generateTwitterShareLink(item.id, 'news', item.description)
-                "
-                target="_blank"
-                class="btn btn-sm btn-outline-info"
-                aria-label="Share on Twitter"
-              >
-                <i
-                  class="pi pi-twitter"
-                  style="color: var(--color-primary)"
-                ></i>
-              </a>
+            <div class="news-content">
+              <div class="news-text">
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="news-actions">
+                <div class="social-buttons">
+                  <a
+                    [href]="generateFacebookShareLink(item.id, 'news')"
+                    target="_blank"
+                    aria-label="مشاركة على فيسبوك"
+                    title="مشاركة على فيسبوك"
+                  >
+                    <i class="pi pi-facebook"></i>
+                  </a>
+                  <a
+                    [href]="
+                      generateTwitterShareLink(
+                        item.id,
+                        'news',
+                        item.description
+                      )
+                    "
+                    target="_blank"
+                    aria-label="مشاركة على تويتر"
+                    title="مشاركة على تويتر"
+                  >
+                    <i class="pi pi-twitter"></i>
+                  </a>
+                </div>
+                <button class="news_btn">
+                  <a
+                    [routerLink]="['/landing-page/newsdetails', item.id]"
+                    [queryParams]="{ type: 'news' }"
+                  >
+                    {{ item.buttonText || ("news.readMore" | translate) }}
+                  </a>
+                </button>
+              </div>
             </div>
-            <button class="news_btn w-50 mt-2">
-              <a
-                [routerLink]="['/landing-page/newsdetails', item.id]"
-                [queryParams]="{ type: 'news' }"
-                class="text-white"
-              >
-                {{ item.buttonText || ("news.readMore" | translate) }}
-              </a>
-            </button>
           </div>
         </div>
       </div>
@@ -79,59 +82,57 @@
     <div class="container">
       <h1>{{ "news.tourismNewsTitle" | translate }}</h1>
       <div
-        class="row justify-content-center text-center justify-content-lg-start"
+        class="row justify-content-center text-center justify-content-lg-start g-4"
       >
         <div
-          class="col-12 col-sm-10 col-md-6 col-lg-4"
+          class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4"
           *ngFor="let item of tourismNews"
         >
-          <div class="news-card d-flex flex-column align-items-center">
+          <div class="news-card">
             <img
               [src]="getImageUrl(item.imageUrl)"
-              alt="news"
+              alt="صورة الخبر"
               (error)="onImageError($event)"
             />
-            <h1>{{ item.description }}</h1>
-            <div class="d-flex gap-2 mt-2">
-              <a
-                [href]="generateFacebookShareLink(item.id, 'touristnews')"
-                target="_blank"
-                class="btn btn-sm btn-outline-primary"
-                aria-label="Share on Facebook"
-              >
-                <i
-                  class="pi pi-facebook"
-                  style="color: var(--color-primary)"
-                ></i>
-              </a>
-              <a
-                [href]="
-                  generateTwitterShareLink(
-                    item.id,
-                    'touristnews',
-                    item.description
-                  )
-                "
-                target="_blank"
-                class="btn btn-sm btn-outline-info"
-                aria-label="Share on Twitter"
-              >
-                <i
-                  class="pi pi-twitter"
-                  style="color: var(--color-primary)"
-                ></i>
-              </a>
+            <div class="news-content">
+              <div class="news-text">
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="news-actions">
+                <div class="social-buttons">
+                  <a
+                    [href]="generateFacebookShareLink(item.id, 'touristnews')"
+                    target="_blank"
+                    aria-label="مشاركة على فيسبوك"
+                    title="مشاركة على فيسبوك"
+                  >
+                    <i class="pi pi-facebook"></i>
+                  </a>
+                  <a
+                    [href]="
+                      generateTwitterShareLink(
+                        item.id,
+                        'touristnews',
+                        item.description
+                      )
+                    "
+                    target="_blank"
+                    aria-label="مشاركة على تويتر"
+                    title="مشاركة على تويتر"
+                  >
+                    <i class="pi pi-twitter"></i>
+                  </a>
+                </div>
+                <button class="news_btn">
+                  <a
+                    [routerLink]="['/landing-page/newsdetails', item.id]"
+                    [queryParams]="{ type: 'touristnews' }"
+                  >
+                    {{ item.buttonText || ("news.readMore" | translate) }}
+                  </a>
+                </button>
+              </div>
             </div>
-
-            <button class="news_btn w-50 mt-2">
-              <a
-                [routerLink]="['/landing-page/newsdetails', item.id]"
-                [queryParams]="{ type: 'touristnews' }"
-                class="text-white"
-              >
-                {{ item.buttonText || ("news.readMore" | translate) }}
-              </a>
-            </button>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NewsItem } from '../../models/news.model';
 import { LandingPageService } from '../../services/landing-page.service';
 import { TourismNews } from '../../models/tourism-news.model';
@@ -12,12 +12,15 @@ import { environment } from '../../../../../environments/environment';
 })
 export class NewsDetailsComponent implements OnInit {
   private route = inject(ActivatedRoute);
+  private router = inject(Router);
   private landingService = inject(LandingPageService);
   newsItem!: NewsItem | TourismNews | undefined;
+  type: string = 'news';
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     const type = this.route.snapshot.queryParamMap.get('type');
+    this.type = type || 'news';
 
     if (type === 'touristnews') {
       this.landingService.getTourismNewsById(id).subscribe((item) => {
@@ -52,5 +55,24 @@ export class NewsDetailsComponent implements OnInit {
   onImageError(event: Event): void {
     const img = event.target as HTMLImageElement;
     img.src = 'assets/img/blankImage.jpg';
+  }
+
+  generateFacebookShareLink(id: string, type: string): string {
+    const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
+    return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+      url
+    )}`;
+  }
+
+  generateTwitterShareLink(id: string, type: string, title: string): string {
+    const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
+    const text = title || 'شاهد هذا الخبر المميز';
+    return `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      text
+    )}&url=${encodeURIComponent(url)}`;
+  }
+
+  goBack(): void {
+    this.router.navigate(['/landing-page/news']);
   }
 }
