@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
-import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import {
+  ExtraOptions,
+  RouterModule,
+  Routes,
+  PreloadAllModules,
+} from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
@@ -13,12 +18,14 @@ const routes: Routes = [
   },
 ];
 const routerOptions: ExtraOptions = {
-  scrollPositionRestoration: 'enabled', // ⬅️ دي المهمة
+  scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
   scrollOffset: [0, 0],
+  preloadingStrategy: PreloadAllModules,
+  enableTracing: false,
 };
 @NgModule({
-  imports: [RouterModule.forRoot(routes,routerOptions)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

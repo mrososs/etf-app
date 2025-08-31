@@ -8,7 +8,7 @@
   width: 100%;
   z-index: 11111;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  .register_btn{
+  .register_btn {
     color: $color-white;
     padding: 0.5rem 1rem;
     border: none;
@@ -20,33 +20,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    h1{
+    h1 {
       font-size: 1rem;
     }
   }
-.colors {
-  padding: 1rem;
-  height: 3rem;
-  width: 100%;
-  display: flex;
-  gap: 1rem;
+  .colors {
+    padding: 1rem;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
 
-  .color-dot {
-    width: 8rem;               // or any larger width you prefer
-    height: 100%;              // match parent height
-    background-repeat: no-repeat;
-    background-size: 120% auto; // make background bigger than the container
-    background-position: center;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    .color-dot {
+      width: 8rem; // or any larger width you prefer
+      height: 100%; // match parent height
+      background-repeat: no-repeat;
+      background-size: 120% auto; // make background bigger than the container
+      background-position: center;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease;
 
-    &:hover {
-      transform: scale(1.05);
-      border: 2px solid var(--color-primary);
+      &:hover {
+        transform: scale(1.05);
+        border: 2px solid var(--color-primary);
+      }
     }
   }
-}
 
   .egyptFlag {
     width: 3rem;
@@ -507,7 +507,7 @@ button.news_btn {
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
   z-index: 9999 !important;
-   svg circle {
+  svg circle {
     stroke: $color-primary !important;
   }
 }
