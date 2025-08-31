@@ -165,6 +165,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
   changeLang(lang: string) {
     this.langService.setLang(lang);
     this.closeNavbar();
+
+    // إعادة تحميل الصفحة بعد تغيير اللغة
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
   }
 
   get currentLang(): string {

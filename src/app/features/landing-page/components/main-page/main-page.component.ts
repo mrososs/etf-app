@@ -100,4 +100,9 @@ export class MainPageComponent implements OnInit {
   canGoPrevious(): boolean {
     return this.currentPage > 0;
   }
+
+  // دالة مساعدة لتحسين alt text للصور
+  getImageAlt(name: string): string {
+    return `صورة ${name}`;
+  }
 }

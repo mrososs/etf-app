@@ -65,6 +65,7 @@
           <p *ngIf="point && point.trim()">
             <img
               class="me-2"
+              [class.mirror-image]="shouldMirrorImage()"
               src="../../../../../assets/svg/arrowCommittess.svg"
               alt="arrow"
             />

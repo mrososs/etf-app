@@ -1,8 +1,11 @@
 <app-contact-us-banner></app-contact-us-banner>
-<section class="footer">
+<footer class="footer" role="contentinfo">
   <ul class="footer__list">
     <li class="first_list">
-      <img src="../../../../assets/img/logo.png" alt="logo" />
+      <img
+        src="../../../../assets/img/logo.png"
+        alt="شعار الإتحاد المصري للغرف السياحية"
+      />
       <h4>
         {{ "footer.aboutUs" | translate }}
       </h4>
@@ -30,56 +33,102 @@
       <p>
         <img
           src="../../../../assets/svg/location-pin_svgrepo.com.svg"
-          alt="location_icon"
+          alt="أيقونة الموقع"
+          aria-hidden="true"
         />
         {{ "footer.contactDetails" | translate }}
       </p>
       <p>
-        <img src="../../../../assets/svg/PhoneCall.svg" alt="location_icon" />
+        <img
+          src="../../../../assets/svg/PhoneCall.svg"
+          alt="أيقونة الهاتف"
+          aria-hidden="true"
+        />
         {{ "footer.phone" | translate }}
       </p>
       <p>
-        <img src="../../../../assets/svg/EnvelopeSimple.svg" alt="email_icon" />
-        <a [href]="'mailto:' + ('footer.email' | translate)">
+        <img
+          src="../../../../assets/svg/EnvelopeSimple.svg"
+          alt="أيقونة البريد الإلكتروني"
+          aria-hidden="true"
+        />
+        <a
+          [href]="'mailto:' + ('footer.email' | translate)"
+          [attr.aria-label]="
+            'إرسال بريد إلكتروني إلى ' + ('footer.email' | translate)
+          "
+        >
           {{ "footer.email" | translate }}
         </a>
       </p>
       <h1>{{ "footer.title2" | translate }}</h1>
       <p>
-        <img src="../../../../assets/svg/EnvelopeSimple.svg" alt="email_icon" />
-        <a [href]="'mailto:' + ('footer.email2' | translate)">
+        <img
+          src="../../../../assets/svg/EnvelopeSimple.svg"
+          alt="أيقونة البريد الإلكتروني"
+          aria-hidden="true"
+        />
+        <a
+          [href]="'mailto:' + ('footer.email2' | translate)"
+          [attr.aria-label]="
+            'إرسال بريد إلكتروني إلى ' + ('footer.email2' | translate)
+          "
+        >
           {{ "footer.email2" | translate }}
         </a>
       </p>
       <p>
-        <img src="../../../../assets/svg/PhoneCall.svg" alt="location_icon" />
+        <img
+          src="../../../../assets/svg/PhoneCall.svg"
+          alt="أيقونة الهاتف"
+          aria-hidden="true"
+        />
         {{ "footer.phone2" | translate }}
       </p>
     </li>
   </ul>
   <div class="social_media">
     <h1>{{ "footer.followUs" | translate }}</h1>
-    <div class="social_media__icons">
-      <img
-        src="../../../../assets/svg/Link - Link to Calendly Facebook account.svg"
-        alt="facebook_icon"
-      />
-      <img
-        src="../../../../assets/svg/Link - Link to Calendly Instagram account.svg"
-        alt="instagram_icon"
-      />
-      <img
-        src="../../../../assets/svg/Link - Link to Calendly Twitter account.svg"
-        alt="twitter_icon"
-      />
-      <img
-        src="../../../../assets/svg/Link - Link to Calendly Linkedin account.svg"
-        alt="linkedin_icon"
-      />
-      <img
-        src="../../../../assets/svg/Link - Link to Calendly Youtube account.svg"
-        alt="youtube_icon"
-      />
+    <div
+      class="social_media__icons"
+      role="group"
+      aria-label="مواقع التواصل الاجتماعي"
+    >
+      <a href="#" aria-label="تابعنا على فيسبوك">
+        <img
+          src="../../../../assets/svg/Link - Link to Calendly Facebook account.svg"
+          alt="أيقونة فيسبوك"
+          aria-hidden="true"
+        />
+      </a>
+      <a href="#" aria-label="تابعنا على إنستغرام">
+        <img
+          src="../../../../assets/svg/Link - Link to Calendly Instagram account.svg"
+          alt="أيقونة إنستغرام"
+          aria-hidden="true"
+        />
+      </a>
+      <a href="#" aria-label="تابعنا على تويتر">
+        <img
+          src="../../../../assets/svg/Link - Link to Calendly Twitter account.svg"
+          alt="أيقونة تويتر"
+          aria-hidden="true"
+        />
+      </a>
+      <a href="#" aria-label="تابعنا على لينكد إن">
+        <img
+          src="../../../../assets/svg/Link - Link to Calendly Linkedin account.svg"
+          alt="أيقونة لينكد إن"
+          aria-hidden="true"
+        />
+      </a>
+      <a href="#" aria-label="تابعنا على يوتيوب">
+        <img
+          src="../../../../assets/svg/Link - Link to Calendly Youtube account.svg"
+          alt="أيقونة يوتيوب"
+          aria-hidden="true"
+        />
+      </a>
     </div>
   </div>
   <div
@@ -87,4 +136,4 @@
   >
     <h1>{{ "footer.copyright" | translate }}</h1>
   </div>
-</section>
+</footer>

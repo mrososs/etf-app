@@ -12,13 +12,19 @@ export class AboutUnionComponent implements OnInit {
   private landingPageService = inject(LandingPageService);
   committees: Committee[] = [];
   reports: Report[] = [];
+  currentLang: string = 'ar';
 
   ngOnInit(): void {
+    this.currentLang = localStorage.getItem('lang') || 'ar';
     this.landingPageService.getCommittees().subscribe((data) => {
       this.committees = data;
     });
     this.landingPageService.getReports().subscribe((data) => {
       this.reports = data;
     });
+  }
+
+  shouldMirrorImage(): boolean {
+    return this.currentLang === 'en';
   }
 }

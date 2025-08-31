@@ -1,16 +1,22 @@
 <nav
   class="navbar navbar-expand-lg"
   [ngClass]="{ 'navbar-scrolled': isScrolled, 'bg-transparent': !isScrolled }"
+  role="navigation"
+  aria-label="القائمة الرئيسية"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['landing-page/home']">
+    <a
+      class="navbar-brand"
+      [routerLink]="['landing-page/home']"
+      aria-label="الصفحة الرئيسية - الإتحاد المصري للغرف السياحية"
+    >
       <img
         [src]="
           isScrolled
             ? '../../../../assets/img/logo.png'
             : '../../../../assets/img/logo white.png'
         "
-        alt="logo"
+        alt="شعار الإتحاد المصري للغرف السياحية"
       />
     </a>
     <button
@@ -20,9 +26,9 @@
       data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
-      aria-label="Toggle navigation"
+      aria-label="فتح أو إغلاق القائمة الرئيسية"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
     </button>
     <div
       #navbarCollapse
@@ -57,6 +63,8 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="قائمة الغرف السياحية"
           >
             {{ resourcePath + "rooms" | translate }}
           </a>
@@ -160,6 +168,8 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            aria-haspopup="true"
+            aria-label="قائمة اختيار اللغة"
           >
             {{ resourcePath + currentLang | translate }}
           </a>
@@ -198,7 +208,8 @@
             aria-current="page"
             role="button"
             (click)="showDialog()"
-            label="Show"
+            aria-label="اختيار لون الموقع"
+            tabindex="0"
           >
             {{ resourcePath + "chooseYourColor" | translate }}
           </a>
@@ -208,11 +219,13 @@
             [(visible)]="visible"
             [style]="{ width: '25rem' }"
           >
-            <h1>اختر لونك المفضل من الوان الإتحاد</h1>
+            <h2>اختر لونك المفضل من الوان الإتحاد</h2>
             <div
               class="colors d-flex justify-content-center align-items-center gap-2"
+              role="group"
+              aria-label="اختيار لون الموقع"
             >
-              <div
+              <button
                 *ngFor="let theme of themes"
                 class="color-dot"
                 [ngStyle]="{
@@ -220,8 +233,10 @@
                   'background-size': 'cover'
                 }"
                 (click)="changeTheme(theme.class)"
-                title="{{ theme.class }}"
-              ></div>
+                [title]="theme.class"
+                [attr.aria-label]="'اختيار لون ' + theme.class"
+                type="button"
+              ></button>
             </div>
           </p-dialog>
         </li>

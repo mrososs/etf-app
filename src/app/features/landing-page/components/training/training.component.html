@@ -103,7 +103,8 @@
             <img
               class="w-25"
               src="../../../../../assets/svg/road_svgrepo.com.svg"
-              alt="road"
+              alt="أيقونة الطريق"
+              aria-hidden="true"
             />
             <p>{{ "safeDivingDesc.track" + track | translate }}</p>
           </div>
@@ -134,13 +135,18 @@
           <h1>{{ "safeDivingDesc.locationTitle" | translate }}</h1>
           <p>{{ "safeDivingDesc.locationDesc" | translate }}</p>
           <span class="d-flex align-items-center mb-2">
-            <img src="../../../../../assets/svg/PhoneCall.svg" alt="phone" />
+            <img
+              src="../../../../../assets/svg/PhoneCall.svg"
+              alt="أيقونة الهاتف"
+              aria-hidden="true"
+            />
             <p class="mb-0">4444 363 411 02+</p>
           </span>
           <span class="d-flex align-items-center mb-2">
             <img
               src="../../../../../assets/svg/EnvelopeSimple.svg"
-              alt="email"
+              alt="أيقونة البريد الإلكتروني"
+              aria-hidden="true"
             />
             <p class="mb-0">
               <a href="https://www.etf-rstc.org.eg" target="_blank"
@@ -151,17 +157,23 @@
           <span class="d-flex align-items-center mb-2">
             <img
               src="../../../../../assets/svg/location-pin_svgrepo.com.svg"
-              alt="location"
+              alt="أيقونة الموقع"
+              aria-hidden="true"
             />
             <p class="mb-0">
               {{ "safeDivingDesc.locationAddress" | translate }}
             </p>
           </span>
         </div>
-        <div #safeMap id="safeMap" class="map-img" aria-label="map"></div>
-
+        <div
+          #safeMap
+          id="safeMap"
+          class="map-img"
+          aria-label="خريطة مواقع التدريب"
+          role="img"
+        ></div>
       </div>
-
+      @defer (on viewport) {
       <div class="mt-3 video-gallery">
         <div class="main-video">
           <video
@@ -169,15 +181,33 @@
             autoplay
             muted
             playsinline
+            controls
             [poster]="mainVideoPoster"
             class="w-100 rounded"
+            aria-label="فيديو تدريب القيادة الآمنة"
           >
             <source [src]="driveVideoTraining" type="video/mp4" />
-            Your browser does not support the video tag.
+            متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
-       
       </div>
+      } @placeholder {
+      <div class="mt-3 video-gallery">
+        <div class="main-video">
+          <div
+            class="w-100 rounded bg-light d-flex align-items-center justify-content-center"
+            style="height: 300px"
+          >
+            <div class="text-center">
+              <i class="fas fa-play-circle fa-3x text-muted"></i>
+              <p class="mt-2 text-muted">
+                {{ "training.loadingVideo" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
     </div>
   </ng-template>
 
@@ -202,7 +232,7 @@
           <div class="col-12 col-md-6 col-lg-6">
             <img
               src="../../../../../assets/img/t3lym.jpg"
-              alt="education"
+              alt="صورة التعليم المزدوج"
               class="eductionImg"
             />
           </div>
@@ -256,11 +286,18 @@
           <p class="text-center">
             {{ "doubleLearning.mustLogin" | translate }}
           </p>
-          <div class="d-flex justify-content-between align-items-center"  [routerLink]="['/landing-page/login']">
+          <div
+            class="d-flex justify-content-between align-items-center"
+            [routerLink]="['/landing-page/login']"
+          >
             <button class="news_btn" type="button">
               {{ "login.loginNow" | translate }}
             </button>
-            <button class="news_btn" type="button" [routerLink]="['/landing-page/register']">
+            <button
+              class="news_btn"
+              type="button"
+              [routerLink]="['/landing-page/register']"
+            >
               {{ "login.register" | translate }}
             </button>
           </div>
@@ -333,6 +370,7 @@
               autoplay
               muted
               playsinline
+              controls
               class="w-100 rounded"
             >
               <source [src]="mainVideoSrc2" type="video/mp4" />

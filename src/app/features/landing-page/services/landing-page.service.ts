@@ -71,6 +71,7 @@ export class LandingPageService {
   }
   getCommittees(): Observable<Committee[]> {
     const lang = localStorage.getItem('lang') || 'ar';
+    console.log(lang);
     return this.http.get<Committee[]>(
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Commitee/${lang}`
     );
