@@ -3,9 +3,11 @@ export const environment = {
   enableDebugTools: false,
   enableTracing: false,
   apiBaseUrl: 'https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net',
-  confirmUrl: 'http://etf.itechpro-eg.com/landing-page/confirm-register',
-  resetPasswordUrl: 'http://etf.itechpro-eg.com/landing-page/resetpassword',
-  lmsUrl: 'http://etflms.itechpro-eg.com',
+  confirmUrl:
+    'https://etfwebsite-gcf6ggathwd6ehgv.canadacentral-01.azurewebsites.net/landing-page/confirm-register',
+  resetPasswordUrl:
+    'https://etfwebsite-gcf6ggathwd6ehgv.canadacentral-01.azurewebsites.net/landing-page/resetpassword',
+  lmsUrl: 'https://lmsetf-h4h6gkc8fqbvffd8.canadaeast-01.azurewebsites.net',
   mapCenter: {
     lat: 29.862373543976624,
     lng: 31.359766997791912,

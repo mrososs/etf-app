@@ -60,6 +60,8 @@
               "extractLicenses": true,
               "sourceMap": false,
               "namedChunks": false,
+              "baseHref": "/",
+              "deployUrl": "/",
               "budgets": [
                 {
                   "type": "initial",

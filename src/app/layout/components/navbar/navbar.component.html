@@ -68,7 +68,13 @@
           >
             {{ resourcePath + "rooms" | translate }}
           </a>
-          <ul class="dropdown-menu">
+          <ul
+            class="dropdown-menu"
+            [ngClass]="{
+              'dropdown-menu-end': currentLang === 'ar',
+              'dropdown-menu-start': currentLang === 'en'
+            }"
+          >
             <li>
               <a
                 class="dropdown-item"
