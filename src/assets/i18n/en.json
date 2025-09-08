@@ -27,7 +27,13 @@
       "passwordRequired": "Password is required",
       "passwordMinLength": "Password must be at least 6 characters"
     },
-    "accountConfirmed": "Your account has been successfully confirmed! You can now log in."
+    "accountConfirmed": "Your account has been successfully confirmed! You can now log in.",
+    "successDialog": {
+      "title": "Login Successful!",
+      "message": "What would you like to do next?",
+      "browseWebsite": "Browse the Federation Website",
+      "goToTraining": "Go to Training Platform"
+    }
   },
 
   "register": {
@@ -151,6 +157,22 @@
     "ETFHeadSpeakDesc": "Since July 2024, my colleagues and I have had the honor of assuming responsibility for leading the Egyptian Tourism Federation, a prestigious entity approaching its 60th anniversary, making it one of the oldest and most impactful institutions in Egypt. At the start of this term, the Board of Directors set out a number of strategic goals: First, to actively contribute to shaping a new roadmap for Egyptian tourism that supports the state’s vision of reaching 30 million tourists annually by 2030; Second, to address the current challenges facing the tourism sector; Third, to work on enforcing the laws governing tourism chambers and administration, as well as the law on hotel and tourism establishments. The Federation is pursuing these objectives through several key tracks, including coordinating with various stakeholders to implement the national sustainable tourism strategy, which includes a new roadmap for Egyptian tourism, enhancing the training system, supporting digital transformation in the tourism sector, and building strategic partnerships and strengthening cooperation with tourism organizations and federations at the local, regional, and international levels. Last but not least, we are committed to empowering the Federation to fully fulfill its role. In conclusion, I would like to emphasize the importance of maintaining continuous communication between the Federation and the sector through various channels, including this website.",
     "ETFDesc": "The Federation aims to assist the Ministry of Tourism and Antiquities in formulating the general policy for tourism activities and implementing the national strategy for sustainable tourism, which includes a new roadmap for Egyptian tourism aimed at supporting sustainable tourism development as a driver of economic growth and comprehensive development."
   },
+  "etf": {
+    "pageTitle": "About the ETF",
+    "aboutTitle": "About the ETF",
+    "aboutDescription": "The Egyptian Tourism Federation is a professional etf established by Law No. 85 of 1968 and amended by Law No. 27 of 2023 to serve the common interests of the tourism sector in the Arab Republic of Egypt.",
+    "vision": {
+      "title": "Vision",
+      "description": "The Egyptian Tourism Federation believes in the importance of the tourism industry and considers it a driver of economic, social, and cultural development."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To be a leader in supporting and strengthening the tourism sector through coordination and cooperation among the different tourism chambers."
+    },
+    "committeesTitle": "Specialized Committees",
+    "reportsTitle": "Annual Reports",
+    "reportLabel": "Report Year"
+  },
   "news": {
     "pageTitle": "News",
     "breadcrumbHome": "Home",
@@ -223,6 +245,9 @@
     },
     "cooking": {
       "title": "Culinary Arts"
+    },
+    "trainingPlatform": {
+      "title": "Training Platform"
     }
   },
   "safeDivingDesc": {
@@ -284,6 +309,21 @@
     "title": "Culinary Arts Training Centers",
     "description1": "The Egyptian Tourism Federation has established specialized training centers for culinary arts to prepare qualified professional chefs through practical programs designed according to international standards in collaboration with the British City & Guilds Foundation.",
     "description2": "Currently, a study is underway to restart the centers in one of the leading tourism governorates to meet the needs of the tourism labor market."
+  },
+  "trainingPlatform": {
+    "title": "Training Platform",
+    "subtitle": "Advanced educational platform to develop your professional skills",
+    "description": "Join our advanced training platform and gain the skills and knowledge needed to develop your career in the tourism sector",
+    "card1": {
+      "title": "Specialized Training Courses",
+      "description": "Get specialized training in various tourism and hospitality fields through courses designed according to the latest international standards"
+    },
+    "card2": {
+      "title": "Certified Certificates",
+      "description": "Get internationally recognized and certified certificates that open new horizons in the tourism job market"
+    },
+    "accessPlatform": "Access Platform",
+    "mustLogin": "You must log in to access the training platform"
   },
   "confirmRegister": {
     "loading": "Verifying your account...",

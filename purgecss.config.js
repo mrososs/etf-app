@@ -1,0 +1,22 @@
+module.exports = {
+  content: ["./src/**/*.html", "./src/**/*.ts", "./src/**/*.scss"],
+  css: ["./dist/etf-app/browser/styles.css"],
+  output: "./dist/etf-app/browser/",
+  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+  safelist: [
+    /^pi-/,
+    /^p-/,
+    /^ng-/,
+    /^leaflet-/,
+    /^toastr-/,
+    /^bootstrap/,
+    /^carousel/,
+    /^modal/,
+    /^fade/,
+    /^show/,
+    /^active/,
+    /^disabled/,
+    /^loading/,
+    /^spinner/,
+  ],
+};

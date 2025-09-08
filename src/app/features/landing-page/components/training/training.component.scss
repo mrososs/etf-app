@@ -4,3 +4,45 @@
   border-radius: 8px;
   overflow: hidden;
 }
+
+// Training Platform Styles
+.training__contentPlatform {
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, #0056b3, #004085);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    }
+  }
+
+  .fa-graduation-cap {
+    color: #007bff !important;
+  }
+
+  .fa-certificate {
+    color: #28a745 !important;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #495057;
+  }
+}

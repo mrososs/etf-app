@@ -5,6 +5,8 @@ import { TreeNode } from 'primeng/api';
 import { NewsItem } from '../../models/news.model';
 import { forkJoin } from 'rxjs';
 import { TourismNews } from '../../models/tourism-news.model';
+// import { PlatformService } from '../../../shared/platform/platform.service';
+import { ImagePreloadService } from '../../../../shared/services/image-preload.service';
 
 @Component({
   selector: 'app-main-page',
@@ -25,7 +27,12 @@ export class MainPageComponent implements OnInit {
   totalPages: number = 0;
 
   private _landingPageService = inject(LandingPageService);
+  // private _platformService = inject(PlatformService);
+  private _imagePreloadService = inject(ImagePreloadService);
   ngOnInit(): void {
+    // Preload critical images
+    this._imagePreloadService.preloadCriticalImages();
+
     forkJoin({
       members: this._landingPageService.getGroupMembers(),
       news: this._landingPageService.getNewsItems(),
@@ -35,6 +42,12 @@ export class MainPageComponent implements OnInit {
         this.members = members;
         this.newsItems = news;
         this.tourismNews = tourismNews;
+
+        // Preload member and news images
+        this._imagePreloadService.preloadMemberImages(this.members);
+        this._imagePreloadService.preloadNewsImages(this.newsItems);
+        this._imagePreloadService.preloadNewsImages(this.tourismNews);
+
         this.updateDisplayedNews();
       },
       error: (err) => {
@@ -48,14 +61,22 @@ export class MainPageComponent implements OnInit {
   }
 
   generateFacebookShareLink(id: number, type: string): string {
-    const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
+    const origin =
+      typeof window !== 'undefined'
+        ? window.location.origin
+        : 'https://etf-egypt.com';
+    const url = `${origin}/landing-page/newsdetails/${id}?type=${type}`;
     return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       url
     )}`;
   }
 
   generateTwitterShareLink(id: number, type: string, text?: string): string {
-    const url = `${window.location.origin}/landing-page/newsdetails/${id}?type=${type}`;
+    const origin =
+      typeof window !== 'undefined'
+        ? window.location.origin
+        : 'https://etf-egypt.com';
+    const url = `${origin}/landing-page/newsdetails/${id}?type=${type}`;
     return `https://twitter.com/intent/tweet?url=${encodeURIComponent(
       url
     )}&text=${encodeURIComponent(text || '')}`;

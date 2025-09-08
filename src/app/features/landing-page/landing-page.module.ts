@@ -22,7 +22,11 @@ import { ConfirmRegisterComponent } from './components/confirm-register/confirm-
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { ConfirmAuthComponent } from './components/confirm-auth/confirm-auth.component';
+import { LoginSuccessDialogComponent } from './components/login-success-dialog/login-success-dialog.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DialogModule } from 'primeng/dialog';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
+import { DialogService } from 'primeng/dynamicdialog';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,15 @@ import { DialogModule } from 'primeng/dialog';
     ForgetPasswordComponent,
     ResetPasswordComponent,
     ConfirmAuthComponent,
+    LoginSuccessDialogComponent,
   ],
-  imports: [CommonModule, LandingPageRoutingModule, SharedModule, DialogModule],
+  imports: [
+    CommonModule,
+    LandingPageRoutingModule,
+    SharedModule,
+    DialogModule,
+    DynamicDialogModule,
+  ],
+  providers: [DialogService],
 })
 export class LandingPageModule {}

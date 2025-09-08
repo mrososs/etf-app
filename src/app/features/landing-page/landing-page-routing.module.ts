@@ -17,13 +17,24 @@ import { AuthRegisterComponent } from './components/auth-register/auth-register.
 import { ConfirmRegisterComponent } from './components/confirm-register/confirm-register.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
     component: MainPageComponent,
-    data: { title: 'الرئيسية - الإتحاد المصري' },
+    data: {
+      seo: {
+        title: 'الرئيسية - الإتحاد المصري للسياحة',
+        description:
+          'مرحباً بكم في موقع الإتحاد المصري للسياحة - منظمة غير حكومية تعمل على تطوير وتنمية قطاع السياحة في مصر',
+        keywords:
+          'الإتحاد المصري للسياحة، السياحة في مصر، تنمية السياحة، منظمة سياحية',
+        ogImage: '/assets/img/logo.png',
+        url: 'https://etf-egypt.com/landing-page/home',
+      },
+    },
   },
   {
     path: 'newsdetails/:id',
@@ -80,12 +91,32 @@ const routes: Routes = [
   {
     path: 'union',
     component: AboutUnionComponent,
-    data: { title: 'عن الإتحاد - الإتحاد المصري' },
+    data: {
+      seo: {
+        title: 'عن الإتحاد - الإتحاد المصري للسياحة',
+        description:
+          'تعرف على الإتحاد المصري للسياحة - تاريخنا، رؤيتنا، رسالتنا، وأهدافنا في تطوير قطاع السياحة المصري',
+        keywords:
+          'عن الإتحاد، الإتحاد المصري للسياحة، تاريخ الإتحاد، رؤية الإتحاد، رسالة الإتحاد',
+        ogImage: '/assets/img/aboutUnion.jpeg',
+        url: 'https://etf-egypt.com/landing-page/union',
+      },
+    },
   },
   {
     path: 'news',
     component: NewsComponent,
-    data: { title: 'الأخبار - الإتحاد المصري' },
+    data: {
+      seo: {
+        title: 'الأخبار - الإتحاد المصري للسياحة',
+        description:
+          'تابع آخر أخبار الإتحاد المصري للسياحة وأحدث التطورات في قطاع السياحة المصري',
+        keywords:
+          'أخبار الإتحاد، أخبار السياحة، أخبار مصر السياحية، تطورات السياحة',
+        ogImage: '/assets/img/newsBackground.jpg',
+        url: 'https://etf-egypt.com/landing-page/news',
+      },
+    },
   },
   {
     path: 'Tourism-legislation',
@@ -95,7 +126,17 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsComponent,
-    data: { title: 'تواصل معنا  - الإتحاد المصري' },
+    data: {
+      seo: {
+        title: 'تواصل معنا - الإتحاد المصري للسياحة',
+        description:
+          'تواصل مع الإتحاد المصري للسياحة - معلومات الاتصال، العنوان، الهاتف، البريد الإلكتروني',
+        keywords:
+          'تواصل معنا، الإتحاد المصري للسياحة، معلومات الاتصال، العنوان، الهاتف',
+        ogImage: '/assets/img/contactUsBackground.jpg',
+        url: 'https://etf-egypt.com/landing-page/contact-us',
+      },
+    },
   },
   {
     path: 'training',
@@ -126,6 +167,18 @@ const routes: Routes = [
     path: 'hotel-room',
     component: HotelRoomComponent,
     data: { title: 'غرفة المنشآت الفندقية  - الإتحاد المصري' },
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
+    data: {
+      seo: {
+        title: '404 - الصفحة غير موجودة | الإتحاد المصري للسياحة',
+        description:
+          'الصفحة التي تبحث عنها غير موجودة. يرجى التحقق من الرابط أو العودة إلى الصفحة الرئيسية.',
+        noindex: true,
+      },
+    },
   },
 ];
 const routerOptions: ExtraOptions = {

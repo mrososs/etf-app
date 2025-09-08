@@ -32,7 +32,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              { "glob": "web.config", "input": "src", "output": "" }
+              { "glob": "web.config", "input": "src", "output": "" },
+              { "glob": "robots.txt", "input": "src", "output": "" }
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -41,6 +42,7 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/leaflet/dist/leaflet.css",
+              "src/assets/styles/layout-shift-prevention.scss",
               "src/styles.scss"
             ],
 
@@ -56,7 +58,14 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": true
+                },
+                "fonts": true
+              },
               "extractLicenses": true,
               "sourceMap": false,
               "namedChunks": false,
@@ -65,8 +74,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1.2MB",
-                  "maximumError": "1.5MB"
+                  "maximumWarning": "1mb",
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -113,6 +122,31 @@
             ],
             "styles": ["src/styles.scss"],
             "scripts": []
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/etf-app/server",
+            "browser": "src/main.ts",
+            "index": "src/index.html",
+            "tsConfig": "tsconfig.server.json",
+            "polyfills": ["zone.js/node"]
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/express-engine:dev-server",
+          "options": {
+            "browserTarget": "etf-app:build",
+            "serverTarget": "etf-app:server"
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routesFile": "prerender-routes.json",
+            "browserTarget": "etf-app:build",
+            "serverTarget": "etf-app:server"
           }
         }
       }

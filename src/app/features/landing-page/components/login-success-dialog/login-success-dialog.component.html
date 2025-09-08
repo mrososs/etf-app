@@ -1,0 +1,34 @@
+<div class="login-success-dialog">
+  <div class="dialog-header">
+    <h2 class="dialog-title">
+      <i class="pi pi-check-circle text-green-500 mr-2"></i>
+      {{ "login.successDialog.title" | translate }}
+    </h2>
+  </div>
+
+  <div class="dialog-content">
+    <p class="dialog-message">
+      {{ "login.successDialog.message" | translate }}
+    </p>
+
+    <div class="dialog-actions">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg w-100 mb-3"
+        (click)="onBrowseWebsite()"
+      >
+        <i class="pi pi-globe mr-2"></i>
+        {{ "login.successDialog.browseWebsite" | translate }}
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-lg w-100 mb-3"
+        (click)="onGoToTraining()"
+      >
+        <i class="pi pi-graduation-cap mr-2"></i>
+        {{ "login.successDialog.goToTraining" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

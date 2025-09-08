@@ -5,6 +5,13 @@ import { ToastrService } from 'ngx-toastr';
 import { Login } from '../../models/login.model';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import {
+  DynamicDialogRef,
+  DynamicDialogConfig,
+  DialogService,
+} from 'primeng/dynamicdialog';
+import { LoginSuccessDialogComponent } from '../login-success-dialog/login-success-dialog.component';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-auth-login',
@@ -16,6 +23,7 @@ export class AuthLoginComponent implements OnInit {
   private toasterService = inject(ToastrService);
   private router = inject(Router);
   private translateService = inject(TranslateService);
+  private dialogService = inject(DialogService);
   showPassword = false;
 
   loginForm = new FormGroup({
@@ -82,15 +90,15 @@ export class AuthLoginComponent implements OnInit {
               detail: { isLoggedIn: true, token: res },
             })
           );
+
+          // Show login success dialog
+          this.showLoginSuccessDialog(res);
         },
         error: (err) => {
           this.toasterService.error(
             'Invalid email or password.',
             'Login Failed'
           );
-        },
-        complete: () => {
-          this.router.navigate(['/landing-page/home']);
         },
       });
     } else {
@@ -104,5 +112,48 @@ export class AuthLoginComponent implements OnInit {
 
   get password() {
     return this.loginForm.get('password');
+  }
+
+  private showLoginSuccessDialog(token: string) {
+    const ref = this.dialogService.open(LoginSuccessDialogComponent, {
+      header: '',
+      width: '500px',
+      modal: true,
+      dismissableMask: false,
+      closable: false,
+      styleClass: 'login-success-dialog-container',
+    });
+
+    ref.onClose.subscribe((result: string) => {
+      if (result === 'website') {
+        this.router.navigate(['/landing-page/home']);
+      } else if (result === 'training') {
+        this.redirectToTrainingPlatform(token);
+      } else {
+        // Default to home page if cancelled
+        this.router.navigate(['/landing-page/home']);
+      }
+    });
+  }
+
+  private redirectToTrainingPlatform(token: string) {
+    const pendingUserId = localStorage.getItem('pendingUserId');
+    const pendingToken = localStorage.getItem('pendingToken');
+
+    const lmsUrl = environment.lmsUrl;
+    let urlWithParams = `${lmsUrl}?token=${token}`;
+
+    // Add pending confirmation parameters if they exist
+    if (pendingUserId && pendingToken) {
+      urlWithParams += `&userId=${pendingUserId}&confirmToken=${pendingToken}`;
+      // Clear the pending values after using them
+      localStorage.removeItem('pendingUserId');
+      localStorage.removeItem('pendingToken');
+    }
+
+    window.open(urlWithParams, '_blank');
+
+    // Also navigate to home page
+    this.router.navigate(['/landing-page/home']);
   }
 }

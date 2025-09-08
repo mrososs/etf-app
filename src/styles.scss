@@ -31,3 +31,22 @@ p {
   border-radius: 8px;
   overflow: hidden;
 }
+
+/* Login Success Dialog Styles */
+.login-success-dialog-container {
+  .p-dialog {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+
+  .p-dialog-header {
+    display: none; /* Hide default header since we have custom header */
+  }
+
+  .p-dialog-content {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
