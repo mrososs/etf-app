@@ -180,7 +180,6 @@
       @media screen and (max-width: 551px) {
         margin: 0 auto;
         max-width: 10rem;
-        height: 18rem;
 
         .manager_name {
           h1,
@@ -305,6 +304,12 @@
       }
     }
     .group-name {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 0;
+
       h2 {
         font-size: 2rem;
         font-weight: bold;
@@ -435,36 +440,67 @@
 
       /* ✅ Media query لتغيير التصميم على الشاشات الصغيرة */
       @media (max-width: 768px) {
+        min-height: auto;
+        padding: 1.5rem 0;
+
         .members-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+          grid-template-columns: none;
+          grid-template-rows: none;
+          grid-template-areas: none;
         }
 
         .member-card {
           width: 100%;
-          margin-bottom: 1rem;
+          max-width: 300px;
+          margin-bottom: 0;
 
           .manager_name {
             h3 {
-              font-size: 0.8rem;
+              font-size: 0.9rem;
               min-height: 2.2rem;
             }
 
             p {
-              font-size: 0.65rem;
+              font-size: 0.7rem;
             }
           }
+        }
+
+        // إزالة جميع grid-area classes في الشاشات الصغيرة
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5,
+        .div6,
+        .div7,
+        .div8,
+        .div9,
+        .div10,
+        .div11,
+        .div12,
+        .div13,
+        .div14,
+        .div15,
+        .div16 {
+          grid-area: unset;
         }
       }
 
       @media (max-width: 480px) {
+        padding: 1rem 0;
+
         .members-grid {
-          grid-template-columns: 1fr;
-          gap: 0.75rem;
+          gap: 1rem;
         }
 
         .member-card {
+          max-width: 280px;
+
           .manager_name {
             h3 {
               font-size: 0.85rem;
@@ -894,7 +930,13 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+
     @media screen and (max-width: 767px) {
+      .row {
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
       .order-mobile-third {
         /* الصورة الثالثة (Group 111.png) نريدها أن تكون الأولى في الموبايل */
         order: 1;
