@@ -174,7 +174,11 @@
     "breadcrumbNews": "الأخبار",
     "unionNewsTitle": "أخبار الإتحاد",
     "tourismNewsTitle": "أخبار السياحة",
-    "readMore": "اقرأ المزيد"
+    "readMore": "اقرأ المزيد",
+    "loading": "جاري تحميل الأخبار...",
+    "retry": "إعادة المحاولة",
+    "noImage": "لا توجد صورة",
+    "noNews": "لا توجد أخبار متاحة حالياً"
   },
   "divingroom": {
     "title": "الغرف السياحية",
@@ -184,7 +188,8 @@
     "officialSite": {
       "title": "الموقع الرسمي",
       "link": "https://www.cdws.travel/ar"
-    }
+    },
+    "visitWebsite": "زيارة موقع غرفة سياحة الغوص والأنشطة البحرية"
   },
   "eatroom": {
     "title": "الغرف السياحية",
@@ -194,7 +199,8 @@
     "officialSite": {
       "title": "الموقع الرسمي",
       "link": "https://ctr-egypt.org/"
-    }
+    },
+    "visitWebsite": "زيارة موقع غرفة المنشآت والمطاعم السياحية"
   },
 
   "hotelroom": {
@@ -205,7 +211,8 @@
     "officialSite": {
       "title": "الموقع الرسمي",
       "link": "https://www.egyptianhotels.org/"
-    }
+    },
+    "visitWebsite": "زيارة موقع غرفة المنشآت الفندقية"
   },
   "productroom": {
     "title": "الغرف السياحية",
@@ -215,7 +222,8 @@
     "officialSite": {
       "title": "الموقع الرسمي",
       "link": "https://www.facebook.com/egyptianctc"
-    }
+    },
+    "visitWebsite": "زيارة موقع غرفة محال العاديات والسلع السياحية"
   },
   "travelroom": {
     "title": "الغرف السياحية",
@@ -225,7 +233,8 @@
     "officialSite": {
       "title": "الموقع الرسمي",
       "link": "https://www.etaa-egypt.org/"
-    }
+    },
+    "visitWebsite": "زيارة موقع غرفة شركات ووكالات السفر والسياحة"
   },
   "training": {
     "title": "التدريب",

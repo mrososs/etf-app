@@ -360,18 +360,58 @@
         </div>
       </div>
       <div class="news-pagination-wrapper mt-4">
-        <div class="news-grid">
+        <!-- Loading State -->
+        <div *ngIf="isLoadingCurrentNews" class="news-loading">
+          <div class="loading-spinner">
+            <i class="pi pi-spin pi-spinner"></i>
+            <p>{{ "news.loading" | translate }}</p>
+          </div>
+        </div>
+
+        <!-- Error State -->
+        <div
+          *ngIf="currentNewsError && !isLoadingCurrentNews"
+          class="news-error"
+        >
+          <div class="error-message">
+            <i class="pi pi-exclamation-triangle"></i>
+            <p>{{ currentNewsError }}</p>
+            <button
+              class="retry-btn"
+              (click)="loadNewsData(selected)"
+              [attr.aria-label]="'إعادة المحاولة'"
+            >
+              {{ "news.retry" | translate }}
+            </button>
+          </div>
+        </div>
+
+        <!-- News Grid -->
+        <div
+          class="news-grid"
+          *ngIf="!isLoadingCurrentNews && !currentNewsError"
+        >
           <div class="news-item" *ngFor="let item of displayedNews">
-            <img
-              [src]="item.imageUrl"
-              alt="صورة الخبر"
-              width="300"
-              height="200"
-              loading="lazy"
-              decoding="async"
-            />
+            <div class="news-image-container">
+              <img
+                [src]="getImageUrl(item.imageUrl)"
+                [alt]="'صورة الخبر - ' + (item.title || 'خبر')"
+                width="300"
+                height="200"
+                loading="lazy"
+                decoding="async"
+                (error)="onImageError($event)"
+                (load)="onImageLoad($event)"
+                class="news-image"
+              />
+              <div class="image-loading-placeholder" *ngIf="!item.imageUrl">
+                <i class="pi pi-image"></i>
+                <span>{{ "news.noImage" | translate }}</span>
+              </div>
+            </div>
             <div class="news-content">
               <div class="news-text">
+                <h3 class="news-title" *ngIf="item.title">{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
               </div>
               <div class="news-actions">
@@ -424,6 +464,21 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- No News Message -->
+        <div
+          *ngIf="
+            !isLoadingCurrentNews &&
+            !currentNewsError &&
+            displayedNews.length === 0
+          "
+          class="no-news"
+        >
+          <div class="no-news-message">
+            <i class="pi pi-info-circle"></i>
+            <p>{{ "news.noNews" | translate }}</p>
           </div>
         </div>
       </div>

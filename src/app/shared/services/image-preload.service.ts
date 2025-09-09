@@ -71,7 +71,7 @@ export class ImagePreloadService {
   }
 
   /**
-   * Preload news images
+   * Preload news images with better error handling
    */
   preloadNewsImages(news: any[]): void {
     if (!isPlatformBrowser(this.platformId)) {
@@ -81,13 +81,50 @@ export class ImagePreloadService {
     news.slice(0, 6).forEach((item) => {
       // Only preload first 6 news images
       if (item.imageUrl) {
-        this.preloadImage(item.imageUrl);
+        const fullImageUrl = this.getCompleteImageUrl(item.imageUrl);
+        if (this.isValidImageUrl(fullImageUrl)) {
+          this.preloadImage(fullImageUrl);
+        }
       }
     });
   }
 
   /**
-   * Preload a single image
+   * Get complete image URL for news items
+   */
+  private getCompleteImageUrl(imageUrl: string): string {
+    if (!imageUrl) {
+      return '';
+    }
+
+    // If it's already a complete URL, return as is
+    if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+      return imageUrl;
+    }
+
+    // If it's a relative path starting with /uploads/, construct the full URL
+    if (imageUrl.startsWith('/uploads/')) {
+      return `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net${imageUrl}`;
+    }
+
+    // For other relative paths, assume they're asset paths
+    return imageUrl;
+  }
+
+  /**
+   * Check if image URL is valid
+   */
+  private isValidImageUrl(url: string): boolean {
+    try {
+      new URL(url);
+      return url.match(/\.(jpeg|jpg|gif|png|webp|svg)$/i) !== null;
+    } catch {
+      return false;
+    }
+  }
+
+  /**
+   * Preload a single image with timeout and better error handling
    */
   private preloadImage(src: string): void {
     if (this.preloadedImages.has(src)) {
@@ -95,12 +132,21 @@ export class ImagePreloadService {
     }
 
     const img = new Image();
+    const timeout = setTimeout(() => {
+      console.warn(`Image preload timeout: ${src}`);
+      img.src = '';
+    }, 10000); // 10 second timeout
+
     img.onload = () => {
+      clearTimeout(timeout);
       this.preloadedImages.add(src);
     };
+
     img.onerror = () => {
+      clearTimeout(timeout);
       console.warn(`Failed to preload image: ${src}`);
     };
+
     img.src = src;
   }
 

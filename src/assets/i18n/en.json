@@ -179,7 +179,11 @@
     "breadcrumbNews": "News",
     "ETFNewsTitle": "ETF News",
     "tourismNewsTitle": "Tourism News",
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "loading": "Loading news...",
+    "retry": "Retry",
+    "noImage": "No image available",
+    "noNews": "No news available at the moment"
   },
   "divingroom": {
     "title": "Tourism Rooms",
@@ -189,7 +193,8 @@
     "officialSite": {
       "title": "Official Website",
       "link": "https://www.cdws.travel/en"
-    }
+    },
+    "visitWebsite": "Visit Diving Chamber Website"
   },
   "eatroom": {
     "title": "Tourism Rooms",
@@ -199,7 +204,8 @@
     "officialSite": {
       "title": "Official Website",
       "link": "https://ctr-egypt.org/"
-    }
+    },
+    "visitWebsite": "Visit Restaurants Chamber Website"
   },
   "hotelroom": {
     "title": "Tourism Rooms",
@@ -209,7 +215,8 @@
     "officialSite": {
       "title": "Official Website",
       "link": "https://www.egyptianhotels.org/"
-    }
+    },
+    "visitWebsite": "Visit Hotels Chamber Website"
   },
   "productroom": {
     "title": "Tourism Rooms",
@@ -219,7 +226,8 @@
     "officialSite": {
       "title": "Official Website",
       "link": "https://www.facebook.com/egyptianctc"
-    }
+    },
+    "visitWebsite": "Visit Commodities Chamber Website"
   },
   "travelroom": {
     "title": "Tourism Rooms",
@@ -229,7 +237,8 @@
     "officialSite": {
       "title": "Official Website",
       "link": "https://www.etaa-egypt.org/"
-    }
+    },
+    "visitWebsite": "Visit Travel Chamber Website"
   },
   "training": {
     "title": "Training",
