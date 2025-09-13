@@ -1,42 +1,42 @@
 .login {
+  
   .hero_text {
-    .login-container{
-        background: white;
-        padding: 2rem;
-        border-radius: 10px;
+    margin-top: 3rem;
+    .login-container {
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
     }
-    a{
+    a {
+      color: $color-primary;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
         color: $color-primary;
-        font-weight: 600;
-        cursor: pointer;
-        text-decoration: none;
-        &:hover{
-            color: $color-primary;
-            text-decoration: underline;
-        }
+        text-decoration: underline;
+      }
     }
-    h1{
-        color: $color-primary;
-        font-size: 2rem;
-        font-weight: 800;
-        margin-bottom: 3rem;
+    h1 {
+      color: $color-primary;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 3rem;
     }
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-bottom: 5rem;
-    
+
     border-left: none;
     display: flex;
     justify-content: end;
     padding: 5rem 0;
-
-   
   }
   .carousel {
     width: 100%;
-    
+
     max-width: 100vw; // ✅ مهم جدًا لتجنب overflow
     overflow: hidden; // ✅ يمنع أي عنصر داخلي يخرج خارج الحدود
 
@@ -53,6 +53,7 @@
     }
 
     .carousel-indicators {
+      display: none;
       button {
         border-radius: 50% !important;
         height: 1rem;
@@ -85,6 +86,194 @@
 
     .carousel-control-prev {
       rotate: 90deg !important;
+    }
+  }
+}
+.confirmation-message {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #28a745;
+
+  .success-icon {
+    animation: bounceIn 0.8s ease-out;
+  }
+
+  h3 {
+    font-weight: 600;
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+  }
+
+  .alert {
+    border: none;
+    border-radius: 10px;
+    background: rgba(13, 202, 240, 0.1);
+    border-left: 4px solid #0dcaf0;
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+  }
+
+  .btn {
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease-out 0.8s both;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Password field enhancements
+.form-group {
+  position: relative;
+
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+    z-index: 10;
+
+    &:hover {
+      color: #495057;
+    }
+  }
+}
+
+.password-strength {
+  .strength-bar {
+    height: 3px;
+    background-color: #e9ecef;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 3px;
+
+    .strength-fill {
+      height: 100%;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+  }
+
+  .strength-label {
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+}
+
+.password-hints {
+  .password-requirements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2px;
+      font-size: 0.75rem;
+      transition: all 0.3s ease;
+
+      i {
+        margin-right: 6px;
+        width: 12px;
+        text-align: center;
+        font-size: 0.7rem;
+      }
+
+      &.valid {
+        color: #28a745;
+      }
+
+      &:not(.valid) {
+        color: #6c757d;
+      }
+    }
+  }
+
+  small {
+    font-size: 0.7rem !important;
+  }
+}
+
+// Password validation error messages
+.text-danger {
+  small {
+    font-size: 0.7rem !important;
+    line-height: 1.2;
+  }
+}
+
+// RTL Support for Arabic
+[dir="rtl"] {
+  .confirmation-message {
+    .alert {
+      border-left: none;
+      border-right: 4px solid #0dcaf0;
+    }
+
+    .btn {
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+  }
+
+  .form-group {
+    .password-toggle {
+      right: auto;
+      left: 12px;
+    }
+  }
+
+  .password-hints {
+    .password-requirements {
+      li {
+        i {
+          margin-right: 0;
+          margin-left: 6px;
+        }
+      }
     }
   }
 }

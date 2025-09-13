@@ -49,8 +49,40 @@
     "goToLogin": "Already have an account?",
     "errors": {
       "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
       "usernameRequired": "Username is required",
-      "passwordRequired": "Password is required"
+      "passwordRequired": "Password is required",
+      "passwordWeak": "Password is too weak",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordUppercase": "Password must contain at least one uppercase letter",
+      "passwordLowercase": "Password must contain at least one lowercase letter",
+      "passwordNumber": "Password must contain at least one number",
+      "passwordSpecial": "Password must contain at least one special character"
+    },
+    "passwordHints": {
+      "title": "Password Requirements:",
+      "minLength": "At least 8 characters",
+      "uppercase": "One uppercase letter (A-Z)",
+      "lowercase": "One lowercase letter (a-z)",
+      "number": "One number (0-9)",
+      "special": "One special character (!@#$%^&*)",
+      "strength": {
+        "weak": "Weak",
+        "medium": "Medium",
+        "strong": "Strong",
+        "veryStrong": "Very Strong"
+      }
+    },
+    "success": {
+      "title": "Registration Successful!",
+      "message": "Your account has been created successfully. Please check your email for a confirmation link to activate your account.",
+      "checkEmail": "Check your email",
+      "confirmationSent": "A confirmation email has been sent to your registered email address. Please click the link in the email to activate your account.",
+      "goToLogin": "Go to Login"
+    },
+    "error": {
+      "title": "Registration Failed",
+      "message": "Something went wrong during registration. Please try again."
     }
   },
   "navbar": {

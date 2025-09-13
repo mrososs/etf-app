@@ -1,0 +1,283 @@
+.confirmation-message {
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border: 3px solid #28a745;
+  max-width: 500px;
+  margin: 0 auto;
+
+  .success-icon {
+    animation: bounceIn 0.8s ease-out;
+    margin-bottom: 1.5rem;
+
+    i {
+      font-size: 5rem;
+      color: #28a745;
+      text-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+    color: #28a745;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+    color: #495057;
+  }
+
+  .alert {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(
+      135deg,
+      rgba(13, 202, 240, 0.1) 0%,
+      rgba(13, 202, 240, 0.05) 100%
+    );
+    border-left: 5px solid #0dcaf0;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+
+    i {
+      color: #0dcaf0;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.6s ease-out 0.8s both;
+
+    .btn {
+      border-radius: 30px;
+      padding: 0.875rem 2.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      min-width: 180px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      &.btn-primary {
+        background: linear-gradient(135deg, #fd7e14 0%, #e8590c 100%);
+        border: none;
+        color: white;
+
+        &:hover {
+          background: linear-gradient(135deg, #e8590c 0%, #d63384 100%);
+          color: white;
+        }
+      }
+
+      &.btn-outline-primary {
+        background: transparent;
+        border: 2px solid #fd7e14;
+        color: #fd7e14;
+
+        &:hover {
+          background: #fd7e14;
+          color: white;
+          border-color: #fd7e14;
+        }
+      }
+    }
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Password field enhancements
+.form-group {
+  position: relative;
+  [dir="rtl"] {
+    .password-toggle {
+      left: 15px;
+    }
+  }
+  [dir="ltr"] {
+    .password-toggle {
+      right: 15px;
+    }
+  }
+  .password-toggle {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    position: absolute;
+    cursor: pointer;
+    color: #6c757d;
+    top: 70%;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+
+    &:hover {
+      color: #495057;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // Add padding to password input to make room for the icon (LTR - English)
+  input[formControlName="password"] {
+    padding-right: 45px;
+  }
+}
+
+.password-strength {
+  .strength-bar {
+    height: 3px;
+    background-color: #e9ecef;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 3px;
+
+    .strength-fill {
+      height: 100%;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+  }
+
+  .strength-label {
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+}
+
+.password-hints {
+  .password-requirements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2px;
+      font-size: 0.75rem;
+      transition: all 0.3s ease;
+
+      i {
+        margin-right: 6px;
+        width: 12px;
+        text-align: center;
+        font-size: 0.7rem;
+      }
+
+      &.valid {
+        color: #28a745;
+      }
+
+      &:not(.valid) {
+        color: #6c757d;
+      }
+    }
+  }
+
+  small {
+    font-size: 0.7rem !important;
+  }
+}
+
+// Password validation error messages
+.text-danger {
+  small {
+    font-size: 0.7rem !important;
+    line-height: 1.2;
+  }
+}
+
+// RTL Support for Arabic
+[dir="rtl"] {
+  .confirmation-message {
+    .alert {
+      border-left: none;
+      border-right: 5px solid #0dcaf0;
+
+      i {
+        margin-right: 0;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .action-buttons {
+      .btn {
+        i {
+          margin-right: 0;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .form-group {
+    // Add padding to password input for RTL (Arabic) to make room for the icon on the left
+    input[formControlName="password"] {
+      padding-right: 12px;
+      padding-left: 45px;
+    }
+  }
+
+  .password-hints {
+    .password-requirements {
+      li {
+        i {
+          margin-right: 0;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}

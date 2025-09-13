@@ -6,7 +6,12 @@
         <h1>{{ "register.title" | translate }}</h1>
       </div>
       <div class="col-12 contact-us__form">
-        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <!-- Registration Form -->
+        <form
+          [formGroup]="registerForm"
+          (ngSubmit)="onSubmit()"
+          *ngIf="!showConfirmationMessage"
+        >
           <div class="row">
             <div class="col-12 mb-3">
               <div class="form-group">
@@ -61,12 +66,37 @@
                 <input
                   id="password"
                   formControlName="password"
-                  type="password"
+                  [type]="showPassword ? 'text' : 'password'"
                   pInputText
                   placeholder="{{ 'register.passwordPlaceholder' | translate }}"
                   class="form-control"
                 />
 
+                <!-- Password toggle button -->
+                <div class="password-toggle" (click)="togglePassword()">
+                  <i
+                    [class]="showPassword ? 'pi pi-eye-slash' : 'pi pi-eye'"
+                  ></i>
+                </div>
+
+                <!-- Password strength indicator -->
+                <div class="password-strength mt-2" *ngIf="password?.value">
+                  <div class="strength-bar">
+                    <div
+                      class="strength-fill"
+                      [style.width.%]="(passwordStrength.score / 5) * 100"
+                      [style.background-color]="getPasswordStrengthColor()"
+                    ></div>
+                  </div>
+                  <small
+                    class="strength-label"
+                    [style.color]="getPasswordStrengthColor()"
+                  >
+                    {{ getPasswordStrengthLabel() | translate }}
+                  </small>
+                </div>
+
+                <!-- Password validation errors -->
                 <div
                   class="text-danger mt-1"
                   *ngIf="password?.touched && password?.invalid"
@@ -74,6 +104,80 @@
                   <small *ngIf="password?.errors?.['required']">
                     {{ "register.errors.passwordRequired" | translate }}
                   </small>
+                  <small *ngIf="hasPasswordError('minLength')">
+                    {{ "register.errors.passwordMinLength" | translate }}
+                  </small>
+                  <small *ngIf="hasPasswordError('noUppercase')">
+                    {{ "register.errors.passwordUppercase" | translate }}
+                  </small>
+                  <small *ngIf="hasPasswordError('noLowercase')">
+                    {{ "register.errors.passwordLowercase" | translate }}
+                  </small>
+                  <small *ngIf="hasPasswordError('noNumber')">
+                    {{ "register.errors.passwordNumber" | translate }}
+                  </small>
+                  <small *ngIf="hasPasswordError('noSpecial')">
+                    {{ "register.errors.passwordSpecial" | translate }}
+                  </small>
+                </div>
+
+                <!-- Password hints -->
+                <div class="password-hints mt-2" *ngIf="password?.value">
+                  <small class="text-muted d-block mb-1">
+                    {{ "register.passwordHints.title" | translate }}
+                  </small>
+                  <ul class="password-requirements">
+                    <li [class.valid]="hasMinLength()">
+                      <i
+                        [class]="
+                          hasMinLength()
+                            ? 'pi pi-check text-success'
+                            : 'pi pi-times text-danger'
+                        "
+                      ></i>
+                      {{ "register.passwordHints.minLength" | translate }}
+                    </li>
+                    <li [class.valid]="hasUppercase()">
+                      <i
+                        [class]="
+                          hasUppercase()
+                            ? 'pi pi-check text-success'
+                            : 'pi pi-times text-danger'
+                        "
+                      ></i>
+                      {{ "register.passwordHints.uppercase" | translate }}
+                    </li>
+                    <li [class.valid]="hasLowercase()">
+                      <i
+                        [class]="
+                          hasLowercase()
+                            ? 'pi pi-check text-success'
+                            : 'pi pi-times text-danger'
+                        "
+                      ></i>
+                      {{ "register.passwordHints.lowercase" | translate }}
+                    </li>
+                    <li [class.valid]="hasNumber()">
+                      <i
+                        [class]="
+                          hasNumber()
+                            ? 'pi pi-check text-success'
+                            : 'pi pi-times text-danger'
+                        "
+                      ></i>
+                      {{ "register.passwordHints.number" | translate }}
+                    </li>
+                    <li [class.valid]="hasSpecialChar()">
+                      <i
+                        [class]="
+                          hasSpecialChar()
+                            ? 'pi pi-check text-success'
+                            : 'pi pi-times text-danger'
+                        "
+                      ></i>
+                      {{ "register.passwordHints.special" | translate }}
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -85,7 +189,43 @@
             </div>
           </div>
         </form>
-        <div class="d-flex justify-content-center mt-3">
+
+        <!-- Confirmation Message -->
+        <div
+          class="confirmation-message text-center"
+          *ngIf="showConfirmationMessage"
+        >
+          <div class="success-icon">
+            <i class="pi pi-check-circle"></i>
+          </div>
+          <h3>
+            {{ "register.success.title" | translate }}
+          </h3>
+          <p>{{ "register.success.message" | translate }}</p>
+          <div class="alert alert-info text-start">
+            <i class="pi pi-envelope"></i>
+            {{ "register.success.confirmationSent" | translate }}
+          </div>
+          <div class="action-buttons">
+            <button class="btn btn-primary" (click)="goBackToRegister()">
+              <i class="pi pi-user-plus"></i>
+              {{ "register.registerNow" | translate }}
+            </button>
+            <a
+              [routerLink]="['/landing-page/login']"
+              class="btn btn-outline-primary"
+            >
+              <i class="pi pi-sign-in"></i>
+              {{ "register.success.goToLogin" | translate }}
+            </a>
+          </div>
+        </div>
+
+        <!-- Login Link (only show when form is visible) -->
+        <div
+          class="d-flex justify-content-center mt-3"
+          *ngIf="!showConfirmationMessage"
+        >
           <a [routerLink]="['/landing-page/login']">{{
             "register.goToLogin" | translate
           }}</a>
