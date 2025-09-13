@@ -390,6 +390,8 @@
         <div
           class="news-grid"
           *ngIf="!isLoadingCurrentNews && !currentNewsError"
+          (mouseenter)="onNewsHover()"
+          (mouseleave)="onNewsLeave()"
         >
           <div class="news-item" *ngFor="let item of displayedNews">
             <div class="news-image-container">

@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { GroupMember } from '../../models/group.model';
 import { LandingPageService } from '../../services/landing-page.service';
 import { TreeNode } from 'primeng/api';
@@ -13,7 +13,7 @@ import { ImagePreloadService } from '../../../../shared/services/image-preload.s
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
 })
-export class MainPageComponent implements OnInit {
+export class MainPageComponent implements OnInit, OnDestroy {
   selected: string = 'أخبار عن الإتحاد'; // ✅ لازم تتعرف هنا
   isExpanded = false;
   members: GroupMember[] = [];
@@ -31,6 +31,11 @@ export class MainPageComponent implements OnInit {
   currentPage: number = 0;
   itemsPerPage: number = 3;
   totalPages: number = 0;
+
+  // Auto-pagination properties
+  private autoPaginationInterval: any;
+  private isHovered: boolean = false;
+  private readonly AUTO_PAGINATION_DELAY = 5000; // 5 seconds
 
   // Cache for loaded news
   private newsCache = new Map<string, any[]>();
@@ -169,11 +174,22 @@ export class MainPageComponent implements OnInit {
     const startIndex = this.currentPage * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
     this.displayedNews = sourceArray.slice(startIndex, endIndex);
+
+    // Start auto-pagination if there are multiple pages
+    if (this.totalPages > 1) {
+      this.startAutoPagination();
+    } else {
+      this.stopAutoPagination();
+    }
   }
 
   nextPage() {
     if (this.currentPage < this.totalPages - 1) {
       this.currentPage++;
+      this.updateDisplayedNews();
+    } else {
+      // Loop back to first page
+      this.currentPage = 0;
       this.updateDisplayedNews();
     }
   }
@@ -182,7 +198,36 @@ export class MainPageComponent implements OnInit {
     if (this.currentPage > 0) {
       this.currentPage--;
       this.updateDisplayedNews();
+    } else {
+      // Loop to last page
+      this.currentPage = this.totalPages - 1;
+      this.updateDisplayedNews();
     }
+  }
+
+  // Auto-pagination methods
+  startAutoPagination() {
+    this.stopAutoPagination(); // Clear any existing interval
+    this.autoPaginationInterval = setInterval(() => {
+      if (!this.isHovered && this.totalPages > 1) {
+        this.nextPage();
+      }
+    }, this.AUTO_PAGINATION_DELAY);
+  }
+
+  stopAutoPagination() {
+    if (this.autoPaginationInterval) {
+      clearInterval(this.autoPaginationInterval);
+      this.autoPaginationInterval = null;
+    }
+  }
+
+  onNewsHover() {
+    this.isHovered = true;
+  }
+
+  onNewsLeave() {
+    this.isHovered = false;
   }
 
   // Helper methods for pagination state
@@ -261,5 +306,9 @@ export class MainPageComponent implements OnInit {
 
     // For other relative paths, assume they're asset paths
     return imageUrl;
+  }
+
+  ngOnDestroy(): void {
+    this.stopAutoPagination();
   }
 }

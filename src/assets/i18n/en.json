@@ -101,7 +101,7 @@
     "news": "News",
     "contact": "Contact Us",
     "arabic": "العربية",
-    "chooseYourColor": "choose Your Color",
+    "chooseYourColor": "Choose Your Color",
 
     "ar": "العربية",
     "en": "English",
@@ -189,7 +189,7 @@
     "ETFHeadSpeakDesc": "Since July 2024, my colleagues and I have had the honor of assuming responsibility for leading the Egyptian Tourism Federation, a prestigious entity approaching its 60th anniversary, making it one of the oldest and most impactful institutions in Egypt. At the start of this term, the Board of Directors set out a number of strategic goals: First, to actively contribute to shaping a new roadmap for Egyptian tourism that supports the state’s vision of reaching 30 million tourists annually by 2030; Second, to address the current challenges facing the tourism sector; Third, to work on enforcing the laws governing tourism chambers and administration, as well as the law on hotel and tourism establishments. The Federation is pursuing these objectives through several key tracks, including coordinating with various stakeholders to implement the national sustainable tourism strategy, which includes a new roadmap for Egyptian tourism, enhancing the training system, supporting digital transformation in the tourism sector, and building strategic partnerships and strengthening cooperation with tourism organizations and federations at the local, regional, and international levels. Last but not least, we are committed to empowering the Federation to fully fulfill its role. In conclusion, I would like to emphasize the importance of maintaining continuous communication between the Federation and the sector through various channels, including this website.",
     "ETFDesc": "The Federation aims to assist the Ministry of Tourism and Antiquities in formulating the general policy for tourism activities and implementing the national strategy for sustainable tourism, which includes a new roadmap for Egyptian tourism aimed at supporting sustainable tourism development as a driver of economic growth and comprehensive development."
   },
-  "etf": {
+  "union": {
     "pageTitle": "About the ETF",
     "aboutTitle": "About the ETF",
     "aboutDescription": "The Egyptian Tourism Federation is a professional etf established by Law No. 85 of 1968 and amended by Law No. 27 of 2023 to serve the common interests of the tourism sector in the Arab Republic of Egypt.",
@@ -364,6 +364,7 @@
       "description": "Get internationally recognized and certified certificates that open new horizons in the tourism job market"
     },
     "accessPlatform": "Access Platform",
+    "clickHere": "Click Here",
     "mustLogin": "You must log in to access the training platform"
   },
   "confirmRegister": {

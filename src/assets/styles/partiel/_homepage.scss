@@ -670,6 +670,7 @@
       gap: 2rem;
       align-items: stretch;
       justify-items: center;
+      transition: all 0.5s ease-in-out;
 
       @media (min-width: 1200px) {
         grid-template-columns: repeat(3, 1fr);
@@ -704,7 +705,7 @@
       padding: 0;
       text-align: center;
       position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease-in-out;
       display: flex;
       flex-direction: column;
       height: 450px; // Fixed height for all cards
@@ -712,6 +713,7 @@
       max-width: 380px;
       overflow: hidden;
       border: 1px solid rgba(0, 0, 0, 0.05);
+      animation: slideInUp 0.6s ease-out;
 
       &:hover {
         transform: translateY(-8px);
@@ -920,6 +922,68 @@
       }
       100% {
         background-position: -200% 0;
+      }
+    }
+
+    // Auto-pagination animations
+    @keyframes slideInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    // Auto-pagination transition classes
+    .news-grid.auto-paginating {
+      .news-item {
+        animation: slideInUp 0.6s ease-out;
+      }
+    }
+
+    .news-grid.auto-paginating-left {
+      .news-item {
+        animation: slideInLeft 0.6s ease-out;
+      }
+    }
+
+    .news-grid.auto-paginating-right {
+      .news-item {
+        animation: slideInRight 0.6s ease-out;
       }
     }
   }
