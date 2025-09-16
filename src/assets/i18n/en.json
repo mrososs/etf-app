@@ -212,6 +212,7 @@
   },
   "news": {
     "pageTitle": "News",
+    "unionNewsTitle": "ETF News",
     "breadcrumbHome": "Home",
     "breadcrumbNews": "News",
     "ETFNewsTitle": "ETF News",
@@ -223,7 +224,7 @@
     "noNews": "No news available at the moment"
   },
   "divingroom": {
-    "title": "Tourism Rooms",
+    "title": "Tourism Chambers",
     "breadcrumb": "Rooms",
     "header": "Chamber Of Diving And Water sports",
     "description": "It includes diving facilities licensed by the Ministry of Tourism. The chamber aims to improve the quality, safety, and standards of diving and marine activity services, in addition to preserving the unique marine life of the Red Sea.",
@@ -234,7 +235,7 @@
     "visitWebsite": "Visit Diving Chamber Website"
   },
   "eatroom": {
-    "title": "Tourism Rooms",
+    "title": "Tourism Chambers",
     "breadcrumb": "Rooms",
     "header": "Chamber of Tourism Establishments & Restaurants",
     "description": "It includes tourism establishments licensed by the Ministry of Tourism and works to support and improve the services provided by these establishments and restaurants.",
@@ -245,7 +246,7 @@
     "visitWebsite": "Visit Restaurants Chamber Website"
   },
   "hotelroom": {
-    "title": "Tourism Rooms",
+    "title": "Tourism Chambers",
     "breadcrumb": "Rooms",
     "header": "Egyptian Hotels Association",
     "description": "It includes hotel establishments licensed by the Ministry of Tourism. The chamber works to develop the hotel sector in Egypt by promoting knowledge sharing, overcoming obstacles to its growth, and providing continuous professional training to enhance hotel staff performance.",
@@ -256,7 +257,7 @@
     "visitWebsite": "Visit Hotels Chamber Website"
   },
   "productroom": {
-    "title": "Tourism Rooms",
+    "title": "Tourism Chambers",
     "breadcrumb": "Rooms",
     "header": "Egyptian Chamber Of Touristic Commodities",
     "description": "It includes licensed establishments for selling handicrafts and tourist goods. The chamber supports its members and their activities in the trade of tourist products, aiming to develop the product, raise the standards of workers, solve issues, and represent them before the relevant authorities.",
@@ -267,7 +268,7 @@
     "visitWebsite": "Visit Commodities Chamber Website"
   },
   "travelroom": {
-    "title": "Tourism Rooms",
+    "title": "Tourism Chambers",
     "breadcrumb": "Rooms",
     "header": "Egyptian Travel Agents Association",
     "description": "It includes tourism companies licensed by the Ministry of Tourism. The chamber works to support and care for these companies within the state's tourism plan, and represents them before public authorities, organizations, and local and international bodies.",

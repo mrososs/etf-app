@@ -1,0 +1,25 @@
+.room__content {
+  .room__description {
+    text-align: justify;
+  }
+
+  .room_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  @media (max-width: 992px) {
+    .room_img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .room_img {
+      width: 100%;
+    }
+  }
+}
