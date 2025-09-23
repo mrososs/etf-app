@@ -25,7 +25,12 @@
       <div class="row align-items-center">
         <div class="col-12 col-md-7 px-4 about-union__message__vision__text">
           <h1>{{ "union.vision.title" | translate }}</h1>
-          <p>{{ "union.vision.description" | translate }}</p>
+          <p>
+            {{
+              missionAndVision?.vision ||
+                ("union.vision.description" | translate)
+            }}
+          </p>
         </div>
         <div class="col-12 col-md-5 text-center d-none d-md-block">
           <img src="../../../../../assets/img/vision.jpg" alt="vision" />
@@ -38,7 +43,12 @@
       <div class="row align-items-center flex-md-row-reverse">
         <div class="col-12 col-md-7 px-4 about-union__message__vision__text">
           <h1>{{ "union.mission.title" | translate }}</h1>
-          <p>{{ "union.mission.description" | translate }}</p>
+          <p>
+            {{
+              missionAndVision?.mission ||
+                ("union.mission.description" | translate)
+            }}
+          </p>
         </div>
         <div class="col-12 col-md-5 text-center d-none d-md-block">
           <img
@@ -84,7 +94,7 @@
         class="col-12 col-sm-10 col-md-6 col-lg-3 card-report p-4"
         *ngFor="let report of reports"
       >
-        <h1>{{ "union.reportLabel" | translate }}  {{ report.year }}</h1>
+        <h1>{{ "union.reportLabel" | translate }} {{ report.year }}</h1>
         <p>{{ report.description }}</p>
         <p class="text-center">
           <!-- View -->

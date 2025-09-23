@@ -12,6 +12,7 @@ import { Login } from '../models/login.model';
 import { RegisterModel } from '../models/register.model';
 import { forgetPasswordModel } from '../models/forgetpassword.model';
 import { ResetPasswordModel } from '../models/token.model';
+import { MissionAndVision } from '../models/MissionAndVision.model';
 
 @Injectable({
   providedIn: 'root',
@@ -76,7 +77,12 @@ export class LandingPageService {
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Commitee/${lang}`
     );
   }
-
+  getMissionAndVision(): Observable<MissionAndVision> {
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<MissionAndVision>(`
+      https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Content/MissionAndVision/${lang}
+      `);
+  }
   getReports(): Observable<Report[]> {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<Report[]>(
