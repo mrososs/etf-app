@@ -76,16 +76,54 @@ export class AuthRegisterComponent {
             });
         },
         error: (err) => {
-          // Show error toast with translated message
+          // Handle error response
+          let errorMessage = '';
+          let errorCode = '';
+
+          // Check if error is an array with code and description
+          if (Array.isArray(err?.error)) {
+            const firstError = err.error[0];
+            errorCode = firstError?.code;
+            errorMessage = firstError?.description;
+          }
+          // Check if error has a message property
+          else if (err?.error?.message) {
+            errorMessage = err.error.message;
+          }
+
+          // Get translated title
           this.translateService
-            .get('register.error.message')
-            .subscribe((message) => {
-              this.translateService
-                .get('register.error.title')
-                .subscribe((title) => {
-                  const errorMessage = err?.error?.message || message;
-                  this.toasterService.error(errorMessage, title);
-                });
+            .get('register.error.title')
+            .subscribe((title) => {
+              // If we have an error code, try to get its translation
+              if (errorCode) {
+                const translationKey = `register.error.${errorCode}`;
+                this.translateService
+                  .get(translationKey)
+                  .subscribe((translatedMessage) => {
+                    // If translation exists (not the same as key), use it
+                    // Otherwise, use the original description from API
+                    const finalMessage =
+                      translatedMessage !== translationKey
+                        ? translatedMessage
+                        : errorMessage;
+
+                    this.toasterService.error(
+                      finalMessage || 'حدث خطأ غير متوقع',
+                      title
+                    );
+                  });
+              } else {
+                // No error code, use generic message
+                this.translateService
+                  .get('register.error.message')
+                  .subscribe((defaultMessage) => {
+                    this.toasterService.error(
+                      errorMessage || defaultMessage,
+                      title
+                    );
+                  });
+              }
             });
         },
       });

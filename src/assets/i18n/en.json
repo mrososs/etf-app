@@ -82,7 +82,12 @@
     },
     "error": {
       "title": "Registration Failed",
-      "message": "Something went wrong during registration. Please try again."
+      "message": "Something went wrong during registration. Please try again.",
+      "DuplicateEmail": "This email is already taken. Please use a different email.",
+      "DuplicateUsername": "This username is already taken. Please choose a different username.",
+      "InvalidEmail": "Invalid email address.",
+      "WeakPassword": "Password is too weak. Please choose a stronger password.",
+      "InvalidData": "Invalid data entered. Please check all fields."
     }
   },
   "navbar": {
