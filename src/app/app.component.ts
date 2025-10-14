@@ -16,6 +16,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { filter, map, mergeMap } from 'rxjs/operators';
 import { LangService } from './core/services/lang.service';
 import { LoaderService } from './core/services/loader.service';
+import { TokenExpiryService } from './core/services/token-expiry.service';
 // import { SeoService } from './shared/seo/seo.service';
 // import { StructuredDataService } from './shared/seo/structured-data.service';
 // import { AnalyticsService } from './shared/analytics/analytics.service';
@@ -37,11 +38,16 @@ export class AppComponent implements OnInit {
   private _titleService = inject(Title);
   private _router = inject(Router);
   private _activatedRoute = inject(ActivatedRoute);
+  private _tokenExpiryService = inject(TokenExpiryService);
   // private _seoService = inject(SeoService);
   // private _structuredDataService = inject(StructuredDataService);
   // private _analyticsService = inject(AnalyticsService);
 
   ngOnInit(): void {
+    // Initialize token expiry checking
+    // This will check for expired tokens immediately and then every hour
+    this._tokenExpiryService.initTokenExpiryCheck();
+
     // Initialize Google Analytics
     // this._analyticsService.init();
     // Add organization schema site-wide

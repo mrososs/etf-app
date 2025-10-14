@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../../../environments/environment';
+import { TokenExpiryService } from '../../../../core/services/token-expiry.service';
 import * as L from 'leaflet';
 
 @Component({
@@ -17,6 +18,7 @@ import * as L from 'leaflet';
 })
 export class TrainingComponent implements OnInit, AfterViewInit {
   translate = inject(TranslateService);
+  private tokenExpiryService = inject(TokenExpiryService);
   visible: boolean = false;
   isLoggedIn = false;
 
@@ -80,7 +82,8 @@ export class TrainingComponent implements OnInit, AfterViewInit {
   private readonly maptileKey = environment['maptilerKey'] ?? '';
 
   ngOnInit(): void {
-    this.isLoggedIn = !!localStorage.getItem('auth_token');
+    // Use TokenExpiryService to check for valid token
+    this.isLoggedIn = !!this.tokenExpiryService.getValidToken();
   }
 
   ngAfterViewInit(): void {
@@ -137,7 +140,8 @@ export class TrainingComponent implements OnInit, AfterViewInit {
   }
   handleLinkClick() {
     if (this.isLoggedIn) {
-      const token = localStorage.getItem('auth_token');
+      // Use TokenExpiryService to get valid token
+      const token = this.tokenExpiryService.getValidToken();
       const pendingUserId = localStorage.getItem('pendingUserId');
       const pendingToken = localStorage.getItem('pendingToken');
 

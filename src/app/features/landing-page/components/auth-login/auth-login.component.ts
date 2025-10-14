@@ -12,6 +12,7 @@ import {
 } from 'primeng/dynamicdialog';
 import { LoginSuccessDialogComponent } from '../login-success-dialog/login-success-dialog.component';
 import { environment } from '../../../../../environments/environment';
+import { TokenExpiryService } from '../../../../core/services/token-expiry.service';
 
 @Component({
   selector: 'app-auth-login',
@@ -24,6 +25,7 @@ export class AuthLoginComponent implements OnInit {
   private router = inject(Router);
   private translateService = inject(TranslateService);
   private dialogService = inject(DialogService);
+  private tokenExpiryService = inject(TokenExpiryService);
   showPassword = false;
 
   loginForm = new FormGroup({
@@ -72,7 +74,10 @@ export class AuthLoginComponent implements OnInit {
       this.landingPageService.login(data).subscribe({
         next: (res) => {
           this.toasterService.success('Login successful!', 'Success');
-          localStorage.setItem('auth_token', res);
+
+          // Store token with 24-hour expiry using TokenExpiryService
+          this.tokenExpiryService.storeTokenWithExpiry(res, 24);
+
           document.cookie = `token=${res}; path=/; domain=.itechpro-eg.com; secure; SameSite=None`;
 
           // Trigger storage event to notify navbar of login state change

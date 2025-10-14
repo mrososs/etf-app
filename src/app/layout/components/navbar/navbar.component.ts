@@ -10,6 +10,7 @@ import {
 import { LangService } from '../../../core/services/lang.service';
 import { ToastrService } from 'ngx-toastr';
 import { TranslateService } from '@ngx-translate/core';
+import { TokenExpiryService } from '../../../core/services/token-expiry.service';
 declare var bootstrap: any;
 
 @Component({
@@ -48,6 +49,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   private langService = inject(LangService);
   private toasterService = inject(ToastrService);
   private translateService = inject(TranslateService);
+  private tokenExpiryService = inject(TokenExpiryService);
 
   // ⬅️ النقطة المهمة: استخدام ViewChild عشان نوصل لعنصر collapse
   @ViewChild('navbarCollapse') navbarCollapse!: ElementRef;
@@ -76,7 +78,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   private checkLoginStatus(): void {
-    const token = localStorage.getItem('auth_token');
+    // Use TokenExpiryService to get valid token (checks expiry automatically)
+    const token = this.tokenExpiryService.getValidToken();
     this.isLoggedIn = !!token;
     console.log('Login status:', this.isLoggedIn, 'Token exists:', !!token);
   }
