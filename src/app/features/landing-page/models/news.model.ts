@@ -4,4 +4,5 @@ export interface NewsItem {
   imageUrl: string;
   description: string;
   buttonText: string;
+  images: string[];
 }

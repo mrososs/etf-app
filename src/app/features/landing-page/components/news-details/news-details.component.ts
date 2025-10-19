@@ -17,6 +17,25 @@ export class NewsDetailsComponent implements OnInit {
   newsItem!: NewsItem | TourismNews | undefined;
   type: string = 'news';
 
+  // Carousel responsive options - showing one image at a time
+  responsiveOptions = [
+    {
+      breakpoint: '1024px',
+      numVisible: 1,
+      numScroll: 1,
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 1,
+      numScroll: 1,
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1,
+      numScroll: 1,
+    },
+  ];
+
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     const type = this.route.snapshot.queryParamMap.get('type');
@@ -74,5 +93,12 @@ export class NewsDetailsComponent implements OnInit {
 
   goBack(): void {
     this.router.navigate(['/landing-page/news']);
+  }
+
+  getCarouselImages(): string[] {
+    if (!this.newsItem || !this.newsItem.images) {
+      return [];
+    }
+    return this.newsItem.images;
   }
 }

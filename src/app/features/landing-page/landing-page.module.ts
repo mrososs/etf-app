@@ -27,6 +27,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DialogModule } from 'primeng/dialog';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { DialogService } from 'primeng/dynamicdialog';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { DialogService } from 'primeng/dynamicdialog';
     SharedModule,
     DialogModule,
     DynamicDialogModule,
+    CarouselModule,
   ],
   providers: [DialogService],
 })

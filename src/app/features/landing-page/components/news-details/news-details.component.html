@@ -21,11 +21,41 @@
       </div>
 
       <div class="news-image-container">
+        <!-- Main image display -->
         <img
           [src]="getImageUrl(newsItem?.imageUrl || '')"
           alt="صورة الخبر"
           (error)="onImageError($event)"
         />
+
+        <!-- Images carousel if there are additional images -->
+        <div
+          class="images-carousel"
+          *ngIf="newsItem && newsItem.images && newsItem.images.length > 0"
+        >
+          <h3>{{ "newsDetails.additionalImages" | translate }}</h3>
+          <p-carousel
+            [value]="getCarouselImages()"
+            [numVisible]="1"
+            [numScroll]="1"
+            [responsiveOptions]="responsiveOptions"
+            [circular]="true"
+            [autoplayInterval]="5000"
+            [showIndicators]="true"
+            [showNavigators]="true"
+          >
+            <ng-template let-image pTemplate="item">
+              <div class="carousel-image-container">
+                <img
+                  [src]="getImageUrl(image)"
+                  [alt]="newsItem.title"
+                  (error)="onImageError($event)"
+                  class="carousel-image"
+                />
+              </div>
+            </ng-template>
+          </p-carousel>
+        </div>
       </div>
 
       <div class="news-content">
