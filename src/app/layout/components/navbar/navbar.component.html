@@ -162,6 +162,16 @@
             class="nav-link"
             aria-current="page"
             (click)="closeNavbar()"
+            [routerLink]="['/landing-page/multimedia']"
+            routerLinkActive="active"
+            >{{ "multimedia.pageTitle" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            (click)="closeNavbar()"
             [routerLink]="['/landing-page/contact-us']"
             routerLinkActive="active"
             >{{ resourcePath + "contact" | translate }}</a

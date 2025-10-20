@@ -1,0 +1,160 @@
+<section class="multimedia">
+  <!-- Hero Video Section -->
+  <div class="hero-video-section">
+    <div class="hero-video-container">
+      <div class="hero-video-wrapper">
+        <video
+          [src]="safeVideoUrl"
+          class="hero-video"
+          [autoplay]="videoStarted"
+          [muted]="isMuted"
+          loop
+          playsinline
+          (error)="onVideoError()"
+          (loadeddata)="onVideoLoaded()"
+          #heroVideo
+        >
+          Your browser does not support the video tag.
+        </video>
+        <!-- Fallback background image -->
+        <div
+          class="hero-video-fallback"
+          style="
+            background-image: url('assets/img/trainingBackground.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+      </div>
+      <div
+        class="hero-video-overlay"
+        [ngClass]="{ 'fade-out': !showVideoOverlay }"
+      >
+        <div
+          class="hero-video-content"
+          [ngClass]="{ 'fade-out': !showHeroContent }"
+        >
+          <div class="hero-text-animation">
+            <h1>{{ "multimedia.pageTitle" | translate }}</h1>
+            <p class="hero-subtitle">
+              {{ "multimedia.heroSubtitle" | translate }}
+            </p>
+          </div>
+          <nav class="breadcrumb">
+            <a [routerLink]="['/landing-page/home']">{{
+              "multimedia.breadcrumbHome" | translate
+            }}</a>
+            <span>&nbsp;>&nbsp;</span>
+            <span>{{ "multimedia.breadcrumbMultimedia" | translate }}</span>
+          </nav>
+        </div>
+        <div
+          class="scroll-indicator"
+          [ngClass]="{ 'fade-out': !showHeroContent }"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Mute/Unmute Button - Outside overlay to stay visible -->
+    <div class="mute-button">
+      <button
+        class="mute-btn"
+        (click)="toggleMute()"
+        [attr.aria-label]="isMuted ? 'تشغيل الصوت' : 'كتم الصوت'"
+        title="{{ isMuted ? 'تشغيل الصوت' : 'كتم الصوت' }}"
+      >
+        <i [class]="isMuted ? 'pi pi-volume-off' : 'pi pi-volume-up'"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="multimedia__main mt-5">
+    <div class="container">
+      <!-- Category Filter Tabs -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="category-tabs">
+            <button
+              *ngFor="let category of categories"
+              class="category-tab"
+              [class.active]="selectedCategory === category.key"
+              (click)="filterByCategory(category.key)"
+            >
+              {{ category.label | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div *ngIf="isLoading" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3">{{ "common.loading" | translate }}</p>
+      </div>
+
+      <!-- Multimedia Grid -->
+      <div *ngIf="!isLoading" class="row g-4">
+        <div
+          *ngFor="let item of filteredItems"
+          class="col-12 col-md-6 col-lg-4"
+        >
+          <div class="multimedia-card">
+            <div class="multimedia-card__image">
+              <img
+                [src]="item.thumbnail"
+                [alt]="getLocalizedTitle(item)"
+                (error)="onImageError($event)"
+              />
+              <div class="multimedia-card__overlay">
+                <div class="multimedia-card__badge">
+                  {{ getTypeLabel(item.type) | translate }}
+                </div>
+                <div class="multimedia-card__play">
+                  <i [class]="getOverlayIcon(item.type)"></i>
+                </div>
+              </div>
+            </div>
+            <div class="multimedia-card__content">
+              <h3 class="multimedia-card__title">
+                {{ getLocalizedTitle(item) }}
+              </h3>
+              <p class="multimedia-card__description">
+                {{ getLocalizedDescription(item) }}
+              </p>
+              <div class="multimedia-card__meta">
+                <span class="multimedia-card__content-count">
+                  <i [class]="getMetaIcon(item.type)"></i>
+                  {{ getContentCountText(item) }}
+                </span>
+                <span class="multimedia-card__category">
+                  {{ getTypeLabel(item.category) | translate }}
+                </span>
+              </div>
+              <div class="multimedia-card__actions">
+                <button
+                  class="btn btn-primary multimedia-card__btn"
+                  [routerLink]="['/landing-page/multimedia', item.id]"
+                >
+                  {{ getActionButtonText(item.type) | translate }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div
+        *ngIf="!isLoading && filteredItems.length === 0"
+        class="text-center py-5"
+      >
+        <i class="pi pi-video" style="font-size: 4rem; color: #ccc"></i>
+        <h3 class="mt-3">{{ "multimedia.noContent" | translate }}</h3>
+        <p>{{ "multimedia.noContentDescription" | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>

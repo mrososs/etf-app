@@ -379,6 +379,35 @@
     "clickHere": "Click Here",
     "mustLogin": "You must log in to access the training platform"
   },
+  "multimedia": {
+    "pageTitle": "Multimedia Center",
+    "heroSubtitle": "Explore a diverse collection of educational and awareness courses and videos",
+    "breadcrumbHome": "Home",
+    "breadcrumbMultimedia": "Multimedia",
+    "categories": {
+      "all": "All",
+      "training": "Training Courses",
+      "awareness": "Awareness Videos",
+      "events": "Events & Activities",
+      "gallery": "Photo & Video Gallery"
+    },
+    "course": "Course",
+    "video": "Video",
+    "playlist": "Playlist",
+    "gallery": "Photo Gallery",
+    "youtube": "YouTube",
+    "videosCount": "video",
+    "imagesCount": "image",
+    "youtubeCount": "YouTube video",
+    "itemsCount": "item",
+    "watchNow": "Watch Now",
+    "viewGallery": "View Gallery",
+    "watchYoutube": "Watch on YouTube",
+    "relatedContent": "Related Content",
+    "share": "Share",
+    "noContent": "No content available",
+    "noContentDescription": "No content found in this category at the moment"
+  },
   "confirmRegister": {
     "loading": "Verifying your account...",
     "successTitle": "Account Confirmed Successfully!",

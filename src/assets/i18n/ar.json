@@ -370,5 +370,34 @@
     "accessPlatform": "الوصول إلى المنصة التدريبية",
     "clickHere": "الضغط هنا",
     "mustLogin": "يجب تسجيل الدخول للوصول للمنصة التدريبية"
+  },
+  "multimedia": {
+    "pageTitle": "مركز الوسائط المتعددة",
+    "heroSubtitle": "استكشف مجموعة متنوعة من الكورسات والفيديوهات التعليمية والتوعوية",
+    "breadcrumbHome": "الرئيسية",
+    "breadcrumbMultimedia": "الوسائط المتعددة",
+    "categories": {
+      "all": "الكل",
+      "training": "كورسات تدريبية",
+      "awareness": "فيديوهات توعوية",
+      "events": "فعاليات وأنشطة",
+      "gallery": "ألبوم الصور والفيديوهات"
+    },
+    "course": "كورس",
+    "video": "فيديو",
+    "playlist": "قائمة تشغيل",
+    "gallery": "ألبوم صور",
+    "youtube": "يوتيوب",
+    "videosCount": "فيديو",
+    "imagesCount": "صورة",
+    "youtubeCount": "مقطع يوتيوب",
+    "itemsCount": "عنصر",
+    "watchNow": "شاهد الآن",
+    "viewGallery": "عرض الألبوم",
+    "watchYoutube": "شاهد على يوتيوب",
+    "relatedContent": "محتوى ذات صلة",
+    "share": "مشاركة",
+    "noContent": "لا يوجد محتوى متاح",
+    "noContentDescription": "لم يتم العثور على أي محتوى في هذه الفئة حالياً"
   }
 }

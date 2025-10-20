@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { GroupMember } from '../models/group.model';
 import { NewsItem } from '../models/news.model';
 import { Committee } from '../models/comittess.model';
@@ -13,6 +13,7 @@ import { RegisterModel } from '../models/register.model';
 import { forgetPasswordModel } from '../models/forgetpassword.model';
 import { ResetPasswordModel } from '../models/token.model';
 import { MissionAndVision } from '../models/MissionAndVision.model';
+import { MultimediaItem } from '../models/multimedia.model';
 
 @Injectable({
   providedIn: 'root',
@@ -112,6 +113,16 @@ export class LandingPageService {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<Law[]>(
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Law/${lang}`
+    );
+  }
+
+  getMultimediaItems(): Observable<MultimediaItem[]> {
+    return this.http.get<MultimediaItem[]>('/assets/data/multimedia.json');
+  }
+
+  getMultimediaItemById(id: number): Observable<MultimediaItem | undefined> {
+    return this.getMultimediaItems().pipe(
+      map((items) => items.find((item) => item.id === id))
     );
   }
 }

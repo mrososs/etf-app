@@ -1,0 +1,156 @@
+<section class="multimedia-details">
+  <!-- Loading State -->
+  <div *ngIf="isLoading" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-3">{{ "common.loading" | translate }}</p>
+  </div>
+
+  <!-- Content -->
+  <div *ngIf="!isLoading && multimediaItem" class="container">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav">
+      <a [routerLink]="['/landing-page/home']">{{
+        "multimedia.breadcrumbHome" | translate
+      }}</a>
+      <span>&nbsp;>&nbsp;</span>
+      <a [routerLink]="['/landing-page/multimedia']">{{
+        "multimedia.breadcrumbMultimedia" | translate
+      }}</a>
+      <span>&nbsp;>&nbsp;</span>
+      <span>{{ getLocalizedTitle(multimediaItem) }}</span>
+    </nav>
+
+    <div class="row">
+      <!-- Main Video Section -->
+      <div class="col-12 col-lg-8">
+        <div class="video-section">
+          <!-- Video Player -->
+          <div class="video-player">
+            <iframe
+              *ngIf="safeVideoUrl"
+              [src]="safeVideoUrl"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Video Info -->
+          <div class="video-info">
+            <div class="video-meta">
+              <span class="video-type-badge">
+                {{ getTypeLabel(multimediaItem.type) | translate }}
+              </span>
+              <span class="video-category-badge">
+                {{ getCategoryLabel(multimediaItem.category) | translate }}
+              </span>
+            </div>
+            <h1 class="video-title">{{ getLocalizedTitle(multimediaItem) }}</h1>
+            <p class="video-description">
+              {{ getLocalizedDescription(multimediaItem) }}
+            </p>
+
+            <!-- Share Buttons -->
+            <div class="share-buttons">
+              <span class="share-label"
+                >{{ "multimedia.share" | translate }}:</span
+              >
+              <a
+                [href]="generateFacebookShareLink()"
+                target="_blank"
+                class="share-btn facebook"
+                aria-label="مشاركة على فيسبوك"
+              >
+                <i class="pi pi-facebook"></i>
+              </a>
+              <a
+                [href]="generateTwitterShareLink()"
+                target="_blank"
+                class="share-btn twitter"
+                aria-label="مشاركة على تويتر"
+              >
+                <i class="pi pi-twitter"></i>
+              </a>
+              <a
+                [href]="generateWhatsAppShareLink()"
+                target="_blank"
+                class="share-btn whatsapp"
+                aria-label="مشاركة على واتساب"
+              >
+                <i class="pi pi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playlist Section -->
+      <div
+        class="col-12 col-lg-4"
+        *ngIf="multimediaItem.videos && multimediaItem.videos.length > 1"
+      >
+        <div class="playlist-section">
+          <h3 class="playlist-title">
+            {{ "multimedia.playlist" | translate }}
+          </h3>
+          <div class="playlist">
+            <div
+              *ngFor="let video of multimediaItem.videos || []; let i = index"
+              class="playlist-item"
+              [class.active]="i === currentVideoIndex"
+              (click)="selectVideo(video, i)"
+            >
+              <div class="playlist-item__thumbnail">
+                <img
+                  [src]="
+                    'https://img.youtube.com/vi/' +
+                    video.videoId +
+                    '/mqdefault.jpg'
+                  "
+                  [alt]="getLocalizedVideoTitle(video)"
+                  (error)="onImageError($event)"
+                />
+                <div class="playlist-item__play">
+                  <i class="pi pi-play"></i>
+                </div>
+                <div class="playlist-item__duration" *ngIf="video.duration">
+                  {{ video.duration }}
+                </div>
+              </div>
+              <div class="playlist-item__content">
+                <h4 class="playlist-item__title">
+                  {{ getLocalizedVideoTitle(video) }}
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Content -->
+    <div class="related-content" *ngIf="multimediaItem">
+      <h3 class="related-title">
+        {{ "multimedia.relatedContent" | translate }}
+      </h3>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="related-card">
+            <img
+              [src]="multimediaItem.thumbnail"
+              [alt]="getLocalizedTitle(multimediaItem)"
+              (error)="onImageError($event)"
+            />
+            <div class="related-card__content">
+              <h4>{{ getLocalizedTitle(multimediaItem) }}</h4>
+              <p>{{ getTypeLabel(multimediaItem.type) | translate }}</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more related items here -->
+      </div>
+    </div>
+  </div>
+</section>
