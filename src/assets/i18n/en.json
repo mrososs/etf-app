@@ -384,6 +384,11 @@
     "heroSubtitle": "Explore a diverse collection of educational and awareness courses and videos",
     "breadcrumbHome": "Home",
     "breadcrumbMultimedia": "Multimedia",
+    "placeholder": {
+      "title": "No Content Available",
+      "message": "Content will be added soon",
+      "description": "We are working on adding a diverse collection of educational and awareness courses and videos"
+    },
     "categories": {
       "all": "All",
       "training": "Training Courses",
