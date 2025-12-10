@@ -9,6 +9,8 @@ import {
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../../../environments/environment';
 import { TokenExpiryService } from '../../../../core/services/token-expiry.service';
+import { LandingPageService } from '../../services/landing-page.service';
+import { Training } from '../../models/training.model';
 import * as L from 'leaflet';
 
 @Component({
@@ -19,6 +21,7 @@ import * as L from 'leaflet';
 export class TrainingComponent implements OnInit, AfterViewInit {
   translate = inject(TranslateService);
   private tokenExpiryService = inject(TokenExpiryService);
+  private landingPageService = inject(LandingPageService);
   visible: boolean = false;
   isLoggedIn = false;
 
@@ -30,6 +33,8 @@ export class TrainingComponent implements OnInit, AfterViewInit {
     trainingPlatform: this.translate.instant('training.trainingPlatform.title'),
   };
   selected: string = this.translateKeys.safeDriving;
+  apiTrainings: Training[] = []; // Trainings from API
+  selectedApiTraining: Training | null = null; // Currently selected API training
   driveVideoTraining: string =
     '../../../../../assets/video/AQNpMwIm20YPg2bIVbOj_rVBFaUMZA2lIu0njwyowKbLd4fNy153Ktmt5xuehGKQzOiCoJQoSXXnbzBtQhgrVNFs.mp4';
   mainVideoSrc: string = 'assets/videos/video1.mp4';
@@ -84,6 +89,17 @@ export class TrainingComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     // Use TokenExpiryService to check for valid token
     this.isLoggedIn = !!this.tokenExpiryService.getValidToken();
+
+    // Load trainings from API
+    this.landingPageService.getTrainings().subscribe({
+      next: (trainings) => {
+        this.apiTrainings = trainings;
+      },
+      error: (err) => {
+        console.error('Error loading trainings', err);
+        this.apiTrainings = [];
+      },
+    });
   }
 
   ngAfterViewInit(): void {
@@ -127,6 +143,42 @@ export class TrainingComponent implements OnInit, AfterViewInit {
   }
   changeNewsType(type: string) {
     this.selected = type;
+    this.selectedApiTraining = null; // Reset API training selection when changing to static tabs
+  }
+
+  selectApiTraining(training: Training) {
+    this.selectedApiTraining = training;
+    this.selected = `api-training-${training.title}`; // Unique identifier for API training
+  }
+
+  isApiTrainingSelected(): boolean {
+    return this.selectedApiTraining !== null;
+  }
+
+  getTrainingImageUrl(imageLink: string): string {
+    if (!imageLink) {
+      return '/assets/img/blankImage.jpg';
+    }
+
+    // If it's already a complete URL, return as is
+    if (imageLink.startsWith('http://') || imageLink.startsWith('https://')) {
+      return imageLink;
+    }
+
+    // If it's a relative path starting with /uploads/, construct the full URL
+    if (imageLink.startsWith('/uploads/')) {
+      return `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net${imageLink}`;
+    }
+
+    // For other relative paths, return as is
+    return imageLink;
+  }
+
+  onImageError(event: any, fallbackSrc: string = '/assets/img/blankImage.jpg'): void {
+    console.warn('Image failed to load:', event.target.src);
+    if (event.target.src !== fallbackSrc) {
+      event.target.src = fallbackSrc;
+    }
   }
   changeVideo(video: { src: string; poster: string }) {
     this.mainVideoSrc = video.src;

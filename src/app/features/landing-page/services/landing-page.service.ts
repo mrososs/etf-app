@@ -14,6 +14,7 @@ import { forgetPasswordModel } from '../models/forgetpassword.model';
 import { ResetPasswordModel } from '../models/token.model';
 import { MissionAndVision } from '../models/MissionAndVision.model';
 import { MultimediaItem } from '../models/multimedia.model';
+import { Training } from '../models/training.model';
 
 @Injectable({
   providedIn: 'root',
@@ -47,7 +48,10 @@ export class LandingPageService {
     );
   }
   getGroupMembers(): Observable<GroupMember[]> {
-    return this.http.get<GroupMember[]>('/assets/data/group-members.json');
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<GroupMember[]>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/GroupMember/${lang}`
+    );
   }
   getNewDetails(): Observable<NewsItem[]> {
     return this.http.get<NewsItem[]>('/assets/data/news.json');
@@ -83,6 +87,12 @@ export class LandingPageService {
     return this.http.get<MissionAndVision>(`
       https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Content/MissionAndVision/${lang}
       `);
+  }
+  getCEOWord(): Observable<{ value: string }> {
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<{ value: string }>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Content/CEOWord/${lang}`
+    );
   }
   getReports(): Observable<Report[]> {
     const lang = localStorage.getItem('lang') || 'ar';
@@ -123,6 +133,13 @@ export class LandingPageService {
   getMultimediaItemById(id: number): Observable<MultimediaItem | undefined> {
     return this.getMultimediaItems().pipe(
       map((items) => items.find((item) => item.id === id))
+    );
+  }
+
+  getTrainings(): Observable<Training[]> {
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<Training[]>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Content/Trainings/${lang}`
     );
   }
 }

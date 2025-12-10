@@ -17,6 +17,9 @@ export class MainPageComponent implements OnInit, OnDestroy {
   selected: string = 'أخبار عن الإتحاد'; // ✅ لازم تتعرف هنا
   isExpanded = false;
   members: GroupMember[] = [];
+  headMember: GroupMember | undefined; // Member with order 0
+  regularMembers: GroupMember[] = []; // Members with order 1+
+  ceoWord: string = ''; // CEO/Head word from API
   newsItems: NewsItem[] = [];
   tourismNews: TourismNews[] = [];
   displayedNews: NewsItem[] | TourismNews[] = [];
@@ -48,19 +51,95 @@ export class MainPageComponent implements OnInit, OnDestroy {
     // Preload critical images
     this._imagePreloadService.preloadCriticalImages();
 
-    // Load members first (static data)
+    // Load members from API and sort by order
     this._landingPageService.getGroupMembers().subscribe({
       next: (members) => {
-        this.members = members;
+        // Separate head (order 0) from regular members (order 1+)
+        const sorted = this.sortMembersByOrder(members);
+        this.members = sorted;
+        this.headMember = sorted.find((m) => {
+          const order =
+            typeof m.order === 'string'
+              ? Number.parseInt(m.order, 10)
+              : m.order || 999;
+          return order === 0;
+        });
+        this.regularMembers = sorted.filter((m) => {
+          const order =
+            typeof m.order === 'string'
+              ? Number.parseInt(m.order, 10)
+              : m.order || 999;
+          return order !== 0;
+        });
         this._imagePreloadService.preloadMemberImages(this.members);
       },
       error: (err) => {
         console.error('Error loading members', err);
+        // Fallback: initialize with empty array to prevent template errors
+        this.members = [];
+        this.headMember = undefined;
+        this.regularMembers = [];
+      },
+    });
+
+    // Load CEO/Head word from API
+    this._landingPageService.getCEOWord().subscribe({
+      next: (response) => {
+        this.ceoWord = response.value || '';
+      },
+      error: (err) => {
+        console.error('Error loading CEO word', err);
+        // Fallback: use empty string or keep default
+        this.ceoWord = '';
       },
     });
 
     // Load initial news (أخبار عن الإتحاد)
     this.loadNewsData('أخبار عن الإتحاد');
+  }
+
+  /**
+   * Sort members by order field:
+   * - order 0 (or "0") = Head/Manager -> should be at index 0
+   * - order 1+ (or "1", "2", etc.) = Regular members -> should be at index 1, 2, 3, etc.
+   */
+  private sortMembersByOrder(members: GroupMember[]): GroupMember[] {
+    if (!members || members.length === 0) {
+      return [];
+    }
+
+    // Separate head (order 0) from regular members (order 1+)
+    const head: GroupMember[] = [];
+    const regularMembers: GroupMember[] = [];
+
+    members.forEach((member) => {
+      const order = member.order;
+      // Convert order to number for comparison (handle both string and number)
+      const orderNum =
+        typeof order === 'string' ? Number.parseInt(order, 10) : order || 999;
+
+      if (orderNum === 0) {
+        head.push(member);
+      } else {
+        regularMembers.push(member);
+      }
+    });
+
+    // Sort regular members by order (ascending)
+    regularMembers.sort((a, b) => {
+      const orderA =
+        typeof a.order === 'string'
+          ? Number.parseInt(a.order, 10)
+          : a.order || 999;
+      const orderB =
+        typeof b.order === 'string'
+          ? Number.parseInt(b.order, 10)
+          : b.order || 999;
+      return orderA - orderB;
+    });
+
+    // Combine: head first (index 0), then regular members (index 1+)
+    return [...head, ...regularMembers];
   }
 
   toggleText() {
@@ -306,6 +385,46 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
     // For other relative paths, assume they're asset paths
     return imageUrl;
+  }
+
+  /**
+   * Get complete image URL for member images
+   * Handles both /uploads/ paths and asset paths
+   */
+  getMemberImageUrl(imageUrl: string | undefined): string {
+    if (!imageUrl) {
+      return '/assets/img/blankImage.jpg';
+    }
+
+    // If it's already a complete URL, return as is
+    if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+      return imageUrl;
+    }
+
+    // If it's a relative path starting with /uploads/, construct the full URL
+    if (imageUrl.startsWith('/uploads/')) {
+      return `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net${imageUrl}`;
+    }
+
+    // For other relative paths (like assets/), assume they're asset paths and return as is
+    return imageUrl;
+  }
+
+  /**
+   * Get member order as number (for CSS class naming)
+   */
+  getMemberOrder(member: GroupMember): number {
+    const order = member.order;
+    return typeof order === 'string'
+      ? Number.parseInt(order, 10)
+      : order || 999;
+  }
+
+  /**
+   * TrackBy function for ngFor performance optimization
+   */
+  trackByOrder(index: number, member: GroupMember): string | number {
+    return member.order || index;
   }
 
   ngOnDestroy(): void {

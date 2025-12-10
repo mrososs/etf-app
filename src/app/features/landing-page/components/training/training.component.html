@@ -49,11 +49,23 @@
     >
       {{ "training.trainingPlatform.title" | translate }}
     </app-shared-navigate-button>
+
+    <!-- API Trainings Buttons -->
+    <ng-container *ngFor="let training of apiTrainings">
+      <app-shared-navigate-button
+        [isActive]="selectedApiTraining?.title === training.title"
+        (click)="selectApiTraining(training)"
+      >
+        {{ training.title }}
+      </app-shared-navigate-button>
+    </ng-container>
   </div>
 
   <ng-container
     [ngTemplateOutlet]="
-      selected === translateKeys.safeDriving
+      isApiTrainingSelected()
+        ? apiTrainingTpl
+        : selected === translateKeys.safeDriving
         ? safeDrivingTpl
         : selected === translateKeys.dualEducation
         ? dualEducationTpl
@@ -533,6 +545,54 @@
           </button>
         </div>
       </p-dialog>
+    </div>
+  </ng-template>
+
+  <!-- API Training Template -->
+  <ng-template #apiTrainingTpl>
+    <div class="training__contentApi container" *ngIf="selectedApiTraining">
+      <div class="mt-5">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <h1>{{ selectedApiTraining.title }}</h1>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column">
+              <p
+                class="mb-4"
+                style="text-align: justify"
+                [innerHTML]="selectedApiTraining.description"
+              ></p>
+              <a
+                [href]="selectedApiTraining.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg align-self-start"
+              >
+                <i class="fas fa-external-link-alt me-2"></i>
+                عرض المزيد
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              [src]="getTrainingImageUrl(selectedApiTraining.imageLink)"
+              [alt]="selectedApiTraining.title"
+              class="img-fluid rounded"
+              width="600"
+              height="400"
+              loading="lazy"
+              decoding="async"
+              (error)="onImageError($event)"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </ng-template>
 </section>
