@@ -33,8 +33,14 @@ export class TrainingComponent implements OnInit, AfterViewInit {
     trainingPlatform: this.translate.instant('training.trainingPlatform.title'),
   };
   selected: string = this.translateKeys.safeDriving;
-  apiTrainings: Training[] = []; // Trainings from API
+  apiTrainings: Training[] = []; // Trainings from API (only new ones not matching existing templates)
   selectedApiTraining: Training | null = null; // Currently selected API training
+  matchedTrainings: {
+    safeDriving?: Training;
+    dualEducation?: Training;
+    transition?: Training;
+    cooking?: Training;
+  } = {}; // Trainings that match existing static templates
   driveVideoTraining: string =
     '../../../../../assets/video/AQNpMwIm20YPg2bIVbOj_rVBFaUMZA2lIu0njwyowKbLd4fNy153Ktmt5xuehGKQzOiCoJQoSXXnbzBtQhgrVNFs.mp4';
   mainVideoSrc: string = 'assets/videos/video1.mp4';
@@ -93,13 +99,141 @@ export class TrainingComponent implements OnInit, AfterViewInit {
     // Load trainings from API
     this.landingPageService.getTrainings().subscribe({
       next: (trainings) => {
-        this.apiTrainings = trainings;
+        this.processTrainings(trainings);
       },
       error: (err) => {
         console.error('Error loading trainings', err);
         this.apiTrainings = [];
+        this.matchedTrainings = {};
       },
     });
+  }
+
+  private processTrainings(trainings: Training[]): void {
+    // Get translated titles for matching
+    const safeDrivingTitle = this.translate.instant('training.safeDriving.title');
+    const dualEducationTitle = this.translate.instant('training.dualEducation.title');
+    const transitionTitle = this.translate.instant('training.transition.title');
+    const cookingTitle = this.translate.instant('training.cooking.title');
+
+    // Reset matched trainings
+    this.matchedTrainings = {};
+    const newTrainings: Training[] = [];
+
+    trainings.forEach((training) => {
+      // Normalize titles for comparison (remove diacritics and normalize spaces)
+      const normalizedApiTitle = this.normalizeTitle(training.title);
+      const normalizedSafeDriving = this.normalizeTitle(safeDrivingTitle);
+      const normalizedDualEducation = this.normalizeTitle(dualEducationTitle);
+      const normalizedTransition = this.normalizeTitle(transitionTitle);
+      const normalizedCooking = this.normalizeTitle(cookingTitle);
+
+      // Match with existing templates
+      // Check for Safe Driving: "القيادة الأمنة" or "القيادة الآمنة"
+      if (normalizedApiTitle === normalizedSafeDriving || 
+          (normalizedApiTitle.includes('قيادة') && (normalizedApiTitle.includes('أمن') || normalizedApiTitle.includes('آمن'))) ||
+          training.title.includes('القيادة') && (training.title.includes('الأمنة') || training.title.includes('الآمنة'))) {
+        this.matchedTrainings.safeDriving = training;
+      } 
+      // Check for Dual Education: "التعليم المزدوج"
+      else if (normalizedApiTitle === normalizedDualEducation || 
+                 (normalizedApiTitle.includes('تعليم') && normalizedApiTitle.includes('مزدوج')) ||
+                 training.title.includes('التعليم المزدوج')) {
+        this.matchedTrainings.dualEducation = training;
+      } 
+      // Check for Transition: "دعم الانتقال الي سوق العمل" or "دعم الانتقال إلى سوق العمل"
+      else if (normalizedApiTitle === normalizedTransition || 
+                 (normalizedApiTitle.includes('انتقال') && (normalizedApiTitle.includes('سوق') || normalizedApiTitle.includes('عمل'))) ||
+                 training.title.includes('دعم الانتقال') && training.title.includes('سوق العمل')) {
+        this.matchedTrainings.transition = training;
+      } 
+      // Check for Cooking: "فنون الطهي"
+      else if (normalizedApiTitle === normalizedCooking || 
+                 normalizedApiTitle.includes('طهي') || 
+                 normalizedApiTitle.includes('طبخ') ||
+                 training.title.includes('فنون الطهي')) {
+        this.matchedTrainings.cooking = training;
+      } else {
+        // New training that doesn't match existing templates
+        newTrainings.push(training);
+      }
+    });
+
+    this.apiTrainings = newTrainings;
+
+    // Ensure selected training exists, otherwise select first available or training platform
+    this.ensureValidSelection();
+  }
+
+  private ensureValidSelection(): void {
+    // If current selection doesn't exist, find first available training
+    const currentSelection = this.selected;
+    const isCurrentSelectionValid = 
+      (currentSelection === this.translateKeys.safeDriving && this.matchedTrainings.safeDriving) ||
+      (currentSelection === this.translateKeys.dualEducation && this.matchedTrainings.dualEducation) ||
+      (currentSelection === this.translateKeys.transition && this.matchedTrainings.transition) ||
+      (currentSelection === this.translateKeys.cooking && this.matchedTrainings.cooking) ||
+      (currentSelection === this.translateKeys.trainingPlatform) ||
+      (this.selectedApiTraining !== null);
+
+    if (!isCurrentSelectionValid) {
+      // Select first available training
+      if (this.matchedTrainings.safeDriving) {
+        this.selected = this.translateKeys.safeDriving;
+      } else if (this.matchedTrainings.dualEducation) {
+        this.selected = this.translateKeys.dualEducation;
+      } else if (this.matchedTrainings.transition) {
+        this.selected = this.translateKeys.transition;
+      } else if (this.matchedTrainings.cooking) {
+        this.selected = this.translateKeys.cooking;
+      } else if (this.apiTrainings.length > 0) {
+        this.selectApiTraining(this.apiTrainings[0]);
+      } else {
+        // Fallback to training platform
+        this.selected = this.translateKeys.trainingPlatform;
+      }
+    }
+  }
+
+  private normalizeTitle(title: string): string {
+    // Normalize Arabic text: remove diacritics, normalize spaces, handle common variations
+    return title
+      .replace(/[آأإ]/g, 'ا')
+      .replace(/[ىي]/g, 'ي')
+      .replace(/[ة]/g, 'ه')
+      .replace(/[أآ]/g, 'ا') // Handle أ and آ variations
+      .replace(/[أآ]/g, 'ا') // Handle أ and آ in different contexts
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+  }
+
+  // Getters for matched training data
+  getSafeDrivingTraining(): Training | null {
+    return this.matchedTrainings.safeDriving || null;
+  }
+
+  getDualEducationTraining(): Training | null {
+    return this.matchedTrainings.dualEducation || null;
+  }
+
+  getTransitionTraining(): Training | null {
+    return this.matchedTrainings.transition || null;
+  }
+
+  getCookingTraining(): Training | null {
+    return this.matchedTrainings.cooking || null;
+  }
+
+  getFormattedLink(link: string | undefined): string {
+    if (!link) {
+      return 'https://www.etf-rstc.org.eg';
+    }
+    // If link doesn't start with http:// or https://, add https://
+    if (!link.startsWith('http://') && !link.startsWith('https://')) {
+      return `https://${link}`;
+    }
+    return link;
   }
 
   ngAfterViewInit(): void {

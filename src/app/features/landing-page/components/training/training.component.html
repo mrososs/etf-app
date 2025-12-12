@@ -16,31 +16,46 @@
 
   <div class="training__buttons">
     <app-shared-navigate-button
+      *ngIf="getSafeDrivingTraining()"
       [isActive]="selected === translateKeys.safeDriving"
       (click)="changeNewsType(translateKeys.safeDriving)"
     >
-      {{ "training.safeDriving.title" | translate }}
+      {{
+        getSafeDrivingTraining()?.title ||
+          ("training.safeDriving.title" | translate)
+      }}
     </app-shared-navigate-button>
 
     <app-shared-navigate-button
+      *ngIf="getDualEducationTraining()"
       [isActive]="selected === translateKeys.dualEducation"
       (click)="changeNewsType(translateKeys.dualEducation)"
     >
-      {{ "training.dualEducation.title" | translate }}
+      {{
+        getDualEducationTraining()?.title ||
+          ("training.dualEducation.title" | translate)
+      }}
     </app-shared-navigate-button>
 
     <app-shared-navigate-button
+      *ngIf="getTransitionTraining()"
       [isActive]="selected === translateKeys.transition"
       (click)="changeNewsType(translateKeys.transition)"
     >
-      {{ "training.transition.title" | translate }}
+      {{
+        getTransitionTraining()?.title ||
+          ("training.transition.title" | translate)
+      }}
     </app-shared-navigate-button>
 
     <app-shared-navigate-button
+      *ngIf="getCookingTraining()"
       [isActive]="selected === translateKeys.cooking"
       (click)="changeNewsType(translateKeys.cooking)"
     >
-      {{ "training.cooking.title" | translate }}
+      {{
+        getCookingTraining()?.title || ("training.cooking.title" | translate)
+      }}
     </app-shared-navigate-button>
 
     <app-shared-navigate-button
@@ -82,12 +97,21 @@
 
   <!-- Templates -->
   <ng-template #safeDrivingTpl>
-    <div class="training__contentSafeDriving container">
+    <div
+      class="training__contentSafeDriving container"
+      *ngIf="getSafeDrivingTraining()"
+    >
       <div
         class="d-flex training__contentSafeDriving__header justify-content-center align-items-center flex-column text-center"
       >
         <h1>{{ "safeDivingDesc.title" | translate }}</h1>
-        <p>{{ "safeDivingDesc.desc1" | translate }}</p>
+        <p
+          *ngIf="getSafeDrivingTraining(); else staticDesc1"
+          [innerHTML]="getSafeDrivingTraining()?.description"
+        ></p>
+        <ng-template #staticDesc1>
+          <p>{{ "safeDivingDesc.desc1" | translate }}</p>
+        </ng-template>
         <p class="color_p">{{ "safeDivingDesc.desc2" | translate }}</p>
       </div>
 
@@ -157,14 +181,27 @@
           </ng-container>
         </div>
         <img
-          src="../../../../../assets/img/road.jpg"
-          alt="road"
+          *ngIf="getSafeDrivingTraining(); else staticRoadImg"
+          [src]="getTrainingImageUrl(getSafeDrivingTraining()!.imageLink)"
+          [alt]="getSafeDrivingTraining()!.title"
           class="w-50"
           width="600"
           height="400"
           loading="lazy"
           decoding="async"
+          (error)="onImageError($event)"
         />
+        <ng-template #staticRoadImg>
+          <img
+            src="../../../../../assets/img/road.jpg"
+            alt="road"
+            class="w-50"
+            width="600"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+        </ng-template>
       </div>
 
       <div class="mt-3 loaction-card">
@@ -194,9 +231,12 @@
               decoding="async"
             /> -->
             <p class="mb-0">
-              <a href="https://www.etf-rstc.org.eg" target="_blank"
-                >www.etf-rstc.org.eg</a
+              <a
+                [href]="getFormattedLink(getSafeDrivingTraining()?.link)"
+                target="_blank"
               >
+                {{ getSafeDrivingTraining()?.link || "www.etf-rstc.org.eg" }}
+              </a>
             </p>
           </span>
           <span class="d-flex align-items-center mb-2">
@@ -261,33 +301,53 @@
   </ng-template>
 
   <ng-template #dualEducationTpl>
-    <div class="training__contentEduction container">
+    <div
+      class="training__contentEduction container"
+      *ngIf="getDualEducationTraining()"
+    >
       <div class="mt-5">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <h1>{{ "doubleLearning.title" | translate }}</h1>
-          <p>{{ "doubleLearning.subtitle" | translate }}</p>
         </div>
       </div>
 
       <div class="mt-3">
         <div class="row text-center">
           <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-start">
-            <p style="text-align: justify">
-              {{ "doubleLearning.description" | translate }}
-            </p>
+            <p
+              style="text-align: justify"
+              *ngIf="getDualEducationTraining(); else staticSubtitle"
+              [innerHTML]="getDualEducationTraining()?.description"
+            ></p>
+            <ng-template #staticSubtitle>
+              <p>{{ "doubleLearning.subtitle" | translate }}</p>
+            </ng-template>
           </div>
           <div class="col-12 col-md-6 col-lg-6">
             <img
-              src="../../../../../assets/img/t3lym.jpg"
-              alt="صورة التعليم المزدوج"
+              *ngIf="getDualEducationTraining(); else staticDualImg"
+              [src]="getTrainingImageUrl(getDualEducationTraining()!.imageLink)"
+              [alt]="getDualEducationTraining()!.title"
               class="eductionImg"
               width="500"
               height="300"
               loading="lazy"
               decoding="async"
+              (error)="onImageError($event)"
             />
+            <ng-template #staticDualImg>
+              <img
+                src="../../../../../assets/img/t3lym.jpg"
+                alt="صورة التعليم المزدوج"
+                class="eductionImg"
+                width="500"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              />
+            </ng-template>
           </div>
         </div>
       </div>
@@ -314,10 +374,19 @@
   </ng-template>
 
   <ng-template #transitionTpl>
-    <div class="training__contentTransition container">
+    <div
+      class="training__contentTransition container"
+      *ngIf="getTransitionTraining()"
+    >
       <div class="d-flex justify-content-center align-items-center flex-column">
         <h1>{{ "transitionTpl.title" | translate }}</h1>
-        <p>{{ "transitionTpl.description" | translate }}</p>
+        <p
+          *ngIf="getTransitionTraining(); else staticTransitionDesc"
+          [innerHTML]="getTransitionTraining()?.description"
+        ></p>
+        <ng-template #staticTransitionDesc>
+          <p>{{ "transitionTpl.description" | translate }}</p>
+        </ng-template>
       </div>
 
       <div class="mt-3">
@@ -376,14 +445,27 @@
           </div>
           <div class="col-12 col-md-6 col-lg-6">
             <img
-              src="../../../../../assets/img/Group 1597883381.jpg"
-              alt="education"
+              *ngIf="getTransitionTraining(); else staticTransitionImg"
+              [src]="getTrainingImageUrl(getTransitionTraining()!.imageLink)"
+              [alt]="getTransitionTraining()!.title"
               class="Img"
               width="500"
               height="300"
               loading="lazy"
               decoding="async"
+              (error)="onImageError($event)"
             />
+            <ng-template #staticTransitionImg>
+              <img
+                src="../../../../../assets/img/Group 1597883381.jpg"
+                alt="education"
+                class="Img"
+                width="500"
+                height="300"
+                loading="lazy"
+                decoding="async"
+              />
+            </ng-template>
           </div>
         </div>
       </div>
@@ -424,29 +506,52 @@
   </ng-template>
 
   <ng-template #cookingTpl>
-    <div class="training__contentCooking container">
+    <div
+      class="training__contentCooking container"
+      *ngIf="getCookingTraining()"
+    >
       <div class="row mt-5 text-center">
         <div
           class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-start"
         >
           <h1>{{ "cooking.title" | translate }}</h1>
-          <p style="text-align: justify">
-            {{ "cooking.description1" | translate }}
-          </p>
-          <p class="text-end">
-            {{ "cooking.description2" | translate }}
-          </p>
+          <p
+            *ngIf="getCookingTraining(); else staticCookingDesc"
+            style="text-align: justify"
+            [innerHTML]="getCookingTraining()?.description"
+          ></p>
+          <ng-template #staticCookingDesc>
+            <p style="text-align: justify">
+              {{ "cooking.description1" | translate }}
+            </p>
+            <p class="text-end">
+              {{ "cooking.description2" | translate }}
+            </p>
+          </ng-template>
         </div>
         <div class="col-12 col-md-6 col-lg-6">
           <img
-            src="../../../../../assets/img/cooking.jpg"
-            alt="cooking"
+            *ngIf="getCookingTraining(); else staticCookingImg"
+            [src]="getTrainingImageUrl(getCookingTraining()!.imageLink)"
+            [alt]="getCookingTraining()!.title"
             class="imgCooking"
             width="500"
             height="300"
             loading="lazy"
             decoding="async"
+            (error)="onImageError($event)"
           />
+          <ng-template #staticCookingImg>
+            <img
+              src="../../../../../assets/img/cooking.jpg"
+              alt="cooking"
+              class="imgCooking"
+              width="500"
+              height="300"
+              loading="lazy"
+              decoding="async"
+            />
+          </ng-template>
         </div>
       </div>
     </div>
