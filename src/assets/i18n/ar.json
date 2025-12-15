@@ -153,7 +153,8 @@
     },
     "buttons": {
       "laws": "قوانين",
-      "ministerialDecisions": "قرارات وزارية"
+      "ministerialDecisions": "قرارات وزارية",
+      "generalMeetingDecisions": "قرارات الجمعية العمومية"
     },
     "searchPlaceholder": "البحث",
     "card": {
@@ -372,8 +373,7 @@
     "mustLogin": "يجب تسجيل الدخول للوصول للمنصة التدريبية"
   },
   "multimedia": {
-    "pageTitle": "مركز الوسائط المتعددة",
-    "heroSubtitle": "استكشف مجموعة متنوعة من الكورسات والفيديوهات التعليمية والتوعوية",
+    "pageTitle": "مركز الوسائط ",
     "breadcrumbHome": "الرئيسية",
     "breadcrumbMultimedia": "الوسائط المتعددة",
     "placeholder": {
@@ -403,6 +403,7 @@
     "relatedContent": "محتوى ذات صلة",
     "share": "مشاركة",
     "noContent": "لا يوجد محتوى متاح",
-    "noContentDescription": "لم يتم العثور على أي محتوى في هذه الفئة حالياً"
+    "noContentDescription": "لم يتم العثور على أي محتوى في هذه الفئة حالياً",
+    "loading": "جاري التحميل..."
   }
 }

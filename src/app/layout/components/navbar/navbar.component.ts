@@ -114,6 +114,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
     // Clear localStorage
     localStorage.removeItem('auth_token');
+    localStorage.removeItem('user_role');
 
     // Clear cookies
     document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';

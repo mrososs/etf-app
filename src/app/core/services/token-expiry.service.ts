@@ -57,6 +57,7 @@ export class TokenExpiryService {
 
     // Clear localStorage
     this.storageService.removeItem(this.TOKEN_KEY);
+    this.storageService.removeItem('user_role');
 
     // Clear cookies
     if (isPlatformBrowser(this.platformId)) {

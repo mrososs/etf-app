@@ -1,6 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TourismLegislation } from '../../models/tourism-card.model';
 import { LandingPageService } from '../../services/landing-page.service';
+import { StorageService } from '../../../../shared/platform/storage.service';
+import { TokenExpiryService } from '../../../../core/services/token-expiry.service';
+import { JwtService } from '../../../../core/services/jwt.service';
 
 @Component({
   selector: 'app-tourism-legislation',
@@ -12,10 +15,30 @@ export class TourismLegislationComponent implements OnInit {
   selected: string = 'قوانين';
   tourismLegislations: TourismLegislation[] = [];
   filteredLegislations: TourismLegislation[] = [];
+  isGeneralMeetingMember: boolean = false;
 
   private _landingService = inject(LandingPageService);
+  private _storageService = inject(StorageService);
+  private _tokenExpiryService = inject(TokenExpiryService);
+  private _jwtService = inject(JwtService);
 
   ngOnInit(): void {
+    // Check if user has GeneralMeetingMember role
+    let role = this._storageService.getItem('user_role');
+    
+    // If role is not in localStorage but token exists, extract it from token
+    if (!role) {
+      const token = this._tokenExpiryService.getValidToken();
+      if (token) {
+        role = this._jwtService.getRoleFromToken(token);
+        if (role) {
+          this._storageService.setItem('user_role', role);
+        }
+      }
+    }
+    
+    this.isGeneralMeetingMember = role === 'GeneralMeetingMember';
+    
     this.changeNewsType(this.selected); // default: قوانين
   }
   onSearchYear() {
@@ -43,6 +66,14 @@ export class TourismLegislationComponent implements OnInit {
       });
     } else if (type === 'قرارات وزارية') {
       this._landingService.getTourismLegislations().subscribe({
+        next: (data) => {
+          this.tourismLegislations = data;
+          this.filteredLegislations = data;
+        },
+        error: (err) => console.error(err),
+      });
+    } else if (type === 'قرارات الجمعية العمومية') {
+      this._landingService.getGeneralMeetingLegislation().subscribe({
         next: (data) => {
           this.tourismLegislations = data;
           this.filteredLegislations = data;

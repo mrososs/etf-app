@@ -19,7 +19,6 @@ import { ForgetPasswordComponent } from './components/forget-password/forget-pas
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { MultimediaComponent } from './components/multimedia/multimedia.component';
-import { MultimediaDetailsComponent } from './components/multimedia-details/multimedia-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -183,11 +182,6 @@ const routes: Routes = [
         url: 'https://etf-egypt.com/landing-page/multimedia',
       },
     },
-  },
-  {
-    path: 'multimedia/:id',
-    component: MultimediaDetailsComponent,
-    data: { title: 'تفاصيل المحتوى - الإتحاد المصري' },
   },
   {
     path: '**',

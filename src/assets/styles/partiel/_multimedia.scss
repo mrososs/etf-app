@@ -239,78 +239,138 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
-  &__image {
+
+  // Card Thumbnail Container
+  .card-thumbnail {
     position: relative;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     overflow: hidden;
-    img {
+    background: $color-gray-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // YouTube Embed
+    .youtube-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      iframe.youtube-embed {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+
+    // Regular Video
+    .thumbnail-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: $color-black;
+    }
+
+    // Image
+    .thumbnail-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    &:hover img {
-      transform: scale(1.05);
+
+    // Video Badge
+    .video-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(247, 147, 29, 0.9);
+      color: $color-white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      i {
+        font-size: 1.2rem;
+      }
+    }
+
+    // Image Overlay
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      i {
+        color: $color-white;
+        font-size: 3rem;
+      }
+    }
+
+    &:hover {
+      .thumbnail-image {
+        transform: scale(1.05);
+      }
+      .image-overlay {
+        opacity: 1;
+      }
     }
   }
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  &:hover &__overlay {
-    opacity: 1;
-  }
-  &__badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(247, 147, 29, 0.9);
-    color: $color-white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-  &__play {
-    color: $color-white;
-    font-size: 3rem;
-  }
-  &__content {
+
+  // Card Content
+  .card-content {
     padding: 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: $color-gray-800;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 3.5rem;
+    }
+
+    .card-description {
+      color: $color-gray-600;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
-  &__title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: $color-gray-800;
-    line-height: 1.4;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+  // Video Card Specific
+  .video-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
-  &__description {
-    color: $color-gray-600;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    flex-grow: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+  // Image Card Specific
+  .image-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   &__meta {
     display: flex;
@@ -426,14 +486,18 @@
 
 @media (max-width: 768px) {
   .multimedia-card {
-    &__content {
+    .card-thumbnail {
+      height: 200px;
+    }
+    .card-content {
       padding: 1rem;
-    }
-    &__title {
-      font-size: 1.1rem;
-    }
-    &__description {
-      font-size: 0.9rem;
+      .card-title {
+        font-size: 1.1rem;
+        min-height: 3rem;
+      }
+      .card-description {
+        font-size: 0.9rem;
+      }
     }
   }
 }

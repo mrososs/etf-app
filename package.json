@@ -37,6 +37,7 @@
     "bootstrap": "^5.3.6",
     "compression": "^1.8.1",
     "emailjs-com": "^3.2.0",
+    "jwt-decode": "^4.0.0",
     "leaflet": "^1.9.4",
     "maplibre-gl": "^5.7.0",
     "ngx-toastr": "^19.0.0",

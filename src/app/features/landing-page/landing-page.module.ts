@@ -24,7 +24,6 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
 import { ConfirmAuthComponent } from './components/confirm-auth/confirm-auth.component';
 import { LoginSuccessDialogComponent } from './components/login-success-dialog/login-success-dialog.component';
 import { MultimediaComponent } from './components/multimedia/multimedia.component';
-import { MultimediaDetailsComponent } from './components/multimedia-details/multimedia-details.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DialogModule } from 'primeng/dialog';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
@@ -54,7 +53,6 @@ import { CarouselModule } from 'primeng/carousel';
     ConfirmAuthComponent,
     LoginSuccessDialogComponent,
     MultimediaComponent,
-    MultimediaDetailsComponent,
   ],
   imports: [
     CommonModule,

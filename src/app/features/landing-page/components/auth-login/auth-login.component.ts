@@ -13,6 +13,8 @@ import {
 import { LoginSuccessDialogComponent } from '../login-success-dialog/login-success-dialog.component';
 import { environment } from '../../../../../environments/environment';
 import { TokenExpiryService } from '../../../../core/services/token-expiry.service';
+import { JwtService } from '../../../../core/services/jwt.service';
+import { StorageService } from '../../../../shared/platform/storage.service';
 
 @Component({
   selector: 'app-auth-login',
@@ -26,6 +28,8 @@ export class AuthLoginComponent implements OnInit {
   private translateService = inject(TranslateService);
   private dialogService = inject(DialogService);
   private tokenExpiryService = inject(TokenExpiryService);
+  private jwtService = inject(JwtService);
+  private storageService = inject(StorageService);
   showPassword = false;
 
   loginForm = new FormGroup({
@@ -77,6 +81,12 @@ export class AuthLoginComponent implements OnInit {
 
           // Store token with 24-hour expiry using TokenExpiryService
           this.tokenExpiryService.storeTokenWithExpiry(res, 24);
+
+          // Decode token and store role
+          const role = this.jwtService.getRoleFromToken(res);
+          if (role) {
+            this.storageService.setItem('user_role', role);
+          }
 
           document.cookie = `token=${res}; path=/; domain=.itechpro-eg.com; secure; SameSite=None`;
 

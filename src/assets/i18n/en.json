@@ -142,7 +142,8 @@
     },
     "buttons": {
       "laws": "Laws",
-      "ministerialDecisions": "Ministerial Decisions"
+      "ministerialDecisions": "Ministerial Decisions",
+      "generalMeetingDecisions": "General Meeting Decisions"
     },
     "searchPlaceholder": "Enter Year",
     "card": {
@@ -411,7 +412,8 @@
     "relatedContent": "Related Content",
     "share": "Share",
     "noContent": "No content available",
-    "noContentDescription": "No content found in this category at the moment"
+    "noContentDescription": "No content found in this category at the moment",
+    "loading": "Loading..."
   },
   "confirmRegister": {
     "loading": "Verifying your account...",

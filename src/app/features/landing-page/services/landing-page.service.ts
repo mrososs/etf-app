@@ -15,6 +15,7 @@ import { ResetPasswordModel } from '../models/token.model';
 import { MissionAndVision } from '../models/MissionAndVision.model';
 import { MultimediaItem } from '../models/multimedia.model';
 import { Training } from '../models/training.model';
+import { MediaCenterResponse } from '../models/media-center.model';
 
 @Injectable({
   providedIn: 'root',
@@ -140,6 +141,19 @@ export class LandingPageService {
     const lang = localStorage.getItem('lang') || 'ar';
     return this.http.get<Training[]>(
       `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/Content/Trainings/${lang}`
+    );
+  }
+
+  getGeneralMeetingLegislation(): Observable<TourismLegislation[]> {
+    const lang = localStorage.getItem('lang') || 'ar';
+    return this.http.get<TourismLegislation[]>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/GeneralMeetingLegislation?lang=${lang}`
+    );
+  }
+
+  getMediaCenter(): Observable<MediaCenterResponse> {
+    return this.http.get<MediaCenterResponse>(
+      `https://etf-gtfrcrf9gaaceacg.centralus-01.azurewebsites.net/api/MediaCenter`
     );
   }
 }
