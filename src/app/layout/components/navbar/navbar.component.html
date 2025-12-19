@@ -261,6 +261,7 @@
             class="register_btn"
             *ngIf="!isLoggedIn && !isOnLoginPage()"
             [routerLink]="['/landing-page/login']"
+            (click)="closeNavbar()"
           >
             {{ resourcePath + "login" | translate }}
           </button>
