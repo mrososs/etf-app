@@ -72,58 +72,32 @@
             class="dropdown-menu"
             [ngClass]="{
               'dropdown-menu-end': currentLang === 'ar',
-              'dropdown-menu-start': currentLang === 'en'
+              'dropdown-menu-start': currentLang === 'en',
             }"
           >
-            <li>
+            <!-- Original static links kept or commented out? User said: "loop on this endpoint and show the title" 
+                 and "when select each one of them so route to this page with id".
+                 The existing rooms might be different from the "Tourism Rooms" requested. 
+                 But the prompt says: "handle the @[...] in tourism room select to loop on this endpoint".
+                 "Tourism room select" likely refers to the "Rooms" dropdown (translated as "rooms").
+                 If I replace ALL, I lose the static ones (Hotel, Travel, Eat, Diving, Products).
+                 Does the endpoint return THESE rooms or NEW ones? 
+                 "TourismRoom/{language}" sounds like it might return ALL categories.
+                 However, to be safe and follow "loop on this endpoint", I will append them or replace them?
+                 "handle the ... in tourism room select to loop on this endpoint" implies the dropdown IS the tourism room select.
+                 I will REPLACE the static list with the dynamic list as implied by "loop on this endpoint". 
+                 If the user meant to ADD to it, they would say "add to". 
+                 Also "show it like we do on rooms-component feature" implies these ARE the rooms.
+            -->
+            <li *ngFor="let room of tourismRooms; let last = last">
               <a
                 class="dropdown-item"
                 (click)="closeNavbar()"
                 routerLinkActive="active"
-                [routerLink]="['landing-page/hotel-room']"
-                >{{ resourcePath + "hotelRoom" | translate }}</a
+                [routerLink]="['landing-page/tourism-room', room.title]"
+                >{{ room.title }}</a
               >
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a
-                class="dropdown-item"
-                (click)="closeNavbar()"
-                routerLinkActive="active"
-                [routerLink]="['landing-page/travel-room']"
-                >{{ resourcePath + "travelRoom" | translate }}</a
-              >
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a
-                class="dropdown-item"
-                (click)="closeNavbar()"
-                routerLinkActive="active"
-                [routerLink]="['landing-page/eat-room']"
-                >{{ resourcePath + "eatRoom" | translate }}</a
-              >
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a
-                (click)="closeNavbar()"
-                class="dropdown-item"
-                routerLinkActive="active"
-                [routerLink]="['landing-page/diving-room']"
-                >{{ resourcePath + "divingRoom" | translate }}</a
-              >
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-
-            <li>
-              <a
-                class="dropdown-item"
-                routerLinkActive="active"
-                (click)="closeNavbar()"
-                [routerLink]="['landing-page/product-room']"
-                >{{ resourcePath + "productsRoom" | translate }}</a
-              >
+              <hr *ngIf="!last" class="dropdown-menu-divider" />
             </li>
           </ul>
         </li>
@@ -246,7 +220,7 @@
                 class="color-dot"
                 [ngStyle]="{
                   'background-image': 'url(' + theme.image + ')',
-                  'background-size': 'cover'
+                  'background-size': 'cover',
                 }"
                 (click)="changeTheme(theme.class)"
                 [title]="theme.class"

@@ -29,6 +29,7 @@ import { DialogModule } from 'primeng/dialog';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { DialogService } from 'primeng/dynamicdialog';
 import { CarouselModule } from 'primeng/carousel';
+import { TourismRoomDetailsComponent } from './components/tourism-room-details/tourism-room-details.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { CarouselModule } from 'primeng/carousel';
     ConfirmAuthComponent,
     LoginSuccessDialogComponent,
     MultimediaComponent,
+    TourismRoomDetailsComponent,
   ],
   imports: [
     CommonModule,

@@ -11,6 +11,10 @@ import { LangService } from '../../../core/services/lang.service';
 import { ToastrService } from 'ngx-toastr';
 import { TranslateService } from '@ngx-translate/core';
 import { TokenExpiryService } from '../../../core/services/token-expiry.service';
+import {
+  TourismRoom,
+  TourismRoomService,
+} from '../../../core/services/tourism-room.service';
 declare var bootstrap: any;
 
 @Component({
@@ -50,12 +54,15 @@ export class NavbarComponent implements OnInit, OnDestroy {
   private toasterService = inject(ToastrService);
   private translateService = inject(TranslateService);
   private tokenExpiryService = inject(TokenExpiryService);
+  private tourismRoomService = inject(TourismRoomService);
+  tourismRooms: TourismRoom[] = [];
 
   // ⬅️ النقطة المهمة: استخدام ViewChild عشان نوصل لعنصر collapse
   @ViewChild('navbarCollapse') navbarCollapse!: ElementRef;
 
   ngOnInit(): void {
     this.checkLoginStatus();
+    this.fetchTourismRooms();
     window.addEventListener('scroll', this.onScroll, true);
 
     // Listen for storage changes to update login status
@@ -64,7 +71,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
     // Also listen for custom events that might be triggered from other components
     window.addEventListener(
       'loginStateChanged',
-      this.checkLoginStatus.bind(this)
+      this.checkLoginStatus.bind(this),
     );
   }
 
@@ -73,7 +80,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
     window.removeEventListener('storage', this.handleStorageChange.bind(this));
     window.removeEventListener(
       'loginStateChanged',
-      this.checkLoginStatus.bind(this)
+      this.checkLoginStatus.bind(this),
     );
   }
 
@@ -131,13 +138,13 @@ export class NavbarComponent implements OnInit, OnDestroy {
         key: 'auth_token',
         newValue: null,
         url: window.location.href,
-      })
+      }),
     );
 
     window.dispatchEvent(
       new CustomEvent('loginStateChanged', {
         detail: { isLoggedIn: false, token: null },
-      })
+      }),
     );
 
     // Redirect to login page after a short delay
@@ -178,5 +185,13 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   get currentLang(): string {
     return this.langService.currentLang;
+  }
+
+  fetchTourismRooms() {
+    this.tourismRoomService
+      .getTourismRooms(this.currentLang)
+      .subscribe((rooms) => {
+        this.tourismRooms = rooms;
+      });
   }
 }
