@@ -81,16 +81,16 @@
       isApiTrainingSelected()
         ? apiTrainingTpl
         : selected === translateKeys.safeDriving
-        ? safeDrivingTpl
-        : selected === translateKeys.dualEducation
-        ? dualEducationTpl
-        : selected === translateKeys.transition
-        ? transitionTpl
-        : selected === translateKeys.cooking
-        ? cookingTpl
-        : selected === translateKeys.trainingPlatform
-        ? trainingPlatformTpl
-        : null
+          ? safeDrivingTpl
+          : selected === translateKeys.dualEducation
+            ? dualEducationTpl
+            : selected === translateKeys.transition
+              ? transitionTpl
+              : selected === translateKeys.cooking
+                ? cookingTpl
+                : selected === translateKeys.trainingPlatform
+                  ? trainingPlatformTpl
+                  : null
     "
   >
   </ng-container>
@@ -101,9 +101,7 @@
       class="training__contentSafeDriving container"
       *ngIf="getSafeDrivingTraining()"
     >
-      <div
-        class="d-flex training__contentSafeDriving__header justify-content-center align-items-center flex-column text-center"
-      >
+      <div class="training__contentSafeDriving__header">
         <h1>{{ "safeDivingDesc.title" | translate }}</h1>
         <p
           *ngIf="getSafeDrivingTraining(); else staticDesc1"
@@ -115,7 +113,7 @@
         <p class="color_p">{{ "safeDivingDesc.desc2" | translate }}</p>
       </div>
 
-      <div class="mt-3 text-center">
+      <div class="mt-3">
         <h1>{{ "safeDivingDesc.objectivesTitle" | translate }}</h1>
         <p>{{ "safeDivingDesc.objectivesDesc" | translate }}</p>
       </div>
@@ -132,7 +130,7 @@
         </div>
       </div>
 
-      <div class="mt-3 text-center">
+      <div class="mt-3">
         <h1>{{ "safeDivingDesc.tracksTitle" | translate }}</h1>
         <p>{{ "safeDivingDesc.tracksDesc" | translate }}</p>
       </div>
@@ -142,9 +140,7 @@
           class="col-12 col-md-6 col-lg-3"
           *ngFor="let track of [1, 2, 3, 4, 5, 6]"
         >
-          <div
-            class="d-flex road_card justify-content-center align-items-center text-center flex-column"
-          >
+          <div class="d-flex road_card align-items-center flex-column">
             <img
               class="w-25"
               src="../../../../../assets/svg/road_svgrepo.com.svg"
@@ -263,39 +259,39 @@
         ></div>
       </div>
       @defer (on viewport) {
-      <div class="mt-3 video-gallery">
-        <div class="main-video">
-          <video
-            id="mainPlayer"
-            autoplay
-            muted
-            playsinline
-            controls
-            [poster]="mainVideoPoster"
-            class="w-100 rounded"
-            aria-label="فيديو تدريب القيادة الآمنة"
-          >
-            <source [src]="driveVideoTraining" type="video/mp4" />
-            متصفحك لا يدعم تشغيل الفيديو.
-          </video>
+        <div class="mt-3 video-gallery">
+          <div class="main-video">
+            <video
+              id="mainPlayer"
+              autoplay
+              muted
+              playsinline
+              controls
+              [poster]="mainVideoPoster"
+              class="w-100 rounded"
+              aria-label="فيديو تدريب القيادة الآمنة"
+            >
+              <source [src]="driveVideoTraining" type="video/mp4" />
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
         </div>
-      </div>
       } @placeholder {
-      <div class="mt-3 video-gallery">
-        <div class="main-video">
-          <div
-            class="w-100 rounded bg-light d-flex align-items-center justify-content-center"
-            style="height: 300px"
-          >
-            <div class="text-center">
-              <i class="fas fa-play-circle fa-3x text-muted"></i>
-              <p class="mt-2 text-muted">
-                {{ "training.loadingVideo" | translate }}
-              </p>
+        <div class="mt-3 video-gallery">
+          <div class="main-video">
+            <div
+              class="w-100 rounded bg-light d-flex align-items-center justify-content-center"
+              style="height: 300px"
+            >
+              <div class="text-center">
+                <i class="fas fa-play-circle fa-3x text-muted"></i>
+                <p class="mt-2 text-muted">
+                  {{ "training.loadingVideo" | translate }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       }
     </div>
   </ng-template>
@@ -306,18 +302,15 @@
       *ngIf="getDualEducationTraining()"
     >
       <div class="mt-5">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
+        <div>
           <h1>{{ "doubleLearning.title" | translate }}</h1>
         </div>
       </div>
 
       <div class="mt-3">
-        <div class="row text-center">
+        <div class="row">
           <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-start">
             <p
-              style="text-align: justify"
               *ngIf="getDualEducationTraining(); else staticSubtitle"
               [innerHTML]="getDualEducationTraining()?.description"
             ></p>
@@ -353,7 +346,7 @@
       </div>
 
       <div class="mt-3">
-        <div class="d-flex justify-content-center">
+        <div class="">
           <h1>{{ "doubleLearning.goalsTitle" | translate }}</h1>
         </div>
         <div class="mt-3">
@@ -378,7 +371,7 @@
       class="training__contentTransition container"
       *ngIf="getTransitionTraining()"
     >
-      <div class="d-flex justify-content-center align-items-center flex-column">
+      <div class="">
         <h1>{{ "transitionTpl.title" | translate }}</h1>
         <p
           *ngIf="getTransitionTraining(); else staticTransitionDesc"
@@ -390,7 +383,7 @@
       </div>
 
       <div class="mt-3">
-        <div class="row text-center">
+        <div class="row">
           <div class="col-12 col-md-6 col-lg-6">
             <span
               class="d-flex align-items-center justify-content-start mb-2 gap-2"
@@ -510,21 +503,20 @@
       class="training__contentCooking container"
       *ngIf="getCookingTraining()"
     >
-      <div class="row mt-5 text-center">
+      <div class="row mt-5">
         <div
           class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-start"
         >
           <h1>{{ "cooking.title" | translate }}</h1>
           <p
             *ngIf="getCookingTraining(); else staticCookingDesc"
-            style="text-align: justify"
             [innerHTML]="getCookingTraining()?.description"
           ></p>
           <ng-template #staticCookingDesc>
-            <p style="text-align: justify">
+            <p>
               {{ "cooking.description1" | translate }}
             </p>
-            <p class="text-end">
+            <p>
               {{ "cooking.description2" | translate }}
             </p>
           </ng-template>
@@ -560,9 +552,7 @@
   <ng-template #trainingPlatformTpl>
     <div class="training__contentPlatform container">
       <div class="mt-5">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column text-center"
-        >
+        <div class="header__txt">
           <h1>{{ "trainingPlatform.title" | translate }}</h1>
           <p class="lead">{{ "trainingPlatform.subtitle" | translate }}</p>
           <p class="text-muted">
@@ -579,7 +569,7 @@
                 <div class="text-center mb-3">
                   <i class="fas fa-graduation-cap fa-3x text-primary"></i>
                 </div>
-                <h5 class="card-title text-center">
+                <h5 class="card-title">
                   {{ "trainingPlatform.card1.title" | translate }}
                 </h5>
                 <p class="card-text flex-grow-1">
@@ -595,7 +585,7 @@
                 <div class="text-center mb-3">
                   <i class="fas fa-certificate fa-3x text-success"></i>
                 </div>
-                <h5 class="card-title text-center">
+                <h5 class="card-title">
                   {{ "trainingPlatform.card2.title" | translate }}
                 </h5>
                 <p class="card-text flex-grow-1">
@@ -657,9 +647,7 @@
   <ng-template #apiTrainingTpl>
     <div class="training__contentApi container" *ngIf="selectedApiTraining">
       <div class="mt-5">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column text-center"
-        >
+        <div class="header__txt">
           <h1>{{ selectedApiTraining.title }}</h1>
         </div>
       </div>
@@ -668,11 +656,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="d-flex flex-column">
-              <p
-                class="mb-4"
-                style="text-align: justify"
-                [innerHTML]="selectedApiTraining.description"
-              ></p>
+              <p class="mb-4" [innerHTML]="selectedApiTraining.description"></p>
               <a
                 [href]="selectedApiTraining.link"
                 target="_blank"
