@@ -18,6 +18,26 @@ export class TourismRoomDetailsComponent implements OnInit {
   room: TourismRoom | null = null;
   apiUrl = environment.apiBaseUrl;
 
+  getVisitWebsiteTranslationKey(title: string | undefined): string {
+    if (!title) return 'hotelroom.visitWebsite'; // default fallback
+
+    // Mapping the Arabic titles to their respective translation keys
+    if (title.includes('الغوص')) return 'divingroom.visitWebsite';
+    if (title.includes('المنشآت والمطاعم')) return 'eatroom.visitWebsite';
+    if (title.includes('المنشآت الفندقية')) return 'hotelroom.visitWebsite';
+    if (title.includes('العاديات والسلع')) return 'productroom.visitWebsite';
+    if (title.includes('شركات ووكالات')) return 'travelroom.visitWebsite';
+
+    // Mapping the English titles (just in case)
+    if (title.includes('Diving')) return 'divingroom.visitWebsite';
+    if (title.includes('Restaurants')) return 'eatroom.visitWebsite';
+    if (title.includes('Hotels')) return 'hotelroom.visitWebsite';
+    if (title.includes('Commodities')) return 'productroom.visitWebsite';
+    if (title.includes('Travel')) return 'travelroom.visitWebsite';
+
+    return 'hotelroom.visitWebsite';
+  }
+
   private route = inject(ActivatedRoute);
   private tourismRoomService = inject(TourismRoomService);
   private langService = inject(LangService);

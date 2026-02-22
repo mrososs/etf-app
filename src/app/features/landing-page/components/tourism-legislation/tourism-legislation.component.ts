@@ -25,7 +25,7 @@ export class TourismLegislationComponent implements OnInit {
   ngOnInit(): void {
     // Check if user has GeneralMeetingMember role
     let role = this._storageService.getItem('user_role');
-    
+
     // If role is not in localStorage but token exists, extract it from token
     if (!role) {
       const token = this._tokenExpiryService.getValidToken();
@@ -36,15 +36,18 @@ export class TourismLegislationComponent implements OnInit {
         }
       }
     }
-    
-    this.isGeneralMeetingMember = role === 'GeneralMeetingMember';
-    
+
+    const roles = role ? role.split(',') : [];
+    this.isGeneralMeetingMember = roles.some((r) =>
+      ['GeneralMeetingMember', 'SysAdmin', 'GeneralAssemblyMember'].includes(r),
+    );
+
     this.changeNewsType(this.selected); // default: قوانين
   }
   onSearchYear() {
     const year = this.enterYear.trim();
     this.filteredLegislations = this.tourismLegislations.filter((item) =>
-      item.title.includes(year)
+      item.title.includes(year),
     );
   }
   changeNewsType(type: string) {

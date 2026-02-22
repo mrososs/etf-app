@@ -22,7 +22,7 @@ export class AboutUnionComponent implements OnInit {
       this.committees = data;
     });
     this.landingPageService.getReports().subscribe((data) => {
-      this.reports = data;
+      this.reports = data.sort((a, b) => b.year - a.year);
     });
     this.landingPageService.getMissionAndVision().subscribe((data) => {
       this.missionAndVision = data;
